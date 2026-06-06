@@ -139,7 +139,7 @@ const conversionData = [
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2" stroke-linecap="round" aria-hidden="true">
               <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
             </svg>
-            Dla najlepszej dokładności skalibruj linijkę przed pomiarem.
+            Automatyczna kalibracja – linijka dostosowuje się do Twojego ekranu.
           </p>
         </div>
         <div class="hero-image">
@@ -155,87 +155,74 @@ const conversionData = [
     </div>
   </section>
 
-  <!-- ====== RULER TOOL ====== -->
-  <section class="section ruler-tool-wrapper" id="linijka" aria-label="Linijka online">
-    <div class="container">
-      <div class="ruler-controls no-print" id="ruler-controls">
-        <div class="ruler-controls-left">
-          <span class="ruler-info" id="ruler-info">Wykrywanie urządzenia...</span>
-        </div>
-        <div class="ruler-controls-right">
-          <button class="btn btn-sm btn-secondary" id="btn-horizontal" aria-label="Tryb poziomy">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="3" y1="12" x2="21" y2="12"/><polyline points="16 7 21 12 16 17"/></svg>
-            Poziomy
-          </button>
-          <button class="btn btn-sm btn-secondary" id="btn-vertical" aria-label="Tryb pionowy">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="12" y1="3" x2="12" y2="21"/><polyline points="7 16 12 21 17 16"/></svg>
-            Pionowy
-          </button>
-          <button class="btn btn-sm btn-secondary" id="btn-fullscreen" aria-label="Pełny ekran">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg>
-            Pełny ekran
-          </button>
-          <button class="btn btn-sm btn-primary" id="btn-calibrate-scroll" aria-label="Kalibruj">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
-            Kalibruj
-          </button>
-        </div>
-      </div>
-      
-      <div class="ruler-container" id="ruler-container" role="img" aria-label="Linijka pomiarowa w centymetrach i milimetrach">
-        <noscript>
-          <p class="notice notice-warning">Włącz JavaScript, aby korzystać z linijki online.</p>
-        </noscript>
-      </div>
+  <!-- ====== FULL-PAGE RULER TOOL ====== -->
+  <section class="ruler-section no-print" id="linijka" aria-label="Linijka online">
+    <div class="ruler-hint">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="7 13 12 18 17 13"/><polyline points="7 6 12 11 17 6"/></svg>
+      Przewiń w dół, aby zobaczyć pełną linijkę
+    </div>
 
-      <p class="ruler-warning">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-          <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
-          <line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/>
-        </svg>
-        Uwaga: dokładność pomiaru zależy od kalibracji ekranu.
-      </p>
+    <!-- Floating device info card -->
+    <div class="ruler-device-card" id="ruler-device-card">
+      <div class="device-card-header">
+        <span class="device-name" id="device-name">Wykrywanie...</span>
+        <span class="device-diagonal" id="device-diagonal"></span>
+      </div>
+      <div class="device-card-body">
+        <div class="device-screen-input">
+          <label for="screen-size-input" class="sr-only">Rozmiar ekranu w calach</label>
+          <div class="screen-size-display">
+            <span class="screen-label">Ekran</span>
+            <input
+              type="number"
+              id="screen-size-input"
+              class="screen-value-input"
+              min="3"
+              max="100"
+              step="0.1"
+              aria-label="Przekątna ekranu w calach"
+            />
+            <span class="screen-unit">cali</span>
+          </div>
+          <span class="device-hint">Podaj rozmiar ekranu</span>
+        </div>
+        <button class="redetect-btn" id="btn-redetect" aria-label="Wykryj ponownie">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M1 4v6h6"/><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"/></svg>
+          Wykryj
+        </button>
+      </div>
+    </div>
+
+    <!-- Ruler SVG container — scrollable -->
+    <div class="ruler-scroll-area" id="ruler-scroll-area">
+      <div class="ruler-track" id="ruler-track">
+        <!-- SVG will be injected here -->
+      </div>
+    </div>
+
+    <!-- Sticky bottom bar: CM / INCH toggle -->
+    <div class="ruler-bottom-bar" id="ruler-bottom-bar">
+      <div class="unit-toggle">
+        <button class="unit-btn active" id="btn-unit-cm" aria-label="Centymetry" aria-pressed="true">CM</button>
+        <span class="unit-sep">|</span>
+        <button class="unit-btn" id="btn-unit-inch" aria-label="Cale" aria-pressed="false">INCH</button>
+      </div>
+      <a href="/linijka-do-druku/" class="bottom-link">Linijka do druku</a>
     </div>
   </section>
 
-  <!-- ====== CALIBRATION PANEL ====== -->
-  <section class="section section-alt calibration-panel" id="kalibracja" aria-label="Kalibracja linijki">
+  <!-- ====== CALIBRATION PANEL (compact) ====== -->
+  <section class="section section-alt calibration-panel no-print" id="kalibracja" aria-label="Kalibracja linijki">
     <div class="container">
       <h2>Kalibracja linijki</h2>
-      <p>Skalibruj linijkę, aby poprawić dokładność pomiaru na Twoim ekranie.</p>
+      <p>Linijka kalibruje się automatycznie na podstawie Twojego urządzenia. Możesz też skalibrować ręcznie.</p>
 
       <div class="calibration-grid">
-        <!-- Method 1: Screen Diagonal -->
-        <div class="card calibration-card" id="calibration-diagonal">
-          <h3>
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-            Przekątna ekranu
-          </h3>
-          <p>Podaj rozmiar przekątnej ekranu w calach, aby skalibrować skalę.</p>
-          <div class="calibration-form">
-            <label for="diagonal-input" class="input-label">Przekątna ekranu w calach</label>
-            <div class="input-row">
-              <input
-                type="number"
-                id="diagonal-input"
-                class="input"
-                placeholder="np. 15.6"
-                min="3"
-                max="100"
-                step="0.1"
-                aria-describedby="diagonal-help"
-              />
-              <button class="btn btn-primary" id="btn-calibrate-diagonal">Skalibruj linijkę</button>
-            </div>
-            <small id="diagonal-help">Typowe rozmiary: telefon 6,1", laptop 14–15,6", monitor 24–27"</small>
-          </div>
-        </div>
-
-        <!-- Method 2: Credit Card -->
+        <!-- Method: Credit Card -->
         <div class="card calibration-card" id="calibration-card">
           <h3>
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" aria-hidden="true"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
-            Karta bankowa
+            Kalibracja kartą bankową
           </h3>
           <p>Przyłóż kartę do ekranu i dopasuj rozmiar konturów za pomocą suwaka.</p>
           <div class="calibration-form">
@@ -252,21 +239,22 @@ const conversionData = [
               max="500"
               value="323"
               aria-label="Suwak rozmiaru karty"
-              aria-describedby="card-help"
             />
-            <small id="card-help">Przesuń suwak, aż kontury idealnie pasują do Twojej karty.</small>
             <button class="btn btn-primary" id="btn-calibrate-card" style="margin-top: var(--space-3);">Skalibruj linijkę</button>
           </div>
         </div>
-      </div>
 
-      <!-- Calibration status -->
-      <div class="calibration-status" id="calibration-status" style="display: none;">
-        <div class="notice notice-success" id="calibration-message">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-          <span>Linijka została skalibrowana na tym urządzeniu.</span>
+        <!-- Status -->
+        <div class="card calibration-card">
+          <h3>
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+            Status kalibracji
+          </h3>
+          <div id="calibration-status-info">
+            <p id="calibration-status-text">Sprawdzanie kalibracji...</p>
+          </div>
+          <button class="btn btn-sm btn-secondary" id="btn-reset-calibration" style="margin-top: var(--space-3);">Resetuj kalibrację</button>
         </div>
-        <button class="btn btn-sm btn-secondary" id="btn-reset-calibration">Resetuj kalibrację</button>
       </div>
     </div>
   </section>
@@ -288,7 +276,7 @@ const conversionData = [
         </li>
         <li>
           <span class="step-number">2</span>
-          <span>Skalibruj linijkę, aby poprawić dokładność.</span>
+          <span>Linijka automatycznie skalibruje się do Twojego ekranu.</span>
         </li>
         <li>
           <span class="step-number">3</span>
@@ -296,32 +284,31 @@ const conversionData = [
         </li>
         <li>
           <span class="step-number">4</span>
-          <span>Odczytaj długość w centymetrach lub milimetrach.</span>
+          <span>Odczytaj długość w centymetrach lub calach.</span>
         </li>
       </ol>
 
       <h2>Linijka w telefonie</h2>
       <p>
         Jeśli nie masz pod ręką fizycznej miarki, telefon może działać jako szybka <a href="#linijka">linijka online</a>. 
-        Najlepiej używać jej w trybie poziomym, ponieważ ekran pokazuje wtedy dłuższą skalę.
+        Przewiń ekran w dół, aby zobaczyć pełną skalę. Linijka automatycznie rozpoznaje Twoje urządzenie i kalibruje się.
       </p>
 
       <h2>Centymetr online i miarka cm</h2>
       <p>
         Nasza <a href="#linijka">miarka online</a> pokazuje podziałkę w centymetrach i milimetrach. 
-        Dzięki temu możesz szybko sprawdzić długość drobnych przedmiotów, takich jak karta, śruba, biżuteria, opakowanie, notatnik lub mały element techniczny.
+        Możesz też przełączyć na cale. Dzięki temu szybko sprawdzisz długość drobnych przedmiotów, takich jak karta, śruba, biżuteria, opakowanie czy notatnik.
       </p>
 
       <h2>Linijka online 20 cm i 10 cm</h2>
       <p>
         Na wielu ekranach dostępna jest linijka online 10 cm, 20 cm lub dłuższa. 
-        Długość widocznej skali zależy od wielkości ekranu, orientacji urządzenia i kalibracji. 
-        Na większych monitorach linijka może pokazywać nawet do 50 cm.
+        Długość widocznej skali zależy od wielkości ekranu. Przewiń w dół, aby zobaczyć więcej.
       </p>
 
       <h2>Czy linijka online jest dokładna?</h2>
       <p>
-        Linijka online może być bardzo pomocna do szybkich pomiarów, ale jej dokładność zależy od ekranu, przeglądarki i <a href="#kalibracja">kalibracji</a>. 
+        Linijka online może być bardzo pomocna do szybkich pomiarów, ale jej dokładność zależy od ekranu i <a href="#kalibracja">kalibracji</a>. 
         Do precyzyjnych zastosowań technicznych zawsze warto sprawdzić wynik fizyczną linijką lub suwmiarką.
       </p>
 
@@ -413,9 +400,7 @@ const conversionData = [
     }
   }
 
-  .hero-text h1 {
-    margin-bottom: var(--space-4);
-  }
+  .hero-text h1 { margin-bottom: var(--space-4); }
 
   .hero-subtitle {
     font-size: 1.125rem;
@@ -452,52 +437,219 @@ const conversionData = [
     border-radius: var(--radius-lg);
   }
 
-  /* ====== RULER TOOL ====== */
-  .ruler-controls {
+  /* ====== FULL-PAGE RULER ====== */
+  .ruler-section {
+    position: relative;
+    background: #fff;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .ruler-hint {
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-2);
+    padding: var(--space-3) var(--space-4);
+    font-size: 0.8125rem;
+    color: var(--text-tertiary);
+    background: var(--bg-secondary);
+    border-bottom: 1px solid var(--border);
+  }
+
+  /* Floating device card */
+  .ruler-device-card {
+    position: absolute;
+    top: 56px;
+    left: 80px;
+    z-index: 10;
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+    padding: var(--space-4);
+    min-width: 240px;
+    max-width: 320px;
+  }
+
+  @media (max-width: 500px) {
+    .ruler-device-card {
+      left: 70px;
+      right: var(--space-3);
+      min-width: auto;
+    }
+  }
+
+  .device-card-header {
+    display: flex;
+    align-items: baseline;
+    gap: var(--space-2);
+    margin-bottom: var(--space-3);
+    font-size: 0.875rem;
+    color: var(--text-primary);
+    font-weight: 600;
+  }
+
+  .device-diagonal {
+    color: var(--text-tertiary);
+    font-weight: 400;
+  }
+
+  .device-card-body {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-4);
+  }
+
+  .device-screen-input {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .screen-size-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: var(--space-2) var(--space-3);
+    min-width: 72px;
+  }
+
+  .screen-label {
+    font-size: 0.6875rem;
+    font-weight: 600;
+    color: var(--text-tertiary);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .screen-value-input {
+    width: 60px;
+    border: none;
+    background: transparent;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    text-align: center;
+    padding: 0;
+    -moz-appearance: textfield;
+  }
+
+  .screen-value-input::-webkit-inner-spin-button,
+  .screen-value-input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  .screen-value-input:focus {
+    outline: none;
+    color: var(--accent);
+  }
+
+  .screen-unit {
+    font-size: 0.75rem;
+    color: var(--text-tertiary);
+  }
+
+  .device-hint {
+    font-size: 0.6875rem;
+    color: var(--text-tertiary);
+    text-align: center;
+  }
+
+  .redetect-btn {
+    display: flex;
+    align-items: center;
+    gap: var(--space-1);
+    padding: var(--space-2) var(--space-3);
+    background: none;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    font-size: 0.8125rem;
+    font-weight: 500;
+    color: var(--accent);
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all var(--transition-fast);
+    margin-top: var(--space-2);
+  }
+
+  .redetect-btn:hover {
+    background: var(--accent-bg);
+    border-color: var(--accent-lighter);
+  }
+
+  /* Ruler scroll area */
+  .ruler-scroll-area {
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 80vh;
+    min-height: 400px;
+    position: relative;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .ruler-track {
+    position: relative;
+  }
+
+  .ruler-track :global(svg) {
+    display: block;
+  }
+
+  /* Sticky bottom bar */
+  .ruler-bottom-bar {
+    display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: var(--space-3);
-    margin-bottom: var(--space-4);
+    padding: var(--space-3) var(--space-4);
+    background: var(--bg-secondary);
+    border-top: 1px solid var(--border);
   }
 
-  .ruler-controls-right {
+  .unit-toggle {
     display: flex;
-    flex-wrap: wrap;
-    gap: var(--space-2);
+    align-items: center;
+    gap: var(--space-3);
   }
 
-  .ruler-info {
+  .unit-btn {
+    background: none;
+    border: none;
+    font-size: 0.9375rem;
+    font-weight: 700;
+    color: var(--text-tertiary);
+    cursor: pointer;
+    padding: var(--space-1) var(--space-2);
+    border-radius: var(--radius-sm);
+    transition: all var(--transition-fast);
+    letter-spacing: 0.05em;
+  }
+
+  .unit-btn:hover {
+    color: var(--accent);
+  }
+
+  .unit-btn.active {
+    color: var(--accent);
+    background: var(--accent-bg);
+  }
+
+  .unit-sep {
+    color: var(--border-dark);
     font-size: 0.875rem;
+  }
+
+  .bottom-link {
+    font-size: 0.8125rem;
     color: var(--text-tertiary);
     font-weight: 500;
   }
 
-  .ruler-container {
-    overflow-x: auto;
-    overflow-y: hidden;
-    padding: var(--space-4) 0;
-    -webkit-overflow-scrolling: touch;
-    border-radius: var(--radius-lg);
-    box-shadow: var(--shadow-ruler);
-    background: var(--bg-primary);
-    min-height: 100px;
-  }
-
-  .ruler-container :global(svg) {
-    display: block;
-    margin: 0 auto;
-  }
-
-  .ruler-warning {
-    display: flex;
-    align-items: center;
-    gap: var(--space-2);
-    font-size: 0.8125rem;
-    color: var(--text-tertiary);
-    margin-top: var(--space-3);
-    margin-bottom: 0;
+  .bottom-link:hover {
+    color: var(--accent);
   }
 
   /* ====== CALIBRATION ====== */
@@ -527,35 +679,6 @@ const conversionData = [
     margin-bottom: var(--space-4);
   }
 
-  .calibration-form small {
-    display: block;
-    margin-top: var(--space-2);
-    color: var(--text-tertiary);
-    font-size: 0.8125rem;
-  }
-
-  .input-row {
-    display: flex;
-    gap: var(--space-3);
-    align-items: stretch;
-  }
-
-  .input-row .input {
-    flex: 1;
-    min-width: 0;
-  }
-
-  .input-row .btn {
-    white-space: nowrap;
-    flex-shrink: 0;
-  }
-
-  @media (max-width: 500px) {
-    .input-row {
-      flex-direction: column;
-    }
-  }
-
   .card-reference {
     display: flex;
     justify-content: center;
@@ -573,7 +696,6 @@ const conversionData = [
     justify-content: center;
     background: var(--accent-bg);
     transition: width 0.15s ease;
-    position: relative;
   }
 
   .card-label {
@@ -582,23 +704,8 @@ const conversionData = [
     color: var(--accent);
   }
 
-  .calibration-status {
-    margin-top: var(--space-6);
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: var(--space-3);
-  }
-
-  .calibration-status .notice {
-    flex: 1;
-    min-width: 200px;
-  }
-
   /* ====== SEO CONTENT ====== */
-  .seo-container {
-    max-width: var(--container-lg);
-  }
+  .seo-container { max-width: var(--container-lg); }
 
   .steps-list {
     display: flex;
@@ -656,13 +763,8 @@ const conversionData = [
     box-shadow: var(--shadow-sm);
   }
 
-  table {
-    min-width: 400px;
-  }
-
-  thead {
-    background: var(--bg-tertiary);
-  }
+  table { min-width: 400px; }
+  thead { background: var(--bg-tertiary); }
 
   th {
     padding: var(--space-3) var(--space-4);
@@ -673,8 +775,6 @@ const conversionData = [
     color: var(--text-secondary);
     text-align: left;
     white-space: nowrap;
-    position: sticky;
-    top: 0;
   }
 
   td {
@@ -685,16 +785,10 @@ const conversionData = [
     font-variant-numeric: tabular-nums;
   }
 
-  tbody tr:nth-child(even) {
-    background: var(--bg-secondary);
-  }
+  tbody tr:nth-child(even) { background: var(--bg-secondary); }
+  tbody tr:hover { background: var(--accent-bg); }
 
-  tbody tr:hover {
-    background: var(--accent-bg);
-  }
-
-  th:first-child,
-  td:first-child {
+  th:first-child, td:first-child {
     position: sticky;
     left: 0;
     background: inherit;
@@ -717,13 +811,8 @@ const conversionData = [
     transition: box-shadow var(--transition-base);
   }
 
-  .faq-item:hover {
-    box-shadow: var(--shadow-sm);
-  }
-
-  .faq-item[open] {
-    box-shadow: var(--shadow-md);
-  }
+  .faq-item:hover { box-shadow: var(--shadow-sm); }
+  .faq-item[open] { box-shadow: var(--shadow-md); }
 
   .faq-question {
     display: flex;
@@ -740,13 +829,8 @@ const conversionData = [
     transition: background var(--transition-fast);
   }
 
-  .faq-question::-webkit-details-marker {
-    display: none;
-  }
-
-  .faq-question:hover {
-    background: var(--bg-secondary);
-  }
+  .faq-question::-webkit-details-marker { display: none; }
+  .faq-question:hover { background: var(--bg-secondary); }
 
   .faq-chevron {
     flex-shrink: 0;
@@ -754,13 +838,9 @@ const conversionData = [
     color: var(--text-tertiary);
   }
 
-  .faq-item[open] .faq-chevron {
-    transform: rotate(180deg);
-  }
+  .faq-item[open] .faq-chevron { transform: rotate(180deg); }
 
-  .faq-answer {
-    padding: 0 var(--space-5) var(--space-4);
-  }
+  .faq-answer { padding: 0 var(--space-5) var(--space-4); }
 
   .faq-answer p {
     font-size: 0.9375rem;
@@ -770,121 +850,158 @@ const conversionData = [
 </style>
 
 <script>
-  import { initRuler } from '../scripts/ruler';
+  import { generateFullPageRulerSVG, calcMaxUnits, type RulerUnit } from '../scripts/ruler';
   import { detectDevice, onOrientationChange } from '../scripts/device-detect';
   import {
     loadCalibration,
     resetCalibration,
+    autoCalibrate,
     calibrateByDiagonal,
     calibrateByCard,
     getCurrentPxPerMm,
   } from '../scripts/calibration';
 
-  // --- Ruler Initialization ---
-  const container = document.getElementById('ruler-container') as HTMLElement;
-  const rulerInfo = document.getElementById('ruler-info') as HTMLElement;
+  // State
+  let currentUnit: RulerUnit = 'cm';
+  let currentDevice = detectDevice();
 
-  function updateRulerInfo() {
-    const device = detectDevice();
-    const pxPerMm = getCurrentPxPerMm();
-    const cal = loadCalibration();
-    let deviceLabel = device.isMobile ? 'Telefon' : device.isTablet ? 'Tablet' : 'Komputer';
-    let orientLabel = device.isLandscape ? 'poziomo' : 'pionowo';
-    let calLabel = cal ? ` · Skalibrowano` : '';
-    rulerInfo.textContent = `${deviceLabel} · ${orientLabel}${calLabel}`;
+  // DOM refs
+  const rulerTrack = document.getElementById('ruler-track')!;
+  const scrollArea = document.getElementById('ruler-scroll-area')!;
+  const deviceNameEl = document.getElementById('device-name')!;
+  const deviceDiagEl = document.getElementById('device-diagonal')!;
+  const screenInput = document.getElementById('screen-size-input') as HTMLInputElement;
+  const btnUnitCm = document.getElementById('btn-unit-cm')!;
+  const btnUnitInch = document.getElementById('btn-unit-inch')!;
+
+  // --- Auto-calibrate on first load ---
+  function initCalibration() {
+    const existing = loadCalibration();
+    if (!existing) {
+      // First visit: auto-calibrate using detected diagonal
+      autoCalibrate(currentDevice.estimatedDiagonalInches);
+    }
+    updateDeviceCard();
   }
 
-  function renderRuler(orientation?: 'horizontal' | 'vertical') {
-    if (container) {
-      initRuler(container, orientation);
-      updateRulerInfo();
+  function updateDeviceCard() {
+    const cal = loadCalibration();
+    const diag = cal?.diagonalInches || currentDevice.estimatedDiagonalInches;
+
+    deviceNameEl.textContent = currentDevice.deviceName;
+    deviceDiagEl.textContent = `· ${diag.toFixed(2)}"`;
+    screenInput.value = diag.toFixed(1);
+
+    // Update calibration status panel
+    const statusText = document.getElementById('calibration-status-text');
+    if (statusText) {
+      const method = cal?.method || 'default';
+      const labels: Record<string, string> = {
+        auto: 'Automatyczna',
+        diagonal: 'Ręczna (przekątna)',
+        card: 'Ręczna (karta)',
+        default: 'Domyślna (96 DPI)',
+      };
+      statusText.innerHTML = `
+        <strong>Metoda:</strong> ${labels[method] || 'Automatyczna'}<br>
+        <strong>Przekątna:</strong> ${diag.toFixed(1)}"<br>
+        <strong>Urządzenie:</strong> ${currentDevice.deviceName}<br>
+        <strong>Skala:</strong> ${getCurrentPxPerMm().toFixed(2)} px/mm
+      `;
     }
   }
 
-  // Initial render
+  // --- Render ruler ---
+  function renderRuler() {
+    const pxPerMm = getCurrentPxPerMm();
+    // Use viewport height as base for vertical ruler (allow scrolling for more)
+    const availableHeight = Math.max(window.innerHeight * 3, 2000);
+    const totalUnits = calcMaxUnits(availableHeight, currentUnit, pxPerMm);
+
+    const svg = generateFullPageRulerSVG({
+      orientation: 'vertical',
+      unit: currentUnit,
+      pxPerMm,
+      totalUnits: Math.min(totalUnits, currentUnit === 'cm' ? 50 : 20),
+    });
+
+    rulerTrack.innerHTML = svg;
+  }
+
+  // --- Initialize ---
+  initCalibration();
   renderRuler();
 
-  // Re-render on orientation change
+  // --- Screen size input: recalibrate when changed ---
+  screenInput.addEventListener('change', () => {
+    const val = parseFloat(screenInput.value);
+    if (val && val >= 3 && val <= 100) {
+      calibrateByDiagonal(val);
+      updateDeviceCard();
+      renderRuler();
+    }
+  });
+
+  // Re-detect button
+  document.getElementById('btn-redetect')?.addEventListener('click', () => {
+    currentDevice = detectDevice();
+    autoCalibrate(currentDevice.estimatedDiagonalInches);
+    updateDeviceCard();
+    renderRuler();
+  });
+
+  // --- Unit toggle ---
+  btnUnitCm.addEventListener('click', () => {
+    currentUnit = 'cm';
+    btnUnitCm.classList.add('active');
+    btnUnitCm.setAttribute('aria-pressed', 'true');
+    btnUnitInch.classList.remove('active');
+    btnUnitInch.setAttribute('aria-pressed', 'false');
+    renderRuler();
+  });
+
+  btnUnitInch.addEventListener('click', () => {
+    currentUnit = 'inch';
+    btnUnitInch.classList.add('active');
+    btnUnitInch.setAttribute('aria-pressed', 'true');
+    btnUnitCm.classList.remove('active');
+    btnUnitCm.setAttribute('aria-pressed', 'false');
+    renderRuler();
+  });
+
+  // --- Orientation change ---
   onOrientationChange(() => {
+    currentDevice = detectDevice();
     renderRuler();
+    updateDeviceCard();
   });
 
-  // --- Ruler Controls ---
-  document.getElementById('btn-horizontal')?.addEventListener('click', () => {
-    renderRuler('horizontal');
-  });
-
-  document.getElementById('btn-vertical')?.addEventListener('click', () => {
-    renderRuler('vertical');
-  });
-
-  document.getElementById('btn-fullscreen')?.addEventListener('click', () => {
-    const el = document.documentElement;
-    if (!document.fullscreenElement) {
-      el.requestFullscreen?.();
-    } else {
-      document.exitFullscreen?.();
-    }
-  });
-
-  document.getElementById('btn-calibrate-scroll')?.addEventListener('click', () => {
-    document.getElementById('kalibracja')?.scrollIntoView({ behavior: 'smooth' });
-  });
-
-  // --- Calibration: Diagonal ---
-  document.getElementById('btn-calibrate-diagonal')?.addEventListener('click', () => {
-    const input = document.getElementById('diagonal-input') as HTMLInputElement;
-    const value = parseFloat(input.value);
-    if (!value || value < 3 || value > 100) {
-      input.focus();
-      return;
-    }
-    calibrateByDiagonal(value);
-    showCalibrationStatus();
-    renderRuler();
-  });
-
-  // --- Calibration: Credit Card ---
+  // --- Credit card calibration ---
   const cardOutline = document.getElementById('card-outline') as HTMLElement;
   const cardSlider = document.getElementById('card-slider') as HTMLInputElement;
-  
+
   if (cardSlider && cardOutline) {
     cardSlider.addEventListener('input', () => {
       const width = parseInt(cardSlider.value);
       cardOutline.style.width = width + 'px';
-      // Maintain credit card aspect ratio (85.6mm × 53.98mm)
       cardOutline.style.height = Math.round(width * (53.98 / 85.6)) + 'px';
     });
   }
 
   document.getElementById('btn-calibrate-card')?.addEventListener('click', () => {
     if (cardSlider) {
-      const cardWidthPx = parseInt(cardSlider.value);
-      calibrateByCard(cardWidthPx);
-      showCalibrationStatus();
+      calibrateByCard(parseInt(cardSlider.value));
+      updateDeviceCard();
       renderRuler();
     }
   });
 
-  // --- Calibration Status ---
-  function showCalibrationStatus() {
-    const statusEl = document.getElementById('calibration-status');
-    if (statusEl) {
-      statusEl.style.display = 'flex';
-    }
-  }
-
-  // Check for existing calibration on load
-  if (loadCalibration()) {
-    showCalibrationStatus();
-  }
-
+  // --- Reset calibration ---
   document.getElementById('btn-reset-calibration')?.addEventListener('click', () => {
     resetCalibration();
-    const statusEl = document.getElementById('calibration-status');
-    if (statusEl) {
-      statusEl.style.display = 'none';
-    }
+    currentDevice = detectDevice();
+    autoCalibrate(currentDevice.estimatedDiagonalInches);
+    updateDeviceCard();
     renderRuler();
   });
 </script>

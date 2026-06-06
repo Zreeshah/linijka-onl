@@ -1,6 +1,6 @@
 /**
  * Calibration system for the online ruler.
- * Supports screen diagonal calibration and credit card reference calibration.
+ * Supports auto-calibration, screen diagonal, and credit card reference.
  * Persists calibration factor in localStorage.
  */
 
@@ -8,7 +8,8 @@ const STORAGE_KEY = 'linijka_calibration';
 
 export interface CalibrationData {
   factor: number;        // CSS pixels per mm
-  method: 'diagonal' | 'card' | 'default';
+  method: 'auto' | 'diagonal' | 'card' | 'default';
+  diagonalInches: number;
   timestamp: number;
 }
 
@@ -68,27 +69,46 @@ export function getCurrentPxPerMm(): number {
 }
 
 /**
- * Calibrate using screen diagonal size in inches.
- * 
- * Formula:
- * - Physical screen diagonal (inches) is known
- * - Screen resolution in physical pixels: screen.width * devicePixelRatio × screen.height * devicePixelRatio
- * - Calculate physical PPI from diagonal and resolution
- * - CSS PPI = Physical PPI / devicePixelRatio
- * - CSS px per mm = CSS PPI / 25.4
+ * Calculate px-per-mm from a diagonal in inches.
  */
-export function calibrateByDiagonal(diagonalInches: number): CalibrationData {
+function calcPxPerMmFromDiagonal(diagonalInches: number): number {
   const dpr = window.devicePixelRatio || 1;
   const physicalWidth = window.screen.width * dpr;
   const physicalHeight = window.screen.height * dpr;
   const diagonalPx = Math.sqrt(physicalWidth ** 2 + physicalHeight ** 2);
   const physicalPPI = diagonalPx / diagonalInches;
   const cssPPI = physicalPPI / dpr;
-  const pxPerMm = cssPPI / 25.4;
+  return cssPPI / 25.4;
+}
+
+/**
+ * Auto-calibrate using the detected screen diagonal.
+ * Called automatically on first visit.
+ */
+export function autoCalibrate(detectedDiagonalInches: number): CalibrationData {
+  const pxPerMm = calcPxPerMmFromDiagonal(detectedDiagonalInches);
+
+  const data: CalibrationData = {
+    factor: pxPerMm,
+    method: 'auto',
+    diagonalInches: detectedDiagonalInches,
+    timestamp: Date.now(),
+  };
+
+  saveCalibration(data);
+  return data;
+}
+
+/**
+ * Calibrate using screen diagonal size in inches (manual input).
+ */
+export function calibrateByDiagonal(diagonalInches: number): CalibrationData {
+  const pxPerMm = calcPxPerMmFromDiagonal(diagonalInches);
 
   const data: CalibrationData = {
     factor: pxPerMm,
     method: 'diagonal',
+    diagonalInches,
     timestamp: Date.now(),
   };
 
@@ -98,11 +118,7 @@ export function calibrateByDiagonal(diagonalInches: number): CalibrationData {
 
 /**
  * Calibrate using a credit card reference.
- * The standard card width is 85.6mm.
- * The user adjusts a slider until the on-screen card matches their real card.
- * The slider value represents the current CSS pixel width of the card outline.
- * 
- * @param cardWidthPx - The CSS pixel width the user set for the 85.6mm card
+ * Standard card width: 85.6mm.
  */
 export function calibrateByCard(cardWidthPx: number): CalibrationData {
   const CARD_WIDTH_MM = 85.6;
@@ -111,6 +127,7 @@ export function calibrateByCard(cardWidthPx: number): CalibrationData {
   const data: CalibrationData = {
     factor: pxPerMm,
     method: 'card',
+    diagonalInches: 0,
     timestamp: Date.now(),
   };
 
