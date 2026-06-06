@@ -1,0 +1,890 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+// Schema markup
+const schemaWebApp = {
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Linijka online",
+  "url": "https://linijka.onl",
+  "applicationCategory": "UtilityApplication",
+  "operatingSystem": "Web browser",
+  "inLanguage": "pl",
+  "description": "Darmowa linijka online w cm i mm. Użyj telefonu, tabletu lub komputera jako miarki.",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "PLN"
+  }
+};
+
+const schemaHowTo = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "Jak używać linijki online",
+  "description": "Instrukcja korzystania z linijki online na telefonie, tablecie lub komputerze.",
+  "inLanguage": "pl",
+  "step": [
+    {
+      "@type": "HowToStep",
+      "position": 1,
+      "name": "Otwórz stronę",
+      "text": "Otwórz stronę na swoim urządzeniu."
+    },
+    {
+      "@type": "HowToStep",
+      "position": 2,
+      "name": "Skalibruj linijkę",
+      "text": "Skalibruj linijkę, aby poprawić dokładność."
+    },
+    {
+      "@type": "HowToStep",
+      "position": 3,
+      "name": "Połóż przedmiot",
+      "text": "Połóż przedmiot przy skali na ekranie."
+    },
+    {
+      "@type": "HowToStep",
+      "position": 4,
+      "name": "Odczytaj wynik",
+      "text": "Odczytaj długość w centymetrach lub milimetrach."
+    }
+  ]
+};
+
+const faqItems = [
+  {
+    question: "Czy linijka online działa na telefonie?",
+    answer: "Tak, linijka online działa na telefonie. Najlepiej używać jej w trybie poziomym i skalibrować ekran przed pomiarem."
+  },
+  {
+    question: "Czy mogę używać linijki online bez instalacji aplikacji?",
+    answer: "Tak, narzędzie działa bez instalacji aplikacji. Wystarczy otworzyć stronę w przeglądarce."
+  },
+  {
+    question: "Dlaczego muszę skalibrować linijkę?",
+    answer: "Różne ekrany mają różną gęstość pikseli, dlatego kalibracja pomaga dopasować skalę do rzeczywistego rozmiaru."
+  },
+  {
+    question: "Czy dostępna jest linijka do druku?",
+    answer: "Tak, na stronie znajduje się linijka do druku w centymetrach i milimetrach. Należy drukować ją w skali 100%."
+  },
+  {
+    question: "Czy linijka online pokazuje milimetry?",
+    answer: "Tak, linijka pokazuje centymetry i milimetry, dzięki czemu można mierzyć małe przedmioty dokładniej."
+  }
+];
+
+const schemaFAQ = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": faqItems.map(item => ({
+    "@type": "Question",
+    "name": item.question,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": item.answer
+    }
+  }))
+};
+
+const allSchemas = JSON.stringify([schemaWebApp, schemaHowTo, schemaFAQ]);
+
+const conversionData = [
+  { cm: 1, mm: 10, inch: "0,39" },
+  { cm: 2, mm: 20, inch: "0,79" },
+  { cm: 3, mm: 30, inch: "1,18" },
+  { cm: 4, mm: 40, inch: "1,57" },
+  { cm: 5, mm: 50, inch: "1,97" },
+  { cm: 10, mm: 100, inch: "3,94" },
+  { cm: 15, mm: 150, inch: "5,91" },
+  { cm: 20, mm: 200, inch: "7,87" },
+  { cm: 25, mm: 250, inch: "9,84" },
+  { cm: 30, mm: 300, inch: "11,81" },
+  { cm: 50, mm: 500, inch: "19,69" },
+];
+---
+
+<BaseLayout
+  title="Linijka online 1:1 – miarka cm na telefonie i komputerze"
+  description="Darmowa linijka online w cm i mm. Użyj telefonu, tabletu lub komputera jako miarki. Skalibruj ekran i mierz przedmioty online."
+  schemaMarkup={allSchemas}
+>
+  <!-- ====== HERO SECTION ====== -->
+  <section class="hero-section">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-text">
+          <h1>Linijka online 1:1 – miarka cm na&nbsp;ekranie</h1>
+          <p class="hero-subtitle">
+            Zmierz małe przedmioty bez fizycznej linijki. Użyj naszej linijki online na telefonie, tablecie lub&nbsp;komputerze.
+          </p>
+          <div class="hero-cta">
+            <a href="#linijka" class="btn btn-primary btn-lg" id="cta-use-ruler">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+                <path d="M2 12h20M6 8v8M10 10v4M14 8v8M18 10v4"/>
+              </svg>
+              Użyj linijki online
+            </a>
+            <a href="/linijka-do-druku/" class="btn btn-secondary btn-lg" id="cta-print-ruler">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+                <polyline points="6 9 6 2 18 2 18 9"/>
+                <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/>
+                <rect x="6" y="14" width="12" height="8"/>
+              </svg>
+              Pobierz linijkę do druku
+            </a>
+          </div>
+          <p class="hero-trust">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+            Dla najlepszej dokładności skalibruj linijkę przed pomiarem.
+          </p>
+        </div>
+        <div class="hero-image">
+          <img
+            src="/images/hero.webp"
+            alt="Linijka online na telefonie i komputerze"
+            width="520"
+            height="340"
+            loading="eager"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== RULER TOOL ====== -->
+  <section class="section ruler-tool-wrapper" id="linijka" aria-label="Linijka online">
+    <div class="container">
+      <div class="ruler-controls no-print" id="ruler-controls">
+        <div class="ruler-controls-left">
+          <span class="ruler-info" id="ruler-info">Wykrywanie urządzenia...</span>
+        </div>
+        <div class="ruler-controls-right">
+          <button class="btn btn-sm btn-secondary" id="btn-horizontal" aria-label="Tryb poziomy">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="3" y1="12" x2="21" y2="12"/><polyline points="16 7 21 12 16 17"/></svg>
+            Poziomy
+          </button>
+          <button class="btn btn-sm btn-secondary" id="btn-vertical" aria-label="Tryb pionowy">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="12" y1="3" x2="12" y2="21"/><polyline points="7 16 12 21 17 16"/></svg>
+            Pionowy
+          </button>
+          <button class="btn btn-sm btn-secondary" id="btn-fullscreen" aria-label="Pełny ekran">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg>
+            Pełny ekran
+          </button>
+          <button class="btn btn-sm btn-primary" id="btn-calibrate-scroll" aria-label="Kalibruj">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+            Kalibruj
+          </button>
+        </div>
+      </div>
+      
+      <div class="ruler-container" id="ruler-container" role="img" aria-label="Linijka pomiarowa w centymetrach i milimetrach">
+        <noscript>
+          <p class="notice notice-warning">Włącz JavaScript, aby korzystać z linijki online.</p>
+        </noscript>
+      </div>
+
+      <p class="ruler-warning">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
+          <line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/>
+        </svg>
+        Uwaga: dokładność pomiaru zależy od kalibracji ekranu.
+      </p>
+    </div>
+  </section>
+
+  <!-- ====== CALIBRATION PANEL ====== -->
+  <section class="section section-alt calibration-panel" id="kalibracja" aria-label="Kalibracja linijki">
+    <div class="container">
+      <h2>Kalibracja linijki</h2>
+      <p>Skalibruj linijkę, aby poprawić dokładność pomiaru na Twoim ekranie.</p>
+
+      <div class="calibration-grid">
+        <!-- Method 1: Screen Diagonal -->
+        <div class="card calibration-card" id="calibration-diagonal">
+          <h3>
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            Przekątna ekranu
+          </h3>
+          <p>Podaj rozmiar przekątnej ekranu w calach, aby skalibrować skalę.</p>
+          <div class="calibration-form">
+            <label for="diagonal-input" class="input-label">Przekątna ekranu w calach</label>
+            <div class="input-row">
+              <input
+                type="number"
+                id="diagonal-input"
+                class="input"
+                placeholder="np. 15.6"
+                min="3"
+                max="100"
+                step="0.1"
+                aria-describedby="diagonal-help"
+              />
+              <button class="btn btn-primary" id="btn-calibrate-diagonal">Skalibruj linijkę</button>
+            </div>
+            <small id="diagonal-help">Typowe rozmiary: telefon 6,1", laptop 14–15,6", monitor 24–27"</small>
+          </div>
+        </div>
+
+        <!-- Method 2: Credit Card -->
+        <div class="card calibration-card" id="calibration-card">
+          <h3>
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" aria-hidden="true"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+            Karta bankowa
+          </h3>
+          <p>Przyłóż kartę do ekranu i dopasuj rozmiar konturów za pomocą suwaka.</p>
+          <div class="calibration-form">
+            <div class="card-reference" id="card-reference">
+              <div class="card-outline" id="card-outline">
+                <span class="card-label">85,6 mm</span>
+              </div>
+            </div>
+            <label for="card-slider" class="input-label">Dopasuj rozmiar karty</label>
+            <input
+              type="range"
+              id="card-slider"
+              min="200"
+              max="500"
+              value="323"
+              aria-label="Suwak rozmiaru karty"
+              aria-describedby="card-help"
+            />
+            <small id="card-help">Przesuń suwak, aż kontury idealnie pasują do Twojej karty.</small>
+            <button class="btn btn-primary" id="btn-calibrate-card" style="margin-top: var(--space-3);">Skalibruj linijkę</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Calibration status -->
+      <div class="calibration-status" id="calibration-status" style="display: none;">
+        <div class="notice notice-success" id="calibration-message">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          <span>Linijka została skalibrowana na tym urządzeniu.</span>
+        </div>
+        <button class="btn btn-sm btn-secondary" id="btn-reset-calibration">Resetuj kalibrację</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== SEO CONTENT ====== -->
+  <section class="section seo-content">
+    <div class="container seo-container">
+      <h2>Czym jest linijka online?</h2>
+      <p>
+        Linijka online to proste narzędzie, które pozwala mierzyć małe przedmioty bez tradycyjnej linijki. 
+        Wystarczy otworzyć stronę na telefonie, tablecie lub komputerze i położyć przedmiot przy skali widocznej na ekranie.
+      </p>
+
+      <h2>Jak używać linijki online?</h2>
+      <ol class="steps-list">
+        <li>
+          <span class="step-number">1</span>
+          <span>Otwórz stronę na swoim urządzeniu.</span>
+        </li>
+        <li>
+          <span class="step-number">2</span>
+          <span>Skalibruj linijkę, aby poprawić dokładność.</span>
+        </li>
+        <li>
+          <span class="step-number">3</span>
+          <span>Połóż przedmiot przy skali na ekranie.</span>
+        </li>
+        <li>
+          <span class="step-number">4</span>
+          <span>Odczytaj długość w centymetrach lub milimetrach.</span>
+        </li>
+      </ol>
+
+      <h2>Linijka w telefonie</h2>
+      <p>
+        Jeśli nie masz pod ręką fizycznej miarki, telefon może działać jako szybka <a href="#linijka">linijka online</a>. 
+        Najlepiej używać jej w trybie poziomym, ponieważ ekran pokazuje wtedy dłuższą skalę.
+      </p>
+
+      <h2>Centymetr online i miarka cm</h2>
+      <p>
+        Nasza <a href="#linijka">miarka online</a> pokazuje podziałkę w centymetrach i milimetrach. 
+        Dzięki temu możesz szybko sprawdzić długość drobnych przedmiotów, takich jak karta, śruba, biżuteria, opakowanie, notatnik lub mały element techniczny.
+      </p>
+
+      <h2>Linijka online 20 cm i 10 cm</h2>
+      <p>
+        Na wielu ekranach dostępna jest linijka online 10 cm, 20 cm lub dłuższa. 
+        Długość widocznej skali zależy od wielkości ekranu, orientacji urządzenia i kalibracji. 
+        Na większych monitorach linijka może pokazywać nawet do 50 cm.
+      </p>
+
+      <h2>Czy linijka online jest dokładna?</h2>
+      <p>
+        Linijka online może być bardzo pomocna do szybkich pomiarów, ale jej dokładność zależy od ekranu, przeglądarki i <a href="#kalibracja">kalibracji</a>. 
+        Do precyzyjnych zastosowań technicznych zawsze warto sprawdzić wynik fizyczną linijką lub suwmiarką.
+      </p>
+
+      <div class="seo-cta-row">
+        <p>
+          Chcesz mieć fizyczną miarkę? Wydrukuj naszą <a href="/linijka-do-druku/">linijkę do druku</a> w formacie A4.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== CONVERSION TABLE ====== -->
+  <section class="section section-alt conversion-section" id="tabela-konwersji" aria-label="Tabela konwersji">
+    <div class="container">
+      <h2>Tabela konwersji: centymetry, milimetry i cale</h2>
+      <p>Szybkie przeliczanie popularnych jednostek długości.</p>
+      
+      <div class="table-wrapper">
+        <table aria-label="Tabela konwersji centymetrów, milimetrów i cali">
+          <thead>
+            <tr>
+              <th scope="col">Centymetry</th>
+              <th scope="col">Milimetry</th>
+              <th scope="col">Cale</th>
+            </tr>
+          </thead>
+          <tbody>
+            {conversionData.map((row) => (
+              <tr>
+                <td>{row.cm} cm</td>
+                <td>{row.mm} mm</td>
+                <td>{row.inch} cala</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== FAQ ====== -->
+  <section class="section faq-section" id="faq" aria-label="Najczęściej zadawane pytania">
+    <div class="container">
+      <h2>Najczęściej zadawane pytania</h2>
+      
+      <div class="faq-list">
+        {faqItems.map((item, i) => (
+          <details class="faq-item" id={`faq-${i + 1}`}>
+            <summary class="faq-question">
+              <span>{item.question}</span>
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </summary>
+            <div class="faq-answer">
+              <p>{item.answer}</p>
+            </div>
+          </details>
+        ))}
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  /* ====== HERO ====== */
+  .hero-section {
+    padding: var(--space-10) 0 var(--space-8);
+    background: linear-gradient(180deg, var(--accent-bg) 0%, var(--bg-primary) 100%);
+  }
+
+  @media (min-width: 768px) {
+    .hero-section {
+      padding: var(--space-16) 0 var(--space-12);
+    }
+  }
+
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+    align-items: center;
+  }
+
+  @media (min-width: 768px) {
+    .hero-grid {
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-12);
+    }
+  }
+
+  .hero-text h1 {
+    margin-bottom: var(--space-4);
+  }
+
+  .hero-subtitle {
+    font-size: 1.125rem;
+    color: var(--text-secondary);
+    margin-bottom: var(--space-6);
+    max-width: 50ch;
+  }
+
+  .hero-cta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-3);
+    margin-bottom: var(--space-6);
+  }
+
+  .hero-trust {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    font-size: 0.875rem;
+    color: var(--text-tertiary);
+    margin-bottom: 0;
+  }
+
+  .hero-image {
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero-image img {
+    width: 100%;
+    max-width: 520px;
+    height: auto;
+    border-radius: var(--radius-lg);
+  }
+
+  /* ====== RULER TOOL ====== */
+  .ruler-controls {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-3);
+    margin-bottom: var(--space-4);
+  }
+
+  .ruler-controls-right {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+  }
+
+  .ruler-info {
+    font-size: 0.875rem;
+    color: var(--text-tertiary);
+    font-weight: 500;
+  }
+
+  .ruler-container {
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: var(--space-4) 0;
+    -webkit-overflow-scrolling: touch;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-ruler);
+    background: var(--bg-primary);
+    min-height: 100px;
+  }
+
+  .ruler-container :global(svg) {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .ruler-warning {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    font-size: 0.8125rem;
+    color: var(--text-tertiary);
+    margin-top: var(--space-3);
+    margin-bottom: 0;
+  }
+
+  /* ====== CALIBRATION ====== */
+  .calibration-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+    margin-top: var(--space-6);
+  }
+
+  @media (min-width: 768px) {
+    .calibration-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .calibration-card h3 {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    margin-top: 0;
+    margin-bottom: var(--space-3);
+  }
+
+  .calibration-card p {
+    font-size: 0.9375rem;
+    margin-bottom: var(--space-4);
+  }
+
+  .calibration-form small {
+    display: block;
+    margin-top: var(--space-2);
+    color: var(--text-tertiary);
+    font-size: 0.8125rem;
+  }
+
+  .input-row {
+    display: flex;
+    gap: var(--space-3);
+    align-items: stretch;
+  }
+
+  .input-row .input {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .input-row .btn {
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  @media (max-width: 500px) {
+    .input-row {
+      flex-direction: column;
+    }
+  }
+
+  .card-reference {
+    display: flex;
+    justify-content: center;
+    padding: var(--space-4) 0;
+    margin-bottom: var(--space-4);
+  }
+
+  .card-outline {
+    width: 323px;
+    height: 204px;
+    border: 2.5px dashed var(--accent);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--accent-bg);
+    transition: width 0.15s ease;
+    position: relative;
+  }
+
+  .card-label {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--accent);
+  }
+
+  .calibration-status {
+    margin-top: var(--space-6);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-3);
+  }
+
+  .calibration-status .notice {
+    flex: 1;
+    min-width: 200px;
+  }
+
+  /* ====== SEO CONTENT ====== */
+  .seo-container {
+    max-width: var(--container-lg);
+  }
+
+  .steps-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+    margin-top: var(--space-4);
+    margin-bottom: var(--space-6);
+  }
+
+  .steps-list li {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    padding: var(--space-3) var(--space-4);
+    background: var(--bg-secondary);
+    border-radius: var(--radius-md);
+    font-size: 0.9375rem;
+    color: var(--text-secondary);
+  }
+
+  .step-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background: var(--accent);
+    color: #fff;
+    border-radius: 50%;
+    font-size: 0.875rem;
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+
+  .seo-cta-row {
+    margin-top: var(--space-8);
+    padding: var(--space-4) var(--space-6);
+    background: var(--accent-bg);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--accent-lighter);
+  }
+
+  .seo-cta-row p {
+    margin-bottom: 0;
+    color: var(--text-primary);
+    font-weight: 500;
+  }
+
+  /* ====== CONVERSION TABLE ====== */
+  .table-wrapper {
+    overflow-x: auto;
+    margin-top: var(--space-6);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow-sm);
+  }
+
+  table {
+    min-width: 400px;
+  }
+
+  thead {
+    background: var(--bg-tertiary);
+  }
+
+  th {
+    padding: var(--space-3) var(--space-4);
+    font-size: 0.8125rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-secondary);
+    text-align: left;
+    white-space: nowrap;
+    position: sticky;
+    top: 0;
+  }
+
+  td {
+    padding: var(--space-3) var(--space-4);
+    font-size: 0.9375rem;
+    color: var(--text-primary);
+    border-top: 1px solid var(--border);
+    font-variant-numeric: tabular-nums;
+  }
+
+  tbody tr:nth-child(even) {
+    background: var(--bg-secondary);
+  }
+
+  tbody tr:hover {
+    background: var(--accent-bg);
+  }
+
+  th:first-child,
+  td:first-child {
+    position: sticky;
+    left: 0;
+    background: inherit;
+    font-weight: 600;
+  }
+
+  /* ====== FAQ ====== */
+  .faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+    margin-top: var(--space-6);
+    max-width: var(--container-lg);
+  }
+
+  .faq-item {
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    transition: box-shadow var(--transition-base);
+  }
+
+  .faq-item:hover {
+    box-shadow: var(--shadow-sm);
+  }
+
+  .faq-item[open] {
+    box-shadow: var(--shadow-md);
+  }
+
+  .faq-question {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-3);
+    padding: var(--space-4) var(--space-5);
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.9375rem;
+    color: var(--text-primary);
+    list-style: none;
+    user-select: none;
+    transition: background var(--transition-fast);
+  }
+
+  .faq-question::-webkit-details-marker {
+    display: none;
+  }
+
+  .faq-question:hover {
+    background: var(--bg-secondary);
+  }
+
+  .faq-chevron {
+    flex-shrink: 0;
+    transition: transform var(--transition-base);
+    color: var(--text-tertiary);
+  }
+
+  .faq-item[open] .faq-chevron {
+    transform: rotate(180deg);
+  }
+
+  .faq-answer {
+    padding: 0 var(--space-5) var(--space-4);
+  }
+
+  .faq-answer p {
+    font-size: 0.9375rem;
+    line-height: 1.7;
+    margin-bottom: 0;
+  }
+</style>
+
+<script>
+  import { initRuler } from '../scripts/ruler';
+  import { detectDevice, onOrientationChange } from '../scripts/device-detect';
+  import {
+    loadCalibration,
+    resetCalibration,
+    calibrateByDiagonal,
+    calibrateByCard,
+    getCurrentPxPerMm,
+  } from '../scripts/calibration';
+
+  // --- Ruler Initialization ---
+  const container = document.getElementById('ruler-container') as HTMLElement;
+  const rulerInfo = document.getElementById('ruler-info') as HTMLElement;
+
+  function updateRulerInfo() {
+    const device = detectDevice();
+    const pxPerMm = getCurrentPxPerMm();
+    const cal = loadCalibration();
+    let deviceLabel = device.isMobile ? 'Telefon' : device.isTablet ? 'Tablet' : 'Komputer';
+    let orientLabel = device.isLandscape ? 'poziomo' : 'pionowo';
+    let calLabel = cal ? ` · Skalibrowano` : '';
+    rulerInfo.textContent = `${deviceLabel} · ${orientLabel}${calLabel}`;
+  }
+
+  function renderRuler(orientation?: 'horizontal' | 'vertical') {
+    if (container) {
+      initRuler(container, orientation);
+      updateRulerInfo();
+    }
+  }
+
+  // Initial render
+  renderRuler();
+
+  // Re-render on orientation change
+  onOrientationChange(() => {
+    renderRuler();
+  });
+
+  // --- Ruler Controls ---
+  document.getElementById('btn-horizontal')?.addEventListener('click', () => {
+    renderRuler('horizontal');
+  });
+
+  document.getElementById('btn-vertical')?.addEventListener('click', () => {
+    renderRuler('vertical');
+  });
+
+  document.getElementById('btn-fullscreen')?.addEventListener('click', () => {
+    const el = document.documentElement;
+    if (!document.fullscreenElement) {
+      el.requestFullscreen?.();
+    } else {
+      document.exitFullscreen?.();
+    }
+  });
+
+  document.getElementById('btn-calibrate-scroll')?.addEventListener('click', () => {
+    document.getElementById('kalibracja')?.scrollIntoView({ behavior: 'smooth' });
+  });
+
+  // --- Calibration: Diagonal ---
+  document.getElementById('btn-calibrate-diagonal')?.addEventListener('click', () => {
+    const input = document.getElementById('diagonal-input') as HTMLInputElement;
+    const value = parseFloat(input.value);
+    if (!value || value < 3 || value > 100) {
+      input.focus();
+      return;
+    }
+    calibrateByDiagonal(value);
+    showCalibrationStatus();
+    renderRuler();
+  });
+
+  // --- Calibration: Credit Card ---
+  const cardOutline = document.getElementById('card-outline') as HTMLElement;
+  const cardSlider = document.getElementById('card-slider') as HTMLInputElement;
+  
+  if (cardSlider && cardOutline) {
+    cardSlider.addEventListener('input', () => {
+      const width = parseInt(cardSlider.value);
+      cardOutline.style.width = width + 'px';
+      // Maintain credit card aspect ratio (85.6mm × 53.98mm)
+      cardOutline.style.height = Math.round(width * (53.98 / 85.6)) + 'px';
+    });
+  }
+
+  document.getElementById('btn-calibrate-card')?.addEventListener('click', () => {
+    if (cardSlider) {
+      const cardWidthPx = parseInt(cardSlider.value);
+      calibrateByCard(cardWidthPx);
+      showCalibrationStatus();
+      renderRuler();
+    }
+  });
+
+  // --- Calibration Status ---
+  function showCalibrationStatus() {
+    const statusEl = document.getElementById('calibration-status');
+    if (statusEl) {
+      statusEl.style.display = 'flex';
+    }
+  }
+
+  // Check for existing calibration on load
+  if (loadCalibration()) {
+    showCalibrationStatus();
+  }
+
+  document.getElementById('btn-reset-calibration')?.addEventListener('click', () => {
+    resetCalibration();
+    const statusEl = document.getElementById('calibration-status');
+    if (statusEl) {
+      statusEl.style.display = 'none';
+    }
+    renderRuler();
+  });
+</script>

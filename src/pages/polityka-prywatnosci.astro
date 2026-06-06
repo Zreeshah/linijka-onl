@@ -1,0 +1,166 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const breadcrumbSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Strona główna",
+      "item": "https://linijka.onl/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Polityka prywatności",
+      "item": "https://linijka.onl/polityka-prywatnosci/"
+    }
+  ]
+});
+---
+
+<BaseLayout
+  title="Polityka prywatności – Linijka.onl"
+  description="Polityka prywatności serwisu Linijka.onl. Nie wymagamy logowania, nie zbieramy danych osobowych."
+  canonicalUrl="https://linijka.onl/polityka-prywatnosci/"
+  schemaMarkup={breadcrumbSchema}
+>
+  <section class="section privacy-page">
+    <div class="container privacy-container">
+      <!-- Breadcrumb -->
+      <nav class="breadcrumb" aria-label="Nawigacja okruszkowa">
+        <ol>
+          <li><a href="/">Linijka online</a></li>
+          <li aria-current="page">Polityka prywatności</li>
+        </ol>
+      </nav>
+
+      <h1>Polityka prywatności</h1>
+      <p class="privacy-updated">Ostatnia aktualizacja: czerwiec 2026</p>
+
+      <div class="privacy-content">
+        <h2>Informacje ogólne</h2>
+        <p>
+          Serwis <strong>Linijka.onl</strong> jest darmowym narzędziem online do mierzenia przedmiotów na ekranie. 
+          Cenimy Twoją prywatność i dokładamy starań, aby korzystanie z naszego narzędzia było bezpieczne i komfortowe.
+        </p>
+
+        <h2>Dane osobowe</h2>
+        <p>
+          Nasz serwis <strong>nie wymaga logowania</strong> ani rejestracji. 
+          Nie zbieramy żadnych danych osobowych użytkowników. 
+          Nie musisz podawać imienia, adresu e-mail ani żadnych innych informacji, aby korzystać z linijki online.
+        </p>
+
+        <h2>Pliki cookies i localStorage</h2>
+        <p>
+          Serwis może wykorzystywać technologię <strong>localStorage</strong> w przeglądarce wyłącznie do zapisywania 
+          ustawień kalibracji linijki. Dane te:
+        </p>
+        <ul class="privacy-list">
+          <li>Są przechowywane wyłącznie na Twoim urządzeniu</li>
+          <li>Nie są wysyłane na żaden serwer</li>
+          <li>Nie zawierają danych osobowych</li>
+          <li>Można je usunąć w dowolnym momencie (przycisk „Resetuj kalibrację" lub czyszcząc dane przeglądarki)</li>
+        </ul>
+
+        <h2>Usługi zewnętrzne</h2>
+        <p>
+          Serwis może korzystać z usług zewnętrznych, takich jak:
+        </p>
+        <ul class="privacy-list">
+          <li><strong>Google Fonts</strong> — do ładowania czcionek. Google może rejestrować adres IP podczas pobierania czcionek.</li>
+        </ul>
+        <p>
+          Nie korzystamy z narzędzi śledzących, reklam ani systemów analitycznych zbierających dane osobowe.
+        </p>
+
+        <h2>Bezpieczeństwo</h2>
+        <p>
+          Serwis działa w pełni po stronie klienta (w przeglądarce). 
+          Nie przetwarzamy żadnych danych na serwerze. Cała logika narzędzia — w tym kalibracja i pomiary — 
+          wykonywana jest lokalnie na Twoim urządzeniu.
+        </p>
+
+        <h2>Prawa użytkownika</h2>
+        <p>
+          Ponieważ nie zbieramy danych osobowych, nie ma potrzeby składania wniosków o ich usunięcie czy udostępnienie. 
+          Jeśli masz pytania dotyczące prywatności, możesz skontaktować się z nami przez stronę <a href="/o-nas/">O nas</a>.
+        </p>
+
+        <h2>Zmiany w polityce prywatności</h2>
+        <p>
+          Zastrzegamy sobie prawo do wprowadzania zmian w niniejszej polityce prywatności. 
+          Wszelkie zmiany zostaną opublikowane na tej stronie z aktualną datą aktualizacji.
+        </p>
+
+        <div class="privacy-cta">
+          <a href="/" class="btn btn-primary">Wróć do linijki online</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .privacy-container {
+    max-width: var(--container-lg);
+  }
+
+  .breadcrumb ol {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    font-size: 0.8125rem;
+    color: var(--text-tertiary);
+    margin-bottom: var(--space-6);
+  }
+
+  .breadcrumb li:not(:last-child)::after {
+    content: '›';
+    margin-left: var(--space-2);
+    color: var(--border-dark);
+  }
+
+  .breadcrumb a {
+    color: var(--text-tertiary);
+  }
+
+  .breadcrumb a:hover {
+    color: var(--accent);
+  }
+
+  .privacy-updated {
+    font-size: 0.875rem;
+    color: var(--text-tertiary);
+    margin-bottom: var(--space-8);
+  }
+
+  .privacy-content h2 {
+    margin-top: var(--space-8);
+  }
+
+  .privacy-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    margin-top: var(--space-3);
+    margin-bottom: var(--space-4);
+    padding-left: var(--space-5);
+  }
+
+  .privacy-list li {
+    list-style: disc;
+    font-size: 0.9375rem;
+    color: var(--text-secondary);
+    line-height: 1.7;
+  }
+
+  .privacy-cta {
+    margin-top: var(--space-10);
+    padding-top: var(--space-8);
+    border-top: 1px solid var(--border);
+  }
+</style>

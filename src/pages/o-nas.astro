@@ -1,0 +1,166 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const breadcrumbSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Strona główna",
+      "item": "https://linijka.onl/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "O nas",
+      "item": "https://linijka.onl/o-nas/"
+    }
+  ]
+});
+---
+
+<BaseLayout
+  title="O nas – Linijka.onl"
+  description="Dowiedz się więcej o Linijka.onl — darmowym narzędziu do mierzenia przedmiotów online za pomocą telefonu, tabletu lub komputera."
+  canonicalUrl="https://linijka.onl/o-nas/"
+  schemaMarkup={breadcrumbSchema}
+>
+  <section class="section about-page">
+    <div class="container about-container">
+      <!-- Breadcrumb -->
+      <nav class="breadcrumb" aria-label="Nawigacja okruszkowa">
+        <ol>
+          <li><a href="/">Linijka online</a></li>
+          <li aria-current="page">O nas</li>
+        </ol>
+      </nav>
+
+      <h1>O Linijka.onl</h1>
+
+      <div class="about-content">
+        <p class="about-lead">
+          <strong>Linijka.onl</strong> to darmowe narzędzie online, które zamienia ekran Twojego urządzenia w prawdziwą miarkę centymetrową.
+        </p>
+
+        <h2>Dlaczego stworzyliśmy to narzędzie?</h2>
+        <p>
+          Czasami potrzebujesz szybko zmierzyć mały przedmiot, ale nie masz pod ręką fizycznej linijki. 
+          Właśnie w takich momentach nasza <a href="/">linijka online</a> może okazać się niezwykle przydatna. 
+          Wystarczy otworzyć stronę w przeglądarce — na telefonie, tablecie lub komputerze — i gotowe.
+        </p>
+
+        <h2>Jak to działa?</h2>
+        <p>
+          Narzędzie wyświetla na ekranie skalę w centymetrach i milimetrach. Aby pomiar był jak najdokładniejszy, 
+          oferujemy system kalibracji, który pozwala dopasować skalę do rzeczywistego rozmiaru pikseli na Twoim ekranie. 
+          Możesz skalibrować linijkę podając przekątną ekranu w calach lub korzystając z karty bankowej jako punktu odniesienia.
+        </p>
+
+        <h2>Dla kogo jest Linijka.onl?</h2>
+        <ul class="about-list">
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            <span>Dla każdego, kto potrzebuje szybkiego pomiaru w cm lub mm</span>
+          </li>
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            <span>Dla uczniów i studentów podczas nauki</span>
+          </li>
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            <span>Dla osób pracujących z małymi elementami (biżuteria, śruby, elektronika)</span>
+          </li>
+          <li>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            <span>Dla każdego, kto nie ma fizycznej linijki pod ręką</span>
+          </li>
+        </ul>
+
+        <h2>Co nas wyróżnia?</h2>
+        <p>
+          Nasza strona jest szybka, prosta i nie wymaga logowania ani instalacji żadnej aplikacji. 
+          Nie zbieramy danych osobowych. Kalibracja jest zapisywana lokalnie w przeglądarce, 
+          więc przy kolejnej wizycie linijka będzie już gotowa do użycia.
+        </p>
+
+        <div class="about-cta">
+          <a href="/" class="btn btn-primary">Użyj linijki online</a>
+          <a href="/linijka-do-druku/" class="btn btn-secondary">Linijka do druku</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .about-container {
+    max-width: var(--container-lg);
+  }
+
+  .breadcrumb ol {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    font-size: 0.8125rem;
+    color: var(--text-tertiary);
+    margin-bottom: var(--space-6);
+  }
+
+  .breadcrumb li:not(:last-child)::after {
+    content: '›';
+    margin-left: var(--space-2);
+    color: var(--border-dark);
+  }
+
+  .breadcrumb a {
+    color: var(--text-tertiary);
+  }
+
+  .breadcrumb a:hover {
+    color: var(--accent);
+  }
+
+  .about-lead {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    margin-bottom: var(--space-8);
+  }
+
+  .about-content h2 {
+    margin-top: var(--space-8);
+  }
+
+  .about-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+    margin-top: var(--space-4);
+    margin-bottom: var(--space-6);
+  }
+
+  .about-list li {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    padding: var(--space-3) var(--space-4);
+    background: var(--bg-secondary);
+    border-radius: var(--radius-md);
+    font-size: 0.9375rem;
+    color: var(--text-secondary);
+  }
+
+  .about-list li svg {
+    flex-shrink: 0;
+  }
+
+  .about-cta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-3);
+    margin-top: var(--space-10);
+    padding-top: var(--space-8);
+    border-top: 1px solid var(--border);
+  }
+</style>
