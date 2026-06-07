@@ -1,0 +1,100 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+// Fetch all articles from the blog collection
+const allPosts = await getCollection('blog');
+
+// Sort posts (alphabetically by title for structured order)
+const sortedPosts = allPosts.sort((a, b) => a.data.title.localeCompare(b.data.title, 'pl'));
+
+const featuredPost = sortedPosts[0];
+const remainingPosts = sortedPosts.slice(1);
+
+const blogSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "Blog",
+  "name": "Blog Linijka.onl",
+  "description": "Poradniki pomiarowe, przewodniki kalibracji, konwertery jednostek i przydatne artykuły o linijkach online.",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Linijka Online"
+  },
+  "url": "https://linijka.onl/blog/"
+});
+---
+
+<BaseLayout
+  title="Blog i Poradniki Pomiarowe | Linijka.onl"
+  description="Przewodniki, kalibracja linijki online, konwersje centymetrów, milimetrów i cali. Dowiedz się jak dokładnie mierzyć przedmioty na ekranie."
+  canonicalUrl="https://linijka.onl/blog/"
+  schemaMarkup={blogSchema}
+>
+  <div class="blog-index-container container">
+    <header class="blog-index-header">
+      <span class="blog-badge">Wiedza i Narzędzia</span>
+      <h1 class="blog-index-title">Blog o pomiarach i linijkach online</h1>
+      <p class="blog-index-lead">Znajdź szczegółowe instrukcje, tabele konwersji jednostek, przydatne porady i przewodniki dotyczące mierzenia ekranów i drukowania miarek.</p>
+    </header>
+
+    <!-- Featured Post -->
+    {featuredPost && (
+      <section class="featured-section">
+        <a href={`/blog/${featuredPost.id}/`} class="featured-card-link">
+          <article class="featured-card">
+            <div class="featured-img-wrapper">
+              <img src={featuredPost.data.heroImage} alt={featuredPost.data.imageAlt || featuredPost.data.title} />
+            </div>
+            <div class="featured-info">
+              <span class="card-badge">Wyróżniony artykuł</span>
+              <h2 class="featured-title">{featuredPost.data.title}</h2>
+              <p class="featured-desc">{featuredPost.data.description}</p>
+              <div class="card-footer-meta">
+                <span class="card-date">
+                  {new Date(featuredPost.data.pubDate).toLocaleDateString('pl-PL', {
+                    year: 'numeric',
+                    month: 'long',
+                    day: 'numeric'
+                  })}
+                </span>
+                <span class="read-more-link">Czytaj artykuł &rarr;</span>
+              </div>
+            </div>
+          </article>
+        </a>
+      </section>
+    )}
+
+    <!-- Posts Grid -->
+    <section class="posts-grid-section">
+      <h2 class="grid-section-title">Wszystkie artykuły</h2>
+      
+      <div class="blog-cards-grid">
+        {remainingPosts.map((post) => (
+          <a href={`/blog/${post.id}/`} class="blog-card-link">
+            <article class="blog-card">
+              <div class="card-img-wrapper">
+                <img src={post.data.heroImage} alt={post.data.imageAlt || post.data.title} loading="lazy" />
+              </div>
+              <div class="card-body">
+                <span class="card-category">Poradnik</span>
+                <h3 class="card-title">{post.data.title}</h3>
+                <p class="card-excerpt">{post.data.description}</p>
+                <div class="card-meta">
+                  <span class="card-date">
+                    {new Date(post.data.pubDate).toLocaleDateString('pl-PL', {
+                      year: 'numeric',
+                      month: 'short',
+                      day: 'numeric'
+                    })}
+                  </span>
+                  <span class="card-link">Więcej &rarr;</span>
+                </div>
+              </div>
+            </article>
+          </a>
+        ))}
+      </div>
+    </section>
+  </div>
+</BaseLayout>
