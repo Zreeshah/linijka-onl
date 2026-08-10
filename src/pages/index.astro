@@ -350,6 +350,29 @@ const conversionData = [
     </div>
   </section>
 
+  <!-- ====== INFOGRAPHIC ====== -->
+  <section class="section infographic-section" aria-labelledby="infografika-title">
+    <div class="container infographic-container">
+      <div class="infographic-header">
+        <h2 id="infografika-title">Linijka online w praktyce</h2>
+        <p>Zobacz najważniejsze kroki kalibracji, pomiaru i przykłady użycia linijki online na telefonie, tablecie oraz komputerze.</p>
+      </div>
+
+      <figure class="infographic-frame">
+        <a href="/images/linijka-online-infographic.png" aria-label="Otwórz infografikę linijka online w pełnym rozmiarze">
+          <img
+            src="/images/linijka-online-infographic.png"
+            alt="Infografika pokazująca jak używać linijki online w oryginalnym rozmiarze: wybór jednostki, kalibracja ekranu, pomiar i przykłady zastosowań."
+            width="1536"
+            height="2752"
+            loading="lazy"
+            decoding="async"
+          />
+        </a>
+      </figure>
+    </div>
+  </section>
+
   <!-- ====== FAQ ====== -->
   <section class="section faq-section" id="faq" aria-label="Najczęściej zadawane pytania">
     <div class="container">
@@ -436,6 +459,66 @@ const conversionData = [
     max-width: 520px;
     height: auto;
     border-radius: var(--radius-lg);
+  }
+
+  /* ====== INFOGRAPHIC ====== */
+  .infographic-section {
+    background:
+      linear-gradient(180deg, rgba(239, 246, 255, 0.55) 0%, rgba(255, 255, 255, 0) 42%),
+      var(--bg-primary);
+  }
+
+  .infographic-container {
+    max-width: 1040px;
+  }
+
+  .infographic-header {
+    text-align: center;
+    margin-bottom: var(--space-8);
+  }
+
+  .infographic-header h2 {
+    margin-top: 0;
+  }
+
+  .infographic-header p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .infographic-frame {
+    margin: 0 auto;
+    background: var(--bg-primary);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-lg);
+    overflow: hidden;
+  }
+
+  .infographic-frame a {
+    display: block;
+    color: inherit;
+  }
+
+  .infographic-frame img {
+    width: 100%;
+    height: auto;
+  }
+
+  @media (max-width: 639px) {
+    .infographic-section {
+      padding-top: var(--space-10);
+      padding-bottom: var(--space-10);
+    }
+
+    .infographic-container {
+      padding-left: var(--space-2);
+      padding-right: var(--space-2);
+    }
+
+    .infographic-frame {
+      border-radius: var(--radius-lg);
+    }
   }
 
   /* ====== FULL-PAGE RULER ====== */
