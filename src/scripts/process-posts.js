@@ -115,6 +115,7 @@ files.forEach(file => {
   let ogTitle = '';
   let ogDesc = '';
   let imgAlt = '';
+  let updatedDate = '';
   
   let articleStartIndex = -1;
   let schemaStartIndex = -1;
@@ -125,6 +126,8 @@ files.forEach(file => {
       seoTitle = lines[i+1]?.trim() || '';
     } else if (line === '## URL Slug') {
       slug = lines[i+1]?.trim() || '';
+    } else if (line === '## Updated Date') {
+      updatedDate = lines[i+1]?.trim() || '';
     } else if (line === '## Meta Description') {
       metaDesc = lines[i+1]?.trim() || '';
     } else if (line === '## Open Graph Title') {
@@ -173,6 +176,7 @@ files.forEach(file => {
     `imageAlt: ${JSON.stringify(imgAlt)}`,
     `heroImage: ${JSON.stringify(heroImage)}`,
     `pubDate: "2026-06-07"`,
+    ...(updatedDate ? [`updatedDate: ${JSON.stringify(updatedDate)}`] : []),
     '---',
     '',
     articleBody
