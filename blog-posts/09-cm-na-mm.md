@@ -5,13 +5,13 @@ Cm na mm: 6 prostych przykładów i tabela
 cm-na-mm
 
 ## Meta Description
-Cm na mm przeliczysz, mnożąc centymetry przez 10. Zobacz tabelę i przykłady dla pomiarów.
+Przelicz cm na mm, mnożąc centymetry przez 10. Skorzystaj z tabeli, przykładów pomiaru i porad dla linijki online w milimetrach na ekranie.
 
 ## Open Graph Title
 Cm na mm - tabela i przelicznik
 
 ## Open Graph Description
-Prosta zasada, szybkie przykłady i tabela do pracy z linijką online.
+Przelicz cm na mm, mnożąc centymetry przez 10. Skorzystaj z tabeli, przykładów pomiaru i porad dla linijki online w milimetrach na ekranie.
 
 ## Suggested Image Alt Text
 cm na mm tabela przeliczeniowa przy linijce online
@@ -118,7 +118,7 @@ Cm na mm jest najlepszym wyborem wtedy, gdy liczy się szybka odpowiedź i rozs�
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Cm na mm: 6 prostych przykładów i tabela",
-  "description": "Cm na mm przeliczysz, mnożąc centymetry przez 10. Zobacz tabelę i przykłady dla pomiarów.",
+  "description": "Przelicz cm na mm, mnożąc centymetry przez 10. Skorzystaj z tabeli, przykładów pomiaru i porad dla linijki online w milimetrach na ekranie.",
   "author": {
     "@type": "Organization",
     "name": "Redakcja"

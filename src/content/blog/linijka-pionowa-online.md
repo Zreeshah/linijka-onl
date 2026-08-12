@@ -1,8 +1,8 @@
 ---
 title: "Linijka pionowa online: 5 praktycznych użyć"
-description: "Linijka pionowa online pomaga mierzyć wysokość i wąskie elementy na ekranie. Zobacz zastosowania."
+description: "Linijka pionowa online ułatwia pomiar wysokości i wąskich elementów na ekranie. Zobacz zastosowania, kalibrację i różnice względem skali poziomej."
 ogTitle: "Kiedy przydaje się linijka pionowa online?"
-ogDescription: "Pomiar wysokości, wąskich przedmiotów i elementów ustawionych pionowo na ekranie."
+ogDescription: "Linijka pionowa online ułatwia pomiar wysokości i wąskich elementów na ekranie. Zobacz zastosowania, kalibrację i różnice względem skali poziomej."
 imageAlt: "linijka pionowa online z podziałką na ekranie"
 heroImage: "/images/blog/linijka-pionowa-online.svg"
 pubDate: "2026-06-07"

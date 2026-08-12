@@ -5,13 +5,13 @@ Linijka w telefonie: 7 prostych kroków
 linijka-w-telefonie
 
 ## Meta Description
-Linijka w telefonie pomaga zmierzyć małe przedmioty bez aplikacji. Zobacz prosty poradnik krok po kroku.
+Linijka w telefonie mierzy małe przedmioty bez aplikacji. Zobacz kalibrację ekranu, pomiar krok po kroku i typowe błędy na smartfonie.
 
 ## Open Graph Title
 Jak działa linijka w telefonie?
 
 ## Open Graph Description
-Prosty poradnik używania linijki online na smartfonie, z kalibracją i typowymi błędami.
+Linijka w telefonie mierzy małe przedmioty bez aplikacji. Zobacz kalibrację ekranu, pomiar krok po kroku i typowe błędy na smartfonie.
 
 ## Suggested Image Alt Text
 linijka w telefonie pokazana na ekranie smartfona
@@ -119,7 +119,7 @@ Linijka w telefonie jest najlepszym wyborem wtedy, gdy liczy się szybka odpowie
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Linijka w telefonie: 7 prostych kroków",
-  "description": "Linijka w telefonie pomaga zmierzyć małe przedmioty bez aplikacji. Zobacz prosty poradnik krok po kroku.",
+  "description": "Linijka w telefonie mierzy małe przedmioty bez aplikacji. Zobacz kalibrację ekranu, pomiar krok po kroku i typowe błędy na smartfonie.",
   "author": {
     "@type": "Organization",
     "name": "Redakcja"

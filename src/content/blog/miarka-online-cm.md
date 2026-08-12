@@ -1,8 +1,8 @@
 ---
 title: "Miarka online: 6 praktycznych zastosowań"
-description: "Miarka online i miarka cm pomagają mierzyć drobiazgi na ekranie. Sprawdź, kiedy warto ich używać."
+description: "Miarka online w cm i mm pomaga szybko zmierzyć drobiazgi na ekranie. Sprawdź kalibrację, przykłady użycia i kiedy wynik trzeba potwierdzić."
 ogTitle: "Miarka online w cm i mm"
-ogDescription: "Praktyczne zastosowania miarki online w domu, szkole i pracy."
+ogDescription: "Miarka online w cm i mm pomaga szybko zmierzyć drobiazgi na ekranie. Sprawdź kalibrację, przykłady użycia i kiedy wynik trzeba potwierdzić."
 imageAlt: "miarka online w centymetrach i milimetrach na ekranie"
 heroImage: "/images/blog/miarka-online-cm.svg"
 pubDate: "2026-06-07"

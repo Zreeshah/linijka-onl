@@ -1,8 +1,8 @@
 ---
 title: "Rozmiar karty bankowej: 5 pewnych pomiarów"
-description: "Rozmiar karty bankowej pomaga skalibrować linijkę online. Sprawdź wymiary i sposób pomiaru."
+description: "Rozmiar karty bankowej pomaga skalibrować linijkę online. Sprawdź standardowe wymiary karty, metodę porównania i najczęstsze błędy pomiaru."
 ogTitle: "Jak zmierzyć kartę bankową online?"
-ogDescription: "Wymiary karty, kalibracja linijki i praktyczna kontrola pomiaru na ekranie."
+ogDescription: "Rozmiar karty bankowej pomaga skalibrować linijkę online. Sprawdź standardowe wymiary karty, metodę porównania i najczęstsze błędy pomiaru."
 imageAlt: "rozmiar karty bankowej mierzony linijką online"
 heroImage: "/images/blog/rozmiar-karty-bankowej.svg"
 pubDate: "2026-06-07"

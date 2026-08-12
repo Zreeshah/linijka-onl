@@ -1,8 +1,8 @@
 ---
 title: "Czy linijka online jest dokładna: 5 czynników"
-description: "Czy linijka online jest dokładna? Zależy od kalibracji, zoomu, ekranu i sposobu odczytu."
+description: "Czy linijka online jest dokładna? Sprawdź wpływ kalibracji, zoomu przeglądarki, ekranu i sposobu odczytu na realny wynik pomiaru w cm i mm."
 ogTitle: "Czy linijka online jest dokładna?"
-ogDescription: "Najważniejsze czynniki, które wpływają na wynik pomiaru ekranowego."
+ogDescription: "Czy linijka online jest dokładna? Sprawdź wpływ kalibracji, zoomu przeglądarki, ekranu i sposobu odczytu na realny wynik pomiaru w cm i mm."
 imageAlt: "czy linijka online jest dokładna przykład kalibracji"
 heroImage: "/images/blog/czy-linijka-online-dokladna.svg"
 pubDate: "2026-06-07"

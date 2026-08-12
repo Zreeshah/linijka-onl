@@ -5,13 +5,13 @@ Rozmiar karty bankowej: 5 pewnych pomiarów
 rozmiar-karty-bankowej
 
 ## Meta Description
-Rozmiar karty bankowej pomaga skalibrować linijkę online. Sprawdź wymiary i sposób pomiaru.
+Rozmiar karty bankowej pomaga skalibrować linijkę online. Sprawdź standardowe wymiary karty, metodę porównania i najczęstsze błędy pomiaru.
 
 ## Open Graph Title
 Jak zmierzyć kartę bankową online?
 
 ## Open Graph Description
-Wymiary karty, kalibracja linijki i praktyczna kontrola pomiaru na ekranie.
+Rozmiar karty bankowej pomaga skalibrować linijkę online. Sprawdź standardowe wymiary karty, metodę porównania i najczęstsze błędy pomiaru.
 
 ## Suggested Image Alt Text
 rozmiar karty bankowej mierzony linijką online
@@ -119,7 +119,7 @@ Rozmiar karty bankowej jest najlepszym wyborem wtedy, gdy liczy się szybka odpo
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Rozmiar karty bankowej: 5 pewnych pomiarów",
-  "description": "Rozmiar karty bankowej pomaga skalibrować linijkę online. Sprawdź wymiary i sposób pomiaru.",
+  "description": "Rozmiar karty bankowej pomaga skalibrować linijkę online. Sprawdź standardowe wymiary karty, metodę porównania i najczęstsze błędy pomiaru.",
   "author": {
     "@type": "Organization",
     "name": "Redakcja"

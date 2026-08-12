@@ -1,8 +1,8 @@
 ---
 title: "Linijka online 20 cm: 5 praktycznych rad"
-description: "Linijka online 20 cm pomaga mierzyć większe przedmioty na ekranie. Sprawdź kalibrację i dobre praktyki."
+description: "Linijka online 20 cm pomaga mierzyć większe przedmioty na ekranie tabletu lub monitora. Zobacz kalibrację, zakres i dobre praktyki pomiaru."
 ogTitle: "Linijka online 20 cm na większym ekranie"
-ogDescription: "Jak mierzyć dłuższe przedmioty na laptopie, tablecie lub monitorze."
+ogDescription: "Linijka online 20 cm pomaga mierzyć większe przedmioty na ekranie tabletu lub monitora. Zobacz kalibrację, zakres i dobre praktyki pomiaru."
 imageAlt: "linijka online 20 cm na ekranie tabletu"
 heroImage: "/images/blog/linijka-online-20-cm.svg"
 pubDate: "2026-06-07"

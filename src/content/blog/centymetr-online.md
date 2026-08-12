@@ -1,8 +1,8 @@
 ---
 title: "Centymetr online: 6 praktycznych sposobów"
-description: "Centymetr online pomaga sprawdzić długość bez fizycznej miarki. Poznaj szybkie zastosowania i zasady kalibracji."
+description: "Centymetr online pomaga mierzyć małe przedmioty bez fizycznej miarki. Sprawdź kalibrację, zastosowania i zasady dokładnego odczytu na ekranie."
 ogTitle: "Centymetr online bez fizycznej miarki"
-ogDescription: "Jak sprawdzić długość na ekranie telefonu lub komputera i kiedy wynik jest wystarczający."
+ogDescription: "Centymetr online pomaga mierzyć małe przedmioty bez fizycznej miarki. Sprawdź kalibrację, zastosowania i zasady dokładnego odczytu na ekranie."
 imageAlt: "centymetr online na ekranie z podziałką w centymetrach"
 heroImage: "/images/blog/centymetr-online.svg"
 pubDate: "2026-06-07"

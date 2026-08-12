@@ -1,8 +1,8 @@
 ---
 title: "Pomiar śruby linijką: 6 praktycznych kroków"
-description: "Pomiar śruby linijką online pomaga wstępnie sprawdzić długość i średnicę. Zobacz ograniczenia."
+description: "Pomiar śruby linijką online pozwala wstępnie sprawdzić długość i średnicę. Zobacz, kiedy wystarczy miarka ekranowa, a kiedy użyć suwmiarki."
 ogTitle: "Jak zmierzyć śrubę linijką online?"
-ogDescription: "Prosty poradnik dla małych elementów technicznych, z naciskiem na pomiar orientacyjny."
+ogDescription: "Pomiar śruby linijką online pozwala wstępnie sprawdzić długość i średnicę. Zobacz, kiedy wystarczy miarka ekranowa, a kiedy użyć suwmiarki."
 imageAlt: "pomiar śruby linijką online w milimetrach"
 heroImage: "/images/blog/pomiar-sruby-linijka.svg"
 pubDate: "2026-06-07"

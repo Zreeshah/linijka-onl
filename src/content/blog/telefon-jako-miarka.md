@@ -1,8 +1,8 @@
 ---
 title: "Telefon jako miarka: 7 prostych kroków"
-description: "Telefon jako miarka działa bez aplikacji dzięki linijce online. Zobacz szybki sposób pomiaru."
+description: "Telefon jako miarka działa w przeglądarce bez aplikacji. Zobacz szybki sposób pomiaru, kalibrację skali i ograniczenia dokładności na ekranie."
 ogTitle: "Telefon jako miarka bez aplikacji"
-ogDescription: "Jak używać przeglądarki, linijki online i kalibracji do prostych pomiarów."
+ogDescription: "Telefon jako miarka działa w przeglądarce bez aplikacji. Zobacz szybki sposób pomiaru, kalibrację skali i ograniczenia dokładności na ekranie."
 imageAlt: "telefon jako miarka z linijką online"
 heroImage: "/images/blog/telefon-jako-miarka.svg"
 pubDate: "2026-06-07"

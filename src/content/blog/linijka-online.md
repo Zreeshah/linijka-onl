@@ -1,8 +1,8 @@
 ---
 title: "Linijka online: 5 prostych zasad 1:1"
-description: "Linijka online pozwala mierzyć przedmioty na ekranie. Sprawdź, jak ustawić skalę 1:1 i uniknąć błędów."
+description: "Linijka online pozwala mierzyć przedmioty na ekranie w skali 1:1. Sprawdź kalibrację, jednostki cm i mm oraz najczęstsze błędy pomiaru."
 ogTitle: "Linijka online 1:1 w praktyce"
-ogDescription: "Zasady mierzenia przedmiotów na ekranie komputera, tabletu i telefonu."
+ogDescription: "Linijka online pozwala mierzyć przedmioty na ekranie w skali 1:1. Sprawdź kalibrację, jednostki cm i mm oraz najczęstsze błędy pomiaru."
 imageAlt: "linijka online w skali 1:1 na ekranie laptopa"
 heroImage: "/images/blog/linijka-online.png"
 pubDate: "2026-06-07"

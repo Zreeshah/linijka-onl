@@ -5,13 +5,13 @@ Mm na cm: 6 szybkich przykładów
 mm-na-cm
 
 ## Meta Description
-Mm na cm przeliczysz, dzieląc milimetry przez 10. Zobacz tabelę do szybkich pomiarów.
+Przelicz mm na cm, dzieląc milimetry przez 10. Zobacz tabelę, przykłady małych pomiarów i zasady odczytu wyniku na linijce online.
 
 ## Open Graph Title
 Mm na cm - szybka tabela
 
 ## Open Graph Description
-Prosty przelicznik milimetrów na centymetry dla pomiarów online i technicznych.
+Przelicz mm na cm, dzieląc milimetry przez 10. Zobacz tabelę, przykłady małych pomiarów i zasady odczytu wyniku na linijce online.
 
 ## Suggested Image Alt Text
 mm na cm szybka tabela dla pomiarów
@@ -118,7 +118,7 @@ Mm na cm jest najlepszym wyborem wtedy, gdy liczy się szybka odpowiedź i rozs�
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Mm na cm: 6 szybkich przykładów",
-  "description": "Mm na cm przeliczysz, dzieląc milimetry przez 10. Zobacz tabelę do szybkich pomiarów.",
+  "description": "Przelicz mm na cm, dzieląc milimetry przez 10. Zobacz tabelę, przykłady małych pomiarów i zasady odczytu wyniku na linijce online.",
   "author": {
     "@type": "Organization",
     "name": "Redakcja"

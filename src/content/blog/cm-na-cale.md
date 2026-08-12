@@ -1,8 +1,8 @@
 ---
 title: "Cm na cale: 6 prostych przeliczeń"
-description: "Cm na cale przeliczysz, dzieląc centymetry przez 2,54. Sprawdź tabelę dla linijki online."
+description: "Przelicz cm na cale, dzieląc centymetry przez 2,54. Zobacz tabelę konwersji, przykłady dla ekranów i praktyczne wskazówki pomiaru linijką."
 ogTitle: "Cm na cale - tabela konwersji"
-ogDescription: "Szybki przelicznik centymetrów na cale do ekranów, przedmiotów i opisów produktów."
+ogDescription: "Przelicz cm na cale, dzieląc centymetry przez 2,54. Zobacz tabelę konwersji, przykłady dla ekranów i praktyczne wskazówki pomiaru linijką."
 imageAlt: "cm na cale tabela konwersji dla linijki online"
 heroImage: "/images/blog/cm-na-cale.svg"
 pubDate: "2026-06-07"

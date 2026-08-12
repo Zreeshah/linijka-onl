@@ -5,13 +5,13 @@ Linijka do druku: 7 bezpiecznych zasad A4
 linijka-do-druku
 
 ## Meta Description
-Linijka do druku musi być wydrukowana w skali 100%. Sprawdź ustawienia A4 i prostą kontrolę pomiaru.
+Linijka do druku musi być wydrukowana w skali 100%. Sprawdź ustawienia A4, test kontrolny 5 cm i kiedy lepsza jest miarka online na ekranie.
 
 ## Open Graph Title
 Linijka do druku A4 w skali 100%
 
 ## Open Graph Description
-Jak wydrukować papierową miarkę bez przypadkowego skalowania strony.
+Linijka do druku musi być wydrukowana w skali 100%. Sprawdź ustawienia A4, test kontrolny 5 cm i kiedy lepsza jest miarka online na ekranie.
 
 ## Suggested Image Alt Text
 linijka do druku na kartce A4 w skali 100 procent
@@ -119,7 +119,7 @@ Linijka do druku jest najlepszym wyborem wtedy, gdy liczy się szybka odpowiedź
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Linijka do druku: 7 bezpiecznych zasad A4",
-  "description": "Linijka do druku musi być wydrukowana w skali 100%. Sprawdź ustawienia A4 i prostą kontrolę pomiaru.",
+  "description": "Linijka do druku musi być wydrukowana w skali 100%. Sprawdź ustawienia A4, test kontrolny 5 cm i kiedy lepsza jest miarka online na ekranie.",
   "author": {
     "@type": "Organization",
     "name": "Redakcja"

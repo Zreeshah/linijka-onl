@@ -1,8 +1,8 @@
 ---
 title: "Miarka w telefonie: 9 praktycznych zastosowań"
-description: "Miarka w telefonie przydaje się w domu, szkole i pracy. Sprawdź praktyczne przykłady użycia."
+description: "Miarka w telefonie przydaje się w domu, szkole i pracy. Sprawdź praktyczne przykłady użycia, kalibrację ekranu i ograniczenia pomiaru."
 ogTitle: "Miarka w telefonie w praktyce"
-ogDescription: "Przykłady zastosowań telefonu jako krótkiej miarki do codziennych pomiarów."
+ogDescription: "Miarka w telefonie przydaje się w domu, szkole i pracy. Sprawdź praktyczne przykłady użycia, kalibrację ekranu i ograniczenia pomiaru."
 imageAlt: "miarka w telefonie używana do pomiaru małego przedmiotu"
 heroImage: "/images/blog/miarka-w-telefonie.svg"
 pubDate: "2026-06-07"

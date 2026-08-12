@@ -1,16 +1,52 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 
+const siteUrl = 'https://www.linijka.onl';
+
 // Schema markup
+const schemaOrganization = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": `${siteUrl}/#organization`,
+  "name": "Linijka.onl",
+  "url": `${siteUrl}/`,
+  "logo": `${siteUrl}/favicon.svg`,
+  "description": "Darmowe narzędzie do pomiarów ekranowych w centymetrach i milimetrach.",
+  "knowsAbout": [
+    "linijka online",
+    "kalibracja ekranu",
+    "pomiar w centymetrach",
+    "pomiar w milimetrach"
+  ],
+  "publishingPrinciples": `${siteUrl}/polityka-prywatnosci/`
+};
+
+const schemaWebSite = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": `${siteUrl}/#website`,
+  "name": "Linijka.onl",
+  "url": `${siteUrl}/`,
+  "inLanguage": "pl-PL",
+  "publisher": {
+    "@id": `${siteUrl}/#organization`
+  }
+};
+
 const schemaWebApp = {
   "@context": "https://schema.org",
   "@type": "WebApplication",
+  "@id": `${siteUrl}/#webapp`,
   "name": "Linijka online",
-  "url": "https://www.linijka.onl",
+  "url": `${siteUrl}/`,
   "applicationCategory": "UtilityApplication",
   "operatingSystem": "Web browser",
   "inLanguage": "pl",
   "description": "Darmowa linijka online w cm i mm. Użyj telefonu, tabletu lub komputera jako miarki.",
+  "isAccessibleForFree": true,
+  "publisher": {
+    "@id": `${siteUrl}/#organization`
+  },
   "offers": {
     "@type": "Offer",
     "price": "0",
@@ -88,7 +124,7 @@ const schemaFAQ = {
   }))
 };
 
-const allSchemas = JSON.stringify([schemaWebApp, schemaHowTo, schemaFAQ]);
+const allSchemas = JSON.stringify([schemaOrganization, schemaWebSite, schemaWebApp, schemaHowTo, schemaFAQ]);
 
 const conversionData = [
   { cm: 1, mm: 10, inch: "0,39" },
@@ -107,7 +143,7 @@ const conversionData = [
 
 <BaseLayout
   title="Linijka online 1:1 – miarka cm na telefonie i komputerze"
-  description="Darmowa linijka online w cm i mm. Użyj telefonu, tabletu lub komputera jako miarki. Skalibruj ekran i mierz przedmioty online."
+  description="Darmowa linijka online 1:1 w cm i mm na telefon, tablet i komputer. Skalibruj ekran, zmieniaj jednostki i mierz małe przedmioty bez instalacji."
   schemaMarkup={allSchemas}
 >
   <!-- ====== HERO SECTION ====== -->
@@ -359,15 +395,24 @@ const conversionData = [
       </div>
 
       <figure class="infographic-frame">
-        <a href="/images/linijka-online-infographic.png" aria-label="Otwórz infografikę linijka online w pełnym rozmiarze">
-          <img
-            src="/images/linijka-online-infographic.png"
-            alt="Infografika pokazująca jak używać linijki online w oryginalnym rozmiarze: wybór jednostki, kalibracja ekranu, pomiar i przykłady zastosowań."
-            width="1536"
-            height="2752"
-            loading="lazy"
-            decoding="async"
-          />
+        <a href="/images/linijka-online-infographic-1200.jpg" aria-label="Otwórz infografikę linijka online w pełnym rozmiarze">
+          <picture>
+            <source
+              type="image/avif"
+              srcset="/images/linijka-online-infographic-768.avif 768w, /images/linijka-online-infographic-1200.avif 1200w"
+              sizes="(max-width: 639px) calc(100vw - 1rem), (max-width: 1120px) calc(100vw - 3rem), 1040px"
+            />
+            <img
+              src="/images/linijka-online-infographic-1200.jpg"
+              srcset="/images/linijka-online-infographic-768.jpg 768w, /images/linijka-online-infographic-1200.jpg 1200w"
+              sizes="(max-width: 639px) calc(100vw - 1rem), (max-width: 1120px) calc(100vw - 3rem), 1040px"
+              alt="Infografika pokazująca jak używać linijki online w oryginalnym rozmiarze: wybór jednostki, kalibracja ekranu, pomiar i przykłady zastosowań."
+              width="1200"
+              height="2150"
+              loading="lazy"
+              decoding="async"
+            />
+          </picture>
         </a>
       </figure>
     </div>

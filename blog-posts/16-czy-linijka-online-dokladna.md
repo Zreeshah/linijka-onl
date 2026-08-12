@@ -5,13 +5,13 @@ Czy linijka online jest dokładna: 5 czynników
 czy-linijka-online-dokladna
 
 ## Meta Description
-Czy linijka online jest dokładna? Zależy od kalibracji, zoomu, ekranu i sposobu odczytu.
+Czy linijka online jest dokładna? Sprawdź wpływ kalibracji, zoomu przeglądarki, ekranu i sposobu odczytu na realny wynik pomiaru w cm i mm.
 
 ## Open Graph Title
 Czy linijka online jest dokładna?
 
 ## Open Graph Description
-Najważniejsze czynniki, które wpływają na wynik pomiaru ekranowego.
+Czy linijka online jest dokładna? Sprawdź wpływ kalibracji, zoomu przeglądarki, ekranu i sposobu odczytu na realny wynik pomiaru w cm i mm.
 
 ## Suggested Image Alt Text
 czy linijka online jest dokładna przykład kalibracji
@@ -119,7 +119,7 @@ Czy linijka online jest dokładna jest najlepszym wyborem wtedy, gdy liczy się 
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Czy linijka online jest dokładna: 5 czynników",
-  "description": "Czy linijka online jest dokładna? Zależy od kalibracji, zoomu, ekranu i sposobu odczytu.",
+  "description": "Czy linijka online jest dokładna? Sprawdź wpływ kalibracji, zoomu przeglądarki, ekranu i sposobu odczytu na realny wynik pomiaru w cm i mm.",
   "author": {
     "@type": "Organization",
     "name": "Redakcja"

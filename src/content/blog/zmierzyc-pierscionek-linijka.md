@@ -1,8 +1,8 @@
 ---
 title: "Zmierzyć pierścionek linijką: 5 ważnych rad"
-description: "Zmierzyć pierścionek linijką można orientacyjnie. Sprawdź średnicę, obwód i ograniczenia pomiaru online."
+description: "Jak zmierzyć pierścionek linijką? Sprawdź średnicę, obwód, tabelę rozmiarów i ograniczenia orientacyjnego pomiaru na ekranie przed zakupem."
 ogTitle: "Jak zmierzyć pierścionek linijką online?"
-ogDescription: "Praktyczne wskazówki do pomiaru biżuterii bez specjalnego narzędzia jubilerskiego."
+ogDescription: "Jak zmierzyć pierścionek linijką? Sprawdź średnicę, obwód, tabelę rozmiarów i ograniczenia orientacyjnego pomiaru na ekranie przed zakupem."
 imageAlt: "zmierzyć pierścionek linijką na ekranie"
 heroImage: "/images/blog/zmierzyc-pierscionek-linijka.svg"
 pubDate: "2026-06-07"

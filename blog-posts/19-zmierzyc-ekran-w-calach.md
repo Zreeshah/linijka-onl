@@ -5,13 +5,13 @@ Jak zmierzyć ekran w calach: 5 kroków
 zmierzyc-ekran-w-calach
 
 ## Meta Description
-Jak zmierzyć ekran w calach? Zmierz przekątną i przelicz cm na cale, dzieląc przez 2,54.
+Jak zmierzyć ekran w calach? Zmierz przekątną, przelicz cm na cale i sprawdź tabelę dla telefonu, tabletu, laptopa lub monitora w domu.
 
 ## Open Graph Title
 Jak zmierzyć ekran telefonu lub laptopa?
 
 ## Open Graph Description
-Prosty sposób liczenia przekątnej ekranu w calach oraz najczęstsze błędy.
+Jak zmierzyć ekran w calach? Zmierz przekątną, przelicz cm na cale i sprawdź tabelę dla telefonu, tabletu, laptopa lub monitora w domu.
 
 ## Suggested Image Alt Text
 jak zmierzyć ekran w calach za pomocą linijki
@@ -119,7 +119,7 @@ Jak zmierzyć ekran w calach jest najlepszym wyborem wtedy, gdy liczy się szybk
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Jak zmierzyć ekran w calach: 5 kroków",
-  "description": "Jak zmierzyć ekran w calach? Zmierz przekątną i przelicz cm na cale, dzieląc przez 2,54.",
+  "description": "Jak zmierzyć ekran w calach? Zmierz przekątną, przelicz cm na cale i sprawdź tabelę dla telefonu, tabletu, laptopa lub monitora w domu.",
   "author": {
     "@type": "Organization",
     "name": "Redakcja"

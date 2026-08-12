@@ -5,13 +5,13 @@ Kalibracja linijki online: 5 ważnych kroków
 kalibracja-linijki-online
 
 ## Meta Description
-Kalibracja linijki online poprawia pomiar na ekranie. Zobacz prosty sposób ustawienia skali.
+Kalibracja linijki online ustawia skalę 1:1 na ekranie. Zobacz metodę z kartą bankową, przekątną ekranu i kontrolą zoomu przeglądarki.
 
 ## Open Graph Title
 Jak skalibrować linijkę online?
 
 ## Open Graph Description
-Pięć kroków, które pomagają ustawić dokładniejszą skalę na telefonie lub komputerze.
+Kalibracja linijki online ustawia skalę 1:1 na ekranie. Zobacz metodę z kartą bankową, przekątną ekranu i kontrolą zoomu przeglądarki.
 
 ## Suggested Image Alt Text
 kalibracja linijki online za pomocą karty na ekranie
@@ -120,7 +120,7 @@ Kalibracja linijki online jest najlepszym wyborem wtedy, gdy liczy się szybka o
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "Kalibracja linijki online: 5 ważnych kroków",
-  "description": "Kalibracja linijki online poprawia pomiar na ekranie. Zobacz prosty sposób ustawienia skali.",
+  "description": "Kalibracja linijki online ustawia skalę 1:1 na ekranie. Zobacz metodę z kartą bankową, przekątną ekranu i kontrolą zoomu przeglądarki.",
   "author": {
     "@type": "Organization",
     "name": "Redakcja"
