@@ -18,7 +18,7 @@ zmierzyć pierścionek linijką na ekranie
 
 ## Article
 
-# Jak zmierzyć pierścionek lub biżuterię linijką online?
+## Jak zmierzyć pierścionek lub biżuterię linijką online?
 
 Zmierzyć pierścionek linijką można orientacyjnie, mierząc wewnętrzną średnicę obrączki w milimetrach. Najlepiej położyć pierścionek płasko, ustawić środek otworu nad podziałką i odczytać odległość między wewnętrznymi krawędziami. Dlatego przed pierwszym pomiarem warto poświęcić minutę na ustawienia, zamiast ufać podziałce bez sprawdzenia.
 
@@ -79,7 +79,7 @@ Przy dalszej pracy warto sprawdzić także:
 
 - [miarkę online w mm](/blog/miarka-online-cm)
 - [przelicznik mm na cm](/blog/mm-na-cm)
-- [kalibrację linijki](/guides/kalibracja-linijki-online)
+- [kalibrację linijki](/blog/kalibracja-linijki-online/)
 
 Źródła pomocne przy jednostkach i skali:
 

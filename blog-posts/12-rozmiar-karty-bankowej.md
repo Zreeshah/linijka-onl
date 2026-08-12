@@ -18,7 +18,7 @@ rozmiar karty bankowej mierzony linijką online
 
 ## Article
 
-# Jak zmierzyć kartę bankową linijką online?
+## Jak zmierzyć kartę bankową linijką online?
 
 Rozmiar karty bankowej jest przydatny jako punkt odniesienia przy kalibracji linijki online. Standard ID-1 używany dla wielu kart identyfikacyjnych ma 85,60 mm szerokości i 53,98 mm wysokości, więc karta może pomóc sprawdzić skalę ekranu. Dlatego przed pierwszym pomiarem warto poświęcić minutę na ustawienia, zamiast ufać podziałce bez sprawdzenia.
 
@@ -77,7 +77,7 @@ Tabela kontrolna: dłuższy bok karty ID-1 to 85,60 mm, czyli 8,56 cm. Krótszy 
 
 Przy dalszej pracy warto sprawdzić także:
 
-- [kalibrację linijki online](/guides/kalibracja-linijki-online)
+- [kalibrację linijki online](/blog/kalibracja-linijki-online/)
 - [linijkę online 1:1](/blog/linijka-online)
 - [przelicznik mm na cm](/blog/mm-na-cm)
 

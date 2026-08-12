@@ -8,7 +8,7 @@ heroImage: "/images/blog/miarka-online-cm.svg"
 pubDate: "2026-06-07"
 ---
 
-# Miarka online w cm i mm - kiedy warto jej używać?
+## Miarka online w cm i mm - kiedy warto jej używać?
 
 Miarka online jest przydatna, gdy trzeba szybko oszacować długość małego przedmiotu w cm lub mm. Najlepiej używać jej do prostych pomiarów, po wcześniejszej kalibracji ekranu i przy założeniu, że wynik ma charakter orientacyjny. Dlatego przed pierwszym pomiarem warto poświęcić minutę na ustawienia, zamiast ufać podziałce bez sprawdzenia.
 
@@ -69,7 +69,7 @@ Przy dalszej pracy warto sprawdzić także:
 
 - [centymetr online](/blog/centymetr-online)
 - [tabelę mm na cm](/blog/mm-na-cm)
-- [kalibrację miarki online](/guides/kalibracja-linijki-online)
+- [kalibrację miarki online](/blog/kalibracja-linijki-online/)
 
 Źródła pomocne przy jednostkach i skali:
 

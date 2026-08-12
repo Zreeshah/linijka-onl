@@ -8,7 +8,7 @@ heroImage: "/images/blog/linijka-w-telefonie.png"
 pubDate: "2026-06-07"
 ---
 
-# Jak używać linijki online na telefonie? Prosty poradnik krok po kroku
+## Jak używać linijki online na telefonie? Prosty poradnik krok po kroku
 
 Linijka w telefonie działa najlepiej wtedy, gdy strona z miarką jest skalibrowana do realnego rozmiaru ekranu. Użytkownik otwiera narzędzie w przeglądarce, ustawia skalę za pomocą karty płatniczej lub znanego przedmiotu, a potem przykłada mierzony obiekt do krawędzi ekranu. Dlatego przed pierwszym pomiarem warto poświęcić minutę na ustawienia, zamiast ufać podziałce bez sprawdzenia.
 
@@ -68,8 +68,8 @@ Przykład: osoba chce sprawdzić, czy naklejka ma 5 cm szerokości. Po kalibracj
 Przy dalszej pracy warto sprawdzić także:
 
 - [linijkę online 1:1](/blog/linijka-online)
-- [kalibrację linijki online](/guides/kalibracja-linijki-online)
-- [centymetr online](/resources/centymetr-online)
+- [kalibrację linijki online](/blog/kalibracja-linijki-online/)
+- [centymetr online](/blog/centymetr-online/)
 
 Źródła pomocne przy jednostkach i skali:
 

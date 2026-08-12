@@ -8,7 +8,7 @@ heroImage: "/images/blog/kalibracja-linijki-online.png"
 pubDate: "2026-06-07"
 ---
 
-# Jak skalibrować linijkę online, aby pomiar był dokładniejszy?
+## Jak skalibrować linijkę online, aby pomiar był dokładniejszy?
 
 Kalibracja linijki online polega na dopasowaniu podziałki ekranowej do przedmiotu o znanym wymiarze. Użytkownik przykłada wzorzec, na przykład kartę płatniczą albo fizyczną linijkę, a następnie zmienia skalę narzędzia, aż wskazania pokryją się z realną długością. Dlatego przed pierwszym pomiarem warto poświęcić minutę na ustawienia, zamiast ufać podziałce bez sprawdzenia.
 
@@ -68,8 +68,8 @@ Najprostszy test wygląda tak: po kalibracji karta powinna zgadzać się z podzi
 Przy dalszej pracy warto sprawdzić także:
 
 - [linijkę online](/blog/linijka-online)
-- [rozmiar karty bankowej](/resources/rozmiar-karty-bankowej)
-- [dokładność linijki online](/blog/czy-linijka-online-jest-dokladna)
+- [rozmiar karty bankowej](/blog/rozmiar-karty-bankowej/)
+- [dokładność linijki online](/blog/czy-linijka-online-dokladna/)
 
 Źródła pomocne przy jednostkach i skali:
 

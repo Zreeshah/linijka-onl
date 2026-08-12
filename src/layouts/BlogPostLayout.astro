@@ -39,7 +39,7 @@ const articleSchema = JSON.stringify({
   "@type": "Article",
   "headline": title,
   "description": description,
-  "image": `https://linijka.onl${heroImage}`,
+  "image": `https://www.linijka.onl${heroImage}`,
   "author": {
     "@type": "Organization",
     "name": "Redakcja"
@@ -49,13 +49,13 @@ const articleSchema = JSON.stringify({
     "name": "Linijka Online",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://linijka.onl/favicon.svg"
+      "url": "https://www.linijka.onl/favicon.svg"
     }
   },
   "datePublished": "2026-06-07",
   "dateModified": "2026-06-07",
   "inLanguage": "pl-PL",
-  "mainEntityOfPage": `https://linijka.onl/blog/${slug}/`
+  "mainEntityOfPage": `https://www.linijka.onl/blog/${slug}/`
 });
 
 // Filter headings for the Table of Contents (H2 and H3 headings)
@@ -65,7 +65,7 @@ const tocHeadings = headings.filter((h) => h.depth === 2 || h.depth === 3);
 <BaseLayout
   title={`${title} | Blog Linijka.onl`}
   description={description}
-  canonicalUrl={`https://linijka.onl/blog/${slug}/`}
+  canonicalUrl={`https://www.linijka.onl/blog/${slug}/`}
   ogImage={heroImage}
   schemaMarkup={articleSchema}
 >

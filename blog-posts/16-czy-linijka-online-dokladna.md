@@ -18,7 +18,7 @@ czy linijka online jest dokładna przykład kalibracji
 
 ## Article
 
-# Czy linijka online jest dokładna? Co wpływa na wynik pomiaru?
+## Czy linijka online jest dokładna? Co wpływa na wynik pomiaru?
 
 Czy linijka online jest dokładna? Może być wystarczająco dokładna do codziennych pomiarów, ale nie gwarantuje precyzji technicznej bez kalibracji. Na wynik wpływa ekran, zoom przeglądarki, ustawienia systemu, sposób przykładania przedmiotu i odczyt milimetrów. Dlatego przed pierwszym pomiarem warto poświęcić minutę na ustawienia, zamiast ufać podziałce bez sprawdzenia.
 
@@ -77,9 +77,9 @@ Jeśli po kalibracji odcinek 10 cm zgadza się z fizyczną linijką, narzędzie 
 
 Przy dalszej pracy warto sprawdzić także:
 
-- [kalibrację linijki online](/guides/kalibracja-linijki-online)
+- [kalibrację linijki online](/blog/kalibracja-linijki-online/)
 - [linijkę online 1:1](/blog/linijka-online)
-- [linijkę do druku](/resources/linijka-do-druku)
+- [linijkę do druku](/linijka-do-druku/)
 
 Źródła pomocne przy jednostkach i skali:
 

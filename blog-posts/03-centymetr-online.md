@@ -18,7 +18,7 @@ centymetr online na ekranie z podziałką w centymetrach
 
 ## Article
 
-# Centymetr online - jak sprawdzić długość bez fizycznej miarki?
+## Centymetr online - jak sprawdzić długość bez fizycznej miarki?
 
 Centymetr online pozwala szybko sprawdzić długość małego przedmiotu, gdy w pobliżu nie ma fizycznej miarki. Najpierw trzeba ustawić prawidłową skalę, a następnie przyłożyć przedmiot do zera i odczytać koniec na podziałce w centymetrach. Dlatego przed pierwszym pomiarem warto poświęcić minutę na ustawienia, zamiast ufać podziałce bez sprawdzenia.
 
@@ -79,7 +79,7 @@ Przy dalszej pracy warto sprawdzić także:
 
 - [przelicznik cm na mm](/blog/cm-na-mm)
 - [linijkę online](/blog/linijka-online)
-- [telefon jako miarkę](/guides/telefon-jako-miarka)
+- [telefon jako miarkę](/blog/telefon-jako-miarka/)
 
 Źródła pomocne przy jednostkach i skali:
 

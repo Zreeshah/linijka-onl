@@ -8,7 +8,7 @@ heroImage: "/images/blog/cm-na-mm.svg"
 pubDate: "2026-06-07"
 ---
 
-# Centymetry na milimetry - tabela i prosty przelicznik
+## Centymetry na milimetry - tabela i prosty przelicznik
 
 Cm na mm przelicza się przez pomnożenie liczby centymetrów przez 10. Oznacza to, że 1 cm to 10 mm, 2,5 cm to 25 mm, a 10 cm to 100 mm. Ta zasada wynika bezpośrednio z budowy układu metrycznego. Dlatego przed pierwszym pomiarem warto poświęcić minutę na ustawienia, zamiast ufać podziałce bez sprawdzenia.
 

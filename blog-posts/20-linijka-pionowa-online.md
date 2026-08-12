@@ -18,7 +18,7 @@ linijka pionowa online z podziałką na ekranie
 
 ## Article
 
-# Linijka pionowa online - kiedy przydaje się pionowa miarka na ekranie?
+## Linijka pionowa online - kiedy przydaje się pionowa miarka na ekranie?
 
 Linijka pionowa online przydaje się, gdy trzeba zmierzyć wysokość małego przedmiotu, a nie jego szerokość. Działa podobnie jak pozioma linijka online, ale podziałka biegnie wzdłuż pionowej osi ekranu. Dlatego przed pierwszym pomiarem warto poświęcić minutę na ustawienia, zamiast ufać podziałce bez sprawdzenia.
 
@@ -79,7 +79,7 @@ Przy dalszej pracy warto sprawdzić także:
 
 - [poziomą linijkę online](/blog/linijka-online)
 - [linijkę w telefonie](/blog/linijka-w-telefonie)
-- [kalibrację pionowej skali](/guides/kalibracja-linijki-online)
+- [kalibrację pionowej skali](/blog/kalibracja-linijki-online/)
 
 Źródła pomocne przy jednostkach i skali:
 

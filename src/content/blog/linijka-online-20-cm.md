@@ -8,7 +8,7 @@ heroImage: "/images/blog/linijka-online-20-cm.svg"
 pubDate: "2026-06-07"
 ---
 
-# Linijka online 20 cm - jak zmierzyć większe przedmioty na ekranie?
+## Linijka online 20 cm - jak zmierzyć większe przedmioty na ekranie?
 
 Linijka online 20 cm najlepiej działa na tablecie, laptopie lub monitorze, gdzie cały odcinek mieści się w jednym widoku. Po ustawieniu skali 1:1 można mierzyć dłuższe akcesoria, paski papieru, przewody i elementy biurowe bez drukowania miarki. Dlatego przed pierwszym pomiarem warto poświęcić minutę na ustawienia, zamiast ufać podziałce bez sprawdzenia.
 
@@ -69,7 +69,7 @@ Przy dalszej pracy warto sprawdzić także:
 
 - [linijkę online 10 cm](/blog/10-cm)
 - [centymetr online](/blog/centymetr-online)
-- [kalibrację linijki](/guides/kalibracja-linijki-online)
+- [kalibrację linijki](/blog/kalibracja-linijki-online/)
 
 Źródła pomocne przy jednostkach i skali:
 

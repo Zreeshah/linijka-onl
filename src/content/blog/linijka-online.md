@@ -8,7 +8,7 @@ heroImage: "/images/blog/linijka-online.png"
 pubDate: "2026-06-07"
 ---
 
-# Linijka online 1:1 - jak mierzyć przedmioty na ekranie?
+## Linijka online 1:1 - jak mierzyć przedmioty na ekranie?
 
 Linijka online 1:1 pokazuje centymetry i milimetry w rozmiarze zbliżonym do prawdziwej miarki. Aby wynik miał sens, użytkownik powinien najpierw skalibrować ekran, sprawdzić zoom przeglądarki i przykładać przedmiot równo do początku podziałki. Dlatego przed pierwszym pomiarem warto poświęcić minutę na ustawienia, zamiast ufać podziałce bez sprawdzenia.
 
@@ -67,9 +67,9 @@ Jeśli ekran laptopa jest większy, można zmierzyć ołówek albo pasek papieru
 
 Przy dalszej pracy warto sprawdzić także:
 
-- [poradnik kalibracji](/guides/kalibracja-linijki-online)
+- [poradnik kalibracji](/blog/kalibracja-linijki-online/)
 - [miarkę online w cm](/blog/miarka-online-cm)
-- [linijkę do druku](/resources/linijka-do-druku)
+- [linijkę do druku](/linijka-do-druku/)
 
 Źródła pomocne przy jednostkach i skali:
 

@@ -18,7 +18,7 @@ jak zmierzyć ekran w calach za pomocą linijki
 
 ## Article
 
-# Jak zmierzyć ekran telefonu lub laptopa w calach?
+## Jak zmierzyć ekran telefonu lub laptopa w calach?
 
 Jak zmierzyć ekran w calach? Trzeba zmierzyć przekątną aktywnej części ekranu od jednego rogu do przeciwnego rogu, a następnie podzielić wynik w centymetrach przez 2,54. Ramki obudowy nie wchodzą do przekątnej ekranu. Dlatego przed pierwszym pomiarem warto poświęcić minutę na ustawienia, zamiast ufać podziałce bez sprawdzenia.
 
@@ -79,7 +79,7 @@ Przy dalszej pracy warto sprawdzić także:
 
 - [tabelę cm na cale](/blog/cm-na-cale)
 - [linijkę online 20 cm](/blog/linijka-online-20-cm)
-- [centymetr online](/resources/centymetr-online)
+- [centymetr online](/blog/centymetr-online/)
 
 Źródła pomocne przy jednostkach i skali:
 

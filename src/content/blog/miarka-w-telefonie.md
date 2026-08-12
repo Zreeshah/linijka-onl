@@ -8,7 +8,7 @@ heroImage: "/images/blog/miarka-w-telefonie.svg"
 pubDate: "2026-06-07"
 ---
 
-# Miarka w telefonie - praktyczne zastosowania w domu, szkole i pracy
+## Miarka w telefonie - praktyczne zastosowania w domu, szkole i pracy
 
 Miarka w telefonie przydaje się, gdy trzeba szybko sprawdzić długość małego przedmiotu bez szukania fizycznej linijki. Po kalibracji może pomóc w domu, szkole, pracy biurowej, zakupach i prostych zadaniach technicznych. Dlatego przed pierwszym pomiarem warto poświęcić minutę na ustawienia, zamiast ufać podziałce bez sprawdzenia.
 
@@ -67,7 +67,7 @@ Mini lista zastosowań: sprawdzenie szerokości naklejki, długości spinacza, r
 
 Przy dalszej pracy warto sprawdzić także:
 
-- [telefon jako miarkę](/guides/telefon-jako-miarka)
+- [telefon jako miarkę](/blog/telefon-jako-miarka/)
 - [linijkę w telefonie](/blog/linijka-w-telefonie)
 - [zakres 10 cm](/blog/10-cm)
 

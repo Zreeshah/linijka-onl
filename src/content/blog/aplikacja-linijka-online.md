@@ -8,7 +8,7 @@ heroImage: "/images/blog/aplikacja-linijka-online.svg"
 pubDate: "2026-06-07"
 ---
 
-# Linijka online vs aplikacja linijka - co jest wygodniejsze?
+## Linijka online vs aplikacja linijka - co jest wygodniejsze?
 
 Aplikacja linijka bywa wygodna przy częstym mierzeniu, ale linijka online jest szybsza, gdy użytkownik chce jednorazowo sprawdzić mały wymiar bez instalowania czegokolwiek. W obu przypadkach najważniejsze są kalibracja, zoom i rozsądne traktowanie wyniku. Dlatego przed pierwszym pomiarem warto poświęcić minutę na ustawienia, zamiast ufać podziałce bez sprawdzenia.
 
@@ -68,8 +68,8 @@ Porównanie: linijka online wygrywa szybkością startu i brakiem instalacji. Ap
 Przy dalszej pracy warto sprawdzić także:
 
 - [linijkę online](/blog/linijka-online)
-- [telefon jako miarkę](/guides/telefon-jako-miarka)
-- [dokładność pomiaru](/blog/czy-linijka-online-jest-dokladna)
+- [telefon jako miarkę](/blog/telefon-jako-miarka/)
+- [dokładność pomiaru](/blog/czy-linijka-online-dokladna/)
 
 Źródła pomocne przy jednostkach i skali:
 

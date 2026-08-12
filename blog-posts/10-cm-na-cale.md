@@ -18,7 +18,7 @@ cm na cale tabela konwersji dla linijki online
 
 ## Article
 
-# Centymetry na cale - tabela konwersji dla linijki online
+## Centymetry na cale - tabela konwersji dla linijki online
 
 Cm na cale przelicza się przez podzielenie liczby centymetrów przez 2,54. Jeden cal ma dokładnie 2,54 cm, więc 10 cm to około 3,94 cala, a 20 cm to około 7,87 cala. Dlatego przed pierwszym pomiarem warto poświęcić minutę na ustawienia, zamiast ufać podziałce bez sprawdzenia.
 
@@ -77,9 +77,9 @@ Tabela: 1 cm = 0,39 cala; 2,54 cm = 1 cal; 5 cm = 1,97 cala; 10 cm = 3,94 cala; 
 
 Przy dalszej pracy warto sprawdzić także:
 
-- [pomiar ekranu w calach](/blog/jak-zmierzyc-ekran-w-calach)
+- [pomiar ekranu w calach](/blog/zmierzyc-ekran-w-calach/)
 - [przelicznik cm na mm](/blog/cm-na-mm)
-- [linijkę online](/resources/linijka-online)
+- [linijkę online](/blog/linijka-online/)
 
 Źródła pomocne przy jednostkach i skali:
 

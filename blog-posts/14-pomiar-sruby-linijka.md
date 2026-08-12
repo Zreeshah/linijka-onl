@@ -18,7 +18,7 @@ pomiar śruby linijką online w milimetrach
 
 ## Article
 
-# Jak zmierzyć śrubę, nakrętkę lub mały element techniczny?
+## Jak zmierzyć śrubę, nakrętkę lub mały element techniczny?
 
 Pomiar śruby linijką online nadaje się do wstępnego sprawdzenia długości elementu, ale nie zastępuje suwmiarki. Najłatwiej zmierzyć całkowitą długość śruby i przybliżoną średnicę, używając podziałki milimetrowej po starannej kalibracji ekranu. Dlatego przed pierwszym pomiarem warto poświęcić minutę na ustawienia, zamiast ufać podziałce bez sprawdzenia.
 
@@ -79,7 +79,7 @@ Przy dalszej pracy warto sprawdzić także:
 
 - [przelicznik mm na cm](/blog/mm-na-cm)
 - [linijkę online 10 cm](/blog/10-cm)
-- [kalibrację narzędzia](/guides/kalibracja-linijki-online)
+- [kalibrację narzędzia](/blog/kalibracja-linijki-online/)
 
 Źródła pomocne przy jednostkach i skali:
 

@@ -8,7 +8,7 @@ heroImage: "/images/blog/linijka-do-druku.png"
 pubDate: "2026-06-07"
 ---
 
-# Linijka do druku A4 - jak wydrukować miarkę w skali 100%?
+## Linijka do druku A4 - jak wydrukować miarkę w skali 100%?
 
 Linijka do druku powinna być drukowana bez dopasowania do strony, czyli w skali 100%. Po wydruku trzeba sprawdzić kontrolny odcinek, najlepiej 10 cm, fizyczną linijką lub znanym wymiarem, zanim papierowa miarka zostanie użyta do pomiaru. Dlatego przed pierwszym pomiarem warto poświęcić minutę na ustawienia, zamiast ufać podziałce bez sprawdzenia.
 
@@ -67,9 +67,9 @@ Jeśli kontrolny odcinek 10 cm ma na wydruku 9,7 cm, drukarka zmniejszyła plik.
 
 Przy dalszej pracy warto sprawdzić także:
 
-- [linijkę online](/resources/linijka-online)
+- [linijkę online](/blog/linijka-online/)
 - [odcinek 10 cm](/blog/10-cm)
-- [kalibrację pomiaru](/guides/kalibracja-linijki-online)
+- [kalibrację pomiaru](/blog/kalibracja-linijki-online/)
 
 Źródła pomocne przy jednostkach i skali:
 

@@ -8,7 +8,7 @@ heroImage: "/images/blog/telefon-jako-miarka.svg"
 pubDate: "2026-06-07"
 ---
 
-# Jak używać telefonu jako miarki bez instalowania aplikacji?
+## Jak używać telefonu jako miarki bez instalowania aplikacji?
 
 Telefon jako miarka działa bez instalowania aplikacji, jeśli użytkownik otworzy linijkę online w przeglądarce i skalibruje podziałkę do ekranu. To szybki sposób na sprawdzenie małych wymiarów w domu, sklepie, szkole lub pracy. Dlatego przed pierwszym pomiarem warto poświęcić minutę na ustawienia, zamiast ufać podziałce bez sprawdzenia.
 
@@ -69,7 +69,7 @@ Przy dalszej pracy warto sprawdzić także:
 
 - [linijkę w telefonie](/blog/linijka-w-telefonie)
 - [miarkę w telefonie](/blog/miarka-w-telefonie)
-- [kalibrację skali](/guides/kalibracja-linijki-online)
+- [kalibrację skali](/blog/kalibracja-linijki-online/)
 
 Źródła pomocne przy jednostkach i skali:
 

@@ -8,7 +8,7 @@ heroImage: "/images/blog/mm-na-cm.svg"
 pubDate: "2026-06-07"
 ---
 
-# Milimetry na centymetry - szybka tabela dla pomiarów
+## Milimetry na centymetry - szybka tabela dla pomiarów
 
 Mm na cm przelicza się przez podzielenie liczby milimetrów przez 10. To znaczy, że 10 mm to 1 cm, 25 mm to 2,5 cm, a 100 mm to 10 cm. Dlatego przed pierwszym pomiarem warto poświęcić minutę na ustawienia, zamiast ufać podziałce bez sprawdzenia.
 
