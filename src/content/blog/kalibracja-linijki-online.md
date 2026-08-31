@@ -1,104 +1,96 @@
 ---
-title: "Kalibracja linijki online: 5 ważnych kroków"
-description: "Kalibracja linijki online ustawia skalę 1:1 na ekranie. Zobacz metodę z kartą bankową, przekątną ekranu i kontrolą zoomu przeglądarki."
-ogTitle: "Jak skalibrować linijkę online?"
-ogDescription: "Kalibracja linijki online ustawia skalę 1:1 na ekranie. Zobacz metodę z kartą bankową, przekątną ekranu i kontrolą zoomu przeglądarki."
-imageAlt: "kalibracja linijki online za pomocą karty na ekranie"
+title: "Kalibracja skali na ekranie: dokładny test w 7 krokach"
+description: "Skalibruj podziałkę na ekranie za pomocą karty lub fizycznej linijki. Sprawdź zoom, dwa punkty kontrolne i wpływ orientacji telefonu na wynik."
+ogTitle: "Jak skalibrować skalę linijki na ekranie?"
+ogDescription: "Praktyczny test skali na telefonie, tablecie i komputerze z kartą bankową, znanym odcinkiem oraz kontrolą błędu."
+imageAlt: "kalibracja skali pomiarowej na ekranie za pomocą karty"
 heroImage: "/images/blog/kalibracja-linijki-online.png"
 pubDate: "2026-06-07"
+updatedDate: "2026-09-01"
 ---
 
-## Jak skalibrować linijkę online, aby pomiar był dokładniejszy?
+## Po co kalibrować podziałkę ekranową?
 
-Kalibracja linijki online polega na dopasowaniu podziałki ekranowej do przedmiotu o znanym wymiarze. Użytkownik przykłada wzorzec, na przykład kartę płatniczą albo fizyczną linijkę, a następnie zmienia skalę narzędzia, aż wskazania pokryją się z realną długością. Dlatego przed pierwszym pomiarem warto poświęcić minutę na ustawienia, zamiast ufać podziałce bez sprawdzenia.
+Kalibracja skali polega na dopasowaniu wskazania na ekranie do przedmiotu o znanej długości. To ważne, ponieważ ten sam odcinek CSS może wyglądać inaczej na telefonie, tablecie i monitorze. Najprostszy test używa karty płatniczej, a najlepsza kontrola sprawdza dwa różne miejsca podziałki.
 
-| Etap | Co zrobić | Po co |
+| Co sprawdzić | Przykład | Dobry rezultat |
 | --- | --- | --- |
-| 1 | Sprawdź temat: kalibracja linijki online | Ustala właściwą jednostkę i zakres |
-| 2 | Skalibruj ekran lub wydruk | Ogranicza błąd skali |
-| 3 | Zmierz spokojnie dwa razy | Wykrywa odczyt pod kątem |
+| Wzorzec | Długi bok karty ID-1 | 85,60 mm na podziałce |
+| Środek | Odcinek 5 cm | Zgodność z fizyczną linijką |
+| Koniec | Odcinek 10 cm | Brak narastającego przesunięcia |
+| Ustawienia | Zoom i orientacja | Brak zmiany po kalibracji |
 
+## Kalibracja kartą krok po kroku
 
-## Najważniejsze wnioski
+1. Otwórz [linijkę online](/) na urządzeniu, na którym będzie wykonany pomiar.
+2. Ustaw powiększenie przeglądarki na 100% i wyłącz dodatkowe powiększenie systemowe.
+3. Wybierz jednostkę, w której ma być wykonany odczyt.
+4. Połóż kartę płasko przy oznaczonym odcinku.
+5. Ustaw suwak lub skalę tak, aby długi bok karty odpowiadał 85,60 mm.
+6. Sprawdź odcinek 50 mm w innym miejscu ekranu.
+7. Nie zmieniaj orientacji, zoomu ani szerokości okna przed pomiarem.
 
-- Najpierw trzeba ustalić skalę, a dopiero potem mierzyć.
-- Wynik z ekranu warto traktować jako praktyczny, nie laboratoryjny.
-- Milimetry są lepsze dla drobiazgów, centymetry dla szybkiego opisu.
-- Fraza **kalibracja linijki online** dotyczy przede wszystkim prostych pomiarów codziennych.
+Standardowy format karty ID-1 ma 85,60 mm szerokości i 53,98 mm wysokości. Warto użyć prostej krawędzi, a nie zaokrąglonego narożnika. Szczegóły formatu opisuje [ISO/IEC 7810](https://www.iso.org/standard/70483.html).
 
-## Czym jest kalibracja linijki online w praktyce?
+## Dlaczego jeden punkt kontrolny nie wystarcza
 
-Kalibracja jest ważna, ponieważ przeglądarki używają jednostek ekranowych, które nie zawsze mają fizyczny rozmiar centymetra. MDN opisuje, że na ekranach wartości cm i mm mogą być zakotwiczone w pikselu referencyjnym, a nie w realnej długości.
+Jeśli podziałka ma stałe przesunięcie, jeden punkt może wyglądać poprawnie, mimo że pozostała część skali jest nieprawidłowa. Dlatego po ustawieniu wzorca warto sprawdzić drugi odcinek. Karta pasująca przy początku, środku i końcu daje większą pewność, że nie leży pod kątem.
 
-Warto kalibrować po zmianie urządzenia, przeglądarki, poziomu zoomu, trybu orientacji ekranu lub ustawień skalowania systemowego. Właśnie dlatego dobry pomiar zaczyna się od krótkiego testu skali, a kończy zapisaniem wyniku razem z jednostką.
+Przykład: po ustawieniu karty punkt 0 mm zgadza się z lewą krawędzią, ale przy prawej krawędzi brakuje 2 mm. To sygnał, aby ułożyć kartę równolegle albo poprawić skalę. Nie należy kompensować takiego błędu podczas każdego pomiaru.
 
-## Kalibracja linijki online krok po kroku
+## Telefon, tablet i monitor
 
-1. Ustawić zoom strony na 100%.
-2. Położyć znany wzorzec równo na skali.
-3. Wybrać w narzędziu opcję kalibracji.
-4. Przesuwać suwak, aż długość wzorca pasuje do podziałki.
-5. Sprawdzić drugi punkt, na przykład 5 cm lub 10 cm.
-6. Zapisać ustawienie, jeśli narzędzie to umożliwia.
-7. Powtórzyć kalibrację po zmianie ekranu.
+Każde urządzenie wymaga osobnej kalibracji. Telefon może zmienić rozmiar strony po obróceniu, a monitor może mieć włączone systemowe skalowanie 125% lub 150%. Na komputerze warto sprawdzić również szerokość okna, bo układ strony może się zmienić po przejściu w tryb pełnoekranowy.
 
-Ten prosty proces ogranicza najczęstsze pomyłki. Jeśli wynik ma wpływ na zakup, wydruk, dopasowanie części albo zamówienie akcesorium, dobrze jest sprawdzić go drugim sposobem.
+Orientacja wpływa na wygodę, ale nie powinna zmieniać ustawienia, jeśli narzędzie zachowuje ten sam rozmiar elementów. W praktyce bezpieczniej jest skalibrować urządzenie w tej pozycji, w której będzie mierzone.
 
-## Jak poprawić dokładność pomiaru?
+## Jak ocenić niepewność wyniku
 
-Najważniejsze są trzy rzeczy: stabilne ułożenie przedmiotu, poprawna kalibracja i czytelna jednostka. Według [NIST: SI Units - Length](https://www.nist.gov/pml/owm/si-units-length) 10 mm to 1 cm, więc drobny błąd milimetrowy łatwo zauważyć na krótkiej skali. Z kolei [MDN: CSS length](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/length) wyjaśnia, że jednostki długości w CSS na ekranie nie zawsze muszą odpowiadać fizycznemu centymetrowi.
+Niepewność rośnie, gdy krawędź przedmiotu jest gruba, miękka albo zaokrąglona. Przy krótkim odcinku błąd odczytu 1 mm ma większe znaczenie niż przy odcinku 20 cm. Dlatego warto zapisać wynik jako około 47 mm, jeśli krawędź wypada między kreskami, zamiast udawać dokładność do setnych milimetra.
 
-W praktyce warto sprawdzić punkt zerowy, środek skali i koniec skali. Jeżeli wszystkie trzy miejsca zgadzają się z wzorcem, pomiar będzie bardziej wiarygodny.
+Według [NIST](https://www.nist.gov/pml/owm/si-units-length) 1 cm to 10 mm. Samo przeliczenie jest pewne; niepewność dotyczy dopasowania obrazu, skali i przedmiotu. [MDN opisuje jednostki długości CSS](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/length), które na ekranie nie muszą oznaczać fizycznego centymetra bez dodatkowego testu.
 
-## Typowe błędy przy pomiarze
+## Błędy, które psują kalibrację
 
-- użycie elastycznego lub zużytego wzorca
-- kalibracja na powiększonej stronie
-- przykładanie wzorca do krawędzi telefonu zamiast do zera skali
-- zapominanie o ponownym sprawdzeniu po obróceniu ekranu
+- użycie karty z grubą nakładką;
+- kalibracja przy powiększonej stronie;
+- przykładanie wzorca do krawędzi urządzenia zamiast do podziałki;
+- zmiana orientacji po ustawieniu skali;
+- pomiar przedmiotu trzymanego w powietrzu;
+- zaokrąglanie wyniku wcześniej niż na końcu.
 
-Każdy z tych błędów może przesunąć wynik o milimetry. Przy zwykłej etykiecie to mało, ale przy śrubie, pierścionku albo dopasowanym etui może mieć znaczenie.
+Przy pomiarze technicznym warto użyć fizycznej linijki albo suwmiarki. Kalibracja poprawia skalę, lecz nie usuwa problemu z krzywą krawędzią, paralaksą i ograniczoną rozdzielczością odczytu.
 
-## Przykład użycia
+## Narzędzia pomocnicze
 
-Najprostszy test wygląda tak: po kalibracji karta powinna zgadzać się z podziałką nie tylko przy początku, ale również przy końcu. Jeśli zgadza się tylko jeden punkt, przedmiot prawdopodobnie leży pod kątem.
+Do krótkiego testu można użyć [rozmiaru karty bankowej](/blog/rozmiar-karty-bankowej/). Gdy potrzebny jest dłuższy odcinek, przydatna będzie [linijka online 20 cm](/blog/linijka-online-20-cm/). Dla pomiaru papierowego warto porównać wynik z instrukcją [linijki do druku](/blog/linijka-do-druku/).
 
-## Linki wewnętrzne i źródła
+## Najczęstsze pytania
 
-Przy dalszej pracy warto sprawdzić także:
+### Czy kalibrację wykonuje się na każdym urządzeniu?
 
-- [linijkę online](/blog/linijka-online)
-- [rozmiar karty bankowej](/blog/rozmiar-karty-bankowej/)
-- [dokładność linijki online](/blog/czy-linijka-online-dokladna/)
+Tak. Skala zależy od ekranu, przeglądarki, zoomu i ustawień systemowych.
 
-Źródła pomocne przy jednostkach i skali:
+### Czy karta płatnicza jest dobrym wzorcem?
 
-- [MDN: CSS length](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/length)
-- [W3C: CSS Values and Units](https://w3c.github.io/csswg-drafts/css-values-4/#absolute-lengths)
-- [NIST: SI Units - Length](https://www.nist.gov/pml/owm/si-units-length)
-- [ISO: ISO/IEC 7810:2019](https://www.iso.org/standard/70483.html)
+Tak, jeśli ma standardowy format i prostą, nieodkształconą krawędź. Najlepiej znać jej rzeczywisty wymiar.
 
+### Czy trzeba użyć fizycznej linijki?
 
-## FAQs
+Nie, ale fizyczna linijka daje łatwy punkt odniesienia. Karta jest wygodną alternatywą.
 
-### Czy kalibracja linijki online jest konieczna?
-Nie zawsze, ale bardzo poprawia wiarygodność wyniku na ekranach o różnej gęstości pikseli.
+### Co zrobić po obróceniu telefonu?
 
-### Czym najlepiej skalibrować linijkę?
-Najlepsza jest fizyczna linijka. Wygodna jest też karta o standardowym rozmiarze.
-
-### Czy kalibracja zapisuje się na stałe?
-To zależy od narzędzia. Niektóre strony zapisują ustawienia w przeglądarce.
-
-### Czy trzeba kalibrować po zmianie zoomu?
-Tak. Zmiana zoomu może zmienić widoczny rozmiar podziałki.
-
-### Czy karta bankowa zawsze ma ten sam wymiar?
-Większość kart płatniczych używa formatu ID-1, ale warto sprawdzić, czy karta nie jest niestandardowa.
+Sprawdzić skalę ponownie. Nie należy zakładać, że orientacja nie zmieni układu strony.
 
 ### Czy kalibracja daje dokładność suwmiarki?
-Nie. Poprawia wynik, ale nie zastępuje narzędzi technicznych.
 
-## Conclusion
+Nie. Zmniejsza błąd skali, ale nie zastępuje narzędzia technicznego.
 
-Kalibracja linijki online jest najlepszym wyborem wtedy, gdy liczy się szybka odpowiedź i rozsądna dokładność. Po kalibracji narzędzie pomaga w wielu codziennych sytuacjach, ale przy pomiarach technicznych warto potwierdzić wynik fizyczną miarką, suwmiarką albo wydrukiem kontrolnym.
+### Jak często sprawdzać ustawienie?
+
+Przed ważnym pomiarem oraz po zmianie urządzenia, zoomu, przeglądarki lub orientacji ekranu.
+
+## Wnioski
+
+Dobra kalibracja ma trzy elementy: znany wzorzec, brak dodatkowego powiększenia i kontrolę w drugim punkcie. Dzięki temu ekranowa podziałka może służyć do codziennych, orientacyjnych pomiarów. Wymiar istotny dla projektu, części lub zamówienia trzeba jednak potwierdzić fizycznym narzędziem.

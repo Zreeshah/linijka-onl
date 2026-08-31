@@ -1,0 +1,11 @@
+{
+  "redirects": [
+    { "source": "/blog/linijka-w-telefonie", "destination": "/blog/telefon-jako-miarka/", "permanent": true },
+    { "source": "/blog/miarka-w-telefonie", "destination": "/blog/telefon-jako-miarka/", "permanent": true },
+    { "source": "/blog/linijka-online", "destination": "/", "permanent": true },
+    { "source": "/blog/centymetr-online", "destination": "/", "permanent": true },
+    { "source": "/blog/miarka-online-cm", "destination": "/", "permanent": true },
+    { "source": "/blog/czy-linijka-online-dokladna", "destination": "/blog/kalibracja-linijki-online/", "permanent": true },
+    { "source": "/blog/mm-na-cm", "destination": "/blog/cm-na-mm/", "permanent": true }
+  ]
+}

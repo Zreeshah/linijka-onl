@@ -1,103 +1,87 @@
 ---
-title: "Linijka do druku: 7 bezpiecznych zasad A4"
-description: "Linijka do druku musi być wydrukowana w skali 100%. Sprawdź ustawienia A4, test kontrolny 5 cm i kiedy lepsza jest miarka online na ekranie."
-ogTitle: "Linijka do druku A4 w skali 100%"
-ogDescription: "Linijka do druku musi być wydrukowana w skali 100%. Sprawdź ustawienia A4, test kontrolny 5 cm i kiedy lepsza jest miarka online na ekranie."
-imageAlt: "linijka do druku na kartce A4 w skali 100 procent"
+title: "Linijka do druku A4: 7 kontroli przed pomiarem"
+description: "Wydrukuj linijkę na arkuszu A4 bez zmiany skali. Sprawdź ustawienia PDF, 100%, marginesy, test 5 cm i różnicę między papierem a ekranem."
+ogTitle: "Jak poprawnie wydrukować podziałkę na A4?"
+ogDescription: "Lista kontroli dla papierowej podziałki: plik, skala, marginesy, test kontrolny i bezpieczne zastosowania wydruku."
+imageAlt: "linijka do druku na arkuszu A4 z odcinkiem kontrolnym"
 heroImage: "/images/blog/linijka-do-druku.png"
 pubDate: "2026-06-07"
+updatedDate: "2026-09-01"
 ---
 
-## Linijka do druku A4 - jak wydrukować miarkę w skali 100%?
+## Wydruk ma znaczenie tylko przy zachowanej skali
 
-Linijka do druku powinna być drukowana bez dopasowania do strony, czyli w skali 100%. Po wydruku trzeba sprawdzić kontrolny odcinek, najlepiej 10 cm, fizyczną linijką lub znanym wymiarem, zanim papierowa miarka zostanie użyta do pomiaru. Dlatego przed pierwszym pomiarem warto poświęcić minutę na ustawienia, zamiast ufać podziałce bez sprawdzenia.
+Linijka do druku może być użyteczna, ale sam wydruk nie gwarantuje właściwego wymiaru. Drukarka, program PDF i ustawienia strony potrafią zmniejszyć lub powiększyć dokument. Przed użyciem trzeba wyłączyć opcję „dopasuj do strony”, wydrukować w skali 100% i zmierzyć odcinek kontrolny.
 
-| Etap | Co zrobić | Po co |
+| Kontrola | Co sprawdzić | Wniosek |
 | --- | --- | --- |
-| 1 | Sprawdź temat: linijka do druku | Ustala właściwą jednostkę i zakres |
-| 2 | Skalibruj ekran lub wydruk | Ogranicza błąd skali |
-| 3 | Zmierz spokojnie dwa razy | Wykrywa odczyt pod kątem |
+| Plik | Otwiera się w PDF lub podglądzie | Podziałka nie jest przycięta |
+| Skala | „Rzeczywisty rozmiar” lub 100% | Brak automatycznego dopasowania |
+| Arkusz | A4 i właściwa orientacja | Cały zakres mieści się na papierze |
+| Test | Odcinek 5 lub 10 cm | Wymiar zgadza się fizycznie |
 
+## Ustawienia drukowania krok po kroku
 
-## Najważniejsze wnioski
+1. Pobierz plik z [narzędziem do drukowania linijki](/linijka-do-druku/).
+2. Otwórz go w programie, który pokazuje skalę wydruku.
+3. Wybierz papier A4 i właściwą orientację.
+4. Ustaw „rzeczywisty rozmiar”, „100%” albo równoważną opcję.
+5. Wyłącz „dopasuj”, „zmniejsz”, „powiększ” i automatyczne marginesy.
+6. Wydrukuj stronę testową.
+7. Zmierz zaznaczony odcinek fizyczną linijką.
 
-- Najpierw trzeba ustalić skalę, a dopiero potem mierzyć.
-- Wynik z ekranu warto traktować jako praktyczny, nie laboratoryjny.
-- Milimetry są lepsze dla drobiazgów, centymetry dla szybkiego opisu.
-- Fraza **linijka do druku** dotyczy przede wszystkim prostych pomiarów codziennych.
+Jeżeli test 10 cm ma 9,6 cm, wydruk jest za mały. Nie należy poprawiać wyniku podczas pomiaru. Trzeba wrócić do ustawień drukarki i powtórzyć próbę.
 
-## Czym jest linijka do druku w praktyce?
+## Dlaczego A4 nie zawsze oznacza ten sam obszar
 
-Format A4 ma 210 x 297 mm. To wygodny rozmiar do wydruku miarki, ale drukarka i program PDF mogą automatycznie zmniejszyć projekt, gdy włączone jest dopasowanie do marginesów.
+Format A4 ma standardowe wymiary 210 x 297 mm, lecz drukarka może pozostawić margines niedrukowalny. Gdy dokument jest szerszy od obszaru roboczego, program często proponuje automatyczne zmniejszenie. Ta funkcja jest wygodna dla tekstu, ale psuje podziałkę.
 
-Papierowa linijka przydaje się, gdy użytkownik potrzebuje miarki jednorazowo, chce mierzyć poza ekranem albo nie chce przykładać twardych elementów do telefonu. Właśnie dlatego dobry pomiar zaczyna się od krótkiego testu skali, a kończy zapisaniem wyniku razem z jednostką.
+Przed wydrukiem sprawdź podgląd. Jeśli skala wygląda na zmniejszoną albo linia kontrolna nie mieści się w ustawionym miejscu, przerwij i popraw konfigurację.
 
-## Jak wydrukować linijkę w skali 100%
+## Papier, ekran i różne zastosowania
 
-1. Pobrać plik z linijką przygotowany do formatu A4.
-2. Otworzyć okno drukowania w przeglądarce lub czytniku PDF.
-3. Wybrać papier A4.
-4. Ustawić skalę 100% albo opcję rzeczywisty rozmiar.
-5. Wyłączyć dopasowanie do strony i zmniejszanie do marginesów.
-6. Wydrukować stronę testową.
-7. Sprawdzić odcinek kontrolny 10 cm przed użyciem.
+Papierowa podziałka nie wymaga baterii i można ją przyłożyć do przedmiotu bez dotykania wyświetlacza. Ekranowa podziałka jest szybsza, gdy nie ma drukarki. W obu przypadkach trzeba sprawdzić skalę: na ekranie przez kalibrację, na papierze przez odcinek kontrolny.
 
-Ten prosty proces ogranicza najczęstsze pomyłki. Jeśli wynik ma wpływ na zakup, wydruk, dopasowanie części albo zamówienie akcesorium, dobrze jest sprawdzić go drugim sposobem.
+Do wydruku najlepiej nadaje się sztywniejszy papier, jeśli będzie często używany. Nie rozciągaj arkusza i nie mierz papieru, który został zagięty. Wilgoć może zmienić jego wymiar, dlatego dokładne prace lepiej wykonywać fizyczną linijką lub suwmiarką.
 
-## Jak poprawić dokładność pomiaru?
+## Przykład błędnego ustawienia
 
-Najważniejsze są trzy rzeczy: stabilne ułożenie przedmiotu, poprawna kalibracja i czytelna jednostka. Według [NIST: SI Units - Length](https://www.nist.gov/pml/owm/si-units-length) 10 mm to 1 cm, więc drobny błąd milimetrowy łatwo zauważyć na krótkiej skali. Z kolei [MDN: CSS length](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/length) wyjaśnia, że jednostki długości w CSS na ekranie nie zawsze muszą odpowiadać fizycznemu centymetrowi.
+Użytkownik chce wydrukować odcinek 20 cm. Program wybiera „dopasuj do marginesów” i skaluje dokument do 92%. Po wydruku odcinek ma 18,4 cm. Przyłożony do małego elementu wynik będzie systematycznie zaniżony. Ten błąd dotyczy ustawienia wydruku, a nie matematycznej relacji cm-mm.
 
-W praktyce warto sprawdzić punkt zerowy, środek skali i koniec skali. Jeżeli wszystkie trzy miejsca zgadzają się z wzorcem, pomiar będzie bardziej wiarygodny.
+Relację jednostek można sprawdzić w [NIST](https://www.nist.gov/pml/owm/si-units-length). Przydatne jest także porównanie z [kalibracją skali na ekranie](/blog/kalibracja-linijki-online/), gdy użytkownik chce wybrać między papierem a narzędziem online.
 
-## Typowe błędy przy pomiarze
+## Siedem zastosowań papierowej podziałki
 
-- drukowanie z opcją dopasuj do obszaru drukowania
-- użycie papieru Letter zamiast A4
-- pominięcie pomiaru kontrolnego
-- druk z podglądu obrazu, który zmienia skalę
+Wydruk sprawdza się przy zaznaczaniu długości na kartonie, sprawdzaniu szerokości etykiety, pracy plastycznej, prostych zadaniach szkolnych, układaniu elementów na biurku, pakowaniu małych przedmiotów i kontroli krótkiego odcinka. Nie jest dobrym narzędziem do pomiarów budowlanych, części z małą tolerancją ani dokumentacji technicznej.
 
-Każdy z tych błędów może przesunąć wynik o milimetry. Przy zwykłej etykiecie to mało, ale przy śrubie, pierścionku albo dopasowanym etui może mieć znaczenie.
+Przedmiot należy ułożyć przy zerze, nie przy krawędzi papieru. Brzeg kartki może nie pokrywać się z początkiem podziałki.
 
-## Przykład użycia
+## Najczęstsze pytania
 
-Jeśli kontrolny odcinek 10 cm ma na wydruku 9,7 cm, drukarka zmniejszyła plik. Wtedy trzeba ponownie wejść w ustawienia i wybrać rzeczywisty rozmiar, a nie dopasuj do strony.
+### Czy drukować w skali 100%?
 
-## Linki wewnętrzne i źródła
+Tak. Należy wyłączyć automatyczne dopasowanie do strony i potwierdzić wymiar odcinka kontrolnego.
 
-Przy dalszej pracy warto sprawdzić także:
+### Czy papier A4 zawsze mieści całą podziałkę?
 
-- [linijkę online](/blog/linijka-online/)
-- [odcinek 10 cm](/blog/10-cm)
-- [kalibrację pomiaru](/blog/kalibracja-linijki-online/)
+Nie zawsze. Marginesy drukarki i orientacja mogą ograniczyć dostępny obszar.
 
-Źródła pomocne przy jednostkach i skali:
+### Jak sprawdzić poprawność wydruku?
 
-- [Prepressure: A4 paper size](https://www.prepressure.com/library/paper-size/din-a4)
-- [NIST: SI Units - Length](https://www.nist.gov/pml/owm/si-units-length)
-- [NIST: Approximate Conversions](https://www.nist.gov/pml/owm/metric-si/unit-conversion/approximate-conversions-us-customary-measures-metric)
+Zmierz linię kontrolną fizyczną linijką. Jeśli 10 cm nie ma dokładnie 10 cm, popraw ustawienia.
 
+### Czy można używać zagiętej kartki?
 
-## FAQs
+Do orientacyjnego pomiaru tak, lecz zagięcie utrudnia równe przyłożenie. Do dokładniejszego odczytu użyj płaskiego arkusza.
 
-### Czy linijka do druku musi być w PDF?
-PDF jest najlepszy, bo łatwiej zachować skalę. Obraz może zostać przypadkowo przeskalowany.
+### Czy papierowa podziałka jest dokładniejsza od ekranu?
 
-### Jak sprawdzić skalę wydruku?
-Najprościej zmierzyć odcinek kontrolny 10 cm fizyczną linijką.
+Nie zawsze. Daje stabilny wzorzec, ale wynik zależy od ustawień drukarki i stanu papieru.
 
-### Czy margines drukarki ma znaczenie?
-Tak. Margines może wymusić zmniejszenie projektu, jeśli włączone jest dopasowanie do strony.
+### Co wybrać bez drukarki?
 
-### Czy można drukować na papierze Letter?
-Można tylko wtedy, gdy plik jest do tego przygotowany. Dla A4 należy wybrać papier A4.
+Można użyć [narzędzia ekranowego](/) po wcześniejszej kalibracji do konkretnego urządzenia.
 
-### Czy wydrukowana linijka jest trwała?
-Papierowa miarka jest podatna na zagięcia i wilgoć, więc nadaje się głównie do prostych pomiarów.
+## Wnioski
 
-### Czy kolor wydruku ma znaczenie?
-Nie dla skali, ale kontrastowa podziałka ułatwia odczyt milimetrów.
-
-## Conclusion
-
-Linijka do druku jest najlepszym wyborem wtedy, gdy liczy się szybka odpowiedź i rozsądna dokładność. Po kalibracji narzędzie pomaga w wielu codziennych sytuacjach, ale przy pomiarach technicznych warto potwierdzić wynik fizyczną miarką, suwmiarką albo wydrukiem kontrolnym.
+Linijka do druku jest praktyczna, jeśli dokument został wydrukowany w rzeczywistym rozmiarze i przeszedł test kontrolny. Największe ryzyko stanowią automatyczne marginesy, skalowanie PDF i przyłożenie przedmiotu do niewłaściwego punktu. Przy ważnym wymiarze papier powinien być tylko jednym z etapów sprawdzenia.

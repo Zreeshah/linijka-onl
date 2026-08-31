@@ -183,6 +183,11 @@ files.forEach(file => {
   ].join('\n');
 
   const destFile = path.join(destDir, `${slug}.md`);
+  // Keep reviewed content in src/content/blog authoritative on later runs.
+  if (fs.existsSync(destFile)) {
+    console.log(`Skipped ${file}: ${destFile} already exists`);
+    return;
+  }
   fs.writeFileSync(destFile, frontmatter, 'utf-8');
   console.log(`Processed ${file} -> ${slug}.md (Image: ${heroImage})`);
 });

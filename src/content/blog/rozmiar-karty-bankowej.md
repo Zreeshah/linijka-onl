@@ -1,103 +1,86 @@
 ---
-title: "Rozmiar karty bankowej: 5 pewnych pomiarów"
-description: "Rozmiar karty bankowej pomaga skalibrować linijkę online. Sprawdź standardowe wymiary karty, metodę porównania i najczęstsze błędy pomiaru."
-ogTitle: "Jak zmierzyć kartę bankową online?"
-ogDescription: "Rozmiar karty bankowej pomaga skalibrować linijkę online. Sprawdź standardowe wymiary karty, metodę porównania i najczęstsze błędy pomiaru."
-imageAlt: "rozmiar karty bankowej mierzony linijką online"
+title: "Rozmiar karty bankowej: wymiary i 6 zastosowań"
+description: "Standardowa karta bankowa ma 85,60 x 53,98 mm. Sprawdź, jak użyć jej do kalibracji skali, oceny portfela i kontroli pomiaru bez zgadywania."
+ogTitle: "Jaki jest standardowy rozmiar karty bankowej?"
+ogDescription: "Wymiary karty w formacie ID-1, przeliczenie na cm i praktyczny test wykorzystania karty jako wzorca pomiarowego."
+imageAlt: "karta bankowa używana jako wzorzec długości do kalibracji"
 heroImage: "/images/blog/rozmiar-karty-bankowej.svg"
 pubDate: "2026-06-07"
+updatedDate: "2026-09-01"
 ---
 
-## Jak zmierzyć kartę bankową linijką online?
+## Standardowy wymiar karty
 
-Rozmiar karty bankowej jest przydatny jako punkt odniesienia przy kalibracji linijki online. Standard ID-1 używany dla wielu kart identyfikacyjnych ma 85,60 mm szerokości i 53,98 mm wysokości, więc karta może pomóc sprawdzić skalę ekranu. Dlatego przed pierwszym pomiarem warto poświęcić minutę na ustawienia, zamiast ufać podziałce bez sprawdzenia.
+Typowa karta bankowa w formacie ID-1 ma 85,60 mm długości i 53,98 mm szerokości. Po przeliczeniu to 8,56 cm x 5,398 cm. Te liczby tworzą wygodny wzorzec dla kalibracji skali, ale tylko wtedy, gdy karta jest prosta, nieodkształcona i pozbawiona grubej nakładki.
 
-| Etap | Co zrobić | Po co |
-| --- | --- | --- |
-| 1 | Sprawdź temat: rozmiar karty bankowej | Ustala właściwą jednostkę i zakres |
-| 2 | Skalibruj ekran lub wydruk | Ogranicza błąd skali |
-| 3 | Zmierz spokojnie dwa razy | Wykrywa odczyt pod kątem |
+| Wymiar | Milimetry | Centymetry |
+| --- | ---: | ---: |
+| Długi bok | 85,60 mm | 8,56 cm |
+| Krótki bok | 53,98 mm | 5,398 cm |
+| Grubość nominalna | około 0,76 mm | około 0,076 cm |
 
+Normę formatu opisuje [ISO/IEC 7810](https://www.iso.org/standard/70483.html). Karta lojalnościowa, identyfikator lub przepustka może mieć inny wymiar, dlatego nie każdą kartę należy traktować jako wzorzec.
 
-## Najważniejsze wnioski
+## Jak użyć karty do kalibracji
 
-- Najpierw trzeba ustalić skalę, a dopiero potem mierzyć.
-- Wynik z ekranu warto traktować jako praktyczny, nie laboratoryjny.
-- Milimetry są lepsze dla drobiazgów, centymetry dla szybkiego opisu.
-- Fraza **rozmiar karty bankowej** dotyczy przede wszystkim prostych pomiarów codziennych.
+1. Otwórz [narzędzie pomiarowe](/) na konkretnym urządzeniu.
+2. Wyłącz powiększenie strony i ustaw zoom na 100%.
+3. Wybierz jednostkę mm albo cm.
+4. Przyłóż długi, prosty bok karty do podziałki.
+5. Ustaw skalę tak, aby odpowiadała 85,60 mm.
+6. Sprawdź także krótki bok 53,98 mm.
+7. Nie obracaj ani nie przesuwaj urządzenia po kalibracji.
 
-## Czym jest rozmiar karty bankowej w praktyce?
+Instrukcja [kalibracji skali na ekranie](/blog/kalibracja-linijki-online/) pokazuje, dlaczego kontrola dwóch boków jest lepsza niż dopasowanie jednego punktu. Nie przykładaj karty z ostrym zabrudzeniem ani naklejką, która zwiększa jej obrys.
 
-ISO/IEC 7810 opisuje fizyczne cechy kart identyfikacyjnych, w tym kilka formatów. W codziennym użyciu karta płatnicza zwykle ma format zbliżony do ID-1, ale karta uszkodzona, nietypowa lub ozdobna może nie być idealnym wzorcem.
+## Karta a krawędź z zaokrągleniem
 
-Pomiar karty jest dobry do kalibracji, kontroli etui, kieszonki, portfela, uchwytu albo szablonu graficznego. Właśnie dlatego dobry pomiar zaczyna się od krótkiego testu skali, a kończy zapisaniem wyniku razem z jednostką.
+Narożniki karty są zaokrąglone, ale jej proste boki mają określony wymiar. Pomiar prowadź od początku prostej krawędzi do jej końca, a nie po łuku narożnika. Jeśli karta ma pęknięcie lub jest wygięta, użyj fizycznej linijki jako wzorca.
 
-## Jak zmierzyć kartę bankową na ekranie
+Nie mierz przez grubą kieszeń portfela. Etui zmienia odległość, a folia ochronna może utrudnić równe ułożenie. Do kalibracji na ekranie lepiej wykorzystać samą kartę i zachować ostrożność, aby nie porysować wyświetlacza.
 
-1. Położyć kartę płasko na ekranie lub tuż obok podziałki.
-2. Ustawić dłuższy bok przy osi poziomej.
-3. Dopasować początek karty do zera.
-4. Sprawdzić, czy drugi koniec wypada przy 85,6 mm.
-5. Obrócić kartę i zmierzyć krótszy bok.
-6. Porównać krótszy bok z wartością 53,98 mm.
-7. Nie dociskać karty do ekranu, jeśli ma ostre zabrudzenia.
+## Zastosowania poza kalibracją
 
-Ten prosty proces ogranicza najczęstsze pomyłki. Jeśli wynik ma wpływ na zakup, wydruk, dopasowanie części albo zamówienie akcesorium, dobrze jest sprawdzić go drugim sposobem.
+Wymiar karty pomaga sprawdzić, czy portfel ma odpowiednią kieszeń, porównać rozmiar uchwytu, oszacować szerokość etui albo szybko ocenić małą przegródkę. Nie jest jednak wzorcem dla kart nietypowych, kart z grubym chipem ani elementów, które mają być produkowane z dokładnością techniczną.
 
-## Jak poprawić dokładność pomiaru?
+Długi bok może pomóc ocenić odcinek około 8,5 cm. Przy krótszych odcinkach warto skorzystać z [testu 10 cm](/blog/10-cm/), ale pamiętaj, że 10 cm to 100 mm, a nie dokładny wymiar karty.
 
-Najważniejsze są trzy rzeczy: stabilne ułożenie przedmiotu, poprawna kalibracja i czytelna jednostka. Według [NIST: SI Units - Length](https://www.nist.gov/pml/owm/si-units-length) 10 mm to 1 cm, więc drobny błąd milimetrowy łatwo zauważyć na krótkiej skali. Z kolei [MDN: CSS length](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/length) wyjaśnia, że jednostki długości w CSS na ekranie nie zawsze muszą odpowiadać fizycznemu centymetrowi.
+## Przykład kontroli skali
 
-W praktyce warto sprawdzić punkt zerowy, środek skali i koniec skali. Jeżeli wszystkie trzy miejsca zgadzają się z wzorcem, pomiar będzie bardziej wiarygodny.
+Użytkownik kładzie kartę na ekranie i ustawia długi bok na 85,60 mm. Przy krótkim boku odczytuje 54,0 mm, czyli różnica wynosi 0,02 mm względem nominalnej wartości. Taki odczyt jest wystarczająco zgodny do orientacyjnej kalibracji, choć nie uzasadnia raportowania dokładności do setnych milimetra.
 
-## Typowe błędy przy pomiarze
+Jeśli długi bok pasuje, a krótki ma 52 mm, karta prawdopodobnie leży pod kątem albo narzędzie wyświetla zniekształcony obszar. Popraw ułożenie i sprawdź ustawienia przed pomiarem.
 
-- mierzenie karty z osłonką lub naklejką
-- użycie karty promocyjnej o niestandardowym wymiarze
-- ignorowanie zaokrąglonych narożników
-- odczyt do pełnych centymetrów zamiast mm
+## Jednostki i rozsądna precyzja
 
-Każdy z tych błędów może przesunąć wynik o milimetry. Przy zwykłej etykiecie to mało, ale przy śrubie, pierścionku albo dopasowanym etui może mieć znaczenie.
+[NIST](https://www.nist.gov/pml/owm/si-units-length) opisuje relację jednostek długości. 85,60 mm można zapisać jako 8,56 cm, lecz nie należy dodawać zer, których nie uzasadnia pomiar. [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/length) przypomina, że ekranowe jednostki CSS wymagają kalibracji do realnego wymiaru.
 
-## Przykład użycia
-
-Tabela kontrolna: dłuższy bok karty ID-1 to 85,60 mm, czyli 8,56 cm. Krótszy bok to 53,98 mm, czyli około 5,40 cm. Te wartości są wygodne do ustawienia skali.
-
-## Linki wewnętrzne i źródła
-
-Przy dalszej pracy warto sprawdzić także:
-
-- [kalibrację linijki online](/blog/kalibracja-linijki-online/)
-- [linijkę online 1:1](/blog/linijka-online)
-- [przelicznik mm na cm](/blog/mm-na-cm)
-
-Źródła pomocne przy jednostkach i skali:
-
-- [ISO: ISO/IEC 7810:2019](https://www.iso.org/standard/70483.html)
-- [NIST: SI Units - Length](https://www.nist.gov/pml/owm/si-units-length)
-- [MDN: CSS length](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/length)
-
-
-## FAQs
+## Najczęstsze pytania
 
 ### Jaki jest standardowy rozmiar karty bankowej?
-Typowy format ID-1 ma 85,60 mm x 53,98 mm.
 
-### Czy każda karta bankowa ma identyczny rozmiar?
-Większość jest bardzo podobna, ale warto uważać na karty nietypowe, uszkodzone lub ozdobne.
+Najczęściej 85,60 x 53,98 mm, czyli format ID-1.
 
-### Czy karta nadaje się do kalibracji linijki online?
-Tak, jeśli jest standardowa i nie ma deformacji.
+### Ile cm ma długi bok karty?
 
-### Czy mierzyć kartę z zaokrąglonymi rogami?
-Należy mierzyć proste boki, a nie narożniki.
+85,60 mm to 8,56 cm.
 
-### Ile cm ma dłuższy bok karty?
-Dłuższy bok ma 8,56 cm.
+### Czy każda karta ma ten sam rozmiar?
 
-### Czy można przykładać kartę do ekranu?
-Można ostrożnie, ale ekran warto chronić przed brudem i twardymi krawędziami.
+Nie. Karty nietypowe, lojalnościowe lub z grubą osłoną mogą mieć inne wymiary.
 
-## Conclusion
+### Czy karta nadaje się do kalibracji ekranu?
 
-Rozmiar karty bankowej jest najlepszym wyborem wtedy, gdy liczy się szybka odpowiedź i rozsądna dokładność. Po kalibracji narzędzie pomaga w wielu codziennych sytuacjach, ale przy pomiarach technicznych warto potwierdzić wynik fizyczną miarką, suwmiarką albo wydrukiem kontrolnym.
+Tak, jeśli ma prosty, standardowy bok i nie jest odkształcona.
+
+### Czy mierzyć zaokrąglony narożnik?
+
+Nie. Mierz prosty bok, a nie łuk narożnika.
+
+### Czy karta zastępuje fizyczną linijkę?
+
+Tylko jako wygodny wzorzec znanej długości. Przy pomiarze technicznym użyj właściwego narzędzia.
+
+## Wnioski
+
+Standardowa karta bankowa ma 85,60 x 53,98 mm i może pomóc skalibrować podziałkę na ekranie. Wymaga jednak prostej krawędzi, stabilnego ułożenia i kontroli drugiego boku. Jej wymiar jest praktycznym wzorcem, nie licencją na udawanie laboratoryjnej dokładności.
