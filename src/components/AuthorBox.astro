@@ -1,0 +1,88 @@
+---
+import { authorProfile } from '../data/author';
+
+export interface Props {
+  profile?: typeof authorProfile;
+}
+
+const { profile = authorProfile } = Astro.props;
+---
+
+<section class="author-box" aria-labelledby="author-box-title">
+  <div class="author-avatar" aria-hidden="true">AT</div>
+  <div class="author-copy">
+    <p class="author-label">Autor</p>
+    <h2 id="author-box-title">{profile.name}</h2>
+    <p>{profile.bio}</p>
+    <a href="/kontakt/">Skontaktuj się z autorem</a>
+  </div>
+</section>
+
+<style>
+  .author-box {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-4);
+    margin-top: var(--space-10);
+    padding: var(--space-5);
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+  }
+
+  .author-avatar {
+    display: grid;
+    flex: 0 0 48px;
+    place-items: center;
+    width: 48px;
+    height: 48px;
+    color: #fff;
+    background: var(--accent);
+    border-radius: 50%;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+  }
+
+  .author-copy {
+    min-width: 0;
+  }
+
+  .author-label {
+    margin: 0 0 var(--space-1);
+    color: var(--text-tertiary);
+    font-size: 0.8125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  .author-copy h2 {
+    margin: 0 0 var(--space-2);
+    font-size: 1.125rem;
+  }
+
+  .author-copy p:not(.author-label) {
+    margin: 0 0 var(--space-3);
+    color: var(--text-secondary);
+    font-size: 0.9375rem;
+    line-height: 1.7;
+  }
+
+  .author-copy a {
+    font-size: 0.9375rem;
+    font-weight: 600;
+  }
+
+  @media (max-width: 480px) {
+    .author-box {
+      gap: var(--space-3);
+      padding: var(--space-4);
+    }
+
+    .author-avatar {
+      flex-basis: 40px;
+      width: 40px;
+      height: 40px;
+      font-size: 0.875rem;
+    }
+  }
+</style>

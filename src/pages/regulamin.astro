@@ -1,0 +1,146 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const breadcrumbSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Strona główna",
+      "item": "https://www.linijka.onl/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Regulamin",
+      "item": "https://www.linijka.onl/regulamin/"
+    }
+  ]
+});
+---
+
+<BaseLayout
+  title="Regulamin – Linijka.onl"
+  description="Regulamin serwisu Linijka.onl opisuje zasady korzystania z bezpłatnej linijki online, ograniczenia pomiarów i prawa operatora."
+  canonicalUrl="https://www.linijka.onl/regulamin/"
+  schemaMarkup={breadcrumbSchema}
+>
+  <section class="section terms-page">
+    <div class="container terms-container">
+      <nav class="breadcrumb" aria-label="Nawigacja okruszkowa">
+        <ol>
+          <li><a href="/">Linijka online</a></li>
+          <li aria-current="page">Regulamin</li>
+        </ol>
+      </nav>
+
+      <h1>Regulamin serwisu Linijka.onl</h1>
+      <p class="terms-updated">Ostatnia aktualizacja: wrzesień 2026</p>
+
+      <div class="terms-content">
+        <h2>1. Postanowienia ogólne</h2>
+        <p>
+          Regulamin określa zasady korzystania z serwisu Linijka.onl, prowadzonego przez Aleksandra Tiedemanna,
+          dostępnego pod adresem https://www.linijka.onl/ oraz podstronami serwisu.
+        </p>
+
+        <h2>2. Zakres bezpłatnej usługi</h2>
+        <p>
+          Serwis udostępnia bezpłatne narzędzie wyświetlające podziałkę na ekranie urządzenia oraz materiały
+          informacyjne dotyczące pomiarów, kalibracji i jednostek długości. Korzystanie z podstawowej funkcji nie
+          wymaga zakładania konta ani instalowania aplikacji.
+        </p>
+        <p>
+          Użytkownik powinien korzystać z serwisu zgodnie z prawem, przeznaczeniem narzędzia i zasadami bezpieczeństwa.
+          Nie wolno podejmować prób zakłócania działania serwisu ani obciążać go w sposób wykraczający poza zwykłe
+          korzystanie.
+        </p>
+
+        <h2>3. Charakter wyników pomiaru</h2>
+        <p>
+          Wyniki wyświetlane na ekranie mają charakter orientacyjny. Ich wiarygodność zależy między innymi od urządzenia,
+          ustawień przeglądarki, powiększenia strony, kalibracji, położenia przedmiotu i czytelności jego krawędzi.
+        </p>
+        <p>
+          Serwis nie udziela gwarancji dokładności pomiaru. Wyniki nie są przeznaczone do zastosowań technicznych,
+          budowlanych, laboratoryjnych, medycznych ani innych, w których błąd pomiaru może spowodować szkodę.
+          W takich sytuacjach należy użyć certyfikowanego lub odpowiedniego dla danego zadania przyrządu.
+        </p>
+
+        <h2>4. Odpowiedzialność użytkownika</h2>
+        <p>
+          Użytkownik sam ocenia, czy narzędzie odpowiada jego potrzebom, i odpowiada za decyzje podjęte na podstawie
+          orientacyjnego wyniku. Przedmiotów ostrych, ciężkich lub mogących uszkodzić ekran nie należy przykładać do
+          wyświetlacza bez odpowiedniego zabezpieczenia.
+        </p>
+
+        <h2>5. Prawa autorskie</h2>
+        <p>
+          Układ serwisu, kod narzędzia, teksty, grafiki, oznaczenia i pozostałe materiały są chronione przepisami prawa
+          i należą do operatora albo są wykorzystywane na podstawie odpowiednich uprawnień. Dozwolone jest korzystanie
+          z serwisu na własny użytek zgodnie z prawem. Kopiowanie, rozpowszechnianie lub komercyjne wykorzystywanie
+          materiałów wymaga podstawy prawnej albo zgody operatora.
+        </p>
+
+        <h2>6. Zmiany i dostępność serwisu</h2>
+        <p>
+          Operator może rozwijać, modyfikować, czasowo ograniczać albo wycofać narzędzie lub wybrane funkcje serwisu.
+          Może także aktualizować treści i regulamin. Zmiany będą publikowane na tej stronie, a dalsze korzystanie z
+          serwisu po ich opublikowaniu oznacza akceptację zaktualizowanych zasad w zakresie dozwolonym przez prawo.
+        </p>
+
+        <h2>7. Kontakt</h2>
+        <p>
+          Pytania dotyczące regulaminu można kierować na adres
+          <a href="mailto:info@linijka.onl?subject=Regulamin%20Linijka.onl">info@linijka.onl</a>.
+          Dane operatora i dodatkowe informacje kontaktowe znajdują się na stronie <a href="/kontakt/">Kontakt</a>.
+        </p>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .terms-container {
+    max-width: var(--container-lg);
+  }
+
+  .breadcrumb ol {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    margin-bottom: var(--space-6);
+    color: var(--text-tertiary);
+    font-size: 0.8125rem;
+  }
+
+  .breadcrumb li:not(:last-child)::after {
+    content: '›';
+    margin-left: var(--space-2);
+    color: var(--border-dark);
+  }
+
+  .breadcrumb a {
+    color: var(--text-tertiary);
+  }
+
+  .breadcrumb a:hover {
+    color: var(--accent);
+  }
+
+  .terms-updated {
+    margin: var(--space-3) 0 var(--space-8);
+    color: var(--text-tertiary);
+    font-size: 0.875rem;
+  }
+
+  .terms-content {
+    max-width: 780px;
+  }
+
+  .terms-content h2 {
+    margin-top: var(--space-8);
+  }
+</style>
