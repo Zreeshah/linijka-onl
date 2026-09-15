@@ -163,6 +163,84 @@ const rulerSizes = [10, 20, 30];
       </p>
     </div>
   </section>
+
+  <!-- ====== TROUBLESHOOTING SECTION ====== -->
+  <section class="section print-troubleshooting no-print" id="rozwiazywanie-problemow" aria-label="Rozwiązywanie problemów z wydrukiem linijki">
+    <div class="container troubleshooting-container">
+      <h2>Rozwiązywanie problemów z wydrukiem linijki (Troubleshooting)</h2>
+      <p class="troubleshooting-lead">
+        Wydrukowanie precyzyjnego przymiaru w skali 1:1 wymaga wyeliminowania automatycznego skalowania, które większość przeglądarek i sterowników drukarek stosuje domyślnie. Poniżej znajdziesz sprawdzone rozwiązania najczęstszych problemów.
+      </p>
+
+      <div class="troubleshooting-grid">
+        <div class="troubleshoot-card">
+          <div class="card-icon-wrap">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          </div>
+          <h3>1. Dlaczego linijka po wydrukowaniu jest o kilka milimetrów za krótka?</h3>
+          <p>
+            <strong>Przyczyna:</strong> Przeglądarka internetowa miała zaznaczoną opcję <em>„Dopasuj do obszaru zadruku”</em> (Fit to printable area) lub marginesy były ustawione na „Domyślne”. Aby zmieścić treść w marginesach arkusza, sterownik automatycznie pomniejsza dokument do ok. 93–96%.
+          </p>
+          <p>
+            <strong>Rozwiązanie:</strong> W oknie dialogowym drukowania wybierz <strong>Skala: Niestandardowa &rarr; 100%</strong> (lub „Rozmiar rzeczywisty” / „Brak skalowania”) oraz ustaw Marginesy na <strong>„Brak”</strong> lub <strong>„Minimalne”</strong>.
+          </p>
+        </div>
+
+        <div class="troubleshoot-card">
+          <div class="card-icon-wrap">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="m9 12 2 2 4-4"/></svg>
+          </div>
+          <h3>2. Instrukcja ustawień dla popularnych przeglądarek</h3>
+          <ul class="browser-guide-list">
+            <li>
+              <strong>Google Chrome:</strong> W oknie drukowania kliknij <em>Więcej ustawień</em> &rarr; <em>Skala</em>: zmień z „Domyślna” na <strong>„Niestandardowa”</strong> i wpisz <strong>100</strong>. Marginesy: „Domyślne”.
+            </li>
+            <li>
+              <strong>Mozilla Firefox:</strong> Rozwiń <em>Więcej ustawień</em> &rarr; odznacz pole <em>„Dopasuj do szerokości strony”</em> &rarr; wpisz w polu <em>Skala</em>: <strong>100%</strong>.
+            </li>
+            <li>
+              <strong>Safari (macOS):</strong> W oknie systemowym upewnij się, że opcja <em>„Skaluj w celu dopasowania”</em> jest <strong>wyłączona</strong>, a wartość skali wynosi dokładnie <strong>100%</strong>.
+            </li>
+            <li>
+              <strong>Microsoft Edge:</strong> W sekcji <em>Skalowanie</em> wybierz <strong>Rzeczywisty rozmiar</strong> (100%).
+            </li>
+          </ul>
+        </div>
+
+        <div class="troubleshoot-card">
+          <div class="card-icon-wrap">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect width="20" height="14" x="2" y="5" rx="2"/><line x1="2" x2="22" y1="10" y2="10"/></svg>
+          </div>
+          <h3>3. Szybka weryfikacja skali za pomocą karty bankowej</h3>
+          <p>
+            Nie masz pod ręką innej linijki, aby zmierzyć pole kontrolne 5 cm? Użyj dowolnej standardowej karty płatniczej, dowodu osobistego lub prawa jazdy (standard ISO/IEC 7810 ID-1):
+          </p>
+          <ul class="card-spec-list">
+            <li><strong>Szerokość karty wynosi dokładnie 85,60 mm (8,56 cm)</strong>.</li>
+            <li><strong>Wysokość karty wynosi dokładnie 53,98 mm (5,40 cm)</strong>.</li>
+          </ul>
+          <p>
+            Przyłóż kartę do wydrukowanej podziałki od zera. Krawędź karty powinna wypadać dokładnie w połowie szóstego milimetra za ósmym centymetrem. Jeśli wynik się zgadza, wydruk jest w 100% dokładny.
+          </p>
+        </div>
+
+        <div class="troubleshoot-card">
+          <div class="card-icon-wrap">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          </div>
+          <h3>4. Wpływ papieru i mechanizmu podajnika drukarki</h3>
+          <p>
+            Domyślne domowe drukarki atramentowe i laserowe mogą powodować mikro-zniekształcenia w osi posuwu papieru (wzdłuż arkusza A4):
+          </p>
+          <ul class="card-spec-list">
+            <li><strong>Gramatura papieru:</strong> Zalecamy papier o gramaturze co najmniej 80–120 g/m². Zbyt cienki papier może ulegać naciąganiu przez rolki prowadzące.</li>
+            <li><strong>Wilgotność papieru:</strong> Wilgotny papier w drukarce laserowej pod wpływem wysokiej temperatury fuzera kurczy się nawet o 1–2%. Używaj suchego papieru prosto z ryzy.</li>
+            <li><strong>Kierunek druku:</strong> Linijki 10 cm i 20 cm ułożone poprzecznie są najmniej podatne na błędy wałków posuwowych drukarki.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
 </BaseLayout>
 
 <style>
@@ -301,10 +379,81 @@ const rulerSizes = [10, 20, 30];
     text-align: center;
   }
 
-  .print-footer p {
-    font-size: 0.75rem;
-    color: #000;
-    margin-bottom: var(--space-1);
+  /* --- Troubleshooting Section --- */
+  .print-troubleshooting {
+    background: var(--bg-secondary);
+    border-top: 1px solid var(--border);
+    margin-top: var(--space-12);
+  }
+
+  .troubleshooting-container {
+    max-width: var(--container-lg);
+  }
+
+  .troubleshooting-lead {
+    font-size: 1.0625rem;
+    line-height: 1.7;
+    color: var(--text-secondary);
+    margin-bottom: var(--space-8);
+  }
+
+  .troubleshooting-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--space-6);
+  }
+
+  .troubleshoot-card {
+    background: var(--bg-primary);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: var(--space-6);
+    box-shadow: var(--shadow-sm);
+  }
+
+  .card-icon-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background: var(--accent-bg);
+    color: var(--accent);
+    border-radius: var(--radius-md);
+    margin-bottom: var(--space-4);
+  }
+
+  .troubleshoot-card h3 {
+    font-size: 1.125rem;
+    margin-top: 0;
+    margin-bottom: var(--space-3);
+    color: var(--text-primary);
+    line-height: 1.4;
+  }
+
+  .troubleshoot-card p {
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    color: var(--text-secondary);
+    margin-bottom: var(--space-3);
+  }
+
+  .browser-guide-list, .card-spec-list {
+    margin: 0;
+    padding-left: var(--space-4);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+  }
+
+  .browser-guide-list li, .card-spec-list li {
+    font-size: 0.875rem;
+    line-height: 1.5;
+    color: var(--text-secondary);
+  }
+
+  .browser-guide-list strong, .card-spec-list strong {
+    color: var(--text-primary);
   }
 
   /* --- Print-specific overrides --- */

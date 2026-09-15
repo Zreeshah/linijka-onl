@@ -1,0 +1,339 @@
+---
+// CMP / Consent Management Provider for EEA & Google AdSense compliance
+---
+
+<!-- Google Consent Mode v2 Initialization -->
+<script is:inline>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+
+  (function() {
+    var stored = null;
+    try {
+      stored = localStorage.getItem('linijka_cmp_consent');
+    } catch(e) {}
+
+    if (stored === 'granted') {
+      gtag('consent', 'default', {
+        'ad_storage': 'granted',
+        'ad_user_data': 'granted',
+        'ad_personalization': 'granted',
+        'analytics_storage': 'granted',
+        'wait_for_update': 500
+      });
+    } else {
+      gtag('consent', 'default', {
+        'ad_storage': 'denied',
+        'ad_user_data': 'denied',
+        'ad_personalization': 'denied',
+        'analytics_storage': 'denied',
+        'wait_for_update': 500
+      });
+    }
+  })();
+</script>
+
+<!-- CMP Consent Banner UI -->
+<aside id="cmp-banner" class="cmp-banner no-print" aria-label="Zgoda na pliki cookies i przetwarzanie danych" role="dialog" aria-modal="true" hidden>
+  <div class="cmp-container">
+    <div class="cmp-content">
+      <div class="cmp-header">
+        <svg class="cmp-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <circle cx="12" cy="12" r="10"></circle>
+          <path d="M12 16v-4"></path>
+          <path d="M12 8h.01"></path>
+        </svg>
+        <h2 class="cmp-title">Szanujemy Twoją prywatność (Zgoda EOG / RODO)</h2>
+      </div>
+      <p class="cmp-desc">
+        W serwisie <strong>Linijka.onl</strong> korzystamy z plików cookies oraz technologii śledzących (w tym Google AdSense). 
+        Pliki te służą do zapamiętywania kalibracji linijki w Twojej przeglądarce, pomiaru ruchu oraz wyświetlania trafnych reklam. 
+        Zgodnie z przepisami EOG możesz w dowolnym momencie zaakceptować wszystkie zgody, odrzucić opcjonalne lub dostosować preferencje. 
+        Szczegóły znajdziesz w naszej <a href="/polityka-prywatnosci/">Polityce prywatności</a>.
+      </p>
+      
+      <!-- Detailed Options (Expandable) -->
+      <div id="cmp-details" class="cmp-details" hidden>
+        <div class="cmp-option">
+          <label class="cmp-switch-label">
+            <input type="checkbox" checked disabled />
+            <span class="cmp-option-title">Niezbędne (Wymagane)</span>
+          </label>
+          <p class="cmp-option-desc">Konieczne do działania narzędzia, zapamiętywania kalibracji ekranu oraz bezpieczeństwa.</p>
+        </div>
+        <div class="cmp-option">
+          <label class="cmp-switch-label">
+            <input type="checkbox" id="cmp-ads-checkbox" checked />
+            <span class="cmp-option-title">Reklamy spersonalizowane i Google AdSense</span>
+          </label>
+          <p class="cmp-option-desc">Umożliwia Google i partnerom wyświetlanie dopasowanych reklam oraz pomiar ich skuteczności.</p>
+        </div>
+        <div class="cmp-option">
+          <label class="cmp-switch-label">
+            <input type="checkbox" id="cmp-analytics-checkbox" checked />
+            <span class="cmp-option-title">Analityka i diagnostyka</span>
+          </label>
+          <p class="cmp-option-desc">Pomaga nam ulepszać dokładność podziałek i rozpoznawanie rozdzielczości ekranów.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="cmp-actions">
+      <button type="button" id="cmp-accept-all" class="btn btn-primary cmp-btn">Zaakceptuj wszystkie</button>
+      <button type="button" id="cmp-reject-optional" class="btn btn-secondary cmp-btn">Tylko niezbędne</button>
+      <button type="button" id="cmp-toggle-details" class="cmp-btn-link">Dostosuj preferencje</button>
+      <button type="button" id="cmp-save-custom" class="btn btn-primary cmp-btn" hidden>Zapisz wybrane</button>
+    </div>
+  </div>
+</aside>
+
+<script is:inline>
+  (function() {
+    var ADSENSE_CLIENT = 'ca-pub-6218065184548996';
+    var banner = document.getElementById('cmp-banner');
+    var details = document.getElementById('cmp-details');
+    var btnAcceptAll = document.getElementById('cmp-accept-all');
+    var btnRejectOptional = document.getElementById('cmp-reject-optional');
+    var btnToggleDetails = document.getElementById('cmp-toggle-details');
+    var btnSaveCustom = document.getElementById('cmp-save-custom');
+    var adsCheckbox = document.getElementById('cmp-ads-checkbox');
+    var analyticsCheckbox = document.getElementById('cmp-analytics-checkbox');
+
+    function loadAdSense() {
+      if (window._adsenseLoaded) return;
+      window._adsenseLoaded = true;
+      var s = document.createElement('script');
+      s.async = true;
+      s.crossOrigin = 'anonymous';
+      s.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=' + ADSENSE_CLIENT;
+      document.head.appendChild(s);
+    }
+
+    function applyConsent(grantedAds, grantedAnalytics) {
+      var adState = grantedAds ? 'granted' : 'denied';
+      var anState = grantedAnalytics ? 'granted' : 'denied';
+
+      if (typeof gtag === 'function') {
+        gtag('consent', 'update', {
+          'ad_storage': adState,
+          'ad_user_data': adState,
+          'ad_personalization': adState,
+          'analytics_storage': anState
+        });
+      }
+
+      try {
+        localStorage.setItem('linijka_cmp_consent', grantedAds ? 'granted' : 'rejected');
+        localStorage.setItem('linijka_cmp_time', new Date().toISOString());
+      } catch(e) {}
+
+      if (banner) {
+        banner.hidden = true;
+      }
+
+      if (grantedAds) {
+        loadAdSense();
+      }
+    }
+
+    // Check stored state
+    var stored = null;
+    try {
+      stored = localStorage.getItem('linijka_cmp_consent');
+    } catch(e) {}
+
+    if (!stored) {
+      // First visit in EEA: show banner
+      if (banner) banner.hidden = false;
+    } else if (stored === 'granted') {
+      loadAdSense();
+    }
+
+    if (btnAcceptAll) {
+      btnAcceptAll.addEventListener('click', function() {
+        applyConsent(true, true);
+      });
+    }
+
+    if (btnRejectOptional) {
+      btnRejectOptional.addEventListener('click', function() {
+        applyConsent(false, false);
+      });
+    }
+
+    if (btnToggleDetails) {
+      btnToggleDetails.addEventListener('click', function() {
+        if (!details) return;
+        var isHidden = details.hidden;
+        details.hidden = !isHidden;
+        btnToggleDetails.textContent = isHidden ? 'Zwiń opcje' : 'Dostosuj preferencje';
+        if (btnSaveCustom) btnSaveCustom.hidden = !isHidden;
+        if (btnAcceptAll) btnAcceptAll.hidden = isHidden;
+      });
+    }
+
+    if (btnSaveCustom) {
+      btnSaveCustom.addEventListener('click', function() {
+        var ads = adsCheckbox ? adsCheckbox.checked : false;
+        var analytics = analyticsCheckbox ? analyticsCheckbox.checked : false;
+        applyConsent(ads, analytics);
+      });
+    }
+
+    // Allow re-opening CMP from footer or privacy page
+    window.openCmpSettings = function() {
+      if (!banner) return;
+      banner.hidden = false;
+      if (details) details.hidden = false;
+      if (btnSaveCustom) btnSaveCustom.hidden = false;
+      if (btnToggleDetails) btnToggleDetails.textContent = 'Zwiń opcje';
+      banner.scrollIntoView({ behavior: 'smooth' });
+    };
+
+    var openBtn = document.getElementById('open-cmp-settings');
+    if (openBtn) {
+      openBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        window.openCmpSettings();
+      });
+    }
+  })();
+</script>
+
+<style>
+  .cmp-banner {
+    position: fixed;
+    bottom: var(--space-4);
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - var(--space-8));
+    max-width: 860px;
+    background: #ffffff;
+    border: 2px solid var(--accent);
+    border-radius: var(--radius-xl);
+    box-shadow: 0 20px 40px -15px rgba(15, 23, 42, 0.35);
+    z-index: 9999;
+    padding: var(--space-6);
+    animation: cmpSlideUp 0.3s ease-out;
+  }
+
+  @keyframes cmpSlideUp {
+    from {
+      opacity: 0;
+      transform: translate(-50%, 20px);
+    }
+    to {
+      opacity: 1;
+      transform: translate(-50%, 0);
+    }
+  }
+
+  .cmp-header {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    margin-bottom: var(--space-2);
+  }
+
+  .cmp-icon {
+    color: var(--accent);
+    flex-shrink: 0;
+  }
+
+  .cmp-title {
+    font-size: 1.125rem;
+    margin: 0;
+    color: var(--text-primary);
+    font-weight: 700;
+  }
+
+  .cmp-desc {
+    font-size: 0.875rem;
+    line-height: 1.6;
+    color: var(--text-secondary);
+    margin-bottom: var(--space-4);
+  }
+
+  .cmp-desc a {
+    color: var(--accent);
+    text-decoration: underline;
+  }
+
+  .cmp-details {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+    margin-bottom: var(--space-4);
+    padding: var(--space-4);
+    background: var(--bg-secondary);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border);
+  }
+
+  .cmp-switch-label {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    font-weight: 600;
+    font-size: 0.875rem;
+    color: var(--text-primary);
+    cursor: pointer;
+  }
+
+  .cmp-switch-label input {
+    cursor: pointer;
+    accent-color: var(--accent);
+  }
+
+  .cmp-option-desc {
+    font-size: 0.8125rem;
+    color: var(--text-tertiary);
+    margin: 2px 0 0 24px;
+    line-height: 1.4;
+  }
+
+  .cmp-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-3);
+  }
+
+  .cmp-btn {
+    padding: var(--space-2) var(--space-4);
+    font-size: 0.875rem;
+  }
+
+  .cmp-btn-link {
+    background: none;
+    border: none;
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+    text-decoration: underline;
+    cursor: pointer;
+    padding: var(--space-2);
+  }
+
+  .cmp-btn-link:hover {
+    color: var(--accent);
+  }
+
+  @media (max-width: 639px) {
+    .cmp-banner {
+      bottom: var(--space-2);
+      width: calc(100% - var(--space-4));
+      padding: var(--space-4);
+    }
+    .cmp-actions {
+      flex-direction: column;
+      align-items: stretch;
+    }
+    .cmp-btn {
+      width: 100%;
+      text-align: center;
+    }
+    .cmp-btn-link {
+      text-align: center;
+    }
+  }
+</style>

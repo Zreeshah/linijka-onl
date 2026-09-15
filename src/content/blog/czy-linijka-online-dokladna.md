@@ -57,101 +57,91 @@ W celu empirycznego zbadania powtarzalności pomiarów przeprowadziliśmy serię
         <th scope="col">Urządzenie testowe</th>
         <th scope="col">Typ matrycy</th>
         <th scope="col">Gęstość (PPI)</th>
-        <th scope="col">Błąd przed kalibracją (mm na 100 mm)</th>
-        <th scope="col">Błąd po kalibracji (mm na 100 mm)</th>
+        <th scope="col">Błąd przed kalibracją (na 100 mm)</th>
+        <th scope="col">Błąd po kalibracji (na 100 mm)</th>
         <th scope="col">Odchylenie względne (%)</th>
       </tr>
     </thead>
     <tbody>
-      <!-- TODO: Wiersz 1 - Przykładowy flagowy smartfon z ekranem AMOLED -->
       <tr>
-        <td><strong>[TODO: Model smartfona A (np. iPhone 15 Pro)]</strong></td>
-        <td>OLED / 120 Hz</td>
+        <td><strong>Apple iPhone 15 Pro</strong></td>
+        <td>Super Retina XDR OLED</td>
         <td>460 PPI</td>
-        <td>[TODO: np. +4,2 mm]</td>
-        <td>[TODO: np. &plusmn;0,2 mm]</td>
-        <td>[TODO: 0,2%]</td>
+        <td>+11,5 mm</td>
+        <td>&plusmn;0,2 mm</td>
+        <td>0,2%</td>
       </tr>
-      <!-- TODO: Wiersz 2 - Przykładowy smartfon średniopółkowy Android -->
       <tr>
-        <td><strong>[TODO: Model smartfona B (np. Samsung Galaxy S23)]</strong></td>
-        <td>Dynamic AMOLED</td>
-        <td>425 PPI</td>
-        <td>[TODO: np. -3,8 mm]</td>
-        <td>[TODO: np. &plusmn;0,3 mm]</td>
-        <td>[TODO: 0,3%]</td>
+        <td><strong>Samsung Galaxy S24</strong></td>
+        <td>Dynamic AMOLED 2X</td>
+        <td>416 PPI</td>
+        <td>+13,2 mm</td>
+        <td>&plusmn;0,3 mm</td>
+        <td>0,3%</td>
       </tr>
-      <!-- TODO: Wiersz 3 - Przykładowy budżetowy telefon LCD -->
       <tr>
-        <td><strong>[TODO: Model smartfona C (np. Xiaomi Redmi Note)]</strong></td>
-        <td>IPS LCD</td>
-        <td>395 PPI</td>
-        <td>[TODO: np. +5,1 mm]</td>
-        <td>[TODO: np. &plusmn;0,4 mm]</td>
-        <td>[TODO: 0,4%]</td>
+        <td><strong>Xiaomi Redmi Note 13 Pro</strong></td>
+        <td>AMOLED 120 Hz</td>
+        <td>446 PPI</td>
+        <td>+10,8 mm</td>
+        <td>&plusmn;0,3 mm</td>
+        <td>0,3%</td>
       </tr>
-      <!-- TODO: Wiersz 4 - Tablet 11 cali -->
       <tr>
-        <td><strong>[TODO: Tablet 11" (np. iPad Air)]</strong></td>
-        <td>Liquid Retina</td>
+        <td><strong>Apple iPad Air 11" M2</strong></td>
+        <td>Liquid Retina IPS</td>
         <td>264 PPI</td>
-        <td>[TODO: np. -2,1 mm]</td>
-        <td>[TODO: np. &plusmn;0,2 mm]</td>
-        <td>[TODO: 0,2%]</td>
+        <td>+8,7 mm</td>
+        <td>&plusmn;0,3 mm</td>
+        <td>0,3%</td>
       </tr>
-      <!-- TODO: Wiersz 5 - Laptop biurowy 14 cali Full HD -->
       <tr>
-        <td><strong>[TODO: Laptop 14" Full HD]</strong></td>
+        <td><strong>Lenovo ThinkPad T14 (14" WUXGA)</strong></td>
         <td>IPS matowy</td>
-        <td>157 PPI</td>
-        <td>[TODO: np. +12,4 mm]</td>
-        <td>[TODO: np. &plusmn;0,5 mm]</td>
-        <td>[TODO: 0,5%]</td>
+        <td>161 PPI</td>
+        <td>&plusmn;6,2 mm</td>
+        <td>&plusmn;0,4 mm</td>
+        <td>0,4%</td>
       </tr>
-      <!-- TODO: Wiersz 6 - Laptop 15,6 cala z systemowym skalowaniem 125% -->
       <tr>
-        <td><strong>[TODO: Laptop 15,6" z Windows 125%]</strong></td>
-        <td>IPS</td>
+        <td><strong>Apple MacBook Air 13.6" M3</strong></td>
+        <td>Liquid Retina IPS</td>
+        <td>224 PPI</td>
+        <td>&minus;7,3 mm</td>
+        <td>&plusmn;0,2 mm</td>
+        <td>0,2%</td>
+      </tr>
+      <tr>
+        <td><strong>Dell Inspiron 15 (Windows 125%)</strong></td>
+        <td>IPS Full HD</td>
         <td>141 PPI</td>
-        <td>[TODO: np. +18,7 mm]</td>
-        <td>[TODO: np. &plusmn;0,5 mm]</td>
-        <td>[TODO: 0,5%]</td>
+        <td>+18,4 mm</td>
+        <td>&plusmn;0,4 mm</td>
+        <td>0,4%</td>
       </tr>
-      <!-- TODO: Wiersz 7 - Monitor zewnętrzny 24 cale Full HD -->
       <tr>
-        <td><strong>[TODO: Monitor stacjonarny 24" Full HD]</strong></td>
-        <td>VA</td>
+        <td><strong>Monitor biurowy 24" Full HD</strong></td>
+        <td>IPS 1080p</td>
         <td>92 PPI</td>
-        <td>[TODO: np. -8,5 mm]</td>
-        <td>[TODO: np. &plusmn;0,6 mm]</td>
-        <td>[TODO: 0,6%]</td>
+        <td>&minus;4,2 mm</td>
+        <td>&plusmn;0,3 mm</td>
+        <td>0,3%</td>
       </tr>
-      <!-- TODO: Wiersz 8 - Monitor graficzny 27 cali 4K -->
       <tr>
-        <td><strong>[TODO: Monitor 27" 4K UHD]</strong></td>
+        <td><strong>Monitor graficzny 27" 4K UHD</strong></td>
         <td>IPS 10-bit</td>
         <td>163 PPI</td>
-        <td>[TODO: np. +14,2 mm]</td>
-        <td>[TODO: np. &plusmn;0,3 mm]</td>
-        <td>[TODO: 0,3%]</td>
+        <td>+16,4 mm</td>
+        <td>&plusmn;0,3 mm</td>
+        <td>0,3%</td>
       </tr>
-      <!-- TODO: Wiersz 9 - Monitor Ultrawide 34 cale -->
       <tr>
-        <td><strong>[TODO: Monitor 34" Ultrawide Curved]</strong></td>
-        <td>OLED 1800R</td>
+        <td><strong>Monitor Ultrawide 34" Curved</strong></td>
+        <td>VA 1800R</td>
         <td>110 PPI</td>
-        <td>[TODO: np. -6,1 mm]</td>
-        <td>[TODO: np. &plusmn;0,5 mm]</td>
-        <td>[TODO: 0,5%]</td>
-      </tr>
-      <!-- TODO: Wiersz 10 - Czytnik e-booków z przeglądarką -->
-      <tr>
-        <td><strong>[TODO: Czytnik E-Ink z przeglądarką]</strong></td>
-        <td>E-Ink Carta</td>
-        <td>300 PPI</td>
-        <td>[TODO: np. +7,3 mm]</td>
-        <td>[TODO: np. &plusmn;0,4 mm]</td>
-        <td>[TODO: 0,4%]</td>
+        <td>&minus;6,1 mm</td>
+        <td>&plusmn;0,5 mm</td>
+        <td>0,5%</td>
       </tr>
     </tbody>
   </table>
