@@ -1,0 +1,262 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const breadcrumbSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Strona główna",
+      "item": "https://linijka.onl/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Kontakt",
+      "item": "https://linijka.onl/kontakt/"
+    }
+  ]
+});
+
+const contactPageSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  "name": "Kontakt – Linijka.onl",
+  "description": "Skontaktuj się z zespołem Linijka.onl. Formularz i adres e-mail do kontaktu.",
+  "url": "https://linijka.onl/kontakt/",
+  "mainEntity": {
+    "@type": "Organization",
+    "name": "Linijka.onl",
+    "url": "https://linijka.onl/",
+    "email": "kontakt@linijka.onl"
+  }
+});
+
+const schemaMarkup = `${breadcrumbSchema}\n${contactPageSchema}`;
+---
+
+<BaseLayout
+  title="Kontakt – Linijka.onl"
+  description="Skontaktuj się z zespołem Linijka.onl. Masz pytania, uwagi lub sugestie dotyczące działania linijki online? Napisz do nas."
+  canonicalUrl="https://linijka.onl/kontakt/"
+  schemaMarkup={schemaMarkup}
+>
+  <section class="section contact-page">
+    <div class="container contact-container">
+      <!-- Breadcrumb -->
+      <nav class="breadcrumb" aria-label="Nawigacja okruszkowa">
+        <ol>
+          <li><a href="/">Linijka online</a></li>
+          <li aria-current="page">Kontakt</li>
+        </ol>
+      </nav>
+
+      <h1>Kontakt</h1>
+
+      <div class="contact-content">
+        <p class="contact-lead">
+          Masz pytania, uwagi, sugestie ulepszeń lub zauważyłeś błąd w działaniu linijki online?
+          Chętnie poznamy Twoją opinię.
+        </p>
+
+        <div class="contact-card">
+          <div class="contact-card-icon" aria-hidden="true">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+            </svg>
+          </div>
+          <div class="contact-card-info">
+            <h2>Napisz do nas bezpośrednio</h2>
+            <p>Najszybszą formą kontaktu jest przesłanie wiadomości e-mail na adres:</p>
+            <a href="mailto:kontakt@linijka.onl" class="contact-email">kontakt@linijka.onl</a>
+            <p class="contact-hint">Staramy się odpowiadać na wszystkie wiadomości w ciągu 24–48 godzin w dni robocze.</p>
+          </div>
+        </div>
+
+        <h2>W czym możemy pomóc?</h2>
+        <ul class="contact-topics">
+          <li>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+            <div>
+              <strong>Kalibracja i urządzenia:</strong>
+              <span>Problemy z dopasowaniem skali lub nieobsługiwane modele ekranów.</span>
+            </div>
+          </li>
+          <li>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+            <div>
+              <strong>Propozycje funkcji:</strong>
+              <span>Pomysły na nowe jednostki miary, ulepszenia interfejsu czy dodatkowe szablony do druku.</span>
+            </div>
+          </li>
+          <li>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+            <div>
+              <strong>Kwestie prawne i prywatność:</strong>
+              <span>Pytania dotyczące <a href="/regulamin/">regulaminu</a> oraz <a href="/polityka-prywatnosci/">polityki prywatności</a> serwisu.</span>
+            </div>
+          </li>
+        </ul>
+
+        <div class="contact-cta">
+          <a href="/" class="btn btn-primary">Przejdź do linijki online</a>
+          <a href="/o-nas/" class="btn btn-secondary">O nas</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .contact-container {
+    max-width: var(--container-lg);
+  }
+
+  .breadcrumb ol {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    font-size: 0.8125rem;
+    color: var(--text-tertiary);
+    margin-bottom: var(--space-6);
+  }
+
+  .breadcrumb li:not(:last-child)::after {
+    content: '›';
+    margin-left: var(--space-2);
+    color: var(--border-dark);
+  }
+
+  .breadcrumb a {
+    color: var(--text-tertiary);
+  }
+
+  .breadcrumb a:hover {
+    color: var(--accent);
+  }
+
+  .contact-lead {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    margin-bottom: var(--space-8);
+  }
+
+  .contact-card {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-5);
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: var(--space-6);
+    margin-bottom: var(--space-8);
+  }
+
+  @media (max-width: 639px) {
+    .contact-card {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  }
+
+  .contact-card-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    background: var(--accent-bg);
+    color: var(--accent);
+    border-radius: var(--radius-md);
+    flex-shrink: 0;
+  }
+
+  .contact-card-info h2 {
+    font-size: 1.25rem;
+    margin: 0 0 var(--space-2);
+  }
+
+  .contact-card-info p {
+    margin: 0 0 var(--space-3);
+    color: var(--text-secondary);
+  }
+
+  .contact-email {
+    display: inline-block;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--accent);
+    text-decoration: none;
+    padding: var(--space-2) var(--space-4);
+    background: #ffffff;
+    border: 1px solid var(--accent);
+    border-radius: var(--radius-md);
+    transition: all var(--transition-fast);
+  }
+
+  .contact-email:hover {
+    background: var(--accent);
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  .contact-hint {
+    font-size: 0.875rem !important;
+    color: var(--text-tertiary) !important;
+    margin-top: var(--space-3) !important;
+    margin-bottom: 0 !important;
+  }
+
+  .contact-content h2 {
+    margin-top: var(--space-8);
+    font-size: 1.25rem;
+  }
+
+  .contact-topics {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+    margin-top: var(--space-4);
+    margin-bottom: var(--space-8);
+    list-style: none;
+    padding: 0;
+  }
+
+  .contact-topics li {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-3);
+    padding: var(--space-4);
+    background: var(--bg-secondary);
+    border-radius: var(--radius-md);
+    font-size: 0.9375rem;
+    color: var(--text-secondary);
+  }
+
+  .contact-topics li strong {
+    display: block;
+    color: var(--text-primary);
+    margin-bottom: 2px;
+  }
+
+  .contact-topics li a {
+    color: var(--accent);
+  }
+
+  .contact-topics li svg {
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+
+  .contact-cta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-3);
+    margin-top: var(--space-10);
+    padding-top: var(--space-8);
+    border-top: 1px solid var(--border);
+  }
+</style>

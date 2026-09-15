@@ -1,0 +1,189 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const breadcrumbSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Strona główna",
+      "item": "https://linijka.onl/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Regulamin",
+      "item": "https://linijka.onl/regulamin/"
+    }
+  ]
+});
+---
+
+<BaseLayout
+  title="Regulamin serwisu – Linijka.onl"
+  description="Regulamin korzystania z serwisu internetowego Linijka.onl. Poznaj zasady funkcjonowania darmowej linijki online."
+  canonicalUrl="https://linijka.onl/regulamin/"
+  schemaMarkup={breadcrumbSchema}
+>
+  <section class="section terms-page">
+    <div class="container terms-container">
+      <!-- Breadcrumb -->
+      <nav class="breadcrumb" aria-label="Nawigacja okruszkowa">
+        <ol>
+          <li><a href="/">Linijka online</a></li>
+          <li aria-current="page">Regulamin</li>
+        </ol>
+      </nav>
+
+      <h1>Regulamin serwisu Linijka.onl</h1>
+      <p class="terms-updated">Ostatnia aktualizacja: czerwiec 2026</p>
+
+      <div class="terms-content">
+        <h2>§ 1. Postanowienia ogólne</h2>
+        <p>
+          1. Niniejszy Regulamin określa zasady korzystania z serwisu internetowego dostępnego pod adresem 
+          <strong>https://linijka.onl</strong> (zwanego dalej „Serwisem”).
+        </p>
+        <p>
+          2. Serwis Linijka.onl jest bezpłatnym narzędziem online umożliwiającym orientacyjny pomiar długości 
+          przedmiotów w centymetrach i milimetrach bezpośrednio na ekranie urządzenia (komputera, smartfona lub tabletu).
+        </p>
+        <p>
+          3. Korzystanie z Serwisu oznacza akceptację postanowień niniejszego Regulaminu. Użytkownik nieakceptujący 
+          Regulaminu powinien zaprzestać korzystania z Serwisu.
+        </p>
+
+        <h2>§ 2. Warunki korzystania z Serwisu</h2>
+        <p>
+          1. Dostęp do Serwisu jest całkowicie bezpłatny i nie wymaga zakładania konta, rejestracji ani logowania.
+        </p>
+        <p>
+          2. Do prawidłowego działania Serwisu niezbędne jest urządzenie z dostępem do sieci Internet oraz standardowa 
+          przeglądarka internetowa obsługująca technologie HTML5, CSS3 i JavaScript.
+        </p>
+        <p>
+          3. Użytkownik zobowiązuje się do korzystania z Serwisu zgodnie z jego przeznaczeniem, obowiązującymi przepisami 
+          prawa oraz zasadami współżycia społecznego.
+        </p>
+
+        <h2>§ 3. Dokładność pomiarów i wyłączenie odpowiedzialności</h2>
+        <p>
+          1. Linijka wyświetlana w Serwisie ma charakter <strong>wyłącznie pomocniczy, poglądowy i edukacyjny</strong>.
+        </p>
+        <p>
+          2. Dokładność wyświetlanej skali zależy od parametrów technicznych ekranu użytkownika, rozdzielczości, gęstości pikseli (PPI/DPR), 
+          powiększenia w przeglądarce (zoom) oraz poprawności przeprowadzonej kalibracji.
+        </p>
+        <p>
+          3. Serwis <strong>nie stanowi wzorcowego ani certyfikowanego przyrządu pomiarowego</strong> w rozumieniu ustawy 
+          Prawo o miarach. Pomiary wykonane za pomocą Serwisu nie mogą być podstawą do roszczeń prawnych, projektów technicznych, 
+          konstrukcyjnych, medycznych ani innych zastosowań wymagających znormalizowanej dokładności pomiarowej.
+        </p>
+        <p>
+          4. Twórcy Serwisu nie ponoszą odpowiedzialności za jakiekolwiek szkody (bezpośrednie lub pośrednie) wynikające z niedokładności 
+          pomiarów lub niewłaściwego użycia narzędzia.
+        </p>
+
+        <h2>§ 4. Prawa autorskie i własność intelektualna</h2>
+        <p>
+          1. Wszelkie prawa do Serwisu, w tym układ graficzny, oprogramowanie, teksty, grafiki oraz materiały do druku 
+          podlegają ochronie prawnej przewidzianej w ustawie o prawie autorskim i prawach pokrewnych.
+        </p>
+        <p>
+          2. Użytkownik ma prawo korzystać z Serwisu w celach osobistych i niekomercyjnych. Kopiowanie, modyfikowanie lub 
+          rozpowszechnianie kodu źródłowego bądź treści Serwisu bez uprzedniej pisemnej zgody jest zabronione.
+        </p>
+
+        <h2>§ 5. Dostępność i zmiany w Serwisie</h2>
+        <p>
+          1. Administrator dokłada wszelkich starań, aby Serwis działał w sposób ciągły i bezawaryjny, jednak zastrzega sobie prawo 
+          do przerw technicznych niezbędnych do aktualizacji lub konserwacji.
+        </p>
+        <p>
+          2. Administrator zastrzega sobie prawo do wprowadzania zmian w niniejszym Regulaminie. Wszelkie zmiany wchodzą w życie z chwilą 
+          ich opublikowania na niniejszej stronie.
+        </p>
+
+        <h2>§ 6. Kontakt i reklamacje</h2>
+        <p>
+          1. Wszelkie pytania, uwagi dotyczące funkcjonowania Serwisu oraz zgłoszenia błędów można kierować poprzez stronę 
+          <a href="/kontakt/">Kontakt</a> lub bezpośrednio na adres poczty elektronicznej: 
+          <a href="mailto:kontakt@linijka.onl">kontakt@linijka.onl</a>.
+        </p>
+        <p>
+          2. Zgłoszenia rozpatrywane są w miarę możliwości w terminie do 14 dni roboczych.
+        </p>
+
+        <div class="terms-cta">
+          <a href="/" class="btn btn-primary">Wróć do linijki online</a>
+          <a href="/polityka-prywatnosci/" class="btn btn-secondary">Polityka prywatności</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .terms-container {
+    max-width: var(--container-lg);
+  }
+
+  .breadcrumb ol {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    font-size: 0.8125rem;
+    color: var(--text-tertiary);
+    margin-bottom: var(--space-6);
+  }
+
+  .breadcrumb li:not(:last-child)::after {
+    content: '›';
+    margin-left: var(--space-2);
+    color: var(--border-dark);
+  }
+
+  .breadcrumb a {
+    color: var(--text-tertiary);
+  }
+
+  .breadcrumb a:hover {
+    color: var(--accent);
+  }
+
+  .terms-updated {
+    font-size: 0.875rem;
+    color: var(--text-tertiary);
+    margin-bottom: var(--space-6);
+  }
+
+  .terms-content h2 {
+    margin-top: var(--space-8);
+    font-size: 1.25rem;
+  }
+
+  .terms-content p {
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: var(--space-4);
+  }
+
+  .terms-content strong {
+    color: var(--text-primary);
+  }
+
+  .terms-content a {
+    color: var(--accent);
+  }
+
+  .terms-cta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-3);
+    margin-top: var(--space-10);
+    padding-top: var(--space-8);
+    border-top: 1px solid var(--border);
+  }
+</style>
