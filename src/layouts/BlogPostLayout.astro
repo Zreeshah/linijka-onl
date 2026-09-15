@@ -38,6 +38,7 @@ const formattedDate = new Date(pubDate).toLocaleDateString('pl-PL', {
 });
 const publishedDate = new Date(pubDate).toISOString().split('T')[0];
 const modifiedDate = new Date(updatedDate || pubDate).toISOString().split('T')[0];
+const isoUpdatedDate = updatedDate ? new Date(updatedDate).toISOString() : null;
 
 const formattedUpdatedDate = updatedDate
   ? new Date(updatedDate).toLocaleDateString('pl-PL', {
@@ -67,8 +68,8 @@ const articleSchema = JSON.stringify({
       "url": "https://linijka.onl/favicon.svg"
     }
   },
-  "datePublished": new Date(pubDate).toISOString().split('T')[0],
-  "dateModified": updatedDate ? new Date(updatedDate).toISOString().split('T')[0] : new Date(pubDate).toISOString().split('T')[0],
+  "datePublished": publishedDate,
+  "dateModified": modifiedDate,
   "inLanguage": "pl-PL",
   "mainEntityOfPage": `https://linijka.onl/blog/${slug}/`
 });
@@ -104,10 +105,10 @@ const tocHeadings = headings.filter((h) => h.depth === 2);
             <span class="blog-category">Poradnik Pomiaru</span>
             <span class="meta-dot">&bull;</span>
             <time datetime={new Date(pubDate).toISOString()}>Opublikowano: {formattedDate}</time>
-            {formattedUpdatedDate && (
+            {formattedUpdatedDate && isoUpdatedDate && (
               <>
                 <span class="meta-dot">&bull;</span>
-                <time datetime={new Date(updatedDate).toISOString()} class="updated-date">Aktualizacja: {formattedUpdatedDate}</time>
+                <time datetime={isoUpdatedDate} class="updated-date">Aktualizacja: {formattedUpdatedDate}</time>
               </>
             )}
             <span class="meta-dot">&bull;</span>
