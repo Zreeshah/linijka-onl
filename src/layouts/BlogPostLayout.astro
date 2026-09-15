@@ -54,7 +54,7 @@ const articleSchema = JSON.stringify({
   "@type": "Article",
   "headline": title,
   "description": description,
-  "image": `https://linijka.onl${heroImage}`,
+  "image": `https://www.linijka.onl${heroImage}`,
   "author": {
     "@type": "Person",
     "name": authorProfile.name,
@@ -65,13 +65,13 @@ const articleSchema = JSON.stringify({
     "name": "Linijka Online",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://linijka.onl/favicon.svg"
+      "url": "https://www.linijka.onl/favicon.svg"
     }
   },
   "datePublished": publishedDate,
   "dateModified": modifiedDate,
   "inLanguage": "pl-PL",
-  "mainEntityOfPage": `https://linijka.onl/blog/${slug}/`
+  "mainEntityOfPage": `https://www.linijka.onl/blog/${slug}/`
 });
 
 // Filter headings for Table of Contents: limit to H2 only to keep TOC concise

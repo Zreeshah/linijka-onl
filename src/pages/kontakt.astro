@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { authorProfile } from '../data/author';
 
 const breadcrumbSchema = JSON.stringify({
   "@context": "https://schema.org",
@@ -9,13 +10,13 @@ const breadcrumbSchema = JSON.stringify({
       "@type": "ListItem",
       "position": 1,
       "name": "Strona główna",
-      "item": "https://linijka.onl/"
+      "item": "https://www.linijka.onl/"
     },
     {
       "@type": "ListItem",
       "position": 2,
       "name": "Kontakt",
-      "item": "https://linijka.onl/kontakt/"
+      "item": "https://www.linijka.onl/kontakt/"
     }
   ]
 });
@@ -24,12 +25,13 @@ const contactPageSchema = JSON.stringify({
   "@context": "https://schema.org",
   "@type": "ContactPage",
   "name": "Kontakt – Linijka.onl",
-  "description": "Skontaktuj się z zespołem Linijka.onl. Formularz i adres e-mail do kontaktu.",
-  "url": "https://linijka.onl/kontakt/",
+  "description": "Skontaktuj się z operatorem serwisu Linijka.onl. Dane kontaktowe i adres e-mail.",
+  "url": "https://www.linijka.onl/kontakt/",
   "mainEntity": {
-    "@type": "Organization",
-    "name": "Linijka.onl",
-    "url": "https://linijka.onl/",
+    "@type": "Person",
+    "name": authorProfile.name,
+    "jobTitle": "Operator i Administrator serwisu",
+    "url": authorProfile.url,
     "email": "kontakt@linijka.onl"
   }
 });
@@ -40,7 +42,7 @@ const schemaMarkup = `${breadcrumbSchema}\n${contactPageSchema}`;
 <BaseLayout
   title="Kontakt – Linijka.onl"
   description="Skontaktuj się z zespołem Linijka.onl. Masz pytania, uwagi lub sugestie dotyczące działania linijki online? Napisz do nas."
-  canonicalUrl="https://linijka.onl/kontakt/"
+  canonicalUrl="https://www.linijka.onl/kontakt/"
   schemaMarkup={schemaMarkup}
 >
   <section class="section contact-page">
@@ -73,6 +75,36 @@ const schemaMarkup = `${breadcrumbSchema}\n${contactPageSchema}`;
             <p>Najszybszą formą kontaktu jest przesłanie wiadomości e-mail na adres:</p>
             <a href="mailto:kontakt@linijka.onl" class="contact-email">kontakt@linijka.onl</a>
             <p class="contact-hint">Staramy się odpowiadać na wszystkie wiadomości w ciągu 24–48 godzin w dni robocze.</p>
+          </div>
+        </div>
+
+        <div class="operator-card">
+          <div class="operator-card-icon" aria-hidden="true">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+          </div>
+          <div class="operator-card-info">
+            <h2>Dane operatora serwisu</h2>
+            <dl class="operator-meta-grid">
+              <div>
+                <dt>Operator i administrator:</dt>
+                <dd><strong>{authorProfile.name}</strong></dd>
+              </div>
+              <div>
+                <dt>Serwis internetowy:</dt>
+                <dd><a href="https://www.linijka.onl/">www.linijka.onl</a></dd>
+              </div>
+              <div>
+                <dt>Adres e-mail:</dt>
+                <dd><a href="mailto:kontakt@linijka.onl">kontakt@linijka.onl</a></dd>
+              </div>
+              <div>
+                <dt>Profil serwisu:</dt>
+                <dd>Darmowe, niezależne narzędzie online do pomiarów ekranowych 1:1 w cm i mm oraz poradniki metrologiczne.</dd>
+              </div>
+            </dl>
           </div>
         </div>
 
@@ -208,6 +240,92 @@ const schemaMarkup = `${breadcrumbSchema}\n${contactPageSchema}`;
     color: var(--text-tertiary) !important;
     margin-top: var(--space-3) !important;
     margin-bottom: 0 !important;
+  }
+
+  .operator-card {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-5);
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: var(--space-6);
+    margin-bottom: var(--space-8);
+  }
+
+  @media (max-width: 639px) {
+    .operator-card {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  }
+
+  .operator-card-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    background: var(--accent-bg);
+    color: var(--accent);
+    border-radius: var(--radius-md);
+    flex-shrink: 0;
+  }
+
+  .operator-card-info {
+    flex: 1;
+  }
+
+  .operator-card-info h2 {
+    font-size: 1.25rem;
+    margin: 0 0 var(--space-3) !important;
+  }
+
+  .operator-meta-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-3);
+    margin: 0;
+    padding: 0;
+  }
+
+  .operator-meta-grid div {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  @media (min-width: 640px) {
+    .operator-meta-grid div {
+      flex-direction: row;
+      align-items: baseline;
+      gap: var(--space-3);
+    }
+  }
+
+  .operator-meta-grid dt {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--text-tertiary);
+    min-width: 190px;
+    flex-shrink: 0;
+  }
+
+  .operator-meta-grid dd {
+    margin: 0;
+    font-size: 0.9375rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+  }
+
+  .operator-meta-grid dd strong {
+    color: var(--text-primary);
+  }
+
+  .operator-meta-grid dd a {
+    color: var(--accent);
+    font-weight: 500;
+    text-decoration: underline;
   }
 
   .contact-content h2 {
