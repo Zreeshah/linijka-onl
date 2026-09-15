@@ -1,16 +1,52 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 
+const siteUrl = 'https://www.linijka.onl';
+
 // Schema markup
+const schemaOrganization = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": `${siteUrl}/#organization`,
+  "name": "Linijka.onl",
+  "url": `${siteUrl}/`,
+  "logo": `${siteUrl}/favicon.svg`,
+  "description": "Darmowe narzędzie do pomiarów ekranowych w centymetrach i milimetrach.",
+  "knowsAbout": [
+    "linijka online",
+    "kalibracja ekranu",
+    "pomiar w centymetrach",
+    "pomiar w milimetrach"
+  ],
+  "publishingPrinciples": `${siteUrl}/polityka-prywatnosci/`
+};
+
+const schemaWebSite = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": `${siteUrl}/#website`,
+  "name": "Linijka.onl",
+  "url": `${siteUrl}/`,
+  "inLanguage": "pl-PL",
+  "publisher": {
+    "@id": `${siteUrl}/#organization`
+  }
+};
+
 const schemaWebApp = {
   "@context": "https://schema.org",
   "@type": "WebApplication",
+  "@id": `${siteUrl}/#webapp`,
   "name": "Linijka online",
-  "url": "https://linijka.onl",
+  "url": `${siteUrl}/`,
   "applicationCategory": "UtilityApplication",
   "operatingSystem": "Web browser",
   "inLanguage": "pl",
   "description": "Darmowa linijka online w cm i mm. Użyj telefonu, tabletu lub komputera jako miarki.",
+  "isAccessibleForFree": true,
+  "publisher": {
+    "@id": `${siteUrl}/#organization`
+  },
   "offers": {
     "@type": "Offer",
     "price": "0",
@@ -88,7 +124,7 @@ const schemaFAQ = {
   }))
 };
 
-const allSchemas = JSON.stringify([schemaWebApp, schemaHowTo, schemaFAQ]);
+const allSchemas = JSON.stringify([schemaOrganization, schemaWebSite, schemaWebApp, schemaHowTo, schemaFAQ]);
 
 const conversionData = [
   { cm: 1, mm: 10, inch: "0,39" },
@@ -107,7 +143,7 @@ const conversionData = [
 
 <BaseLayout
   title="Linijka online 1:1 – miarka cm na telefonie i komputerze"
-  description="Darmowa linijka online w cm i mm. Użyj telefonu, tabletu lub komputera jako miarki. Skalibruj ekran i mierz przedmioty online."
+  description="Darmowa linijka online 1:1 w cm i mm na telefon, tablet i komputer. Skalibruj ekran, zmieniaj jednostki i mierz małe przedmioty bez instalacji."
   schemaMarkup={allSchemas}
 >
   <!-- ====== HERO SECTION ====== -->
@@ -292,6 +328,8 @@ const conversionData = [
       <p>
         Jeśli nie masz pod ręką fizycznej miarki, telefon może działać jako szybka <a href="#linijka">linijka online</a>. 
         Przewiń ekran w dół, aby zobaczyć pełną skalę. Linijka automatycznie rozpoznaje Twoje urządzenie i kalibruje się.
+        Więcej praktycznych wskazówek znajdziesz w poradnikach <a href="/blog/linijka-w-telefonie/">linijka w telefonie</a>
+        oraz <a href="/blog/aplikacja-linijka-online/">miarka w telefonie</a>.
       </p>
 
       <h2>Centymetr online i miarka cm</h2>
@@ -303,7 +341,8 @@ const conversionData = [
       <h2>Linijka online 20 cm i 10 cm</h2>
       <p>
         Na wielu ekranach dostępna jest linijka online 10 cm, 20 cm lub dłuższa. 
-        Długość widocznej skali zależy od wielkości ekranu. Przewiń w dół, aby zobaczyć więcej.
+        Długość widocznej skali zależy od wielkości ekranu. Przewiń w dół, aby zobaczyć więcej,
+        albo sprawdź osobny poradnik <a href="/blog/10-cm/">10 cm na ekranie</a>.
       </p>
 
       <h2>Czy linijka online jest dokładna?</h2>
@@ -324,7 +363,11 @@ const conversionData = [
   <section class="section section-alt conversion-section" id="tabela-konwersji" aria-label="Tabela konwersji">
     <div class="container">
       <h2>Tabela konwersji: centymetry, milimetry i cale</h2>
-      <p>Szybkie przeliczanie popularnych jednostek długości.</p>
+      <p>
+        Szybkie przeliczanie popularnych jednostek długości. Przy przekątnej telefonu, tabletu lub laptopa
+        pomocny będzie poradnik <a href="/blog/zmierzyc-ekran-w-calach/">jak zmierzyć ekran w calach</a>
+        oraz tabela <a href="/blog/cm-na-cale/">cm na cale</a>.
+      </p>
       
       <div class="table-wrapper">
         <table aria-label="Tabela konwersji centymetrów, milimetrów i cali">
@@ -346,6 +389,38 @@ const conversionData = [
           </tbody>
         </table>
       </div>
+    </div>
+  </section>
+
+  <!-- ====== INFOGRAPHIC ====== -->
+  <section class="section infographic-section" aria-labelledby="infografika-title">
+    <div class="container infographic-container">
+      <div class="infographic-header">
+        <h2 id="infografika-title">Linijka online w praktyce</h2>
+        <p>Zobacz najważniejsze kroki kalibracji, pomiaru i przykłady użycia linijki online na telefonie, tablecie oraz komputerze.</p>
+      </div>
+
+      <figure class="infographic-frame">
+        <a href="/images/linijka-online-infographic-1200.jpg" aria-label="Otwórz infografikę linijka online w pełnym rozmiarze">
+          <picture>
+            <source
+              type="image/avif"
+              srcset="/images/linijka-online-infographic-768.avif 768w, /images/linijka-online-infographic-1200.avif 1200w"
+              sizes="(max-width: 639px) calc(100vw - 1rem), (max-width: 1120px) calc(100vw - 3rem), 1040px"
+            />
+            <img
+              src="/images/linijka-online-infographic-1200.jpg"
+              srcset="/images/linijka-online-infographic-768.jpg 768w, /images/linijka-online-infographic-1200.jpg 1200w"
+              sizes="(max-width: 639px) calc(100vw - 1rem), (max-width: 1120px) calc(100vw - 3rem), 1040px"
+              alt="Infografika pokazująca jak używać linijki online w oryginalnym rozmiarze: wybór jednostki, kalibracja ekranu, pomiar i przykłady zastosowań."
+              width="1200"
+              height="2150"
+              loading="lazy"
+              decoding="async"
+            />
+          </picture>
+        </a>
+      </figure>
     </div>
   </section>
 
@@ -435,6 +510,66 @@ const conversionData = [
     max-width: 520px;
     height: auto;
     border-radius: var(--radius-lg);
+  }
+
+  /* ====== INFOGRAPHIC ====== */
+  .infographic-section {
+    background:
+      linear-gradient(180deg, rgba(239, 246, 255, 0.55) 0%, rgba(255, 255, 255, 0) 42%),
+      var(--bg-primary);
+  }
+
+  .infographic-container {
+    max-width: 1040px;
+  }
+
+  .infographic-header {
+    text-align: center;
+    margin-bottom: var(--space-8);
+  }
+
+  .infographic-header h2 {
+    margin-top: 0;
+  }
+
+  .infographic-header p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .infographic-frame {
+    margin: 0 auto;
+    background: var(--bg-primary);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-lg);
+    overflow: hidden;
+  }
+
+  .infographic-frame a {
+    display: block;
+    color: inherit;
+  }
+
+  .infographic-frame img {
+    width: 100%;
+    height: auto;
+  }
+
+  @media (max-width: 639px) {
+    .infographic-section {
+      padding-top: var(--space-10);
+      padding-bottom: var(--space-10);
+    }
+
+    .infographic-container {
+      padding-left: var(--space-2);
+      padding-right: var(--space-2);
+    }
+
+    .infographic-frame {
+      border-radius: var(--radius-lg);
+    }
   }
 
   /* ====== FULL-PAGE RULER ====== */

@@ -1,5 +1,7 @@
 ---
 import BaseLayout from './BaseLayout.astro';
+import AuthorBox from '../components/AuthorBox.astro';
+import { authorProfile } from '../data/author';
 
 export interface Props {
   title: string;
@@ -34,6 +36,8 @@ const formattedDate = new Date(pubDate).toLocaleDateString('pl-PL', {
   month: 'long',
   day: 'numeric',
 });
+const publishedDate = new Date(pubDate).toISOString().split('T')[0];
+const modifiedDate = new Date(updatedDate || pubDate).toISOString().split('T')[0];
 
 const formattedUpdatedDate = updatedDate
   ? new Date(updatedDate).toLocaleDateString('pl-PL', {
@@ -51,8 +55,9 @@ const articleSchema = JSON.stringify({
   "description": description,
   "image": `https://linijka.onl${heroImage}`,
   "author": {
-    "@type": "Organization",
-    "name": "Linijka.onl"
+    "@type": "Person",
+    "name": authorProfile.name,
+    "url": authorProfile.url
   },
   "publisher": {
     "@type": "Organization",
@@ -75,7 +80,7 @@ const tocHeadings = headings.filter((h) => h.depth === 2);
 <BaseLayout
   title={`${title} | Blog Linijka.onl`}
   description={description}
-  canonicalUrl={`https://linijka.onl/blog/${slug}/`}
+  canonicalUrl={`https://www.linijka.onl/blog/${slug}/`}
   ogImage={heroImage}
   schemaMarkup={articleSchema}
 >
@@ -106,7 +111,7 @@ const tocHeadings = headings.filter((h) => h.depth === 2);
               </>
             )}
             <span class="meta-dot">&bull;</span>
-            <span class="author-label">Autor: Linijka.onl</span>
+            <span class="author-label">Autor: {authorProfile.name}</span>
           </div>
           <h1 class="blog-title">{title}</h1>
           <p class="blog-lead">{description}</p>
@@ -120,6 +125,8 @@ const tocHeadings = headings.filter((h) => h.depth === 2);
         <div class="blog-content">
           <slot />
         </div>
+
+        <AuthorBox />
 
         <!-- Call to Action Section -->
         <section class="blog-cta no-print">

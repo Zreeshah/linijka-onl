@@ -17,7 +17,7 @@ const {
   schemaMarkup,
 } = Astro.props;
 
-const siteUrl = 'https://linijka.onl';
+const siteUrl = 'https://www.linijka.onl';
 const fullOgImage = ogImage.startsWith('http') ? ogImage : `${siteUrl}${ogImage}`;
 ---
 
@@ -41,6 +41,10 @@ const fullOgImage = ogImage.startsWith('http') ? ogImage : `${siteUrl}${ogImage}
   <!-- Preconnect for Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6218065184548996"
+     crossorigin="anonymous"></script>
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
@@ -123,6 +127,7 @@ const fullOgImage = ogImage.startsWith('http') ? ogImage : `${siteUrl}${ogImage}
             <li><a href="/kontakt/">Kontakt</a></li>
             <li><a href="/regulamin/">Regulamin</a></li>
             <li><a href="/polityka-prywatnosci/">Polityka prywatności</a></li>
+            <li><a href="/regulamin/">Regulamin</a></li>
           </ul>
         </nav>
       </div>

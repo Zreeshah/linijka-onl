@@ -9,13 +9,13 @@ const breadcrumbSchema = JSON.stringify({
       "@type": "ListItem",
       "position": 1,
       "name": "Strona główna",
-      "item": "https://linijka.onl/"
+      "item": "https://www.linijka.onl/"
     },
     {
       "@type": "ListItem",
       "position": 2,
       "name": "Polityka prywatności",
-      "item": "https://linijka.onl/polityka-prywatnosci/"
+      "item": "https://www.linijka.onl/polityka-prywatnosci/"
     }
   ]
 });
@@ -23,8 +23,8 @@ const breadcrumbSchema = JSON.stringify({
 
 <BaseLayout
   title="Polityka prywatności – Linijka.onl"
-  description="Polityka prywatności serwisu Linijka.onl. Nie wymagamy logowania, nie zbieramy danych osobowych."
-  canonicalUrl="https://linijka.onl/polityka-prywatnosci/"
+  description="Polityka prywatności Linijka.onl opisuje localStorage, reklamy Google AdSense, pliki cookies oraz zasady korzystania z linijki online bez logowania."
+  canonicalUrl="https://www.linijka.onl/polityka-prywatnosci/"
   schemaMarkup={breadcrumbSchema}
 >
   <section class="section privacy-page">
@@ -38,7 +38,7 @@ const breadcrumbSchema = JSON.stringify({
       </nav>
 
       <h1>Polityka prywatności</h1>
-      <p class="privacy-updated">Ostatnia aktualizacja: czerwiec 2026</p>
+      <p class="privacy-updated">Ostatnia aktualizacja: wrzesień 2026</p>
 
       <div class="privacy-content">
         <h2>Informacje ogólne</h2>
@@ -49,15 +49,14 @@ const breadcrumbSchema = JSON.stringify({
 
         <h2>Dane osobowe</h2>
         <p>
-          Nasz serwis <strong>nie wymaga logowania</strong> ani rejestracji. 
-          Nie zbieramy żadnych danych osobowych użytkowników. 
-          Nie musisz podawać imienia, adresu e-mail ani żadnych innych informacji, aby korzystać z linijki online.
+          Nasze narzędzie <strong>nie wymaga logowania</strong> ani rejestracji.
+          Nie prosimy o imię, adres e-mail, konto użytkownika ani inne informacje, aby korzystać z linijki online.
         </p>
 
         <h2>Pliki cookies i localStorage</h2>
         <p>
-          Serwis może wykorzystywać technologię <strong>localStorage</strong> w przeglądarce wyłącznie do zapisywania 
-          ustawień kalibracji linijki. Dane te:
+          Serwis może wykorzystywać technologię <strong>localStorage</strong> w przeglądarce do zapisywania
+          ustawień kalibracji linijki. Dane kalibracji:
         </p>
         <ul class="privacy-list">
           <li>Są przechowywane wyłącznie na Twoim urządzeniu</li>
@@ -65,6 +64,10 @@ const breadcrumbSchema = JSON.stringify({
           <li>Nie zawierają danych osobowych</li>
           <li>Można je usunąć w dowolnym momencie (przycisk „Resetuj kalibrację" lub czyszcząc dane przeglądarki)</li>
         </ul>
+        <p>
+          Dodatkowo zewnętrzni dostawcy reklam, w tym Google, mogą używać plików cookies lub podobnych technologii
+          do wyświetlania i mierzenia reklam na stronie.
+        </p>
 
         <h2>Usługi zewnętrzne</h2>
         <p>
@@ -72,15 +75,31 @@ const breadcrumbSchema = JSON.stringify({
         </p>
         <ul class="privacy-list">
           <li><strong>Google Fonts</strong> — do ładowania czcionek. Google może rejestrować adres IP podczas pobierania czcionek.</li>
+          <li><strong>Google AdSense</strong> — do wyświetlania reklam. Google i jego partnerzy mogą używać cookies, aby dobierać reklamy, ograniczać ich częstotliwość oraz mierzyć ich skuteczność.</li>
         </ul>
         <p>
-          Nie korzystamy z narzędzi śledzących, reklam ani systemów analitycznych zbierających dane osobowe.
+          Więcej informacji znajdziesz w zasadach Google dotyczących reklam:
+          <a href="https://policies.google.com/technologies/ads" rel="nofollow noopener" target="_blank">Jak Google używa informacji z witryn i aplikacji</a>
+          oraz w ustawieniach reklam Google:
+          <a href="https://adssettings.google.com/" rel="nofollow noopener" target="_blank">adssettings.google.com</a>.
+        </p>
+
+        <h2>Reklamy Google AdSense</h2>
+        <p>
+          Reklamy mogą być personalizowane lub niepersonalizowane w zależności od ustawień użytkownika, przeglądarki,
+          lokalizacji oraz obowiązujących wymagań prawnych. Zewnętrzni dostawcy reklam mogą wykorzystywać informacje
+          o wcześniejszych wizytach w tej lub innych witrynach do wyświetlania trafniejszych reklam.
+        </p>
+        <p>
+          Możesz ograniczyć obsługę cookies w ustawieniach swojej przeglądarki albo zmienić preferencje reklamowe
+          w ustawieniach Google. Wyłączenie cookies może wpływać na sposób działania reklam, ale podstawowa linijka
+          online pozostaje dostępna bez logowania.
         </p>
 
         <h2>Bezpieczeństwo</h2>
         <p>
           Serwis działa w pełni po stronie klienta (w przeglądarce). 
-          Nie przetwarzamy żadnych danych na serwerze. Cała logika narzędzia — w tym kalibracja i pomiary — 
+          Cała logika narzędzia — w tym kalibracja i pomiary —
           wykonywana jest lokalnie na Twoim urządzeniu.
         </p>
 
