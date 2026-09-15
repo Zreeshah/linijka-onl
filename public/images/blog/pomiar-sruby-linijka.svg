@@ -1,162 +1,163 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
-    <defs>
-      <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
-        <stop offset="0%" style="stop-color:#0F172A;stop-opacity:1" />
-        <stop offset="50%" style="stop-color:#1E3A8A;stop-opacity:1" />
-        <stop offset="100%" style="stop-color:#2563EB;stop-opacity:1" />
-      </linearGradient>
-      <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-        <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
-      </pattern>
-    </defs>
-    
-    <!-- Background -->
-    <rect width="100%" height="100%" fill="url(#grad)" />
-    <!-- Grid Overlay -->
-    <rect width="100%" height="100%" fill="url(#grid)" />
-    
-    <!-- Top Ruler ticks -->
-    <g>
-      <line x1="0" y1="0" x2="1200" y2="0" stroke="rgba(255,255,255,0.3)" stroke-width="3" />
-      <text x="50" y="55" fill="rgba(255,255,255,0.4)" font-family="system-ui, sans-serif" font-size="14" font-weight="600" text-anchor="middle">0</text>
-<line x1="50" y1="0" x2="50" y2="35" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="60" y1="0" x2="60" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="70" y1="0" x2="70" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="80" y1="0" x2="80" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="90" y1="0" x2="90" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="100" y1="0" x2="100" y2="25" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="110" y1="0" x2="110" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="120" y1="0" x2="120" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="130" y1="0" x2="130" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="140" y1="0" x2="140" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<text x="150" y="55" fill="rgba(255,255,255,0.4)" font-family="system-ui, sans-serif" font-size="14" font-weight="600" text-anchor="middle">10</text>
-<line x1="150" y1="0" x2="150" y2="35" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="160" y1="0" x2="160" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="170" y1="0" x2="170" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="180" y1="0" x2="180" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="190" y1="0" x2="190" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="200" y1="0" x2="200" y2="25" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="210" y1="0" x2="210" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="220" y1="0" x2="220" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="230" y1="0" x2="230" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="240" y1="0" x2="240" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<text x="250" y="55" fill="rgba(255,255,255,0.4)" font-family="system-ui, sans-serif" font-size="14" font-weight="600" text-anchor="middle">20</text>
-<line x1="250" y1="0" x2="250" y2="35" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="260" y1="0" x2="260" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="270" y1="0" x2="270" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="280" y1="0" x2="280" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="290" y1="0" x2="290" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="300" y1="0" x2="300" y2="25" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="310" y1="0" x2="310" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="320" y1="0" x2="320" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="330" y1="0" x2="330" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="340" y1="0" x2="340" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<text x="350" y="55" fill="rgba(255,255,255,0.4)" font-family="system-ui, sans-serif" font-size="14" font-weight="600" text-anchor="middle">30</text>
-<line x1="350" y1="0" x2="350" y2="35" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="360" y1="0" x2="360" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="370" y1="0" x2="370" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="380" y1="0" x2="380" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="390" y1="0" x2="390" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="400" y1="0" x2="400" y2="25" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="410" y1="0" x2="410" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="420" y1="0" x2="420" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="430" y1="0" x2="430" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="440" y1="0" x2="440" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<text x="450" y="55" fill="rgba(255,255,255,0.4)" font-family="system-ui, sans-serif" font-size="14" font-weight="600" text-anchor="middle">40</text>
-<line x1="450" y1="0" x2="450" y2="35" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="460" y1="0" x2="460" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="470" y1="0" x2="470" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="480" y1="0" x2="480" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="490" y1="0" x2="490" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="500" y1="0" x2="500" y2="25" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="510" y1="0" x2="510" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="520" y1="0" x2="520" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="530" y1="0" x2="530" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="540" y1="0" x2="540" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<text x="550" y="55" fill="rgba(255,255,255,0.4)" font-family="system-ui, sans-serif" font-size="14" font-weight="600" text-anchor="middle">50</text>
-<line x1="550" y1="0" x2="550" y2="35" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="560" y1="0" x2="560" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="570" y1="0" x2="570" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="580" y1="0" x2="580" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="590" y1="0" x2="590" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="600" y1="0" x2="600" y2="25" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="610" y1="0" x2="610" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="620" y1="0" x2="620" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="630" y1="0" x2="630" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="640" y1="0" x2="640" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<text x="650" y="55" fill="rgba(255,255,255,0.4)" font-family="system-ui, sans-serif" font-size="14" font-weight="600" text-anchor="middle">60</text>
-<line x1="650" y1="0" x2="650" y2="35" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="660" y1="0" x2="660" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="670" y1="0" x2="670" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="680" y1="0" x2="680" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="690" y1="0" x2="690" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="700" y1="0" x2="700" y2="25" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="710" y1="0" x2="710" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="720" y1="0" x2="720" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="730" y1="0" x2="730" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="740" y1="0" x2="740" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<text x="750" y="55" fill="rgba(255,255,255,0.4)" font-family="system-ui, sans-serif" font-size="14" font-weight="600" text-anchor="middle">70</text>
-<line x1="750" y1="0" x2="750" y2="35" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="760" y1="0" x2="760" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="770" y1="0" x2="770" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="780" y1="0" x2="780" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="790" y1="0" x2="790" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="800" y1="0" x2="800" y2="25" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="810" y1="0" x2="810" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="820" y1="0" x2="820" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="830" y1="0" x2="830" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="840" y1="0" x2="840" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<text x="850" y="55" fill="rgba(255,255,255,0.4)" font-family="system-ui, sans-serif" font-size="14" font-weight="600" text-anchor="middle">80</text>
-<line x1="850" y1="0" x2="850" y2="35" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="860" y1="0" x2="860" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="870" y1="0" x2="870" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="880" y1="0" x2="880" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="890" y1="0" x2="890" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="900" y1="0" x2="900" y2="25" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="910" y1="0" x2="910" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="920" y1="0" x2="920" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="930" y1="0" x2="930" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="940" y1="0" x2="940" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<text x="950" y="55" fill="rgba(255,255,255,0.4)" font-family="system-ui, sans-serif" font-size="14" font-weight="600" text-anchor="middle">90</text>
-<line x1="950" y1="0" x2="950" y2="35" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="960" y1="0" x2="960" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="970" y1="0" x2="970" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="980" y1="0" x2="980" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="990" y1="0" x2="990" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="1000" y1="0" x2="1000" y2="25" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="1010" y1="0" x2="1010" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="1020" y1="0" x2="1020" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="1030" y1="0" x2="1030" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="1040" y1="0" x2="1040" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<text x="1050" y="55" fill="rgba(255,255,255,0.4)" font-family="system-ui, sans-serif" font-size="14" font-weight="600" text-anchor="middle">100</text>
-<line x1="1050" y1="0" x2="1050" y2="35" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="1060" y1="0" x2="1060" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="1070" y1="0" x2="1070" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="1080" y1="0" x2="1080" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="1090" y1="0" x2="1090" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="1100" y1="0" x2="1100" y2="25" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="1110" y1="0" x2="1110" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="1120" y1="0" x2="1120" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="1130" y1="0" x2="1130" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="1140" y1="0" x2="1140" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<text x="1150" y="55" fill="rgba(255,255,255,0.4)" font-family="system-ui, sans-serif" font-size="14" font-weight="600" text-anchor="middle">110</text>
-<line x1="1150" y1="0" x2="1150" y2="35" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
+  <defs>
+    <linearGradient id="bg-grad-bolt" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A" />
+      <stop offset="50%" stop-color="#1E293B" />
+      <stop offset="100%" stop-color="#334155" />
+    </linearGradient>
+    <linearGradient id="steel-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#94A3B8" />
+      <stop offset="35%" stop-color="#F1F5F9" />
+      <stop offset="70%" stop-color="#64748B" />
+      <stop offset="100%" stop-color="#475569" />
+    </linearGradient>
+    <pattern id="grid-bolt" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+    </pattern>
+    <filter id="shadow-bolt" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000" flood-opacity="0.45" />
+    </filter>
+  </defs>
 
-    </g>
-    
-    <!-- Glowing Accent bar on the left -->
-    <rect x="50" y="160" width="8" height="260" rx="4" fill="#3B82F6" opacity="0.8" style="filter: drop-shadow(0px 0px 8px #3B82F6);" />
-    
-    <!-- Label/Category -->
-    <rect x="100" y="110" width="180" height="34" rx="17" fill="rgba(59, 130, 246, 0.15)" stroke="rgba(59, 130, 246, 0.35)" stroke-width="1.5" />
-    <text x="190" y="132" fill="#60A5FA" font-family="system-ui, sans-serif" font-size="12" font-weight="700" letter-spacing="1px" text-anchor="middle">PORADNIK POMIARU</text>
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="url(#bg-grad-bolt)" />
+  <rect width="100%" height="100%" fill="url(#grid-bolt)" />
+
+  <!-- LEFT COLUMN: Editorial / Branding -->
+  <rect x="70" y="70" width="180" height="32" rx="16" fill="rgba(56, 189, 248, 0.15)" stroke="rgba(56, 189, 248, 0.4)" stroke-width="1.5" />
+  <text x="160" y="91" fill="#38BDF8" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" letter-spacing="1px" text-anchor="middle">RYSUNEK TECHNICZNY</text>
+
+  <text x="70" y="160" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-size="44" font-weight="800" letter-spacing="-1px">Pomiar śruby linijką</text>
+  <text x="70" y="215" fill="#38BDF8" font-family="system-ui, -apple-system, sans-serif" font-size="34" font-weight="600">Śruby metryczne M3–M10</text>
+  
+  <text x="70" y="270" fill="#94A3B8" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="400">Prawidłowy pomiar długości trzpienia i średnicy gwintu</text>
+
+  <!-- Technical rule pills -->
+  <g transform="translate(70, 315)">
+    <rect width="360" height="52" rx="8" fill="rgba(15, 23, 42, 0.8)" stroke="rgba(56, 189, 248, 0.3)" />
+    <text x="20" y="32" fill="#F8FAFC" font-family="system-ui, sans-serif" font-size="15" font-weight="700">✓ Długość L: mierzona BEZ łba śruby</text>
+  </g>
+  <g transform="translate(70, 385)">
+    <rect width="360" height="52" rx="8" fill="rgba(15, 23, 42, 0.8)" stroke="rgba(245, 158, 11, 0.3)" />
+    <text x="20" y="32" fill="#FBBF24" font-family="system-ui, sans-serif" font-size="15" font-weight="700">! Wyjątek: wkręty stożkowe mierzy się z łbem</text>
+  </g>
+
+  <!-- Site Brand -->
+  <text x="70" y="570" fill="rgba(255,255,255,0.4)" font-family="system-ui, sans-serif" font-size="18" font-weight="600">Linijka.onl — Linijka online 1:1</text>
+
+  <!-- RIGHT COLUMN: Engineering Diagram of Metric Hex Bolt Measurement -->
+  <g transform="translate(480, 50)" filter="url(#shadow-bolt)">
+    <rect width="660" height="530" rx="16" fill="#0F172A" stroke="rgba(148, 163, 184, 0.2)" stroke-width="1.5" />
     
     <!-- Title -->
-    <g>
-      <text x="100" y="230" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-size="52" font-weight="800" letter-spacing="-1px">Pomiar śruby linijką: 6</text>
-<text x="100" y="295" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-size="52" font-weight="800" letter-spacing="-1px">praktycznych kroków</text>
+    <text x="40" y="45" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="17" font-weight="700">Wymiarowanie śruby z łbem sześciokątnym (DIN 933 / ISO 4017)</text>
+    <text x="40" y="68" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="13">Podstawa łba musi idealnie pokrywać się z kreską zerową (0 mm)</text>
+
+    <!-- Ruler Section Under Bolt -->
+    <g transform="translate(40, 100)">
+      <rect width="580" height="70" rx="8" fill="#1E293B" stroke="#334155" stroke-width="1.5" />
+      <line x1="20" y1="70" x2="560" y2="70" stroke="#38BDF8" stroke-width="2" />
+      
+      <!-- Ruler Ticks: 0 to 6 cm (0 mm aligns with bolt shoulder at x=140) -->
+      <!-- Before 0: negative space where head rests -->
+      <line x1="80" y1="70" x2="80" y2="52" stroke="#475569" stroke-width="1" />
+      
+      <!-- 0 mm (SHOULDER ZERO MARK) -->
+      <line x1="140" y1="70" x2="140" y2="25" stroke="#38BDF8" stroke-width="3" />
+      <text x="140" y="20" fill="#38BDF8" font-family="system-ui, sans-serif" font-size="14" font-weight="800" text-anchor="middle">0 mm</text>
+      
+      <!-- 10 mm -->
+      <line x1="215" y1="70" x2="215" y2="45" stroke="#94A3B8" stroke-width="1.5" />
+      <text x="215" y="38" fill="#CBD5E1" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle">10</text>
+      
+      <!-- 20 mm -->
+      <line x1="290" y1="70" x2="290" y2="45" stroke="#94A3B8" stroke-width="1.5" />
+      <text x="290" y="38" fill="#CBD5E1" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle">20</text>
+      
+      <!-- 30 mm -->
+      <line x1="365" y1="70" x2="365" y2="45" stroke="#94A3B8" stroke-width="1.5" />
+      <text x="365" y="38" fill="#CBD5E1" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle">30</text>
+      
+      <!-- 40 mm (BOLT END ALIGNMENT) -->
+      <line x1="440" y1="70" x2="440" y2="25" stroke="#34D399" stroke-width="3" />
+      <text x="440" y="20" fill="#34D399" font-family="system-ui, sans-serif" font-size="14" font-weight="800" text-anchor="middle">40 mm</text>
+      
+      <!-- 50 mm -->
+      <line x1="515" y1="70" x2="515" y2="45" stroke="#94A3B8" stroke-width="1.5" />
+      <text x="515" y="38" fill="#CBD5E1" font-family="system-ui, sans-serif" font-size="11" text-anchor="middle">50</text>
     </g>
-    
-    <!-- Site Brand -->
-    <text x="100" y="520" fill="rgba(255,255,255,0.35)" font-family="system-ui, sans-serif" font-size="18" font-weight="600" letter-spacing="0.5px">Linijka.onl — Linijka online 1:1</text>
-  </svg>
+
+    <!-- Technical Bolt Drawing -->
+    <g transform="translate(40, 190)">
+      <!-- Projection Lines linking to ruler -->
+      <line x1="140" y1="-20" x2="140" y2="150" stroke="#38BDF8" stroke-width="1.5" stroke-dasharray="4 3" />
+      <line x1="440" y1="-20" x2="440" y2="150" stroke="#34D399" stroke-width="1.5" stroke-dasharray="4 3" />
+      <line x1="80" y1="0" x2="80" y2="100" stroke="#EF4444" stroke-width="1.5" stroke-dasharray="4 3" />
+
+      <!-- Bolt Hex Head (k = 60px wide, from x=80 to x=140, height=120px) -->
+      <g transform="translate(80, 20)">
+        <polygon points="0,15 60,0 60,100 0,85" fill="url(#steel-grad)" stroke="#1E293B" stroke-width="2" />
+        <line x1="20" y1="10" x2="20" y2="90" stroke="#CBD5E1" stroke-width="1.5" />
+        <line x1="40" y1="5" x2="40" y2="95" stroke="#64748B" stroke-width="1.5" />
+      </g>
+
+      <!-- Bolt Threaded Shank (L = 40 mm, x=140 to x=440, diameter d = 60px) -->
+      <g transform="translate(140, 40)">
+        <!-- Solid Shank Core -->
+        <rect width="300" height="60" fill="url(#steel-grad)" stroke="#1E293B" stroke-width="2" />
+        
+        <!-- Thread Ridges (Metryczny gwint ISO M8) -->
+        <g stroke="#334155" stroke-width="2">
+          <line x1="20" y1="0" x2="30" y2="60" />
+          <line x1="40" y1="0" x2="50" y2="60" />
+          <line x1="60" y1="0" x2="70" y2="60" />
+          <line x1="80" y1="0" x2="90" y2="60" />
+          <line x1="100" y1="0" x2="110" y2="60" />
+          <line x1="120" y1="0" x2="130" y2="60" />
+          <line x1="140" y1="0" x2="150" y2="60" />
+          <line x1="160" y1="0" x2="170" y2="60" />
+          <line x1="180" y1="0" x2="190" y2="60" />
+          <line x1="200" y1="0" x2="210" y2="60" />
+          <line x1="220" y1="0" x2="230" y2="60" />
+          <line x1="240" y1="0" x2="250" y2="60" />
+          <line x1="260" y1="0" x2="270" y2="60" />
+          <line x1="280" y1="0" x2="290" y2="60" />
+        </g>
+
+        <!-- Chamfer / Bevel at tip -->
+        <polygon points="300,0 305,5 305,55 300,60" fill="#64748B" />
+      </g>
+
+      <!-- Dimension Line for Shank Length L = 40 mm -->
+      <g transform="translate(140, 160)">
+        <line x1="0" y1="0" x2="300" y2="0" stroke="#34D399" stroke-width="2" />
+        <line x1="0" y1="-8" x2="0" y2="8" stroke="#34D399" stroke-width="2" />
+        <line x1="300" y1="-8" x2="300" y2="8" stroke="#34D399" stroke-width="2" />
+        <rect x="75" y="-14" width="150" height="26" rx="4" fill="#0F172A" />
+        <text x="150" y="4" fill="#34D399" font-family="system-ui, sans-serif" font-size="14" font-weight="800" text-anchor="middle">Długość L = 40 mm</text>
+      </g>
+
+      <!-- Dimension Line for Thread Diameter d (M8) -->
+      <g transform="translate(460, 40)">
+        <line x1="0" y1="0" x2="0" y2="60" stroke="#38BDF8" stroke-width="2" />
+        <line x1="-8" y1="0" x2="8" y2="0" stroke="#38BDF8" stroke-width="2" />
+        <line x1="-8" y1="60" x2="8" y2="60" stroke="#38BDF8" stroke-width="2" />
+        <text x="18" y="35" fill="#38BDF8" font-family="system-ui, sans-serif" font-size="13" font-weight="800">d = 8 mm (M8)</text>
+      </g>
+
+      <!-- Head Height Dimension (k) with DO NOT MEASURE indicator -->
+      <g transform="translate(80, 160)">
+        <line x1="0" y1="0" x2="60" y2="0" stroke="#EF4444" stroke-width="2" />
+        <line x1="0" y1="-8" x2="0" y2="8" stroke="#EF4444" stroke-width="2" />
+        <line x1="60" y1="-8" x2="60" y2="8" stroke="#EF4444" stroke-width="2" />
+        <text x="30" y="24" fill="#EF4444" font-family="system-ui, sans-serif" font-size="11" font-weight="700" text-anchor="middle">Nie wliczaj łba!</text>
+      </g>
+    </g>
+
+    <!-- Bottom summary tag -->
+    <g transform="translate(40, 465)">
+      <rect width="580" height="40" rx="8" fill="rgba(30, 41, 59, 0.7)" />
+      <text x="20" y="25" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="13">Oznaczenie handlowe: Śruba <tspan fill="#34D399" font-weight="700">M8 × 40 mm</tspan> (średnica nominalna 8 mm, długość użytkowa 40 mm)</text>
+    </g>
+  </g>
+</svg>

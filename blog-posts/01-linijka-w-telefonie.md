@@ -4,7 +4,7 @@ description: "Linijka w telefonie pomaga zmierzyć małe przedmioty bez aplikacj
 ogTitle: "Jak działa linijka w telefonie?"
 ogDescription: "Prosty poradnik używania linijki online na smartfonie, z kalibracją i typowymi błędami."
 imageAlt: "linijka w telefonie pokazana na ekranie smartfona"
-heroImage: "/images/blog/linijka-w-telefonie.png"
+heroImage: "/images/blog/linijka-w-telefonie.svg"
 pubDate: "2026-05-15"
 updatedDate: "2026-09-15"
 ---

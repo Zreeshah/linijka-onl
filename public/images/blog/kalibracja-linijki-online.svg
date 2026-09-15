@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg-grad-cal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A" />
+      <stop offset="50%" stop-color="#1E293B" />
+      <stop offset="100%" stop-color="#1E3A8A" />
+    </linearGradient>
+    <linearGradient id="card-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563EB" />
+      <stop offset="50%" stop-color="#1D4ED8" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+    <linearGradient id="chip-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE047" />
+      <stop offset="100%" stop-color="#CA8A04" />
+    </linearGradient>
+    <pattern id="grid-cal" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+    </pattern>
+    <filter id="shadow-cal" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000" flood-opacity="0.45" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="url(#bg-grad-cal)" />
+  <rect width="100%" height="100%" fill="url(#grid-cal)" />
+
+  <!-- LEFT COLUMN: Editorial / Branding -->
+  <rect x="70" y="70" width="170" height="32" rx="16" fill="rgba(59, 130, 246, 0.15)" stroke="rgba(59, 130, 246, 0.4)" stroke-width="1.5" />
+  <text x="155" y="91" fill="#60A5FA" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" letter-spacing="1px" text-anchor="middle">METODA KALIBRACJI</text>
+
+  <text x="70" y="160" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-size="44" font-weight="800" letter-spacing="-1px">Kalibracja linijki</text>
+  <text x="70" y="215" fill="#38BDF8" font-family="system-ui, -apple-system, sans-serif" font-size="34" font-weight="600">Standard karty ID-1</text>
+  
+  <text x="70" y="270" fill="#94A3B8" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="400">Wykorzystanie wzorca ISO 7810 o wymiarach 85,60 × 53,98 mm</text>
+
+  <!-- Spec cards -->
+  <g transform="translate(70, 315)">
+    <rect width="360" height="55" rx="8" fill="rgba(15, 23, 42, 0.8)" stroke="rgba(56, 189, 248, 0.3)" />
+    <text x="20" y="24" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="11">SZEROKOŚĆ KARTY ID-1</text>
+    <text x="20" y="46" fill="#38BDF8" font-family="system-ui, sans-serif" font-size="18" font-weight="700">85,60 mm <tspan fill="#94A3B8" font-size="13" font-weight="400">(dokładność fabryczna)</tspan></text>
+  </g>
+  <g transform="translate(70, 385)">
+    <rect width="360" height="55" rx="8" fill="rgba(15, 23, 42, 0.8)" stroke="rgba(52, 211, 153, 0.3)" />
+    <text x="20" y="24" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="11">WYSOKOŚĆ KARTY ID-1</text>
+    <text x="20" y="46" fill="#34D399" font-family="system-ui, sans-serif" font-size="18" font-weight="700">53,98 mm <tspan fill="#94A3B8" font-size="13" font-weight="400">(dowód, karta płatnicza)</tspan></text>
+  </g>
+
+  <!-- Site Brand -->
+  <text x="70" y="570" fill="rgba(255,255,255,0.4)" font-family="system-ui, sans-serif" font-size="18" font-weight="600">Linijka.onl — Linijka online 1:1</text>
+
+  <!-- RIGHT COLUMN: Bank Card Alignment Calibration Diagram -->
+  <g transform="translate(480, 50)" filter="url(#shadow-cal)">
+    <rect width="660" height="530" rx="16" fill="#0F172A" stroke="rgba(148, 163, 184, 0.2)" stroke-width="1.5" />
+    
+    <!-- Title -->
+    <text x="40" y="45" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="17" font-weight="700">Dopasowanie wirtualnej ramki do fizycznej karty</text>
+    <text x="40" y="68" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="13">Przyłóż dowolną kartę bankową do ekranu i zsuń suwak kalibracji</text>
+
+    <!-- Interactive Calibration Target Frame (Screen Boundary) -->
+    <g transform="translate(70, 100)">
+      <!-- Target Area Outline with Corner Brackets -->
+      <rect width="520" height="328" rx="16" fill="rgba(30, 41, 59, 0.4)" stroke="#38BDF8" stroke-width="2" stroke-dasharray="8 6" />
+
+      <!-- Corner Alignment Brackets -->
+      <path d="M 0 30 L 0 0 L 30 0" fill="none" stroke="#38BDF8" stroke-width="4" />
+      <path d="M 490 0 L 520 0 L 520 30" fill="none" stroke="#38BDF8" stroke-width="4" />
+      <path d="M 0 298 L 0 328 L 30 328" fill="none" stroke="#38BDF8" stroke-width="4" />
+      <path d="M 490 328 L 520 328 L 520 298" fill="none" stroke="#38BDF8" stroke-width="4" />
+
+      <!-- The ISO ID-1 Bank Card (Rendered with realistic details) -->
+      <g transform="translate(20, 20)">
+        <rect width="480" height="288" rx="14" fill="url(#card-grad)" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
+        
+        <!-- Card Chip -->
+        <g transform="translate(50, 80)">
+          <rect width="60" height="48" rx="6" fill="url(#chip-grad)" />
+          <path d="M 0 24 L 60 24 M 20 0 L 20 48 M 40 0 L 40 48" stroke="#991B1B" stroke-width="1" opacity="0.4" />
+        </g>
+
+        <!-- Contactless Wave Icon -->
+        <path d="M 135 90 A 20 20 0 0 1 135 120 M 145 80 A 32 32 0 0 1 145 130" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" opacity="0.8" />
+
+        <!-- Card Branding / Number dots -->
+        <text x="50" y="190" fill="#FFFFFF" font-family="monospace" font-size="20" font-weight="700" letter-spacing="4px">•••• •••• •••• 8560</text>
+        <text x="50" y="240" fill="#93C5FD" font-family="system-ui, sans-serif" font-size="12" font-weight="600">STANDARD ISO/IEC 7810 ID-1</text>
+        
+        <!-- Hologram badge -->
+        <circle cx="410" cy="220" r="28" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.3)" stroke-width="1.5" />
+        <circle cx="385" cy="220" r="28" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.3)" stroke-width="1.5" />
+      </g>
+
+      <!-- Dimension Line Width: 85.60 mm -->
+      <g transform="translate(20, -15)">
+        <line x1="0" y1="0" x2="480" y2="0" stroke="#38BDF8" stroke-width="2" />
+        <line x1="0" y1="-8" x2="0" y2="8" stroke="#38BDF8" stroke-width="2" />
+        <line x1="480" y1="-8" x2="480" y2="8" stroke="#38BDF8" stroke-width="2" />
+        <rect x="180" y="-12" width="120" height="24" rx="4" fill="#0F172A" />
+        <text x="240" y="4" fill="#38BDF8" font-family="system-ui, sans-serif" font-size="14" font-weight="800" text-anchor="middle">szerokość: 85,60 mm</text>
+      </g>
+
+      <!-- Dimension Line Height: 53.98 mm -->
+      <g transform="translate(515, 20)">
+        <line x1="0" y1="0" x2="0" y2="288" stroke="#34D399" stroke-width="2" />
+        <line x1="-8" y1="0" x2="8" y2="0" stroke="#34D399" stroke-width="2" />
+        <line x1="-8" y1="288" x2="8" y2="288" stroke="#34D399" stroke-width="2" />
+        <rect x="-12" y="115" width="24" height="60" rx="4" fill="#0F172A" />
+        <text x="0" y="150" fill="#34D399" font-family="system-ui, sans-serif" font-size="13" font-weight="800" text-anchor="middle" transform="rotate(90, 0, 150)">53,98 mm</text>
+      </g>
+    </g>
+
+    <!-- Calibration Slider Simulation (Bottom) -->
+    <g transform="translate(70, 460)">
+      <rect width="520" height="40" rx="8" fill="#1E293B" stroke="#334155" />
+      <text x="20" y="25" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="12">Suwak kalibracji:</text>
+      
+      <!-- Slider track -->
+      <rect x="140" y="17" width="280" height="6" rx="3" fill="#0F172A" />
+      <rect x="140" y="17" width="180" height="6" rx="3" fill="#38BDF8" />
+      <circle cx="320" cy="20" r="12" fill="#38BDF8" stroke="#FFFFFF" stroke-width="2" />
+      
+      <text x="440" y="25" fill="#34D399" font-family="system-ui, sans-serif" font-size="13" font-weight="700">1:1 Zgodne</text>
+    </g>
+  </g>
+</svg>

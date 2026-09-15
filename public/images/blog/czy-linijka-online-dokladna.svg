@@ -1,162 +1,129 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
-    <defs>
-      <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
-        <stop offset="0%" style="stop-color:#0F172A;stop-opacity:1" />
-        <stop offset="50%" style="stop-color:#1E3A8A;stop-opacity:1" />
-        <stop offset="100%" style="stop-color:#2563EB;stop-opacity:1" />
-      </linearGradient>
-      <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-        <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
-      </pattern>
-    </defs>
-    
-    <!-- Background -->
-    <rect width="100%" height="100%" fill="url(#grad)" />
-    <!-- Grid Overlay -->
-    <rect width="100%" height="100%" fill="url(#grid)" />
-    
-    <!-- Top Ruler ticks -->
-    <g>
-      <line x1="0" y1="0" x2="1200" y2="0" stroke="rgba(255,255,255,0.3)" stroke-width="3" />
-      <text x="50" y="55" fill="rgba(255,255,255,0.4)" font-family="system-ui, sans-serif" font-size="14" font-weight="600" text-anchor="middle">0</text>
-<line x1="50" y1="0" x2="50" y2="35" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="60" y1="0" x2="60" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="70" y1="0" x2="70" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="80" y1="0" x2="80" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="90" y1="0" x2="90" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="100" y1="0" x2="100" y2="25" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="110" y1="0" x2="110" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="120" y1="0" x2="120" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="130" y1="0" x2="130" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="140" y1="0" x2="140" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<text x="150" y="55" fill="rgba(255,255,255,0.4)" font-family="system-ui, sans-serif" font-size="14" font-weight="600" text-anchor="middle">10</text>
-<line x1="150" y1="0" x2="150" y2="35" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="160" y1="0" x2="160" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="170" y1="0" x2="170" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="180" y1="0" x2="180" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="190" y1="0" x2="190" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="200" y1="0" x2="200" y2="25" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="210" y1="0" x2="210" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="220" y1="0" x2="220" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="230" y1="0" x2="230" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="240" y1="0" x2="240" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<text x="250" y="55" fill="rgba(255,255,255,0.4)" font-family="system-ui, sans-serif" font-size="14" font-weight="600" text-anchor="middle">20</text>
-<line x1="250" y1="0" x2="250" y2="35" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="260" y1="0" x2="260" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="270" y1="0" x2="270" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="280" y1="0" x2="280" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="290" y1="0" x2="290" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="300" y1="0" x2="300" y2="25" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="310" y1="0" x2="310" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="320" y1="0" x2="320" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="330" y1="0" x2="330" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="340" y1="0" x2="340" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<text x="350" y="55" fill="rgba(255,255,255,0.4)" font-family="system-ui, sans-serif" font-size="14" font-weight="600" text-anchor="middle">30</text>
-<line x1="350" y1="0" x2="350" y2="35" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="360" y1="0" x2="360" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="370" y1="0" x2="370" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="380" y1="0" x2="380" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="390" y1="0" x2="390" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="400" y1="0" x2="400" y2="25" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="410" y1="0" x2="410" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="420" y1="0" x2="420" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="430" y1="0" x2="430" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="440" y1="0" x2="440" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<text x="450" y="55" fill="rgba(255,255,255,0.4)" font-family="system-ui, sans-serif" font-size="14" font-weight="600" text-anchor="middle">40</text>
-<line x1="450" y1="0" x2="450" y2="35" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="460" y1="0" x2="460" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="470" y1="0" x2="470" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="480" y1="0" x2="480" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="490" y1="0" x2="490" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="500" y1="0" x2="500" y2="25" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="510" y1="0" x2="510" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="520" y1="0" x2="520" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="530" y1="0" x2="530" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="540" y1="0" x2="540" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<text x="550" y="55" fill="rgba(255,255,255,0.4)" font-family="system-ui, sans-serif" font-size="14" font-weight="600" text-anchor="middle">50</text>
-<line x1="550" y1="0" x2="550" y2="35" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="560" y1="0" x2="560" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="570" y1="0" x2="570" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="580" y1="0" x2="580" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="590" y1="0" x2="590" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="600" y1="0" x2="600" y2="25" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="610" y1="0" x2="610" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="620" y1="0" x2="620" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="630" y1="0" x2="630" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="640" y1="0" x2="640" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<text x="650" y="55" fill="rgba(255,255,255,0.4)" font-family="system-ui, sans-serif" font-size="14" font-weight="600" text-anchor="middle">60</text>
-<line x1="650" y1="0" x2="650" y2="35" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="660" y1="0" x2="660" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="670" y1="0" x2="670" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="680" y1="0" x2="680" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="690" y1="0" x2="690" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="700" y1="0" x2="700" y2="25" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="710" y1="0" x2="710" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="720" y1="0" x2="720" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="730" y1="0" x2="730" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="740" y1="0" x2="740" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<text x="750" y="55" fill="rgba(255,255,255,0.4)" font-family="system-ui, sans-serif" font-size="14" font-weight="600" text-anchor="middle">70</text>
-<line x1="750" y1="0" x2="750" y2="35" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="760" y1="0" x2="760" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="770" y1="0" x2="770" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="780" y1="0" x2="780" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="790" y1="0" x2="790" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="800" y1="0" x2="800" y2="25" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="810" y1="0" x2="810" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="820" y1="0" x2="820" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="830" y1="0" x2="830" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="840" y1="0" x2="840" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<text x="850" y="55" fill="rgba(255,255,255,0.4)" font-family="system-ui, sans-serif" font-size="14" font-weight="600" text-anchor="middle">80</text>
-<line x1="850" y1="0" x2="850" y2="35" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="860" y1="0" x2="860" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="870" y1="0" x2="870" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="880" y1="0" x2="880" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="890" y1="0" x2="890" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="900" y1="0" x2="900" y2="25" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="910" y1="0" x2="910" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="920" y1="0" x2="920" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="930" y1="0" x2="930" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="940" y1="0" x2="940" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<text x="950" y="55" fill="rgba(255,255,255,0.4)" font-family="system-ui, sans-serif" font-size="14" font-weight="600" text-anchor="middle">90</text>
-<line x1="950" y1="0" x2="950" y2="35" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="960" y1="0" x2="960" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="970" y1="0" x2="970" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="980" y1="0" x2="980" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="990" y1="0" x2="990" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="1000" y1="0" x2="1000" y2="25" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="1010" y1="0" x2="1010" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="1020" y1="0" x2="1020" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="1030" y1="0" x2="1030" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="1040" y1="0" x2="1040" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<text x="1050" y="55" fill="rgba(255,255,255,0.4)" font-family="system-ui, sans-serif" font-size="14" font-weight="600" text-anchor="middle">100</text>
-<line x1="1050" y1="0" x2="1050" y2="35" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="1060" y1="0" x2="1060" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="1070" y1="0" x2="1070" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="1080" y1="0" x2="1080" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="1090" y1="0" x2="1090" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="1100" y1="0" x2="1100" y2="25" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="1110" y1="0" x2="1110" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="1120" y1="0" x2="1120" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="1130" y1="0" x2="1130" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<line x1="1140" y1="0" x2="1140" y2="15" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
-<text x="1150" y="55" fill="rgba(255,255,255,0.4)" font-family="system-ui, sans-serif" font-size="14" font-weight="600" text-anchor="middle">110</text>
-<line x1="1150" y1="0" x2="1150" y2="35" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" />
+  <defs>
+    <linearGradient id="bg-grad-acc" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A" />
+      <stop offset="60%" stop-color="#1E293B" />
+      <stop offset="100%" stop-color="#0284C7" />
+    </linearGradient>
+    <pattern id="grid-acc" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+    </pattern>
+    <filter id="shadow-acc" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000" flood-opacity="0.45" />
+    </filter>
+  </defs>
 
-    </g>
-    
-    <!-- Glowing Accent bar on the left -->
-    <rect x="50" y="160" width="8" height="260" rx="4" fill="#3B82F6" opacity="0.8" style="filter: drop-shadow(0px 0px 8px #3B82F6);" />
-    
-    <!-- Label/Category -->
-    <rect x="100" y="110" width="180" height="34" rx="17" fill="rgba(59, 130, 246, 0.15)" stroke="rgba(59, 130, 246, 0.35)" stroke-width="1.5" />
-    <text x="190" y="132" fill="#60A5FA" font-family="system-ui, sans-serif" font-size="12" font-weight="700" letter-spacing="1px" text-anchor="middle">PORADNIK POMIARU</text>
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="url(#bg-grad-acc)" />
+  <rect width="100%" height="100%" fill="url(#grid-acc)" />
+
+  <!-- LEFT COLUMN: Editorial / Branding -->
+  <rect x="70" y="70" width="180" height="32" rx="16" fill="rgba(56, 189, 248, 0.15)" stroke="rgba(56, 189, 248, 0.4)" stroke-width="1.5" />
+  <text x="160" y="91" fill="#38BDF8" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" letter-spacing="1px" text-anchor="middle">BADANIE DOKŁADNOŚCI</text>
+
+  <text x="70" y="160" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-size="44" font-weight="800" letter-spacing="-1px">Czy linijka online</text>
+  <text x="70" y="215" fill="#38BDF8" font-family="system-ui, -apple-system, sans-serif" font-size="34" font-weight="600">jest dokładna?</text>
+  
+  <text x="70" y="270" fill="#94A3B8" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="400">Piksele ekranowe, PPI i granice tolerancji</text>
+
+  <!-- Key parameters cards -->
+  <g transform="translate(70, 315)">
+    <rect width="360" height="52" rx="8" fill="rgba(15, 23, 42, 0.8)" stroke="rgba(56, 189, 248, 0.3)" />
+    <text x="20" y="24" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="11">PO KALIBRACJI ID-1</text>
+    <text x="20" y="44" fill="#34D399" font-family="system-ui, sans-serif" font-size="16" font-weight="700">Tolerancja odczytu: ±0,2 mm – 0,4 mm</text>
+  </g>
+  <g transform="translate(70, 385)">
+    <rect width="360" height="52" rx="8" fill="rgba(15, 23, 42, 0.8)" stroke="rgba(239, 68, 68, 0.3)" />
+    <text x="20" y="24" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="11">PRZED KALIBRACJĄ (CSS 96 DPI)</text>
+    <text x="20" y="44" fill="#F87171" font-family="system-ui, sans-serif" font-size="16" font-weight="700">Błąd fabryczny: od 7% do 18%</text>
+  </g>
+
+  <!-- Site Brand -->
+  <text x="70" y="570" fill="rgba(255,255,255,0.4)" font-family="system-ui, sans-serif" font-size="18" font-weight="600">Linijka.onl — Linijka online 1:1</text>
+
+  <!-- RIGHT COLUMN: Loupe / Subpixel Precision Inspection Graphic -->
+  <g transform="translate(480, 50)" filter="url(#shadow-acc)">
+    <rect width="660" height="530" rx="16" fill="#0F172A" stroke="rgba(148, 163, 184, 0.2)" stroke-width="1.5" />
     
     <!-- Title -->
-    <g>
-      <text x="100" y="230" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-size="52" font-weight="800" letter-spacing="-1px">Czy linijka online jest</text>
-<text x="100" y="295" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-size="52" font-weight="800" letter-spacing="-1px">dokładna: 5 czynników</text>
+    <text x="40" y="45" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="17" font-weight="700">Mikroskopowa analiza podziałki milimetrowej</text>
+    <text x="40" y="68" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="13">Fizyczna gęstość pikseli (PPI) a precyzja kreski pomiarowej</text>
+
+    <!-- Base Ruler Under Inspection (Horizontal) -->
+    <g transform="translate(40, 100)">
+      <rect width="580" height="70" rx="8" fill="#1E293B" stroke="#334155" stroke-width="1.5" />
+      <line x1="20" y1="70" x2="560" y2="70" stroke="#38BDF8" stroke-width="2" />
+      
+      <!-- Ruler Ticks -->
+      <line x1="40" y1="70" x2="40" y2="25" stroke="#FFFFFF" stroke-width="2" />
+      <text x="40" y="20" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="13" font-weight="700" text-anchor="middle">0</text>
+      
+      <line x1="85" y1="70" x2="85" y2="52" stroke="#64748B" stroke-width="1.5" />
+      <line x1="130" y1="70" x2="130" y2="52" stroke="#64748B" stroke-width="1.5" />
+      <line x1="175" y1="70" x2="175" y2="52" stroke="#64748B" stroke-width="1.5" />
+      <line x1="220" y1="70" x2="220" y2="52" stroke="#64748B" stroke-width="1.5" />
+      
+      <!-- 1 cm (center of inspection) -->
+      <line x1="265" y1="70" x2="265" y2="30" stroke="#38BDF8" stroke-width="2.5" />
+      <text x="265" y="22" fill="#38BDF8" font-family="system-ui, sans-serif" font-size="14" font-weight="800" text-anchor="middle">1 cm</text>
+      
+      <line x1="310" y1="70" x2="310" y2="52" stroke="#64748B" stroke-width="1.5" />
+      <line x1="355" y1="70" x2="355" y2="52" stroke="#64748B" stroke-width="1.5" />
+      <line x1="400" y1="70" x2="400" y2="52" stroke="#64748B" stroke-width="1.5" />
+      <line x1="445" y1="70" x2="445" y2="52" stroke="#64748B" stroke-width="1.5" />
+      
+      <line x1="490" y1="70" x2="490" y2="30" stroke="#FFFFFF" stroke-width="2" />
+      <text x="490" y="22" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="13" font-weight="700" text-anchor="middle">2 cm</text>
     </g>
-    
-    <!-- Site Brand -->
-    <text x="100" y="520" fill="rgba(255,255,255,0.35)" font-family="system-ui, sans-serif" font-size="18" font-weight="600" letter-spacing="0.5px">Linijka.onl — Linijka online 1:1</text>
-  </svg>
+
+    <!-- Inspection Magnifying Loupe Graphic (Looking at 1 cm tick) -->
+    <g transform="translate(305, 170)">
+      <!-- Projection Cones from ruler tick to loupe -->
+      <polygon points="0,0 -160,80 160,80" fill="rgba(56, 189, 248, 0.08)" />
+      
+      <!-- Magnifier Glass Outer Frame -->
+      <circle cx="0" cy="180" r="135" fill="#0B132B" stroke="#38BDF8" stroke-width="4" />
+      
+      <!-- Pixel Matrix Pattern inside the Loupe -->
+      <g transform="translate(-110, 75)" opacity="0.85">
+        <!-- Subpixel Grid (R G B strip simulation) -->
+        <rect x="0" y="0" width="220" height="210" fill="#050B14" />
+        
+        <!-- Render detailed subpixel rows -->
+        <!-- Row of screen subpixels -->
+        <g stroke="#1E293B" stroke-width="1">
+          <!-- Central Millimeter Tick projected on subpixels -->
+          <rect x="98" y="20" width="24" height="170" fill="#38BDF8" opacity="0.9" />
+          <line x1="110" y1="10" x2="110" y2="200" stroke="#FFFFFF" stroke-width="2" />
+        </g>
+        
+        <!-- Crosshair & measurement reticle -->
+        <line x1="0" y1="105" x2="220" y2="105" stroke="rgba(244, 63, 94, 0.6)" stroke-width="1.5" stroke-dasharray="4 3" />
+        <line x1="110" y1="0" x2="110" y2="210" stroke="rgba(244, 63, 94, 0.8)" stroke-width="1.5" />
+        
+        <!-- Tolerance bracket -->
+        <line x1="85" y1="150" x2="135" y2="150" stroke="#34D399" stroke-width="2" />
+        <line x1="85" y1="143" x2="85" y2="157" stroke="#34D399" stroke-width="2" />
+        <line x1="135" y1="143" x2="135" y2="157" stroke="#34D399" stroke-width="2" />
+        <text x="110" y="142" fill="#34D399" font-family="system-ui, sans-serif" font-size="11" font-weight="700" text-anchor="middle">±0,2 mm</text>
+      </g>
+
+      <!-- Glass reflection highlight -->
+      <path d="M -90 120 A 120 120 0 0 1 80 80" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="3" stroke-linecap="round" />
+
+      <!-- Callout badge outside loupe -->
+      <g transform="translate(145, 140)">
+        <rect width="170" height="85" rx="8" fill="#1E293B" stroke="#475569" />
+        <text x="15" y="25" fill="#38BDF8" font-family="system-ui, sans-serif" font-size="12" font-weight="800">460 PPI (Smartfon)</text>
+        <text x="15" y="45" fill="#CBD5E1" font-family="system-ui, sans-serif" font-size="11">1 px ≈ 0,055 mm</text>
+        <text x="15" y="65" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="11">Szerokość kreski: 4 px</text>
+      </g>
+    </g>
+
+    <!-- Bottom summary label -->
+    <g transform="translate(40, 465)">
+      <rect width="320" height="40" rx="8" fill="rgba(30, 41, 59, 0.7)" />
+      <text x="20" y="25" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="12">Klucz do dokładności: <tspan fill="#34D399" font-weight="700">Zoom przeglądarki dokładnie 100%</tspan></text>
+    </g>
+  </g>
+</svg>
