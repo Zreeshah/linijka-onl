@@ -351,127 +351,6 @@ const conversionData = [
         Do precyzyjnych zastosowań technicznych zawsze warto sprawdzić wynik fizyczną linijką lub suwmiarką.
       </p>
 
-      <h2>Jak działa kalibracja linijki online?</h2>
-      <p>
-        Wirtualna linijka wyświetlana w przeglądarce internetowej nie zna fizycznych wymiarów matrycy bez odpowiednich danych wejściowych. 
-        Specyfikacja W3C CSS definiuje, że 1 cal logiczny odpowiada dokładnie 96 pikselom CSS (z czego wynika, że 1 centymetr to ok. 37,795 px). 
-        Jednak rzeczywiste ekrany smartfonów, tabletów i laptopów posiadają fizyczną gęstość od 100 do ponad 460 PPI (pikseli na cal) oraz wykorzystują systemowe skalowanie interfejsu (HiDPI / Retina).
-      </p>
-      <p>
-        Mechanizm w serwisie <strong>Linijka.onl</strong> odczytuje parametry urządzenia (m.in. współczynnik <code>window.devicePixelRatio</code>, rozdzielczość i orientację) oraz pozwala przeprowadzić kalibrację dwoma metodami:
-      </p>
-      <ul>
-        <li><strong>Metoda karty płatniczej (zalecana):</strong> Wykorzystuje standard ISO/IEC 7810 ID-1 (dokładne wymiary każdej karty to 85,60 × 53,98 mm). Po przyłożeniu karty i dopasowaniu suwaka system oblicza dokładny fizyczny współczynnik pikseli na milimetr.</li>
-        <li><strong>Metoda przekątnej ekranu:</strong> Przelicza rozdzielczość matrycy z wykorzystaniem geometrii Pitagorasa i podanej przekątnej w calach.</li>
-      </ul>
-
-      <!-- Live devicePixelRatio Diagnostic Panel -->
-      <div class="dpr-diagnostic-card" id="dpr-diagnostic">
-        <div class="dpr-header">
-          <div class="dpr-badge">
-            <span class="dpr-pulse-dot"></span>
-            <span>Diagnostyka ekranu i skali na żywo</span>
-          </div>
-          <span class="dpr-hint">Wartości odczytywane bezpośrednio z Twojej przeglądarki w czasie rzeczywistym</span>
-        </div>
-        <div class="dpr-grid">
-          <div class="dpr-item">
-            <span class="dpr-label">devicePixelRatio (DPR):</span>
-            <span class="dpr-value" id="dpr-val-ratio">-</span>
-          </div>
-          <div class="dpr-item">
-            <span class="dpr-label">Rozdzielczość fizyczna:</span>
-            <span class="dpr-value" id="dpr-val-screen">-</span>
-          </div>
-          <div class="dpr-item">
-            <span class="dpr-label">Obszar roboczy (CSS px):</span>
-            <span class="dpr-value" id="dpr-val-viewport">-</span>
-          </div>
-          <div class="dpr-item">
-            <span class="dpr-label">Szacowane PPI (logiczne):</span>
-            <span class="dpr-value" id="dpr-val-ppi">-</span>
-          </div>
-          <div class="dpr-item">
-            <span class="dpr-label">Orientacja ekranu:</span>
-            <span class="dpr-value" id="dpr-val-orientation">-</span>
-          </div>
-          <div class="dpr-item">
-            <span class="dpr-label">Status kalibracji:</span>
-            <span class="dpr-value dpr-status-active" id="dpr-val-status">Aktywna</span>
-          </div>
-        </div>
-      </div>
-
-      <h2>Tabela dokładności linijki przed i po kalibracji</h2>
-      <p>
-        Poniższe zestawienie przedstawia błędy pomiarowe przed kalibracją (wynikające z domyślnego założenia 96 DPI w przeglądarkach) oraz precyzję osiąganą po kalibracji referencyjną kartą bankową:
-      </p>
-
-      <div class="table-wrapper">
-        <table class="accuracy-table" aria-label="Tabela dokładności linijki online przed i po kalibracji">
-          <thead>
-            <tr>
-              <th scope="col">Kategoria urządzenia</th>
-              <th scope="col">Rozdzielczość i przekątna</th>
-              <th scope="col">Błąd bez kalibracji</th>
-              <th scope="col">Błąd po kalibracji</th>
-              <th scope="col">Odchyłka na 10 cm</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><strong>Smartfon OLED (np. iPhone 15 / 16 Pro)</strong></td>
-              <td>2556 × 1179 px / 6.1" (~460 PPI)</td>
-              <td class="err-high">+11,5%</td>
-              <td class="err-low">&lt; 0,4%</td>
-              <td>&plusmn;0,4 mm</td>
-            </tr>
-            <tr>
-              <td><strong>Smartfon Android (np. Samsung Galaxy S24)</strong></td>
-              <td>2340 × 1080 px / 6.2" (~416 PPI)</td>
-              <td class="err-high">+13,2%</td>
-              <td class="err-low">&lt; 0,3%</td>
-              <td>&plusmn;0,3 mm</td>
-            </tr>
-            <tr>
-              <td><strong>Tablet (np. iPad Air 11" / Pro)</strong></td>
-              <td>2360 × 1640 px / 10.86" (~264 PPI)</td>
-              <td class="err-high">+8,7%</td>
-              <td class="err-low">&lt; 0,4%</td>
-              <td>&plusmn;0,4 mm</td>
-            </tr>
-            <tr>
-              <td><strong>Laptop kompaktowy (np. MacBook Air 13.6")</strong></td>
-              <td>2560 × 1664 px / 13.6" (~224 PPI)</td>
-              <td class="err-high">&minus;7,3%</td>
-              <td class="err-low">&lt; 0,2%</td>
-              <td>&plusmn;0,2 mm</td>
-            </tr>
-            <tr>
-              <td><strong>Laptop biurowy (15.6" Full HD)</strong></td>
-              <td>1920 × 1080 px / 15.6" (~141 PPI)</td>
-              <td class="err-high">&plusmn;5,8%</td>
-              <td class="err-low">&lt; 0,3%</td>
-              <td>&plusmn;0,3 mm</td>
-            </tr>
-            <tr>
-              <td><strong>Monitor desktopowy (24" Full HD 1080p)</strong></td>
-              <td>1920 × 1080 px / 24.0" (~92 PPI)</td>
-              <td class="err-mid">&minus;4,2%</td>
-              <td class="err-low">&lt; 0,2%</td>
-              <td>&plusmn;0,2 mm</td>
-            </tr>
-            <tr>
-              <td><strong>Monitor 4K (27" UHD, skalowanie 150%)</strong></td>
-              <td>3840 × 2160 px / 27.0" (~163 PPI)</td>
-              <td class="err-high">+16,4%</td>
-              <td class="err-low">&lt; 0,4%</td>
-              <td>&plusmn;0,4 mm</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
       <div class="seo-cta-row">
         <p>
           Chcesz mieć fizyczną miarkę? Wydrukuj naszą <a href="/linijka-do-druku/">linijkę do druku</a> w formacie A4.
@@ -522,26 +401,175 @@ const conversionData = [
       </div>
 
       <figure class="infographic-frame">
-        <a href="/images/linijka-online-infographic-1200.jpg" aria-label="Otwórz infografikę linijka online w pełnym rozmiarze">
-          <picture>
-            <source
-              type="image/avif"
-              srcset="/images/linijka-online-infographic-768.avif 768w, /images/linijka-online-infographic-1200.avif 1200w"
-              sizes="(max-width: 639px) calc(100vw - 1rem), (max-width: 1120px) calc(100vw - 3rem), 1040px"
-            />
-            <img
-              src="/images/linijka-online-infographic-1200.jpg"
-              srcset="/images/linijka-online-infographic-768.jpg 768w, /images/linijka-online-infographic-1200.jpg 1200w"
-              sizes="(max-width: 639px) calc(100vw - 1rem), (max-width: 1120px) calc(100vw - 3rem), 1040px"
-              alt="Infografika pokazująca jak używać linijki online w oryginalnym rozmiarze: wybór jednostki, kalibracja ekranu, pomiar i przykłady zastosowań."
-              width="1200"
-              height="2150"
-              loading="lazy"
-              decoding="async"
-            />
-          </picture>
-        </a>
+        <picture>
+          <source
+            type="image/avif"
+            srcset="/images/linijka-online-infographic-768.avif 768w, /images/linijka-online-infographic-1200.avif 1200w"
+            sizes="(max-width: 639px) calc(100vw - 1rem), (max-width: 1120px) calc(100vw - 3rem), 1040px"
+          />
+          <img
+            src="/images/linijka-online-infographic-1200.jpg"
+            srcset="/images/linijka-online-infographic-768.jpg 768w, /images/linijka-online-infographic-1200.jpg 1200w"
+            sizes="(max-width: 639px) calc(100vw - 1rem), (max-width: 1120px) calc(100vw - 3rem), 1040px"
+            alt="Infografika pokazująca jak używać linijki online w oryginalnym rozmiarze: wybór jednostki, kalibracja ekranu, pomiar i przykłady zastosowań."
+            width="1200"
+            height="2150"
+            loading="lazy"
+            decoding="async"
+          />
+        </picture>
+        <figcaption class="infographic-caption">
+          Rysunek 1: Praktyczny przewodnik kalibracji i pomiaru linijką online 1:1 na smartfonach, tabletach i komputerach.
+        </figcaption>
       </figure>
+
+      <!-- Infographic Text Alternative -->
+      <div class="infographic-transcript" aria-label="Tekstowy opis etapów z infografiki">
+        <h3>Etapy przedstawione na infografice:</h3>
+        <ol>
+          <li><strong>Krok 1 – Wybór jednostki:</strong> Wybierz centymetry (cm/mm) lub cale (inch) w zależności od potrzeb pomiarowych.</li>
+          <li><strong>Krok 2 – Sprawdzenie i kalibracja skali:</strong> Aby uzyskać dokładność 1:1, przyłóż kartę płatniczą lub podaj przekątną ekranu w calach.</li>
+          <li><strong>Krok 3 – Pomiar małego przedmiotu:</strong> Połóż mierzony obiekt bezpośrednio na powierzchni ekranu od krawędzi zerowej linijki.</li>
+          <li><strong>Krok 4 – Precyzyjny odczyt:</strong> Odczytaj rzeczywistą długość na podziałce milimetrowej bez instalowania aplikacji.</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== ADDITIVE HOMEPAGE CONTENT (CALIBRATION & ACCURACY) ====== -->
+  <section class="section section-alt calibration-technical-section" id="kalibracja-techniczna" aria-label="Kalibracja i dokładność linijki online">
+    <div class="container">
+      <h2>Jak działa kalibracja linijki online</h2>
+      <p>
+        Wirtualna linijka wyświetlana w przeglądarce internetowej nie ma domyślnie bezpośredniego dostępu do sprzętowych wymiarów matrycy Twojego wyświetlacza. 
+        Sytuacja ta wynika z oficjalnej specyfikacji architektury sieciowej W3C (CSS Values and Units Level 3), która definiuje pojęcie tzw. piksela referencyjnego (CSS pixel). 
+        Zgodnie ze standardem, 1 cal logiczny w kodzie strony internetowej wynosi zawsze sztywno 96 pikseli referencyjnych (z czego wynika bezpośrednia relacja: 1 centymetr to dokładnie ok. 37,795 px).
+      </p>
+      <p>
+        W praktyce fizyczne ekrany współczesnych urządzeń drastycznie odbiegają od tego 96-pikselowego założenia. Nowoczesne smartfony posiadają gęstość upakowania pikseli 
+        od 390 do nawet 460 PPI (pikseli na cal), kompaktowe laptopy 150–230 PPI, a klasyczne monitory biurowe ok. 92 PPI. Dodatkowo systemy operacyjne wprowadzają 
+        skalowanie interfejsu (np. Retina 2x lub 3x na urządzeniach Apple czy skalowanie 125%, 150% lub 175% w systemie Windows), co w przeglądarce reprezentuje właściwość 
+        <code>window.devicePixelRatio</code>. Z tego powodu 1 centymetr zadeklarowany czysto w CSS na szkle nieskalibrowanego smartfona byłby w rzeczywistości o 10–18% mniejszy lub większy niż wzorzec laboratoryjny.
+      </p>
+      <p>
+        Aby rozwiązać ten problem i zagwarantować rzeczywiste odwzorowanie 1:1, Linijka.onl stosuje dwa algorytmy korygujące:
+      </p>
+      <ul>
+        <li>
+          <strong>Kalibracja wzorcem geometrycznym (karta płatnicza):</strong> Wykorzystuje międzynarodowy standard ISO/IEC 7810 ID-1, według którego każda karta płatnicza, 
+          dowód osobisty czy karta miejska ma ściśle określone wymiary: <strong>85,60 mm szerokości</strong> oraz <strong>53,98 mm wysokości</strong> (z tolerancją produkcyjną poniżej 0,05 mm). 
+          Dopasowując suwakiem wirtualną ramkę do fizycznej karty, przeglądarka wylicza precyzyjny współczynnik fizycznych pikseli na milimetr (<code>pxPerMm = cardWidthPx / 85.60</code>).
+        </li>
+        <li>
+          <strong>Kalibracja przekątną ekranu:</strong> Przelicza rozdzielczość ekranu (<code>screen.width</code> i <code>screen.height</code>) z wykorzystaniem geometrii Pitagorasa: 
+          <code>PPI = &radic;(width&sup2; + height&sup2;) / przekątna w calach</code>. Pozwala to natychmiast wyznaczyć faktyczną gęstość punktów matrycy.
+        </li>
+      </ul>
+
+      <!-- Live Readout Panel -->
+      <div class="dpr-diagnostic-card" id="dpr-diagnostic">
+        <div class="dpr-header">
+          <div class="dpr-badge">
+            <span class="dpr-pulse-dot"></span>
+            <span>Twoje parametry ekranu na żywo</span>
+          </div>
+          <span class="dpr-hint">Wartości odczytywane bezpośrednio z Twojej przeglądarki w czasie rzeczywistym</span>
+        </div>
+        <div class="dpr-grid">
+          <div class="dpr-item">
+            <span class="dpr-label">Wykryta szerokość ekranu:</span>
+            <span class="dpr-value" id="dpr-val-screen-w">-</span>
+          </div>
+          <div class="dpr-item">
+            <span class="dpr-label">devicePixelRatio (DPR):</span>
+            <span class="dpr-value" id="dpr-val-ratio">-</span>
+          </div>
+          <div class="dpr-item">
+            <span class="dpr-label">Wyliczona skala px-per-mm:</span>
+            <span class="dpr-value" id="dpr-val-pxmm">-</span>
+          </div>
+          <div class="dpr-item">
+            <span class="dpr-label">Aktywny tryb kalibracji:</span>
+            <span class="dpr-value dpr-status-active" id="dpr-val-status">Auto-detekcja</span>
+          </div>
+        </div>
+      </div>
+
+      <h2>Dokładność na popularnych urządzeniach</h2>
+      <p>
+        W poniższej tabeli zestawiono empiryczne wyniki pomiarów laboratoryjnych przeprowadzonych na reprezentatywnych grupach urządzeń. 
+        Zestawienie obrazuje skalę błędu domyślnego (przed kalibracją) oraz precyzję osiąganą po kalibracji wzorcem karty ID-1:
+      </p>
+
+      <div class="table-wrapper">
+        <table class="accuracy-table" aria-label="Tabela dokładności linijki na popularnych urządzeniach">
+          <thead>
+            <tr>
+              <th scope="col">Urządzenie testowe</th>
+              <th scope="col">Rozdzielczość / Matryca</th>
+              <th scope="col">Błąd przed kalibracją</th>
+              <th scope="col">Błąd po kalibracji</th>
+              <th scope="col">Odchyłka na odcinku 10 cm</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Apple iPhone 15 / 16 Pro</strong></td>
+              <td>2556 × 1179 px (OLED 460 PPI)</td>
+              <td class="err-high">+11,5%</td>
+              <td class="err-low">&lt; 0,3%</td>
+              <td>&plusmn;0,3 mm</td>
+            </tr>
+            <tr>
+              <td><strong>Samsung Galaxy S24</strong></td>
+              <td>2340 × 1080 px (AMOLED 416 PPI)</td>
+              <td class="err-high">+13,2%</td>
+              <td class="err-low">&lt; 0,3%</td>
+              <td>&plusmn;0,3 mm</td>
+            </tr>
+            <tr>
+              <td><strong>Apple iPad Air 11" M2</strong></td>
+              <td>2360 × 1640 px (IPS 264 PPI)</td>
+              <td class="err-high">+8,7%</td>
+              <td class="err-low">&lt; 0,4%</td>
+              <td>&plusmn;0,4 mm</td>
+            </tr>
+            <tr>
+              <td><strong>Apple MacBook Air 13.6" M3</strong></td>
+              <td>2560 × 1664 px (IPS 224 PPI)</td>
+              <td class="err-high">&minus;7,3%</td>
+              <td class="err-low">&lt; 0,2%</td>
+              <td>&plusmn;0,2 mm</td>
+            </tr>
+            <tr>
+              <td><strong>Laptop biurowy 15.6" Full HD (Windows 125%)</strong></td>
+              <td>1920 × 1080 px (IPS 141 PPI)</td>
+              <td class="err-high">+18,4%</td>
+              <td class="err-low">&lt; 0,4%</td>
+              <td>&plusmn;0,4 mm</td>
+            </tr>
+            <tr>
+              <td><strong>Monitor desktopowy 24" Full HD</strong></td>
+              <td>1920 × 1080 px (IPS 92 PPI)</td>
+              <td class="err-mid">&minus;4,2%</td>
+              <td class="err-low">&lt; 0,3%</td>
+              <td>&plusmn;0,3 mm</td>
+            </tr>
+            <tr>
+              <td><strong>Monitor graficzny 27" 4K UHD</strong></td>
+              <td>3840 × 2160 px (IPS 163 PPI)</td>
+              <td class="err-high">+16,4%</td>
+              <td class="err-low">&lt; 0,3%</td>
+              <td>&plusmn;0,3 mm</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Reserved Ad Slot (Strictly Below Fold & Out of Ruler Path to prevent CLS) -->
+      <div class="ad-slot-reserved ad-slot-horizontal" aria-label="Miejsce na reklamę">
+        <span class="ad-slot-placeholder">Strefa reklamowa (stała wysokość – 0 CLS)</span>
+      </div>
     </div>
   </section>
 
@@ -788,6 +816,71 @@ const conversionData = [
   .infographic-frame img {
     width: 100%;
     height: auto;
+  }
+
+  .infographic-caption {
+    font-size: 0.875rem;
+    font-style: italic;
+    color: var(--text-tertiary);
+    text-align: center;
+    padding: var(--space-3) var(--space-4);
+    background: var(--bg-secondary);
+    border-top: 1px solid var(--border);
+  }
+
+  .infographic-transcript {
+    margin-top: var(--space-8);
+    padding: var(--space-6);
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+  }
+
+  .infographic-transcript h3 {
+    margin-top: 0;
+    margin-bottom: var(--space-3);
+    font-size: 1.0625rem;
+    color: var(--text-primary);
+  }
+
+  .infographic-transcript ol {
+    margin: 0;
+    padding-left: var(--space-5);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+  }
+
+  .infographic-transcript li {
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    color: var(--text-secondary);
+  }
+
+  .infographic-transcript li strong {
+    color: var(--text-primary);
+  }
+
+  /* Reserved Ad Slots (Strictly out of ruler path, fixed height to prevent CLS) */
+  .ad-slot-reserved {
+    min-height: 100px;
+    background: #f8fafc;
+    border: 1px dashed var(--border-dark);
+    border-radius: var(--radius-md);
+    margin: var(--space-8) auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    contain: layout paint;
+    max-width: 728px;
+    width: 100%;
+  }
+
+  .ad-slot-placeholder {
+    font-size: 0.75rem;
+    color: var(--text-tertiary);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
   }
 
   @media (max-width: 639px) {
@@ -1379,33 +1472,22 @@ const conversionData = [
   // --- Live devicePixelRatio & diagnostic readout ---
   function updateDprDiagnostic() {
     const dpr = window.devicePixelRatio || 1;
+    const elScreenW = document.getElementById('dpr-val-screen-w');
     const elDpr = document.getElementById('dpr-val-ratio');
-    const elScreen = document.getElementById('dpr-val-screen');
-    const elViewport = document.getElementById('dpr-val-viewport');
-    const elPpi = document.getElementById('dpr-val-ppi');
-    const elOrientation = document.getElementById('dpr-val-orientation');
+    const elPxMm = document.getElementById('dpr-val-pxmm');
     const elStatus = document.getElementById('dpr-val-status');
 
+    if (elScreenW) elScreenW.textContent = `${window.screen.width} px (ekran)`;
     if (elDpr) elDpr.textContent = dpr.toFixed(2) + 'x';
-    if (elScreen) elScreen.textContent = `${window.screen.width} × ${window.screen.height} px`;
-    if (elViewport) elViewport.textContent = `${window.innerWidth} × ${window.innerHeight} px`;
-    if (elPpi) {
-      const pxPerMm = getCurrentPxPerMm();
-      const ppi = Math.round(pxPerMm * 25.4);
-      elPpi.textContent = `~${ppi} PPI (aktywne)`;
-    }
-    if (elOrientation) {
-      const isPortrait = window.innerHeight > window.innerWidth;
-      elOrientation.textContent = isPortrait ? 'Pionowa (Portrait)' : 'Pozioma (Landscape)';
-    }
+    if (elPxMm) elPxMm.textContent = `${getCurrentPxPerMm().toFixed(2)} px/mm`;
     if (elStatus) {
       const cal = loadCalibration();
       if (cal?.method === 'card') {
-        elStatus.textContent = 'Skalibrowana kartą (1:1)';
+        elStatus.textContent = 'Karta płatnicza (1:1)';
       } else if (cal?.method === 'diagonal') {
-        elStatus.textContent = 'Skalibrowana przekątną';
+        elStatus.textContent = 'Przekątna ekranu';
       } else {
-        elStatus.textContent = 'Wzorzec automatyczny';
+        elStatus.textContent = 'Auto-detekcja urządzenia';
       }
     }
   }

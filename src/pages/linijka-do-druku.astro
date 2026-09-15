@@ -239,6 +239,84 @@ const rulerSizes = [10, 20, 30];
           </ul>
         </div>
       </div>
+
+      <!-- Merged Comprehensive Content from redirected /blog/linijka-do-druku/ -->
+      <div class="merged-guide-content" style="margin-top: var(--space-10);">
+        <h2>Praktyczny przewodnik i zasady formatu A4</h2>
+        <p>
+          Standardowy arkusz papieru biurowego formatu A4 (zgodny z normą ISO 216) ma precyzyjne wymiary <strong>210 × 297 mm</strong>. 
+          Pozwala to bez trudu zmieścić w układzie pionowym linijkę o długości 20 cm, a po przekątnej lub w układzie dopasowanym nawet miarkę 30 cm. 
+          Jednak domyślne sterowniki systemowe bardzo często próbują wymusić własne marginesy bezpieczeństwa (zazwyczaj od 5 do 15 mm z każdej strony arkusza). 
+          Gdy w oknie drukowania pozostawiona jest zaznaczona opcja „Dopasuj do marginesów”, cała zawartość dokumentu ulega proporcjonalnemu skurczeniu.
+        </p>
+
+        <h3>Etapy prawidłowego przygotowania wydruku</h3>
+        <div class="table-wrapper">
+          <table class="guide-steps-table" aria-label="Etapy przygotowania wydruku">
+            <thead>
+              <tr>
+                <th scope="col">Krok</th>
+                <th scope="col">Czynność użytkownika</th>
+                <th scope="col">Cel i znaczenie metrologiczne</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>1. Wybór podziałki</strong></td>
+                <td>Wybierz rozmiar: 10 cm, 20 cm lub 30 cm</td>
+                <td>Dopasowuje długość podziałki do wielkości mierzonego przedmiotu.</td>
+              </tr>
+              <tr>
+                <td><strong>2. Konfiguracja sterownika</strong></td>
+                <td>Skala 100%, brak skalowania, format A4 Portrait</td>
+                <td>Eliminuje programowe pomniejszanie grafiki wektorowej przez przeglądarkę.</td>
+              </tr>
+              <tr>
+                <td><strong>3. Weryfikacja 5 cm</strong></td>
+                <td>Sprawdź pole kontrolne lub kartę płatniczą</td>
+                <td>Weryfikuje poprawność pracy rolek podajnika papieru przed pomiarem.</td>
+              </tr>
+              <tr>
+                <td><strong>4. Spokojny pomiar</strong></td>
+                <td>Przyłóż krawędź papieru bezpośrednio do przedmiotu</td>
+                <td>Zapobiega błędom paralaksy (odczytu pod kątem) typowym dla grubego szkła ekranu.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3 style="margin-top: var(--space-8);">Kiedy papierowa linijka jest lepsza niż ekran telefonu?</h3>
+        <p>
+          Wydrukowany przymiar papierowy ma kilka kluczowych zalet w porównaniu z wyświetlaczem smartfona:
+        </p>
+        <ul class="benefit-list">
+          <li><strong>Brak ryzyka porysowania ekranu:</strong> Możesz bezpiecznie mierzyć ostre metalowe śruby, gwoździe, surowe drewno czy narzędzia warsztatowe.</li>
+          <li><strong>Elastyczność i pomiar po łuku:</strong> Pasek papieru można zagiąć lub owinąć wokół rury, nadgarstka czy butelki, co jest niemożliwe na sztywnym szkle telefonu.</li>
+          <li><strong>Brak błędu paralaksy:</strong> Papier leży płasko na podłożu (grubość ok. 0,1 mm), podczas gdy warstwa szkła ochronnego w smartfonie (0,5–1,2 mm) powoduje pozorne przesunięcie kreski podziałki przy patrzeniu pod kątem.</li>
+        </ul>
+
+        <h3 style="margin-top: var(--space-8);">Najczęstsze pytania o linijkę do druku (FAQ)</h3>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary class="faq-question">Czy format pliku PDF ma znaczenie dla zachowania skali?</summary>
+            <div class="faq-answer">
+              <p>Tak. Format PDF zachowuje wektorowe instrukcje wymiarowe zapisane w punktach typograficznych (72 pt = 1 cal). W przeciwieństwie do zwykłych plików graficznych JPG, które przeglądarka graficzna w systemie Windows często rozciąga do rozmiaru okna, plik PDF drukowany z opcją „Rozmiar rzeczywisty” gwarantuje zachowanie proporcji 1:1.</p>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-question">Czy linijka wydrukowana na papierze Letter będzie dokładna?</summary>
+            <div class="faq-answer">
+              <p>Standard amerykański US Letter ma wymiary 215,9 × 279,4 mm (jest szerszy, ale o 17,6 mm krótszy niż A4). Nasza linijka została zoptymalizowana pod europejski standard A4. W przypadku druku na papierze Letter linijka 30 cm zostanie obcięta na końcach, dlatego zawsze należy w podajniku drukarki wybrać papier A4.</p>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-question">Jak zminimalizować błąd wynikający z rozciągania papieru?</summary>
+            <div class="faq-answer">
+              <p>W drukarkach laserowych temperatura utrwalacza (tonera) przekracza 180°C, co odparowuje wilgoć z papieru i powoduje jego minimalne skurczenie (zazwyczaj poniżej 0,2–0,4 mm na 20 cm). Aby uzyskać maksymalną dokładność, odczekaj 2–3 minuty po wydrukowaniu, aż arkusz ostygnie i wyrówna wilgotność z otoczeniem.</p>
+            </div>
+          </details>
+        </div>
+      </div>
     </div>
   </section>
 </BaseLayout>
@@ -454,6 +532,76 @@ const rulerSizes = [10, 20, 30];
 
   .browser-guide-list strong, .card-spec-list strong {
     color: var(--text-primary);
+  }
+
+  .guide-steps-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: var(--space-4);
+    background: var(--bg-primary);
+  }
+
+  .guide-steps-table th, .guide-steps-table td {
+    padding: var(--space-3) var(--space-4);
+    text-align: left;
+    font-size: 0.9375rem;
+    border-top: 1px solid var(--border);
+  }
+
+  .guide-steps-table thead {
+    background: var(--bg-tertiary);
+  }
+
+  .benefit-list {
+    margin: var(--space-3) 0;
+    padding-left: var(--space-5);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+  }
+
+  .benefit-list li {
+    font-size: 0.9375rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+  }
+
+  .benefit-list strong {
+    color: var(--text-primary);
+  }
+
+  .faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+    margin-top: var(--space-4);
+  }
+
+  .faq-item {
+    background: var(--bg-primary);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+  }
+
+  .faq-question {
+    padding: var(--space-4);
+    font-weight: 600;
+    font-size: 0.95rem;
+    cursor: pointer;
+    color: var(--text-primary);
+    user-select: none;
+  }
+
+  .faq-answer {
+    padding: 0 var(--space-4) var(--space-4);
+  }
+
+  .faq-answer p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
   }
 
   /* --- Print-specific overrides --- */
