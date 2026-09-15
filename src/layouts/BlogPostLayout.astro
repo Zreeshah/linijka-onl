@@ -182,27 +182,10 @@ const tocHeadings = headings.filter((h) => h.depth === 2);
 </BaseLayout>
 
 <style is:global>
-  .blog-content .content-figure {
-    margin: var(--space-8) 0;
-    padding: var(--space-4);
-    background: var(--bg-secondary);
-    border: 1px solid var(--border);
-    border-radius: var(--radius-lg);
-    text-align: center;
-  }
+  /* Hide unsupplied photograph placeholders for now */
+  .blog-content .content-figure,
   .blog-content .placeholder-box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 180px;
-    background: #f8fafc;
-    border: 2px dashed #94a3b8;
-    border-radius: var(--radius-md);
-    color: #475569;
-    font-weight: 600;
-    font-size: 0.95rem;
-    padding: var(--space-4);
-    margin-bottom: var(--space-3);
+    display: none !important;
   }
   .blog-content .content-figure figcaption {
     font-size: 0.875rem;

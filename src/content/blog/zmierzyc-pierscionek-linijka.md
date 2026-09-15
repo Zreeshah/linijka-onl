@@ -15,11 +15,7 @@ Wybór pierścionka zaręczynowego, obrączki ślubnej czy prezentu dla bliskiej
 
 Gdy nie masz możliwości potajemnego zabrania biżuterii do salonu złotniczego w celu użycia rygla miarowego, domowy pomiar linijką na ekranie smartfona lub komputera może dostarczyć cennych wskazówek i pomóc uniknąć nietrafionego zakupu.
 
-<figure class="content-figure">
-  <!-- TODO: Zdjęcie pomiaru pierścionka - pierścionek przyłożony do linijki na ekranie -->
-  <div class="placeholder-box">[TODO: Zdjęcie pomiaru pierścionka – pierścionek ułożony na podziałce w celu odczytu wewnętrznej średnicy]</div>
-  <figcaption>Odczyt średnicy wewnętrznej pierścionka: linijka mierzy wyłącznie prześwit obrączki, całkowicie pomijając grubość metalu.</figcaption>
-</figure>
+<!-- [TODO: Zdjęcie pomiaru pierścionka – pierścionek ułożony na podziałce w celu odczytu wewnętrznej średnicy] -->
 
 ## Średnica a obwód – dwie podstawowe metody domowe
 

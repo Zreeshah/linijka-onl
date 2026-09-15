@@ -15,11 +15,7 @@ Kiedy otwierasz stronę internetową z wirtualną miarką, intuicyjnie oczekujes
 
 Monitory biurowe, ekrany laptopów i matryce smartfonów diametralnie różnią się między sobą rozmiarem plamki i gęstością upakowania elementów świecących. W tym poradniku wyjaśniamy techniczne przyczyny rozbieżności skali w przeglądarkach oraz krok po kroku pokazujemy, jak przeprowadzić niezawodną kalibrację przy użyciu standardowej karty płatniczej.
 
-<figure class="content-figure">
-  <!-- TODO: Zdjęcie kalibracji - karta płatnicza przyłożona do ekranu telefonu/monitora -->
-  <div class="placeholder-box">[TODO: Zdjęcie kalibracji – standardowa karta płatnicza przyłożona do podziałki na ekranie]</div>
-  <figcaption>Wyrównanie krawędzi karty płatniczej (standard ID-1 o szerokości 85,60 mm) z wirtualną ramką kalibratora na ekranie.</figcaption>
-</figure>
+<!-- [TODO: Zdjęcie kalibracji – standardowa karta płatnicza przyłożona do podziałki na ekranie] -->
 
 ## Dlaczego przeglądarka internetowa nie zna rozmiaru Twojego ekranu?
 

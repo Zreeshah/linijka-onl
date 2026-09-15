@@ -15,11 +15,7 @@ Smartfon towarzyszy nam niemal w każdym momencie dnia – w pracy, w warsztacie
 
 Wielu użytkowników w pierwszej kolejności sięga do sklepów Google Play lub App Store, pobierając dedykowane programy naszpikowane reklamami i żądające dostępu do lokalizacji czy kontaktów. Tymczasem nowoczesna przeglądarka internetowa potrafi wyświetlić idealnie wyskalowaną podziałkę bezpośrednio w oknie roboczym bez zaśmiecania pamięci urządzenia.
 
-<figure class="content-figure">
-  <!-- TODO: Zdjęcie pomiaru małego przedmiotu na smartfonie -->
-  <div class="placeholder-box">[TODO: Zdjęcie pomiaru przedmiotu ułożonego na ekranie smartfona]</div>
-  <figcaption>Praktyczny pomiar drobnego elementu ułożonego bezpośrednio na wyświetlaczu telefonu z uruchomioną podziałką milimetrową.</figcaption>
-</figure>
+<!-- [TODO: Zdjęcie pomiaru przedmiotu ułożonego na ekranie smartfona] -->
 
 ## Dlaczego linijka w przeglądarce jest wygodniejsza od aplikacji?
 

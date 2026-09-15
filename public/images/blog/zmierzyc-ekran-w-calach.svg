@@ -103,7 +103,7 @@
 
     <!-- Bottom summary tag -->
     <g transform="translate(50, 480)">
-      <text x="0" y="15" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="12">Popularne rozmiary: 24&quot; ≈ 61 cm &bull; 27&quot; ≈ 69 cm &bull; 32&quot; ≈ 81 cm &bull; 55&quot; ≈ 140 cm</text>
+      <text x="0" y="15" fill="#94A3B8" font-family="system-ui, sans-serif" font-size="12">Popularne rozmiary: 24&quot; ≈ 61 cm • 27&quot; ≈ 69 cm • 32&quot; ≈ 81 cm • 55&quot; ≈ 140 cm</text>
     </g>
   </g>
 </svg>

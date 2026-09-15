@@ -15,11 +15,7 @@ W trakcie domowych napraw mebli, składania urządzeń elektronicznych czy drobn
 
 Choć profesjonalny ślusarz sięga w takiej sytuacji po suwmiarkę z noniuszem, w warunkach domowych z powodzeniem wystarczy dobrze skalibrowana wirtualna linijka na ekranie smartfona lub komputera.
 
-<figure class="content-figure">
-  <!-- TODO: Zdjęcie pomiaru śruby - śruba przyłożona do linijki na ekranie -->
-  <div class="placeholder-box">[TODO: Zdjęcie pomiaru śruby – śruba ułożona na ekranie wzdłuż podziałki milimetrowej]</div>
-  <figcaption>Prawidłowe ułożenie śruby z łbem walcowym na podziałce w celu weryfikacji średnicy gwintu i długości użytkowej.</figcaption>
-</figure>
+<!-- [TODO: Zdjęcie pomiaru śruby – śruba ułożona na ekranie wzdłuż podziałki milimetrowej] -->
 
 ## Anatomia śruby metrycznej – co dokładnie mierzymy?
 

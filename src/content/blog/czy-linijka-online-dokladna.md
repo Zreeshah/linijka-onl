@@ -15,11 +15,7 @@ Mierzenie przedmiotów za pomocą wirtualnej linijki wyświetlanej na ekranie ko
 
 W metrologii dokładność nie jest pojęciem abstrakcyjnym – oznacza zgodność wyniku pomiaru z wartością rzeczywistą wzorca. W tym artykule przeprowadzamy dogłębną analizę fizycznych i programowych ograniczeń ekranowych miarek cyfrowych, omawiamy pięć głównych czynników determinujących błąd pomiaru oraz przedstawiamy wyniki testów laboratoryjnych.
 
-<figure class="content-figure">
-  <!-- TODO: Zdjęcie porównania z wydrukiem kontrolnym A4 -->
-  <div class="placeholder-box">[TODO: Zdjęcie porównawcze – ekran z linijką online zestawiony z certyfikowanym wydrukiem kontrolnym A4 i suwmiarką]</div>
-  <figcaption>Weryfikacja skali wirtualnej linijki w zestawieniu z wydrukiem wzorcowym i tradycyjnym przymiarem warsztatowym.</figcaption>
-</figure>
+<!-- [TODO: Zdjęcie porównawcze – ekran z linijką online zestawiony z certyfikowanym wydrukiem kontrolnym A4 i suwmiarką] -->
 
 ## 5 czynników decydujących o dokładności linijki na ekranie
 
