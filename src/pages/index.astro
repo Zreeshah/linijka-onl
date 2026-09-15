@@ -139,6 +139,10 @@ const conversionData = [
   { cm: 30, mm: 300, inch: "11,81" },
   { cm: 50, mm: 500, inch: "19,69" },
 ];
+
+// Flaga określająca wyświetlanie tabeli dokładności urządzeń z Fazy 2.
+// Pozostaje ukryta (false) za flagą do momentu dostarczenia rzeczywistych danych laboratoryjnych.
+const showDeviceAccuracyTable = false;
 ---
 
 <BaseLayout
@@ -495,76 +499,32 @@ const conversionData = [
         </div>
       </div>
 
-      <h2>Dokładność na popularnych urządzeniach</h2>
-      <p>
-        W poniższej tabeli zestawiono empiryczne wyniki pomiarów laboratoryjnych przeprowadzonych na reprezentatywnych grupach urządzeń. 
-        Zestawienie obrazuje skalę błędu domyślnego (przed kalibracją) oraz precyzję osiąganą po kalibracji wzorcem karty ID-1:
-      </p>
+      {showDeviceAccuracyTable && (
+        <div class="device-accuracy-container">
+          <h2>Dokładność na popularnych urządzeniach</h2>
+          <p>
+            W poniższej tabeli zestawiono wyniki pomiarów laboratoryjnych przeprowadzonych na reprezentatywnych grupach urządzeń. 
+            Zestawienie obrazuje skalę błędu domyślnego (przed kalibracją) oraz precyzję osiąganą po kalibracji wzorcem karty ID-1:
+          </p>
 
-      <div class="table-wrapper">
-        <table class="accuracy-table" aria-label="Tabela dokładności linijki na popularnych urządzeniach">
-          <thead>
-            <tr>
-              <th scope="col">Urządzenie testowe</th>
-              <th scope="col">Rozdzielczość / Matryca</th>
-              <th scope="col">Błąd przed kalibracją</th>
-              <th scope="col">Błąd po kalibracji</th>
-              <th scope="col">Odchyłka na odcinku 10 cm</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><strong>Apple iPhone 15 / 16 Pro</strong></td>
-              <td>2556 × 1179 px (OLED 460 PPI)</td>
-              <td class="err-high">+11,5%</td>
-              <td class="err-low">&lt; 0,3%</td>
-              <td>&plusmn;0,3 mm</td>
-            </tr>
-            <tr>
-              <td><strong>Samsung Galaxy S24</strong></td>
-              <td>2340 × 1080 px (AMOLED 416 PPI)</td>
-              <td class="err-high">+13,2%</td>
-              <td class="err-low">&lt; 0,3%</td>
-              <td>&plusmn;0,3 mm</td>
-            </tr>
-            <tr>
-              <td><strong>Apple iPad Air 11" M2</strong></td>
-              <td>2360 × 1640 px (IPS 264 PPI)</td>
-              <td class="err-high">+8,7%</td>
-              <td class="err-low">&lt; 0,4%</td>
-              <td>&plusmn;0,4 mm</td>
-            </tr>
-            <tr>
-              <td><strong>Apple MacBook Air 13.6" M3</strong></td>
-              <td>2560 × 1664 px (IPS 224 PPI)</td>
-              <td class="err-high">&minus;7,3%</td>
-              <td class="err-low">&lt; 0,2%</td>
-              <td>&plusmn;0,2 mm</td>
-            </tr>
-            <tr>
-              <td><strong>Laptop biurowy 15.6" Full HD (Windows 125%)</strong></td>
-              <td>1920 × 1080 px (IPS 141 PPI)</td>
-              <td class="err-high">+18,4%</td>
-              <td class="err-low">&lt; 0,4%</td>
-              <td>&plusmn;0,4 mm</td>
-            </tr>
-            <tr>
-              <td><strong>Monitor desktopowy 24" Full HD</strong></td>
-              <td>1920 × 1080 px (IPS 92 PPI)</td>
-              <td class="err-mid">&minus;4,2%</td>
-              <td class="err-low">&lt; 0,3%</td>
-              <td>&plusmn;0,3 mm</td>
-            </tr>
-            <tr>
-              <td><strong>Monitor graficzny 27" 4K UHD</strong></td>
-              <td>3840 × 2160 px (IPS 163 PPI)</td>
-              <td class="err-high">+16,4%</td>
-              <td class="err-low">&lt; 0,3%</td>
-              <td>&plusmn;0,3 mm</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+          <div class="table-wrapper">
+            <table class="accuracy-table" aria-label="Tabela dokładności linijki na popularnych urządzeniach">
+              <thead>
+                <tr>
+                  <th scope="col">Urządzenie testowe</th>
+                  <th scope="col">Rozdzielczość / Matryca</th>
+                  <th scope="col">Błąd przed kalibracją</th>
+                  <th scope="col">Błąd po kalibracji</th>
+                  <th scope="col">Odchyłka na odcinku 10 cm</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Komponent przygotowany na przyjęcie zweryfikowanych pomiarów empirycznych -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      )}
 
       <!-- Reserved Ad Slot (Strictly Below Fold & Out of Ruler Path to prevent CLS) -->
       <div class="ad-slot-reserved ad-slot-horizontal" aria-label="Miejsce na reklamę">
