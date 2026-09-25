@@ -22,5 +22,8 @@
     { "source": "/blog/linijka-do-druku/", "destination": "/linijka-do-druku/", "statusCode": 301 },
     { "source": "/blog/linijka-online", "destination": "/", "statusCode": 301 },
     { "source": "/blog/linijka-online/", "destination": "/", "statusCode": 301 }
+  ],
+  "rewrites": [
+    { "source": "/sitemap.xml", "destination": "/sitemap-0.xml" }
   ]
 }
