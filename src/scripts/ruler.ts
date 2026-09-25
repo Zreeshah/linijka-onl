@@ -168,48 +168,38 @@ function drawCmTicks(..._args: any[]) {}
  */
 export function generatePrintRulerSVG(lengthCm: number): string {
   const pxPerMm = 96 / 25.4;
-  const totalPx = lengthCm * 10 * pxPerMm;
   const rulerWidth = 80;
+  const sections: string[] = [];
 
-  let svg = `<svg xmlns="http://www.w3.org/2000/svg" 
-    width="${totalPx}" height="${rulerWidth}" 
-    viewBox="0 0 ${totalPx} ${rulerWidth}"
-    role="img" aria-label="Linijka ${lengthCm} cm"
-    style="display:block;">`;
+  for (let startCm = 0; startCm < lengthCm; startCm += 10) {
+    const sectionCm = Math.min(10, lengthCm - startCm);
+    const sectionMm = sectionCm * 10;
+    const sectionPx = sectionMm * pxPerMm;
+    let svg = `<svg xmlns="http://www.w3.org/2000/svg"
+      width="${sectionCm}cm" height="${rulerWidth}"
+      viewBox="0 0 ${sectionPx} ${rulerWidth}"
+      role="img" aria-label="Linijka od ${startCm} do ${startCm + sectionCm} cm"
+      style="display:block;margin-bottom:0.4cm;">`;
 
-  // Background
-  svg += `<rect x="0" y="0" width="${totalPx}" height="${rulerWidth}" fill="#FFFFFF" rx="4" ry="4" stroke="#D1D5DB" stroke-width="1"/>`;
+    svg += `<rect x="0" y="0" width="${sectionPx}" height="${rulerWidth}" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="1"/>`;
 
-  const totalMm = lengthCm * 10;
-  for (let mm = 0; mm <= totalMm; mm++) {
-    const pos = mm * pxPerMm;
-    let tickLen: number;
-    let sw: number;
-    let color: string;
+    for (let mm = 0; mm <= sectionMm; mm++) {
+      const pos = mm * pxPerMm;
+      const major = mm % 10 === 0;
+      const tickLen = major ? 36 : mm % 5 === 0 ? 24 : 14;
+      const sw = major ? 1.8 : mm % 5 === 0 ? 1.2 : 0.8;
+      const color = major ? '#000' : mm % 5 === 0 ? '#333' : '#666';
+      svg += `<line x1="${pos}" y1="0" x2="${pos}" y2="${tickLen}" stroke="${color}" stroke-width="${sw}"/>`;
 
-    if (mm % 10 === 0) {
-      tickLen = 36;
-      sw = 1.8;
-      color = '#000';
-    } else if (mm % 5 === 0) {
-      tickLen = 24;
-      sw = 1.2;
-      color = '#333';
-    } else {
-      tickLen = 14;
-      sw = 0.8;
-      color = '#666';
+      if (major) {
+        const anchor = mm === 0 ? 'start' : mm === sectionMm ? 'end' : 'middle';
+        svg += `<text x="${pos}" y="${tickLen + 18}" text-anchor="${anchor}" font-family="sans-serif" font-size="14" font-weight="600" fill="#000">${startCm + mm / 10}</text>`;
+      }
     }
 
-    svg += `<line x1="${pos}" y1="0" x2="${pos}" y2="${tickLen}" stroke="${color}" stroke-width="${sw}"/>`;
-
-    if (mm % 10 === 0) {
-      const cmNum = mm / 10;
-      svg += `<text x="${pos}" y="${tickLen + 18}" text-anchor="middle" font-family="Inter,sans-serif" font-size="14" font-weight="600" fill="#000">${cmNum}</text>`;
-    }
+    svg += `<text x="${sectionPx - 8}" y="${rulerWidth - 8}" text-anchor="end" font-family="sans-serif" font-size="11" fill="#555">cm / mm</text>`;
+    sections.push(svg + '</svg>');
   }
 
-  svg += `<text x="${totalPx - 8}" y="${rulerWidth - 8}" text-anchor="end" font-family="Inter,sans-serif" font-size="11" font-weight="500" fill="#999">cm / mm</text>`;
-  svg += '</svg>';
-  return svg;
+  return sections.join('');
 }

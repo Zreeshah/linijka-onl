@@ -56,19 +56,19 @@ const rulerSizes = [10, 20, 30];
           <span class="step-icon">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
           </span>
-          <span>Wybierz opcję drukowania (Ctrl+P lub przycisk poniżej).</span>
+          <span>Otwórz drukowanie przez Ctrl+P lub przyciskiem poniżej.</span>
         </li>
         <li>
           <span class="step-icon">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
           </span>
-          <span>Ustaw skalę na <strong>100%</strong>.</span>
+          <span>Wybierz papier <strong>A4</strong>, orientację <strong>pionową</strong> i skalę <strong>100%</strong>.</span>
         </li>
         <li>
           <span class="step-icon">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
           </span>
-          <span>Wyłącz opcję <strong>„dopasuj do strony"</strong>.</span>
+          <span>Wyłącz opcję <strong>„dopasuj do strony”</strong> oraz automatyczne zmniejszanie wydruku.</span>
         </li>
         <li>
           <span class="step-icon">
@@ -114,7 +114,7 @@ const rulerSizes = [10, 20, 30];
   <section class="section print-calibration" id="test-box">
     <div class="container">
       <h2 class="no-print">Pole kontrolne 5 cm</h2>
-      <p class="no-print">Po wydrukowaniu zmierz to pole fizyczną linijką — powinno mieć dokładnie 5&nbsp;cm.</p>
+      <p class="no-print">Po wydrukowaniu zmierz od zewnętrznej lewej do zewnętrznej prawej krawędzi pola — powinno mieć 5&nbsp;cm.</p>
       
       <div class="test-box-container">
         <div class="test-box" aria-label="Pole kontrolne 5 centymetrów">
@@ -129,6 +129,7 @@ const rulerSizes = [10, 20, 30];
   <section class="section printable-rulers" id="linijki">
     <div class="container">
       <h2 class="no-print">Linijki do wydruku</h2>
+      <p class="no-print">Podziałki 20 cm i 30 cm są pokazane w kolejnych fragmentach po 10 cm, aby każda część zmieściła się na pionowej kartce A4. Zaznacz koniec fragmentu przed przeniesieniem przedmiotu do następnej części.</p>
       
       {rulerSizes.map((size) => (
         <div class="print-ruler-block" id={`ruler-${size}cm`}>
@@ -167,7 +168,7 @@ const rulerSizes = [10, 20, 30];
   <!-- ====== TROUBLESHOOTING SECTION ====== -->
   <section class="section print-troubleshooting no-print" id="rozwiazywanie-problemow" aria-label="Rozwiązywanie problemów z wydrukiem linijki">
     <div class="container troubleshooting-container">
-      <h2>Rozwiązywanie problemów z wydrukiem linijki (Troubleshooting)</h2>
+      <h2>Rozwiązywanie problemów z wydrukiem linijki</h2>
       <p class="troubleshooting-lead">
         Wydrukowanie precyzyjnego przymiaru w skali 1:1 wymaga wyeliminowania automatycznego skalowania, które większość przeglądarek i sterowników drukarek stosuje domyślnie. Poniżej znajdziesz sprawdzone rozwiązania najczęstszych problemów.
       </p>
@@ -179,7 +180,7 @@ const rulerSizes = [10, 20, 30];
           </div>
           <h3>1. Dlaczego linijka po wydrukowaniu jest o kilka milimetrów za krótka?</h3>
           <p>
-            <strong>Przyczyna:</strong> Przeglądarka internetowa miała zaznaczoną opcję <em>„Dopasuj do obszaru zadruku”</em> (Fit to printable area) lub marginesy były ustawione na „Domyślne”. Aby zmieścić treść w marginesach arkusza, sterownik automatycznie pomniejsza dokument do ok. 93–96%.
+            <strong>Przyczyna:</strong> Przeglądarka internetowa miała zaznaczoną opcję <em>„Dopasuj do obszaru zadruku”</em> lub marginesy były ustawione na „Domyślne”. Aby zmieścić treść w marginesach arkusza, sterownik może automatycznie pomniejszyć dokument.
           </p>
           <p>
             <strong>Rozwiązanie:</strong> W oknie dialogowym drukowania wybierz <strong>Skala: Niestandardowa &rarr; 100%</strong> (lub „Rozmiar rzeczywisty” / „Brak skalowania”) oraz ustaw Marginesy na <strong>„Brak”</strong> lub <strong>„Minimalne”</strong>.
@@ -245,7 +246,7 @@ const rulerSizes = [10, 20, 30];
         <h2>Praktyczny przewodnik i zasady formatu A4</h2>
         <p>
           Standardowy arkusz papieru biurowego formatu A4 (zgodny z normą ISO 216) ma precyzyjne wymiary <strong>210 × 297 mm</strong>. 
-          Pozwala to bez trudu zmieścić w układzie pionowym linijkę o długości 20 cm, a po przekątnej lub w układzie dopasowanym nawet miarkę 30 cm. 
+          Przy marginesach po 10 mm dostępna szerokość strony wynosi 19 cm. Dlatego dłuższe podziałki są podzielone na fragmenty po 10 cm; całej linijki 20 lub 30 cm nie należy dopasowywać do szerokości kartki.
           Jednak domyślne sterowniki systemowe bardzo często próbują wymusić własne marginesy bezpieczeństwa (zazwyczaj od 5 do 15 mm z każdej strony arkusza). 
           Gdy w oknie drukowania pozostawiona jest zaznaczona opcja „Dopasuj do marginesów”, cała zawartość dokumentu ulega proporcjonalnemu skurczeniu.
         </p>
@@ -268,7 +269,7 @@ const rulerSizes = [10, 20, 30];
               </tr>
               <tr>
                 <td><strong>2. Konfiguracja sterownika</strong></td>
-                <td>Skala 100%, brak skalowania, format A4 Portrait</td>
+                <td>Skala 100%, brak skalowania, format A4 pionowo</td>
                 <td>Eliminuje programowe pomniejszanie grafiki wektorowej przez przeglądarkę.</td>
               </tr>
               <tr>
@@ -278,7 +279,7 @@ const rulerSizes = [10, 20, 30];
               </tr>
               <tr>
                 <td><strong>4. Spokojny pomiar</strong></td>
-                <td>Przyłóż krawędź papieru bezpośrednio do przedmiotu</td>
+                <td>Przyłóż kreskę zero bezpośrednio do początku przedmiotu</td>
                 <td>Zapobiega błędom paralaksy (odczytu pod kątem) typowym dla grubego szkła ekranu.</td>
               </tr>
             </tbody>
@@ -295,24 +296,24 @@ const rulerSizes = [10, 20, 30];
           <li><strong>Brak błędu paralaksy:</strong> Papier leży płasko na podłożu (grubość ok. 0,1 mm), podczas gdy warstwa szkła ochronnego w smartfonie (0,5–1,2 mm) powoduje pozorne przesunięcie kreski podziałki przy patrzeniu pod kątem.</li>
         </ul>
 
-        <h3 style="margin-top: var(--space-8);">Najczęstsze pytania o linijkę do druku (FAQ)</h3>
+        <h3 style="margin-top: var(--space-8);">Najczęstsze pytania o linijkę do druku</h3>
         <div class="faq-list">
           <details class="faq-item">
             <summary class="faq-question">Czy format pliku PDF ma znaczenie dla zachowania skali?</summary>
             <div class="faq-answer">
-              <p>Tak. Format PDF zachowuje wektorowe instrukcje wymiarowe zapisane w punktach typograficznych (72 pt = 1 cal). W przeciwieństwie do zwykłych plików graficznych JPG, które przeglądarka graficzna w systemie Windows często rozciąga do rozmiaru okna, plik PDF drukowany z opcją „Rozmiar rzeczywisty” gwarantuje zachowanie proporcji 1:1.</p>
+              <p>Plik zapisany jako PDF zachowuje układ strony, ale nadal może zostać przeskalowany przez sterownik drukarki. Wybierz „Rozmiar rzeczywisty” lub 100% i sprawdź wydrukowany odcinek kontrolny przed pomiarem.</p>
             </div>
           </details>
           <details class="faq-item">
             <summary class="faq-question">Czy linijka wydrukowana na papierze Letter będzie dokładna?</summary>
             <div class="faq-answer">
-              <p>Standard amerykański US Letter ma wymiary 215,9 × 279,4 mm (jest szerszy, ale o 17,6 mm krótszy niż A4). Nasza linijka została zoptymalizowana pod europejski standard A4. W przypadku druku na papierze Letter linijka 30 cm zostanie obcięta na końcach, dlatego zawsze należy w podajniku drukarki wybrać papier A4.</p>
+              <p>Ten wydruk przygotowano dla papieru A4 w orientacji pionowej. Przy innym formacie sprawdź, czy sterownik nie zmienia skali i czy 5-centymetrowe pole kontrolne zachowuje właściwy wymiar.</p>
             </div>
           </details>
           <details class="faq-item">
             <summary class="faq-question">Jak zminimalizować błąd wynikający z rozciągania papieru?</summary>
             <div class="faq-answer">
-              <p>W drukarkach laserowych temperatura utrwalacza (tonera) przekracza 180°C, co odparowuje wilgoć z papieru i powoduje jego minimalne skurczenie (zazwyczaj poniżej 0,2–0,4 mm na 20 cm). Aby uzyskać maksymalną dokładność, odczekaj 2–3 minuty po wydrukowaniu, aż arkusz ostygnie i wyrówna wilgotność z otoczeniem.</p>
+              <p>Wydruk powinien być płaski i suchy. Jeśli papier jest wygięty, wilgotny lub pofalowany, przyłożenie go do przedmiotu będzie mniej pewne. Do ważnych pomiarów użyj sztywnej linijki lub suwmiarki.</p>
             </div>
           </details>
         </div>
@@ -399,9 +400,9 @@ const rulerSizes = [10, 20, 30];
   }
 
   .test-box {
-    /* 5cm at 96 DPI = 5 * 37.795 ≈ 189px */
-    width: 189px;
+    width: 5cm;
     height: 60px;
+    box-sizing: border-box;
     border: 2px solid #000;
     display: flex;
     align-items: center;
