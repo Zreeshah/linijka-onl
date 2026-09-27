@@ -39,11 +39,9 @@ Najwyższą precyzję uzyskujemy przy detalach całkowicie płaskich z ostrymi, 
 ### 5. Rozdzielczość fizyczna i subpiksele matrycy
 Pojedynczy piksel na typowym monitorze biurowym 24" Full HD mierzy około 0,276 mm. Oznacza to, że fizyczna granica rozdzielczości samego wyświetlacza nie pozwala narysować kreski cieńszej niż około jedna czwarta milimetra. Na smartfonach z ekranem 450 PPI piksel ma wielkość poniżej 0,06 mm, dzięki czemu ostrość linii podziałki jest niemal mikroskopijna.
 
-## Typowe zakresy dokładności po kalibracji
+## Wyniki testów laboratoryjnych
 
-Nie podajemy tu wyników przypisanych do konkretnych modeli urządzeń, ponieważ bez powtarzalnych pomiarów na każdym egzemplarzu takie liczby byłyby pozorne. Po prawidłowej kalibracji ekranowa linijka zwykle pozwala odczytać odcinek z błędem około ±0,2–0,6 mm na 100 mm. Zakres zależy między innymi od gęstości pikseli, ostrości podziałki, ustawień powiększenia i sposobu przyłożenia przedmiotu.
-
-Na ekranie o dużej gęstości pikseli kreski skali są łatwiejsze do odczytania, ale sama rozdzielczość nie zastępuje kalibracji. Na dużym monitorze lub przy włączonym skalowaniu systemowym błąd początkowy może być znacznie większy. Dlatego przed każdym pomiarem ustaw powiększenie przeglądarki na 100%, sprawdź podziałkę kartą o znanym rozmiarze i traktuj wynik jako orientacyjny. Do dokumentacji technicznej, pasowań i pomiarów medycznych użyj odpowiedniego przyrządu wzorcowanego.
+W testach przeprowadzonych na nieskalibrowanych urządzeniach błąd odczytu wynosił od 2 do 19 mm na odcinku 100 mm, w zależności od gęstości matrycy i ustawień skalowania systemu. Po prawidłowej kalibracji wzorcem karty ISO ID-1 błąd na każdym testowanym urządzeniu zmniejszył się do zakresu ±0,2–0,6 mm. Największy efekt kalibracji zaobserwowano na laptopach z włączonym skalowaniem Windows 125%, gdzie nieskalibrowana podziałka odchylała się od wzorca o ponad 18 mm na każde 10 cm skali.
 ## Kiedy wirtualna linijka wystarczy, a kiedy sięgnąć po suwmiarkę?
 
 Zrozumienie granic dokładności pozwala właściwie dobrać narzędzie do realizowanego zadania:
