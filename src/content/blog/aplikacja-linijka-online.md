@@ -20,7 +20,7 @@ Oba rozwiązania realizują ten sam podstawowy cel, jednak różnią się pod wz
 Przed omówieniem różnic warto wyjaśnić, z jakich mechanizmów korzystają oba typy oprogramowania:
 
 1. **Aplikacje natywne (instalowane)**: Pliki binarne (APK lub IPA) pobierane z marketu i instalowane bezpośrednio w pamięci telefonu. Dzielą się na:
-   - **Aplikacje 2D (ekranowe)** – wyświetlają statyczną podziałkę na wyświetlaczu, podobnie jak strona WWW.
+   - **Aplikacje 2D (ekranowe)** – wyświetlają statyczną podziałkę na wyświetlaczu, podobnie jak [strona główna Linijka.onl](/).
    - **Aplikacje AR (rozszerzona rzeczywistość)** – wykorzystują aparat fotograficzny smartfona, czujniki żyroskopowe oraz sensor LiDAR (np. w nowszych modelach iPhone Pro) do wyznaczania punktów w trójwymiarowej przestrzeni pokoju.
 2. **Narzędzia webowe (linijki online)**: Lekkie aplikacje internetowe działające w bezpiecznej piaskownicy (*sandbox*) nowoczesnej przeglądarki internetowej (Chrome, Safari, Firefox, Edge). Nie wymagają instalacji i operują na standardowych technologiach HTML5, CSS3 i JavaScript.
 
