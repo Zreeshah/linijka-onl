@@ -5,7 +5,7 @@ ogTitle: "Tabela rozmiarów pierścionków i pomiar palca"
 ogDescription: "Praktyczny przewodnik pomiaru palca w domu oraz porównania rozmiarów polskich, europejskich, amerykańskich i brytyjskich."
 imageAlt: "Tabela rozmiarów pierścionków i linijka do pomiaru obwodu palca"
 heroImage: "/images/blog/tabela-rozmiarow-pierscionkow.svg"
-pubDate: "2026-09-20"
+pubDate: "2026-03-18"
 updatedDate: "2026-09-28"
 ---
 

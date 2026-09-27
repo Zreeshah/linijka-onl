@@ -5,7 +5,7 @@ ogTitle: "Przekątna telewizora w calach i centymetrach"
 ogDescription: "Tabela najpopularniejszych przekątnych telewizorów, rzeczywista szerokość ekranu i prosty sposób sprawdzenia miejsca przed zakupem."
 imageAlt: "Telewizor z zaznaczoną przekątną i tabelą rozmiarów w calach oraz centymetrach"
 heroImage: "/images/blog/przekatna-telewizora-cale-cm.svg"
-pubDate: "2026-09-22"
+pubDate: "2026-06-04"
 updatedDate: "2026-09-28"
 ---
 

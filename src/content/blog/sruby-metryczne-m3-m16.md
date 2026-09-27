@@ -5,7 +5,7 @@ ogTitle: "Śruby metryczne M3–M16: tabela wymiarów"
 ogDescription: "Praktyczna tabela popularnych śrub metrycznych oraz instrukcja rozpoznania średnicy, skoku i długości elementu."
 imageAlt: "Śruba metryczna na podziałce z tabelą wymiarów od M3 do M16"
 heroImage: "/images/blog/sruby-metryczne-m3-m16.svg"
-pubDate: "2026-09-21"
+pubDate: "2026-04-24"
 updatedDate: "2026-09-28"
 ---
 
