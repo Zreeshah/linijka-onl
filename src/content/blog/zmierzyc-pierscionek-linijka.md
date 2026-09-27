@@ -15,8 +15,6 @@ Wybór pierścionka zaręczynowego, obrączki ślubnej czy prezentu dla bliskiej
 
 Gdy nie masz możliwości potajemnego zabrania biżuterii do salonu złotniczego w celu użycia rygla miarowego, domowy pomiar linijką na ekranie smartfona lub komputera może dostarczyć cennych wskazówek i pomóc uniknąć nietrafionego zakupu.
 
-<!-- [TODO: Zdjęcie pomiaru pierścionka – pierścionek ułożony na podziałce w celu odczytu wewnętrznej średnicy] -->
-
 ## Średnica a obwód – dwie podstawowe metody domowe
 
 W jubilerstwie stosuje się dwie podstawowe wielkości geometryczne opisujące rozmiar palca i pierścionka:
@@ -50,117 +48,9 @@ Palce zmieniają swoją objętość w ciągu doby:
 - Zimą na mrozie palce kurczą się i pierścionek może zsuwać się z dłoni.
 Najbardziej miarodajny pomiar uzyskuje się w temperaturze pokojowej w godzinach popołudniowych.
 
-## Tabela rozmiarów pierścionków w Polsce (rozmiary 1–30)
+## Jak odczytać rozmiar bez niepewnej tabeli
 
-Poniższa tabela przedstawia oficjalną polską klasyfikację rozmiarów jubilerskich w zestawieniu ze średnicą wewnętrzną oraz obwodem:
-
-<!-- TODO: Tabela polskich rozmiarów jubilerskich 1–30 (numer rozmiaru, średnica wewnętrzna mm, obwód wewnętrzny mm). Uzupełnij pełnym zakresem wzorcowym. -->
-<div class="reference-table-wrapper">
-  <table class="data-table" id="ring-sizes-table">
-    <thead>
-      <tr>
-        <th scope="col">Rozmiar jubilerski (PL)</th>
-        <th scope="col">Średnica wewnętrzna (mm)</th>
-        <th scope="col">Obwód wewnętrzny (mm)</th>
-        <th scope="col">Rozmiar US</th>
-      </tr>
-    </thead>
-    <tbody>
-      <!-- TODO: Wiersze tabeli rozmiarów jubilerskich od 1 do 30 -->
-      <tr>
-        <td><strong>Rozmiar 8</strong></td>
-        <td>[TODO: 15,00 – 15,20 mm]</td>
-        <td>[TODO: ~48 mm]</td>
-        <td>[TODO: 4.5]</td>
-      </tr>
-      <tr>
-        <td><strong>Rozmiar 9</strong></td>
-        <td>[TODO: 15,33 – 15,50 mm]</td>
-        <td>[TODO: ~49 mm]</td>
-        <td>[TODO: 5.0]</td>
-      </tr>
-      <tr>
-        <td><strong>Rozmiar 10</strong></td>
-        <td>[TODO: 15,67 – 15,80 mm]</td>
-        <td>[TODO: ~50 mm]</td>
-        <td>[TODO: 5.5]</td>
-      </tr>
-      <tr>
-        <td><strong>Rozmiar 11</strong></td>
-        <td>[TODO: 16,00 – 16,20 mm]</td>
-        <td>[TODO: ~51 mm]</td>
-        <td>[TODO: 6.0]</td>
-      </tr>
-      <tr>
-        <td><strong>Rozmiar 12</strong></td>
-        <td>[TODO: 16,33 – 16,50 mm]</td>
-        <td>[TODO: ~52 mm]</td>
-        <td>[TODO: 6.0 - 6.5]</td>
-      </tr>
-      <tr>
-        <td><strong>Rozmiar 13</strong></td>
-        <td>[TODO: 16,67 – 16,80 mm]</td>
-        <td>[TODO: ~53 mm]</td>
-        <td>[TODO: 6.5]</td>
-      </tr>
-      <tr>
-        <td><strong>Rozmiar 14</strong></td>
-        <td>[TODO: 17,00 – 17,20 mm]</td>
-        <td>[TODO: ~54 mm]</td>
-        <td>[TODO: 7.0]</td>
-      </tr>
-      <tr>
-        <td><strong>Rozmiar 15</strong></td>
-        <td>[TODO: 17,33 – 17,50 mm]</td>
-        <td>[TODO: ~55 mm]</td>
-        <td>[TODO: 7.5]</td>
-      </tr>
-      <tr>
-        <td><strong>Rozmiar 16</strong></td>
-        <td>[TODO: 17,67 – 17,80 mm]</td>
-        <td>[TODO: ~56 mm]</td>
-        <td>[TODO: 7.5 - 8.0]</td>
-      </tr>
-      <tr>
-        <td><strong>Rozmiar 17</strong></td>
-        <td>[TODO: 18,00 – 18,20 mm]</td>
-        <td>[TODO: ~57 mm]</td>
-        <td>[TODO: 8.0]</td>
-      </tr>
-      <tr>
-        <td><strong>Rozmiar 18</strong></td>
-        <td>[TODO: 18,33 – 18,50 mm]</td>
-        <td>[TODO: ~58 mm]</td>
-        <td>[TODO: 8.5]</td>
-      </tr>
-      <tr>
-        <td><strong>Rozmiar 19</strong></td>
-        <td>[TODO: 18,67 – 18,80 mm]</td>
-        <td>[TODO: ~59 mm]</td>
-        <td>[TODO: 9.0]</td>
-      </tr>
-      <tr>
-        <td><strong>Rozmiar 20</strong></td>
-        <td>[TODO: 19,00 – 19,20 mm]</td>
-        <td>[TODO: ~60 mm]</td>
-        <td>[TODO: 9.5]</td>
-      </tr>
-      <tr>
-        <td><strong>Rozmiar 21</strong></td>
-        <td>[TODO: 19,33 – 19,50 mm]</td>
-        <td>[TODO: ~61 mm]</td>
-        <td>[TODO: 9.5 - 10.0]</td>
-      </tr>
-      <tr>
-        <td><strong>Rozmiar 22</strong></td>
-        <td>[TODO: 19,67 – 19,80 mm]</td>
-        <td>[TODO: ~62 mm]</td>
-        <td>[TODO: 10.0]</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-
+Polski numer jubilerski opisuje obwód wewnętrzny pierścionka w milimetrach. Po zmierzeniu średnicy wewnętrznej pomnóż ją przez 3,1415, aby otrzymać przybliżony obwód, a następnie porównaj wynik z aktualną tabelą konkretnego jubilera. Różnice między tabelami i kształtem obrączki mają znaczenie, dlatego wynik z linijki online traktuj jako wskazówkę do wyboru kilku rozmiarów, a nie jako ostateczne potwierdzenie zamówienia.
 ## Alternatywna metoda: pomiar obwodu palca paskiem papieru
 
 Jeśli nie masz pierścionka wzorcowego, możesz zmierzyć bezpośrednio palec:

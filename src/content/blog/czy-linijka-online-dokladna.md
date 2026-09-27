@@ -13,9 +13,7 @@ updatedDate: "2026-09-15"
 
 Mierzenie przedmiotów za pomocą wirtualnej linijki wyświetlanej na ekranie komputera lub telefonu to niezwykle wygodne rozwiązanie w sytuacjach awaryjnych. Jednak osoby zajmujące się majsterkowaniem, modelarstwem, grafiką czy krawiectwem słusznie zadają sobie pytanie: na ile wiarygodny jest odczyt uzyskany ze szklanego panelu ciekłokrystalicznego lub diodowego?
 
-W metrologii dokładność nie jest pojęciem abstrakcyjnym – oznacza zgodność wyniku pomiaru z wartością rzeczywistą wzorca. W tym artykule przeprowadzamy dogłębną analizę fizycznych i programowych ograniczeń ekranowych miarek cyfrowych, omawiamy pięć głównych czynników determinujących błąd pomiaru oraz przedstawiamy wyniki testów laboratoryjnych.
-
-<!-- [TODO: Zdjęcie porównawcze – ekran z linijką online zestawiony z certyfikowanym wydrukiem kontrolnym A4 i suwmiarką] -->
+W metrologii dokładność nie jest pojęciem abstrakcyjnym – oznacza zgodność wyniku pomiaru z wartością rzeczywistą wzorca. W tym artykule przeprowadzamy dogłębną analizę fizycznych i programowych ograniczeń ekranowych miarek cyfrowych oraz omawiamy pięć głównych czynników determinujących błąd pomiaru.
 
 ## 5 czynników decydujących o dokładności linijki na ekranie
 
@@ -41,118 +39,11 @@ Najwyższą precyzję uzyskujemy przy detalach całkowicie płaskich z ostrymi, 
 ### 5. Rozdzielczość fizyczna i subpiksele matrycy
 Pojedynczy piksel na typowym monitorze biurowym 24" Full HD mierzy około 0,276 mm. Oznacza to, że fizyczna granica rozdzielczości samego wyświetlacza nie pozwala narysować kreski cieńszej niż około jedna czwarta milimetra. Na smartfonach z ekranem 450 PPI piksel ma wielkość poniżej 0,06 mm, dzięki czemu ostrość linii podziałki jest niemal mikroskopijna.
 
-## Wyniki testów laboratoryjnych: tabela dokładności na różnych urządzeniach
+## Typowe zakresy dokładności po kalibracji
 
-W celu empirycznego zbadania powtarzalności pomiarów przeprowadziliśmy serię testów porównawczych. Poniższa tabela zawiera zestawienie błędów bezwzględnych zarejestrowanych przed przeprowadzeniem procedury dopasowania oraz po prawidłowej kalibracji wzorcem ISO ID-1:
+Nie podajemy tu wyników przypisanych do konkretnych modeli urządzeń, ponieważ bez powtarzalnych pomiarów na każdym egzemplarzu takie liczby byłyby pozorne. Po prawidłowej kalibracji ekranowa linijka zwykle pozwala odczytać odcinek z błędem około ±0,2–0,6 mm na 100 mm. Zakres zależy między innymi od gęstości pikseli, ostrości podziałki, ustawień powiększenia i sposobu przyłożenia przedmiotu.
 
-<!-- TODO: Tabela testowa dokładności urządzeń - rzeczywisty zmierzony błąd w mm przed i po kalibracji na ~10 urządzeniach. Wypełnij realnymi pomiarami laboratoryjnymi. -->
-<div class="reference-table-wrapper">
-  <table class="data-table" id="device-accuracy-table">
-    <thead>
-      <tr>
-        <th scope="col">Urządzenie testowe</th>
-        <th scope="col">Typ matrycy</th>
-        <th scope="col">Gęstość (PPI)</th>
-        <th scope="col">Błąd przed kalibracją (mm na 100 mm)</th>
-        <th scope="col">Błąd po kalibracji (mm na 100 mm)</th>
-        <th scope="col">Odchylenie względne (%)</th>
-      </tr>
-    </thead>
-    <tbody>
-      <!-- TODO: Wiersz 1 - Przykładowy flagowy smartfon z ekranem AMOLED -->
-      <tr>
-        <td><strong>[TODO: Model smartfona A (np. iPhone 15 Pro)]</strong></td>
-        <td>OLED / 120 Hz</td>
-        <td>460 PPI</td>
-        <td>[TODO: np. +4,2 mm]</td>
-        <td>[TODO: np. &plusmn;0,2 mm]</td>
-        <td>[TODO: 0,2%]</td>
-      </tr>
-      <!-- TODO: Wiersz 2 - Przykładowy smartfon średniopółkowy Android -->
-      <tr>
-        <td><strong>[TODO: Model smartfona B (np. Samsung Galaxy S23)]</strong></td>
-        <td>Dynamic AMOLED</td>
-        <td>425 PPI</td>
-        <td>[TODO: np. -3,8 mm]</td>
-        <td>[TODO: np. &plusmn;0,3 mm]</td>
-        <td>[TODO: 0,3%]</td>
-      </tr>
-      <!-- TODO: Wiersz 3 - Przykładowy budżetowy telefon LCD -->
-      <tr>
-        <td><strong>[TODO: Model smartfona C (np. Xiaomi Redmi Note)]</strong></td>
-        <td>IPS LCD</td>
-        <td>395 PPI</td>
-        <td>[TODO: np. +5,1 mm]</td>
-        <td>[TODO: np. &plusmn;0,4 mm]</td>
-        <td>[TODO: 0,4%]</td>
-      </tr>
-      <!-- TODO: Wiersz 4 - Tablet 11 cali -->
-      <tr>
-        <td><strong>[TODO: Tablet 11" (np. iPad Air)]</strong></td>
-        <td>Liquid Retina</td>
-        <td>264 PPI</td>
-        <td>[TODO: np. -2,1 mm]</td>
-        <td>[TODO: np. &plusmn;0,2 mm]</td>
-        <td>[TODO: 0,2%]</td>
-      </tr>
-      <!-- TODO: Wiersz 5 - Laptop biurowy 14 cali Full HD -->
-      <tr>
-        <td><strong>[TODO: Laptop 14" Full HD]</strong></td>
-        <td>IPS matowy</td>
-        <td>157 PPI</td>
-        <td>[TODO: np. +12,4 mm]</td>
-        <td>[TODO: np. &plusmn;0,5 mm]</td>
-        <td>[TODO: 0,5%]</td>
-      </tr>
-      <!-- TODO: Wiersz 6 - Laptop 15,6 cala z systemowym skalowaniem 125% -->
-      <tr>
-        <td><strong>[TODO: Laptop 15,6" z Windows 125%]</strong></td>
-        <td>IPS</td>
-        <td>141 PPI</td>
-        <td>[TODO: np. +18,7 mm]</td>
-        <td>[TODO: np. &plusmn;0,5 mm]</td>
-        <td>[TODO: 0,5%]</td>
-      </tr>
-      <!-- TODO: Wiersz 7 - Monitor zewnętrzny 24 cale Full HD -->
-      <tr>
-        <td><strong>[TODO: Monitor stacjonarny 24" Full HD]</strong></td>
-        <td>VA</td>
-        <td>92 PPI</td>
-        <td>[TODO: np. -8,5 mm]</td>
-        <td>[TODO: np. &plusmn;0,6 mm]</td>
-        <td>[TODO: 0,6%]</td>
-      </tr>
-      <!-- TODO: Wiersz 8 - Monitor graficzny 27 cali 4K -->
-      <tr>
-        <td><strong>[TODO: Monitor 27" 4K UHD]</strong></td>
-        <td>IPS 10-bit</td>
-        <td>163 PPI</td>
-        <td>[TODO: np. +14,2 mm]</td>
-        <td>[TODO: np. &plusmn;0,3 mm]</td>
-        <td>[TODO: 0,3%]</td>
-      </tr>
-      <!-- TODO: Wiersz 9 - Monitor Ultrawide 34 cale -->
-      <tr>
-        <td><strong>[TODO: Monitor 34" Ultrawide Curved]</strong></td>
-        <td>OLED 1800R</td>
-        <td>110 PPI</td>
-        <td>[TODO: np. -6,1 mm]</td>
-        <td>[TODO: np. &plusmn;0,5 mm]</td>
-        <td>[TODO: 0,5%]</td>
-      </tr>
-      <!-- TODO: Wiersz 10 - Czytnik e-booków z przeglądarką -->
-      <tr>
-        <td><strong>[TODO: Czytnik E-Ink z przeglądarką]</strong></td>
-        <td>E-Ink Carta</td>
-        <td>300 PPI</td>
-        <td>[TODO: np. +7,3 mm]</td>
-        <td>[TODO: np. &plusmn;0,4 mm]</td>
-        <td>[TODO: 0,4%]</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-
+Na ekranie o dużej gęstości pikseli kreski skali są łatwiejsze do odczytania, ale sama rozdzielczość nie zastępuje kalibracji. Na dużym monitorze lub przy włączonym skalowaniu systemowym błąd początkowy może być znacznie większy. Dlatego przed każdym pomiarem ustaw powiększenie przeglądarki na 100%, sprawdź podziałkę kartą o znanym rozmiarze i traktuj wynik jako orientacyjny. Do dokumentacji technicznej, pasowań i pomiarów medycznych użyj odpowiedniego przyrządu wzorcowanego.
 ## Kiedy wirtualna linijka wystarczy, a kiedy sięgnąć po suwmiarkę?
 
 Zrozumienie granic dokładności pozwala właściwie dobrać narzędzie do realizowanego zadania:

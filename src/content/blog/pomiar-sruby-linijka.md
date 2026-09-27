@@ -15,8 +15,6 @@ W trakcie domowych napraw mebli, składania urządzeń elektronicznych czy drobn
 
 Choć profesjonalny ślusarz sięga w takiej sytuacji po suwmiarkę z noniuszem, w warunkach domowych z powodzeniem wystarczy dobrze skalibrowana wirtualna linijka na ekranie smartfona lub komputera.
 
-<!-- [TODO: Zdjęcie pomiaru śruby – śruba ułożona na ekranie wzdłuż podziałki milimetrowej] -->
-
 ## Anatomia śruby metrycznej – co dokładnie mierzymy?
 
 Oznaczenie śruby metrycznej (np. popularne **M6 x 30**) składa się z dwóch kluczowych liczb:
@@ -33,82 +31,9 @@ Najczęstszym błędem popełnianym przez majsterkowiczów jest niewłaściwy po
 - **Śruby z łbem wystającym ponad materiał** (łeb sześciokątny DIN 933, łeb walcowy imbusowy DIN 912, łeb grzybkowy DIN 603): **Mierzymy wyłącznie długość trzpienia**, od spodu łba do samego końca gwintu. Grubość samego łba jest całkowicie pomijana.
 - **Śruby z łbem stożkowym wpuszczanym** (DIN 965, DIN 7991): **Mierzymy całkowitą długość śruby wraz z łbem**. Wynika to z faktu, że łeb stożkowy po wkręceniu licuje się z płaszczyzną mocowanego elementu i w całości wchodzi w głąb materiału.
 
-## Tabela referencyjna śrub metrycznych M3–M10
+## Jak orientacyjnie rozpoznać rozmiar śruby
 
-Poniższa tabela stanowi podręczny przewodnik ułatwiający rozpoznanie rozmiaru śruby na podstawie średnicy zmierzonej linijką, standardowego skoku gwintu oraz rozmiaru pasującego klucza:
-
-<!-- TODO: Tabela wymiarów śrub metrycznych M3–M10 (średnica gwintu, skok gwintu, rozmiar klucza, średnica otworu pod gwint). Uzupełnij zweryfikowanymi danymi warsztatowymi. -->
-<div class="reference-table-wrapper">
-  <table class="data-table" id="screw-dimensions-table">
-    <thead>
-      <tr>
-        <th scope="col">Oznaczenie gwintu</th>
-        <th scope="col">Zewnętrzna średnica gwintu (mm)</th>
-        <th scope="col">Średnica rdzenia (mm)</th>
-        <th scope="col">Standardowy skok gwintu (mm)</th>
-        <th scope="col">Rozmiar klucza sześciokątnego (mm)</th>
-        <th scope="col">Rozmiar klucza imbusowego (mm)</th>
-      </tr>
-    </thead>
-    <tbody>
-      <!-- TODO: Wiersz M3 -->
-      <tr>
-        <td><strong>M3</strong></td>
-        <td>[TODO: 2,90 – 3,00 mm]</td>
-        <td>[TODO: ~2,38 mm]</td>
-        <td>[TODO: 0,50 mm]</td>
-        <td>[TODO: 5,5 mm]</td>
-        <td>[TODO: 2,5 mm]</td>
-      </tr>
-      <!-- TODO: Wiersz M4 -->
-      <tr>
-        <td><strong>M4</strong></td>
-        <td>[TODO: 3,88 – 4,00 mm]</td>
-        <td>[TODO: ~3,14 mm]</td>
-        <td>[TODO: 0,70 mm]</td>
-        <td>[TODO: 7,0 mm]</td>
-        <td>[TODO: 3,0 mm]</td>
-      </tr>
-      <!-- TODO: Wiersz M5 -->
-      <tr>
-        <td><strong>M5</strong></td>
-        <td>[TODO: 4,86 – 5,00 mm]</td>
-        <td>[TODO: ~4,02 mm]</td>
-        <td>[TODO: 0,80 mm]</td>
-        <td>[TODO: 8,0 mm]</td>
-        <td>[TODO: 4,0 mm]</td>
-      </tr>
-      <!-- TODO: Wiersz M6 -->
-      <tr>
-        <td><strong>M6</strong></td>
-        <td>[TODO: 5,85 – 6,00 mm]</td>
-        <td>[TODO: ~4,77 mm]</td>
-        <td>[TODO: 1,00 mm]</td>
-        <td>[TODO: 10,0 mm]</td>
-        <td>[TODO: 5,0 mm]</td>
-      </tr>
-      <!-- TODO: Wiersz M8 -->
-      <tr>
-        <td><strong>M8</strong></td>
-        <td>[TODO: 7,82 – 8,00 mm]</td>
-        <td>[TODO: ~6,47 mm]</td>
-        <td>[TODO: 1,25 mm]</td>
-        <td>[TODO: 13,0 mm]</td>
-        <td>[TODO: 6,0 mm]</td>
-      </tr>
-      <!-- TODO: Wiersz M10 -->
-      <tr>
-        <td><strong>M10</strong></td>
-        <td>[TODO: 9,80 – 10,00 mm]</td>
-        <td>[TODO: ~8,16 mm]</td>
-        <td>[TODO: 1,50 mm]</td>
-        <td>[TODO: 16,0 / 17,0 mm]</td>
-        <td>[TODO: 8,0 mm]</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-
+Po kalibracji można wstępnie rozróżnić popularne średnice nominalne: około 3 mm zwykle wskazuje M3, około 4 mm M4, około 5 mm M5, około 6 mm M6, a około 8 mm M8. Taki odczyt nie potwierdza jednak skoku gwintu, klasy tolerancji ani właściwego rozmiaru klucza. Wartości mogą różnić się od nominalnych przez zużycie, powłokę i położenie śruby na ekranie, dlatego przed zamówieniem części potwierdź wynik suwmiarką lub sprawdzianem gwintu.
 ## 6 praktycznych kroków do pomiaru śruby na ekranie
 
 Aby zmierzyć łącznik za pomocą linijki internetowej, wykonaj poniższe czynności:

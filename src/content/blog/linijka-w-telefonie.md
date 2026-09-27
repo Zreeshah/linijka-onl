@@ -15,8 +15,6 @@ Smartfon towarzyszy nam niemal w każdym momencie dnia – w pracy, w warsztacie
 
 Wielu użytkowników w pierwszej kolejności sięga do sklepów Google Play lub App Store, pobierając dedykowane programy naszpikowane reklamami i żądające dostępu do lokalizacji czy kontaktów. Tymczasem nowoczesna przeglądarka internetowa potrafi wyświetlić idealnie wyskalowaną podziałkę bezpośrednio w oknie roboczym bez zaśmiecania pamięci urządzenia.
 
-<!-- [TODO: Zdjęcie pomiaru przedmiotu ułożonego na ekranie smartfona] -->
-
 ## Dlaczego linijka w przeglądarce jest wygodniejsza od aplikacji?
 
 Korzystanie z narzędzia webowego bezpośrednio na telefonie niesie ze sobą istotne korzyści funkcjonalne:
