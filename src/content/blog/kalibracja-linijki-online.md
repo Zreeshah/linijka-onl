@@ -17,7 +17,7 @@ Monitory biurowe, ekrany laptopów i matryce smartfonów diametralnie różnią 
 
 ## Dlaczego przeglądarka internetowa nie zna rozmiaru Twojego ekranu?
 
-Aby zrozumieć potrzebę kalibracji, należy przyjrzeć się architekturze wyświetlania grafiki w systemach operacyjnych i przeglądarkach WWW.
+Aby zrozumieć potrzebę kalibracji, należy przyjrzeć się architekturze wyświetlania grafiki w systemach operacyjnych i przeglądarkach internetowych.
 
 W specyfikacji kaskadowych arkuszy stylów (CSS) jednostki bezwzględne, takie jak `1cm` czy `1in`, nie są powiązane z fizycznymi wymiarami matrycy. Zgodnie ze standardem W3C:
 $$\text{1 cal CSS} = 96\text{ px CSS}$$
