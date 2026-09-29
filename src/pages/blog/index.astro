@@ -5,9 +5,10 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 // Fetch all articles from the blog collection
 const allPosts = await getCollection('blog');
 
-// Sort posts by publication date, newest first.
-const sortedPosts = allPosts.sort(
-  (a, b) => new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime()
+// The content schema normalizes each publication date to a Date object.
+// Copy first so the featured article and card grid always share one stable order.
+const sortedPosts = [...allPosts].sort(
+  (a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime()
 );
 
 const featuredPost = sortedPosts[0];
