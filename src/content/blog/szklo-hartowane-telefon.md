@@ -5,7 +5,7 @@ ogTitle: "Jak dobrać szkło hartowane na telefon"
 ogDescription: "Pomiar ekranu telefonu przed zakupem szkła hartowanego: szerokość, wysokość, wycięcia i zgodność z etui."
 imageAlt: "Pomiar szkła hartowanego na ekran telefonu"
 heroImage: "/images/blog/szklo-hartowane-telefon.svg"
-pubDate: "2026-07-16"
+pubDate: "2026-09-17"
 updatedDate: "2026-09-29"
 ---
 

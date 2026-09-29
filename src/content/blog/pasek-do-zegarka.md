@@ -5,7 +5,7 @@ ogTitle: "Jak zmierzyć pasek do zegarka w mm"
 ogDescription: "Praktyczny poradnik pomiaru szerokości mocowania paska i długości paska zegarkowego."
 imageAlt: "Pomiar szerokości paska do zegarka w milimetrach"
 heroImage: "/images/blog/pasek-do-zegarka-mm.svg"
-pubDate: "2026-06-29"
+pubDate: "2026-09-06"
 updatedDate: "2026-09-29"
 ---
 

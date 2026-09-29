@@ -5,7 +5,7 @@ ogTitle: "Wymiary karty bankowej i standard ID-1"
 ogDescription: "Karta bankowa, dowód i karta lojalnościowa: wymiary formatu ID-1 oraz bezpieczna kalibracja linijki online."
 imageAlt: "Wymiary karty bankowej 85,60 na 53,98 milimetra"
 heroImage: "/images/blog/wymiary-karty-bankowej.svg"
-pubDate: "2026-08-16"
+pubDate: "2026-09-26"
 updatedDate: "2026-09-29"
 ---
 
