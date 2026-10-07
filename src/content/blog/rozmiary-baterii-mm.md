@@ -9,8 +9,6 @@ pubDate: "2026-03-28"
 updatedDate: "2026-09-29"
 ---
 
-# Rozmiary baterii AA, AAA, C, D i CR2032 – tabela w mm
-
 Rozmiar baterii określa przede wszystkim jej średnica i wysokość. Oznaczenie AA nie jest nazwą pojemności ani napięcia. Bateria AA ma zwykle około 14,5 mm średnicy i 50,5 mm długości, natomiast AAA jest węższa i krótsza. Przed zakupem zamiennika porównaj oznaczenie na obudowie oraz rzeczywisty wymiar starego ogniwa.
 
 ## Tabela wymiarów popularnych baterii

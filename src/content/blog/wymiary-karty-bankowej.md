@@ -9,8 +9,6 @@ pubDate: "2026-09-26"
 updatedDate: "2026-09-29"
 ---
 
-# Wymiary karty bankowej i dowodu osobistego – standard ISO ID-1
-
 Karta bankowa w formacie ID-1 ma nominalnie 85,60 mm szerokości, 53,98 mm wysokości i około 0,76 mm grubości. Ten sam prostokątny format spotyka się w wielu kartach płatniczych, identyfikacyjnych oraz w części dokumentów. Stały wymiar sprawia, że karta może być wygodnym wzorcem do kalibracji ekranu.
 
 ## Wymiary formatu ID-1

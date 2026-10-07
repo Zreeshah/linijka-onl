@@ -9,8 +9,6 @@ pubDate: "2026-08-22"
 updatedDate: "2026-09-28"
 ---
 
-# Wymiary papieru A3, A4, A5, A6 i A7 w mm, cm i calach
-
 Format A4 ma 210 × 297 mm, czyli 21 × 29,7 cm. To najczęściej używany arkusz biurowy, ale seria A obejmuje także większe A3 oraz mniejsze A5, A6 i A7. Znajomość tych wymiarów ułatwia drukowanie, dobór koperty, przygotowanie projektu i sprawdzenie, czy dokument zmieści się w teczce.
 
 ## Tabela wymiarów papieru serii A

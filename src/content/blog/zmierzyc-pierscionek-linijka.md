@@ -1,5 +1,5 @@
 ---
-title: "Zmierzyć pierścionek linijką: 7 kroków kontroli"
+title: "Zmierzyć pierścionek linijką: 7 kroków"
 description: "Zmierz wewnętrzną średnicę pierścionka w milimetrach, nie zewnętrzny obrys. Sprawdź kalibrację, pasek papieru, tabelę orientacyjną i ograniczenia."
 ogTitle: "Jak zmierzyć pierścionek linijką?"
 ogDescription: "Praktyczna instrukcja pomiaru wewnętrznej średnicy pierścionka i sprawdzenia wyniku przed zakupem lub wizytą u jubilera."
@@ -8,8 +8,6 @@ heroImage: "/images/blog/zmierzyc-pierscionek-linijka.svg"
 pubDate: "2026-08-28"
 updatedDate: "2026-09-15"
 ---
-
-# Jak zmierzyć pierścionek linijką – 5 ważnych rad i tabela rozmiarów jubilerskich
 
 Wybór pierścionka zaręczynowego, obrączki ślubnej czy prezentu dla bliskiej osoby to wyjątkowy moment, który często wiąże się ze sporym stresem organizacyjnym. Zakupy w sklepach internetowych kuszą bogatym asortymentem i atrakcyjnymi cenami, jednak wymagają podania dokładnego rozmiaru jubilerskiego. Różnica między sąsiednimi rozmiarami pierścionków w polskiej tabeli wynosi zaledwie 0,33 milimetra na średnicy wewnętrznej – to mniej niż grubość wizytówki.
 

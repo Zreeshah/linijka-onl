@@ -9,8 +9,6 @@ pubDate: "2026-04-24"
 updatedDate: "2026-09-28"
 ---
 
-# Śruby metryczne M3–M16 – tabela wymiarów, gwintu i klucza
-
 Oznaczenie M6 × 30 mówi więcej, niż wygląda: wskazuje nominalną średnicę gwintu oraz długość śruby. Aby dobrać zamiennik, trzeba jeszcze sprawdzić skok, rodzaj łba i narzędzie potrzebne do montażu. Poniższa tabela porządkuje najczęściej spotykane śruby metryczne M3–M16, a instrukcja pokazuje, które wymiary można wstępnie odczytać za pomocą [linijki online](/).
 
 ## Szybka tabela popularnych rozmiarów

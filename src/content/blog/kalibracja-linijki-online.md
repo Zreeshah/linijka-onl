@@ -1,5 +1,5 @@
 ---
-title: "Kalibracja skali na ekranie: dokładny test w 7 krokach"
+title: "Kalibracja ekranu: test w 7 krokach"
 description: "Skalibruj podziałkę na ekranie za pomocą karty lub fizycznej linijki. Sprawdź zoom, dwa punkty kontrolne i wpływ orientacji telefonu na wynik."
 ogTitle: "Jak skalibrować skalę linijki na ekranie?"
 ogDescription: "Praktyczny test skali na telefonie, tablecie i komputerze z kartą bankową, znanym odcinkiem oraz kontrolą błędu."
@@ -8,8 +8,6 @@ heroImage: "/images/blog/kalibracja-linijki-online.svg"
 pubDate: "2026-04-12"
 updatedDate: "2026-09-15"
 ---
-
-# Kalibracja linijki online – dlaczego jest niezbędna i jak ją wykonać w 5 krokach
 
 Kiedy otwierasz stronę internetową z wirtualną miarką, intuicyjnie oczekujesz, że centymetr widoczny na szklanym panelu odpowiada dokładnie centymetrowi w świecie rzeczywistym. Jednak bez uprzedniej synchronizacji oprogramowania z fizyczną budową Twojej matrycy taki pomiar niemal zawsze obarczony jest znacznym błędem.
 

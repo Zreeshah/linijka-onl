@@ -9,8 +9,6 @@ pubDate: "2026-09-06"
 updatedDate: "2026-09-29"
 ---
 
-# Jak zmierzyć pasek do zegarka bez suwmiarki
-
 Rozmiar paska do zegarka określa szerokość między uszami koperty, a nie szerokość samego starego paska przy klamrze. Najczęstsze wartości to 18, 20, 22 i 24 mm. Pomiar wykonany między wewnętrznymi krawędziami uszu pozwala dobrać pasek, który nie będzie się przesuwał ani klinował.
 
 ## Najpopularniejsze szerokości

@@ -1,6 +1,6 @@
 ---
 title: "Linijka w telefonie: 7 prostych kroków"
-description: "Linijka w telefonie pomaga zmierzyć małe przedmioty bez aplikacji. Zobacz prosty poradnik krok po kroku."
+description: "Linijka w telefonie pozwala mierzyć małe przedmioty bez aplikacji. Poznaj kalibrację ekranu, działanie skali i proste kroki pomiaru."
 ogTitle: "Jak działa linijka w telefonie?"
 ogDescription: "Prosty poradnik używania linijki online na smartfonie, z kalibracją i typowymi błędami."
 imageAlt: "Smartfon w pozycji poziomej z linijką na krawędzi ekranu mierzący długość klucza domowego"
@@ -8,8 +8,6 @@ heroImage: "/images/blog/linijka-w-telefonie.svg"
 pubDate: "2026-05-15"
 updatedDate: "2026-09-15"
 ---
-
-# Jak zamienić smartfon w podręczną miarkę: poradnik w 7 krokach
 
 Smartfon towarzyszy nam niemal w każdym momencie dnia – w pracy, w warsztacie, podczas zakupów meblowych czy spaceru po sklepie budowlanym. Kiedy stajemy przed koniecznością szybkiego ustalenia średnicy kołka, szerokości paska czy wielkości baterii zegarkowej, rzadko kiedy mamy przy sobie metalową taśmę mierniczą. Szklany panel współczesnego telefonu o wysokiej gęstości pikseli potrafi jednak z powodzeniem przejąć funkcję precyzyjnego przymiaru liniowego.
 

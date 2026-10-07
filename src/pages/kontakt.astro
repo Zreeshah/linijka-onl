@@ -36,7 +36,10 @@ const contactPageSchema = JSON.stringify({
   }
 });
 
-const schemaMarkup = `${breadcrumbSchema}\n${contactPageSchema}`;
+const schemaMarkup = JSON.stringify([
+  JSON.parse(breadcrumbSchema),
+  JSON.parse(contactPageSchema),
+]);
 ---
 
 <BaseLayout

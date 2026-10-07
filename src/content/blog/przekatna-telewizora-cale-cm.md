@@ -1,5 +1,5 @@
 ---
-title: "Przekątna telewizora w calach i cm: 7 rozmiarów"
+title: "Przekątna telewizora w calach i cm"
 description: "Przelicz przekątną telewizora z cali na centymetry. Sprawdź szerokość modeli 43, 50, 55, 65 i 75 cali oraz zmierz miejsce na ekran."
 ogTitle: "Przekątna telewizora w calach i centymetrach"
 ogDescription: "Tabela najpopularniejszych przekątnych telewizorów, rzeczywista szerokość ekranu i prosty sposób sprawdzenia miejsca przed zakupem."
@@ -8,8 +8,6 @@ heroImage: "/images/blog/przekatna-telewizora-cale-cm.svg"
 pubDate: "2026-06-04"
 updatedDate: "2026-09-28"
 ---
-
-# Przekątna telewizora w calach i cm – tabela najpopularniejszych rozmiarów
 
 Rozmiar telewizora podaje się po przekątnej ekranu, a nie po jego szerokości. Jeden cal to 2,54 cm, więc telewizor 55-calowy ma przekątną około 139,7 cm. Nie oznacza to jednak, że urządzenie ma prawie 140 cm szerokości. Przy zakupie trzeba sprawdzić proporcje ekranu, ramkę, podstawę i dostępne miejsce.
 

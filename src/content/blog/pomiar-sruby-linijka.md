@@ -9,8 +9,6 @@ pubDate: "2026-08-10"
 updatedDate: "2026-09-15"
 ---
 
-# Jak zmierzyć śrubę linijką – identyfikacja gwintu, długości i średnicy w 6 krokach
-
 W trakcie domowych napraw mebli, składania urządzeń elektronicznych czy drobnego serwisu rowerowego niemal każdy z nas staje przed problemem brakującej śrubki. W warsztatowej szufladzie leżą dziesiątki metalowych łączników, z których żaden na pierwszy rzut oka nie pasuje idealnie. Aby dokupić właściwy element w markecie budowlanym lub sklepie ze złączami, musisz prawidłowo określić dwa bazowe parametry: średnicę nominalną gwintu oraz długość roboczą trzpienia.
 
 Choć profesjonalny ślusarz sięga w takiej sytuacji po suwmiarkę z noniuszem, w warunkach domowych z powodzeniem wystarczy dobrze skalibrowana wirtualna linijka na ekranie smartfona lub komputera.

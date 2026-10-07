@@ -9,8 +9,6 @@ pubDate: "2026-07-05"
 updatedDate: "2026-09-15"
 ---
 
-# Jak zmierzyć ekran w calach – kompletny poradnik i obliczanie przekątnej
-
 Przekątna ekranu wyrażona w calach jest podstawowym parametrem charakteryzującym telewizory, monitory komputerowe, ekrany laptopów oraz wyświetlacze smartfonów. Kiedy planujesz zakup nowego monitora, wymieniasz matrycę w uszkodzonym laptopie lub chcesz dobrać idealnie dopasowaną folię ochronną, musisz znać dokładny rozmiar widocznego obszaru roboczego.
 
 Często jednak etykieta znamionowa urządzenia ulega zatarciu, pudełko dawno trafiło do kosza, a w specyfikacji technicznej brakuje jednoznacznych informacji. Na szczęście fizyczny pomiar i obliczenie przekątnej matrycy w calach jest prostym zadaniem matematycznym, które można zrealizować w warunkach domowych przy użyciu zwykłej miarki lub taśmy.

@@ -9,8 +9,6 @@ pubDate: "2026-09-17"
 updatedDate: "2026-09-29"
 ---
 
-# Grubość szkła hartowanego – jak dobrać rozmiar na telefon
-
 Grubość szkła hartowanego, na przykład 0,15, 0,25 lub 0,33 mm, nie mówi, czy osłona pasuje do telefonu. O dopasowaniu decydują szerokość, wysokość, promień zaokrągleń oraz położenie aparatu i czujników. Najpewniejszy wybór to szkło opisane dla konkretnego modelu telefonu.
 
 ## Co trzeba zmierzyć?

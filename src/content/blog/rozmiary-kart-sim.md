@@ -9,8 +9,6 @@ pubDate: "2026-05-05"
 updatedDate: "2026-09-29"
 ---
 
-# Rozmiary kart SIM: nano, micro, standard – jak dopasować adapter
-
 Karty SIM różnią się głównie ilością plastiku wokół tych samych styków. Standardowa karta SIM ma 25 × 15 mm, micro SIM 15 × 12 mm, a nano SIM 12,3 × 8,8 mm. Najmniejszy format jest też cieńszy, dlatego adapter należy dobierać ostrożnie.
 
 ## Tabela wymiarów kart SIM

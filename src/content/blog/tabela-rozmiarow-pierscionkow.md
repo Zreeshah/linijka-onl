@@ -1,5 +1,5 @@
 ---
-title: "Tabela rozmiarów pierścionków: 6 kroków pomiaru"
+title: "Tabela rozmiarów pierścionków"
 description: "Sprawdź tabelę rozmiarów pierścionków, zmierz palec paskiem papieru i przelicz obwód na średnicę przed zakupem biżuterii online."
 ogTitle: "Tabela rozmiarów pierścionków i pomiar palca"
 ogDescription: "Praktyczny przewodnik pomiaru palca w domu oraz porównania rozmiarów polskich, europejskich, amerykańskich i brytyjskich."
@@ -8,8 +8,6 @@ heroImage: "/images/blog/tabela-rozmiarow-pierscionkow.svg"
 pubDate: "2026-03-18"
 updatedDate: "2026-09-28"
 ---
-
-# Tabela rozmiarów pierścionków – jak zmierzyć palec w domu
 
 Najpewniejszy domowy pomiar rozmiaru pierścionka zaczyna się od obwodu palca, a nie od zgadywania na podstawie wieku lub wzrostu. Wystarczy wąski pasek papieru, długopis i dobrze skalibrowana [linijka online](/). Polski numer jubilerski odpowiada obwodowi palca wyrażonemu w milimetrach, dlatego wynik można szybko porównać z tabelą sprzedawcy.
 
