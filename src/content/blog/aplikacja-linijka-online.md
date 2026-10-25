@@ -32,7 +32,7 @@ W sytuacji awaryjnej liczy się każda sekunda:
 - **Linijka w przeglądarce**: Wpisujesz adres lub klikasz skrót w zakładkach – strona otwiera się w ułamku sekundy, gotowa do pomiaru od razu po załadowaniu.
 
 ### 2. Prywatność i uprawnienia systemowe (Permissions)
-Wielu darmowych twórców aplikacji monetyzuje swoje produkty poprzez agresywne biblioteki śledzące (SDK reklamowe):
+Wielu twórców darmowych aplikacji monetyzuje swoje produkty poprzez agresywne biblioteki śledzące (SDK reklamowe):
 - **Aplikacja instalowana**: Często żąda uprawnień do kamery, mikrofonu, precyzyjnej lokalizacji GPS, a nawet pamięci wewnętrznej telefonu. Pobieranie identyfikatorów reklamowych (IDFA/GAID) umożliwia profilowanie użytkownika w sieciach reklamowych.
 - **Linijka online**: Działa całkowicie lokalnie w przeglądarce. Nie ma dostępu do Twoich kontaktów, zdjęć ani plików. Nasz serwis nie wymaga logowania, a ustawienia zapamiętywane są wyłącznie w mechanizmie `localStorage` Twojego urządzenia.
 

@@ -20,7 +20,7 @@ Karta bankowa w formacie ID-1 ma nominalnie 85,60 mm szerokości, 53,98 mm wysok
 | Grubość | około 0,76 mm |
 | Przekątna | około 101,2 mm |
 
-Format ID-1 opisuje fizyczne właściwości karty. Nie każda karta w portfelu musi być jego zgodna, dlatego do kalibracji wybierz kartę o sztywnym, standardowym kształcie, bez wyraźnego uszkodzenia.
+Format ID-1 opisuje fizyczne właściwości karty. Nie każda karta w portfelu musi być z nim zgodna, dlatego do kalibracji wybierz kartę o sztywnym, standardowym kształcie, bez wyraźnego uszkodzenia.
 
 ## Dlaczego karta pomaga skalibrować ekran?
 
