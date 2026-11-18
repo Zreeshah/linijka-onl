@@ -1,0 +1,51 @@
+---
+// Zestaw Pomiarowy do Druku — CTA do produktu na Gumroad ($3.99).
+// Jeden link w jednym miejscu: zmień GUMROAD_URL tutaj, a zmieni się wszędzie.
+export interface Props {
+  variant?: 'ruler' | 'print' | 'blog';
+}
+const { variant = 'ruler' } = Astro.props;
+const GUMROAD_URL = 'https://thisisabuzarnaqvi.gumroad.com/l/linijka-zestaw-pomiarowy';
+const copy = {
+  ruler: {
+    title: 'Zmierzysz więcej niż długość?',
+    text: 'Zestaw Pomiarowy do Druku — 7 stron A4 w skali 1:1: linijki 10, 20 i 30 cm, miarka pierścionka, pasek do zegarka, śruby M3–M16, baterie, karty SIM i przekątna ekranu. PDF do pobrania od razu.',
+  },
+  print: {
+    title: 'Jedna linijka to za mało?',
+    text: 'Cały zestaw do druku w skali 1:1 — 7 stron A4: linijki, miarka pierścionka (PL 5–30), pasek do zegarka 16–24 mm, śruby M3–M16, baterie i karty SIM. PDF do pobrania od razu.',
+  },
+  blog: {
+    title: 'Mierzysz pierścionek, śrubę albo pasek?',
+    text: 'Zestaw Pomiarowy do Druku — 7 stron A4 w skali 1:1 z miarką pierścionka, identyfikatorem śrub M3–M16 i miarą paska do zegarka. PDF do pobrania od razu.',
+  },
+}[variant];
+---
+
+<section class="product-cta no-print" aria-label="Zestaw Pomiarowy do Druku">
+  <div class="cta-card">
+    <h3>{copy.title}</h3>
+    <p>{copy.text}</p>
+    <a
+      href={GUMROAD_URL}
+      class="btn btn-primary"
+      target="_blank"
+      rel="noopener sponsored"
+      data-cta-placement={variant}
+      onclick="window.gtag && window.gtag('event', 'gumroad_buy_click', { placement: this.dataset.ctaPlacement });"
+    >Pobierz zestaw — $3.99</a>
+    <p class="product-cta-note">7 stron A4 • PDF • skala 1:1 • płatność przez Gumroad</p>
+  </div>
+</section>
+
+<style>
+  .product-cta {
+    margin-top: var(--space-8);
+    margin-bottom: var(--space-8);
+  }
+  .product-cta-note {
+    font-size: 0.8125rem !important;
+    margin-top: var(--space-4) !important;
+    margin-bottom: 0 !important;
+  }
+</style>

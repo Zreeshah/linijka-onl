@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import ProductCTA from '../components/ProductCTA.astro';
 
 const siteUrl = 'https://www.linijka.onl';
 
@@ -250,6 +251,8 @@ const showDeviceAccuracyTable = false;
       <a href="/linijka-do-druku/" class="bottom-link">Linijka do druku</a>
     </div>
   </section>
+
+  <ProductCTA variant="ruler" />
 
   <!-- ====== CALIBRATION PANEL (compact) ====== -->
   <section class="section section-alt calibration-panel no-print" id="kalibracja" aria-label="Kalibracja linijki">

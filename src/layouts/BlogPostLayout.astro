@@ -1,6 +1,7 @@
 ---
 import BaseLayout from './BaseLayout.astro';
 import AuthorBox from '../components/AuthorBox.astro';
+import ProductCTA from '../components/ProductCTA.astro';
 import { authorProfile } from '../data/author';
 
 export interface Props {
@@ -128,6 +129,8 @@ const tocHeadings = headings.filter((h) => h.depth === 2);
         </div>
 
         <AuthorBox />
+
+        <ProductCTA variant="blog" />
 
         <!-- Call to Action Section -->
         <section class="blog-cta no-print">

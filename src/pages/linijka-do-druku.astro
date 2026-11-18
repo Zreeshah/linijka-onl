@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import ProductCTA from '../components/ProductCTA.astro';
 
 const breadcrumbSchema = JSON.stringify({
   "@context": "https://schema.org",
@@ -164,6 +165,8 @@ const rulerSizes = [10, 20, 30];
       </p>
     </div>
   </section>
+
+  <ProductCTA variant="print" />
 
   <!-- ====== TROUBLESHOOTING SECTION ====== -->
   <section class="section print-troubleshooting no-print" id="rozwiazywanie-problemow" aria-label="Rozwiązywanie problemów z wydrukiem linijki">
