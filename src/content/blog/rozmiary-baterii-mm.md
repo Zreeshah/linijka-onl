@@ -41,6 +41,61 @@ AA i AAA są formatami mechanicznymi. Mogą występować jako baterie jednorazow
 
 Przy wymianie wszystkich baterii w jednym urządzeniu używaj tego samego typu i podobnego poziomu naładowania. Nie mieszaj starej baterii z nową ani różnych chemii, jeśli instrukcja urządzenia tego nie dopuszcza.
 
+### Oznaczenia baterii guzikowych: co znaczą litery i cyfry
+
+Oznaczenie baterii guzikowej zwykle opisuje jej budowę i rozmiar. W oznaczeniu
+CR2032 litery CR oznaczają chemię litowo-manganową, pierwsze dwie cyfry to
+średnica w milimetrach, a ostatnie dwie to wysokość w dziesiątych częściach
+milimetra. CR2032 ma więc około 20 mm średnicy i 3,2 mm wysokości. CR2025
+ma tę samą średnicę, ale tylko 2,5 mm wysokości, a CR2016 ma 1,6 mm wysokości.
+Baterie o tej samej średnicy i różnej wysokości nie zawsze pasują do tego
+samego urządzenia, bo styk może nie dotykać ogniwa.
+
+Inne oznaczenia działają podobnie. LR44 to bateria alkaliczna o średnicy
+około 11,6 mm i wysokości 5,4 mm, a SR44 to jej odpowiednik srebrowo-tlenkowy
+o tych samych wymiarach, ale innym napięciu i charakterystyce. Litera L na
+początku zwykle oznacza chemię alkaliczną, S srebrowo-tlenkową, a C litową.
+Przed zakupem zamiennika sprawdź pełne oznaczenie na starej baterii albo
+w instrukcji urządzenia, a nie tylko średnicę.
+
+Warto też pamiętać, że bateria guzikowa oznaczona jako 3 V nie zastąpi
+baterii 1,5 V, nawet jeśli ma identyczny rozmiar. Napięcie musi pasować do
+urządzenia, inaczej może ono działać nieprawidłowo albo ulec uszkodzeniu.
+
+### Akumulatory AA i AAA zamiast baterii jednorazowych
+
+Baterie AA i AAA można zastąpić akumulatorami NiMH, które ładuje się wielokrotnie.
+Akumulator NiMH ma napięcie nominalne 1,2 V, a bateria alkaliczna 1,5 V.
+Większość urządzeń działa na akumulatorach poprawnie, ale część sprzętu,
+zwłaszcza aparaty i urządzenia wrażliwe na napięcie, może szybciej zgłaszać
+niski poziom naładowania.
+
+Pojemność akumulatora podaje się w mAh. Akumulator AA ma zwykle od 1900 do
+2800 mAh, a AAA od 750 do 1100 mAh. Większa pojemność oznacza dłuższy czas
+pracy, ale nie zmienia rozmiaru ogniwa. Akumulatory o niskim samorozładowaniu
+trzymają ładunek miesiącami, więc nadają się do pilotów i zegarów, a zwykłe
+NiMH szybciej tracą ładunek, gdy leżą bez użycia.
+
+Przy wymianie używaj akumulatorów tego samego typu i o podobnym poziomie
+naładowania. Nie mieszaj akumulatora z baterią jednorazową ani ogniw o różnej
+pojemności w jednym urządzeniu. Do ładowania używaj ładowarki przeznaczonej
+do danego typu ogniw i nie zostawiaj rozładowanych akumulatorów w urządzeniu
+na długo, bo mogą wyciec tak samo jak zwykłe baterie.
+
+### Jak przechowywać zapasowe baterie
+
+Zapasowe baterie trzymaj w suchym miejscu, w temperaturze pokojowej, z dala
+od metalowych przedmiotów. Baterie luzem w szufladzie mogą się zewrzeć, gdy
+ich bieguny dotkną kluczy albo monet, a zwarcie grozi nagrzaniem i wyciekiem.
+Najprościej przechowywać je w oryginalnym opakowaniu albo w plastikowym
+pojemniku z przegródkami.
+
+Nie trzymaj baterii w lodówce ani w gorącym samochodzie. Niska temperatura
+czasowo obniża napięcie, a wysoka przyspiesza samorozładowanie i starzenie
+ogniwa. Sprawdzaj datę ważności na opakowaniu: stara bateria, nawet nieużywana,
+może mieć mniejszą pojemność niż świeża. Do urządzeń, które rzadko działają,
+takich jak piloty i czujniki, wybieraj ogniwa o niskim samorozładowaniu.
+
 ## Najczęstsze pytania
 
 ### Czy AA i AAA mają taką samą długość?

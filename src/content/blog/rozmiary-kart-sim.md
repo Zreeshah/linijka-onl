@@ -35,6 +35,58 @@ Adapter pozwala włożyć nano SIM do gniazda micro lub standardowego. Karta mus
 
 Warto porównać kartę z opisem na szufladce. Producenci często oznaczają obsługiwany format symbolem nano, micro albo kształtem. Nie próbuj wkładać micro SIM do gniazda nano. Zwykle nie zmieści się, a nacisk może uszkodzić mechanizm.
 
+### eSIM zamiast fizycznej karty
+
+Coraz więcej telefonów pozwala zrezygnować z plastikowej karty SIM. eSIM to
+wbudowany moduł w telefonie, który przejmuje rolę karty po zeskanowaniu kodu
+QR od operatora albo po wpisaniu danych aktywacyjnych w ustawieniach. Fizycznie
+nie ma czego mierzyć ani przycinać, a zmiana operatora nie wymaga wymiany
+karty w szufladce.
+
+Nie każdy telefon obsługuje eSIM, a część modeli łączy eSIM z miejscem na jedną
+kartę fizyczną. Przed przejściem na eSIM sprawdź w specyfikacji telefonu, czy
+funkcja jest dostępna, oraz zapytaj operatora, czy oferuje przeniesienie numeru
+na eSIM bez wizyty w salonie. Przeniesienie zwykle trwa kilka minut, ale do
+czasu aktywacji stara karta powinna zostać w telefonie.
+
+W podróży eSIM bywa wygodny, bo drugą kartę albo drugi profil można dodać bez
+szukania sklepu z kartami. Trzeba jednak pamiętać, że usunięcie profilu eSIM
+z telefonu bez kopii danych aktywacyjnych może wymagać ponownego kontaktu
+z operatorem. Warto zachować kod QR albo dane do ponownej aktywacji.
+
+### Wymiana karty u operatora
+
+Jeśli karta jest uszkodzona, za stara albo ma zły format, najprościej wymienić
+ją u operatora. W salonie zwykle dostaje się kartę wieloformatową, z której
+wyciska się potrzebny rozmiar: standard, micro albo nano. Taka karta pasuje
+do większości telefonów bez samodzielnego cięcia.
+
+Do wymiany zwykle wystarczy dokument tożsamości i numer telefonu. Część
+operatorów wymienia kartę bez opłaty, inni pobierają niewielką opłatę, więc
+warto zapytać o koszt przed wizytą. Nowa karta działa po kilku minutach od
+aktywacji, a stara przestaje działać w tym samym czasie.
+
+Nie wyrzucaj starej karty od razu. Zachowaj ją do czasu, aż nowa karta
+zaloguje się do sieci i odbierze testowy SMS. Jeśli nowa karta nie działa,
+stara karta i potwierdzenie wymiany ułatwiają wyjaśnienie sprawy w salonie.
+Numery PIN i PUK do nowej karty są zwykle na karcie nośnej albo w aplikacji
+operatora.
+
+### Karta wieloformatowa — jak ją przygotować
+
+Karta wieloformatowa ma nacięcia, które pozwalają wycisnąć z niej mniejszy
+format. Nie wyłamuj karty palcami na siłę, bo nierówna krawędź może zablokować
+szufladkę. Najpierw zdecyduj, który format jest potrzebny, a potem delikatnie
+dociśnij wzdłuż nacięcia i sprawdź, czy krawędź jest gładka. Jeśli zostaje
+zadziorek, wyrównaj go ostrożnie drobnym pilnikiem albo papierem ściernym,
+uważając, żeby nie dotknąć styków.
+
+Wyciśniętej karty nie da się złożyć z powrotem, więc nie przygotowuj mniejszego
+formatu na zapas. Jeśli zmienisz telefon na model z większą szufladką, potrzebny
+będzie adapter albo nowa karta od operatora. Zachowaj plastikową ramkę po
+wyciśnięciu: działa jak adapter awaryjny, choć nie zastępuje dopasowanej ramki
+z zestawu.
+
 ## Najczęstsze pytania
 
 ### Jaki rozmiar ma nano SIM?

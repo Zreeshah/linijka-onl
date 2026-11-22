@@ -33,6 +33,53 @@ Cienkie szkło może być mniej widoczne i lepiej współpracować z dotykiem, l
 
 Jeżeli telefon ma zakrzywione brzegi, szkło pełne może kończyć się przed samą krawędzią. To normalne, gdy producent zostawia miejsce na etui. Nie kupuj większej osłony tylko dlatego, że chcesz zakryć każdy milimetr szkła.
 
+### Szkło na całą powierzchnię a szkło na płaską część ekranu
+
+Producenci oferują zwykle dwa rodzaje osłon. Szkło na całą powierzchnię zakrywa
+prawie cały przód telefonu, razem z zaokrąglonymi krawędziami, i często ma czarną
+ramkę, która maskuje brzegi wyświetlacza. Szkło na płaską część ekranu kończy się
+tam, gdzie zaczyna się zaokrąglenie, więc zostawia widoczny margines, ale rzadziej
+odkleja się przy krawędzi.
+
+Wybór zależy od telefonu i etui. Przy mocno zakrzywionym ekranie szkło pełne
+może nie przylegać na brzegach, a szkło płaskie zostawi nieosłonięty pasek szkła.
+Przy płaskim ekranie różnica jest mniejsza i zwykle lepiej sprawdza się osłona
+dopasowana do aktywnej części wyświetlacza. Przed zakupem sprawdź w opisie,
+czy producent podaje wymiary osłony, a nie tylko nazwę modelu telefonu.
+
+Warto też zwrócić uwagę na sposób klejenia. Szkło z klejem na całej powierzchni
+przylega równomiernie i zwykle lepiej współpracuje z czujnikiem odcisku palca
+pod ekranem. Szkło klejone tylko przy krawędziach montuje się łatwiej, ale pod
+środkiem może powstać warstwa powietrza, która pogarsza dotyk. Jeśli telefon
+ma czytnik w ekranie, szukaj osłony opisanej jako zgodna z tym czytnikiem.
+
+### Montaż bez bąbelków
+
+Nawet dobrze dobrane szkło można źle przykleić. Najczęstsze błędy to kurz pod
+osłoną, krzywe ustawienie i pośpiech przy dociskaniu.
+
+1. Umyj ręce i pracuj w miejscu bez przeciągu.
+2. Przetrzyj ekran ściereczką z zestawu, a drobinki kurzu zbierz naklejką.
+3. Zdejmij folię ochronną dopiero tuż przed przyłożeniem szkła.
+4. Ustaw osłonę według głośnika i aparatu, a nie według krawędzi obudowy.
+5. Dociśnij środek i wypychaj powietrze ku brzegom miękką ściereczką.
+
+Jeśli bąbelek zostanie przy krawędzi, zwykle da się go wypchnąć. Bąbelek ze
+złapanym pyłkiem w środku ekranu oznacza, że montaż trzeba powtórzyć z nowym
+szkłem. Nie podnoś przyklejonej osłony, żeby poprawić jej położenie, bo klej
+zbierze kurz i drugi raz nie będzie trzymał tak samo.
+
+### Kiedy szkło nie pasuje mimo dobrego pomiaru
+
+Zdarza się, że wymiary się zgadzają, a szkło i tak nie leży dobrze. Przyczyną
+bywa szkło prywatyzujące, które przyciemnia ekran pod kątem, albo osłona
+z powłoką, która zmienia sposób działania dotyku. Może też chodzić o wycięcie
+na aparat: dwa telefony o tej samej przekątnej mogą mieć aparat w innym miejscu,
+więc szkło od innego modelu zasłoni obiektyw albo czujnik. Jeśli osłona ma
+wycięcie w złym miejscu, nie da się tego naprawić docinaniem. W takiej sytuacji
+najprościej zwrócić szkło i kupić osłonę oznaczoną dokładną nazwą modelu,
+a nie tylko przekątną ekranu.
+
 ## Najczęstsze pytania
 
 ### Czy 0,33 mm oznacza lepsze szkło?

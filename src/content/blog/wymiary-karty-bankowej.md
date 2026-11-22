@@ -46,6 +46,60 @@ Karta jest wzorcem do ustawienia skali, ale nie zmienia ekranu w przyrząd labor
 
 Nie mierz kartą średnicy śruby, baterii czy pierścionka. Najpierw skalibruj ekran, a potem odczytaj właściwy przedmiot. Dla śrub przyda się także [tabela śrub metrycznych](/blog/sruby-metryczne-m3-m16/).
 
+### Inne przedmioty o znanym wymiarze
+
+Karta bankowa jest najwygodniejszym wzorcem, bo prawie każdy ma ją w portfelu,
+ale nie jest jedynym przedmiotem o stałym rozmiarze. Kartka A4 ma 210 × 297 mm,
+więc jej krótszy bok może posłużyć do sprawdzenia skali na większym odcinku.
+Płyta CD ma 120 mm średnicy, a bateria AA około 50,5 mm długości. Każdy
+z tych przedmiotów nadaje się do szybkiej kontroli, czy skala na ekranie
+wygląda wiarygodnie.
+
+Wzorzec powinien być sztywny i nieuszkodzony. Zgięta kartka, porysowana płyta
+albo bateria z wgniecioną obudową dają gorszy punkt odniesienia niż prosta
+karta. Jeśli masz wątpliwości co do jednego wzorca, sprawdź skalę drugim.
+Gdy karta i kartka A4 wskazują ten sam błąd, problem leży w ustawieniu skali,
+a nie w przedmiocie.
+
+Do pomiaru małych przedmiotów, takich jak śruby albo karty SIM, ekranowa
+linijka po kalibracji wystarcza do orientacyjnego odczytu. Do dokładnych
+pomiarów lepiej użyć suwmiarki albo wydrukowanej skali. Więcej o pomiarze
+śrub znajdziesz w artykule o [śrubach metrycznych M3–M16](/blog/sruby-metryczne-m3-m16/),
+a o kartach SIM w poradniku [rozmiary kart SIM](/blog/rozmiary-kart-sim/).
+
+### Najczęstsze błędy kalibracji
+
+Najczęstszym błędem jest powiększenie przeglądarki inne niż 100%. Skala
+skalibrowana przy powiększeniu 110% będzie zawyżać każdy odczyt, a przy 90%
+zaniżać. Przed kalibracją ustaw powiększenie na 100% i sprawdź, czy pasek
+adresu przeglądarki nie pokazuje ikony lupy.
+
+Drugim błędem jest skalowanie systemowe. Na laptopach z systemem Windows
+skala wyświetlania bywa ustawiona na 125% albo 150%, co zmienia fizyczny
+rozmiar pikseli. Kalibracja w przeglądarce dopasowuje skalę do tego
+ustawienia, ale po zmianie skali systemowej kalibrację trzeba powtórzyć.
+To samo dotyczy podłączenia innego monitora.
+
+Trzeci błąd to pomiar nie tego boku karty. Karta ma 85,60 mm szerokości
+i 53,98 mm wysokości. Dopasowanie ramki kalibracyjnej do krótszego boku
+zamiast dłuższego daje zupełnie inną skalę. Zawsze sprawdzaj oba boki po
+kalibracji. Jeśli krótszy bok nie zgadza się z ramką, wróć do ustawienia
+100% i wykonaj kalibrację od nowa.
+
+### Kalibracja na telefonie a na komputerze
+
+Na telefonie kalibracja jest trudniejsza, bo ekran jest mały, a karta
+bankowa zasłania dużą jego część. Przykładaj kartę do krawędzi ekranu, a nie
+na środek, i sprawdzaj skalę przy dobrym świetle. Na komputerze jest łatwiej,
+bo karta mieści się obok skali, a duży ekran pozwala porównać oba boki
+jednocześnie.
+
+Kalibracja zapisana na jednym urządzeniu nie przenosi się na drugie. Telefon
+i komputer mają inne zagęszczenie pikseli, więc każde urządzenie wymaga
+osobnej kalibracji. Jeśli korzystasz z linijki na kilku urządzeniach,
+wykonaj kalibrację na każdym z nich i nie zmieniaj powiększenia przeglądarki
+pomiędzy pomiarami.
+
 ## Najczęstsze pytania
 
 ### Jakie wymiary ma karta bankowa?

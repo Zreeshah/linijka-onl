@@ -44,6 +44,57 @@ Długość dobiera się do obwodu nadgarstka oraz wielkości koperty. Pasek powi
 
 Skórzany pasek może z czasem dopasować się do nadgarstka, a gumowy nieznacznie się rozciągać. Metalowa bransoleta wymaga regulacji ogniw. Te cechy nie zmieniają szerokości między uszami.
 
+### Teleskopy — mały element, który decyduje o wymianie
+
+Pasek trzyma się koperty zwykle dzięki teleskopom, czyli sprężystym bolcom,
+które wchodzą w otwory w uszach koperty. Długość teleskopu musi odpowiadać
+szerokości między uszami, a jego średnica zwykle wynosi 1,5 lub 1,8 mm.
+Za gruby teleskop nie wejdzie w otwór, a za cienki będzie miał luz i może
+wypaść przy pociągnięciu.
+
+Przy wymianie paska sprawdź, czy stare teleskopy są proste i czy sprężyna
+w środku działa. Wygięty albo skorodowany teleskop wymień razem z paskiem,
+bo to koszt kilku złotych, a od niego zależy, czy zegarek zostanie na ręce.
+Do wyjęcia teleskopu przydaje się wąskie narzędzie z widełkami, a w awaryjnej
+sytuacji cienki, tępy przedmiot, który nie zarysuje koperty.
+
+Coraz więcej pasków ma teleskopy szybkiej wymiany z małym suwakiem. Taki pasek
+można zdjąć palcami, bez narzędzia. Przed zakupem sprawdź, czy suwak nie
+wystaje poza obrys paska, bo przy ciasnym mocowaniu może zahaczać o kopertę.
+Niezależnie od systemu mocowania szerokość przy kopercie musi być identyczna
+z odstępem między uszami.
+
+### Materiał paska a dobór rozmiaru
+
+Szerokość między uszami to podstawa, ale materiał paska wpływa na to, jak
+zegarek leży na ręce. Skóra z czasem dopasowuje się do nadgarstka i lekko
+mięknie, więc nowy skórzany pasek może na początku wydawać się sztywny.
+Nie kupuj go węższego z nadzieją, że się rozciągnie, bo szerokość przy
+kopercie nie zmieni się wcale.
+
+Pasek gumowy albo silikonowy jest odporny na wodę i pot, ale zwykle nie
+rozciąga się na długość. Przy wyborze długości kieruj się obwodem nadgarstka,
+a nie wyglądem paska na zdjęciu. Metalowa bransoleta wymaga regulacji liczby
+ogniw, a jej szerokość przy kopercie musi pasować tak samo jak paska.
+
+Pasek NATO przechodzi pod kopertą, więc dodaje grubości między zegarkiem
+a skórą. Przy grubszym pasku zegarek leży wyżej na nadgarstku. To kwestia
+wygody, nie pomiaru, ale warto o tym wiedzieć przed zakupem, jeśli zegarek
+ma być noszony pod ciasnym mankietem.
+
+### Jak sprawdzić, czy pasek jest dobrze zamocowany
+
+Po założeniu nowego paska pociągnij go lekko w obie strony przy kopercie.
+Dobrze zamocowany pasek nie powinien mieć wyczuwalnego luzu ani przesuwać
+się w uszach. Potem poruszaj nadgarstkiem i sprawdź, czy teleskopy nie
+wyskakują przy zgięciu. Jeśli pasek klika albo rusza się na boki, zdejmij
+go i sprawdź, czy teleskopy weszły w otwory po obu stronach.
+
+Pierwszego dnia noś zegarek ostrożnie i sprawdzaj mocowanie co kilka godzin.
+Dotyczy to zwłaszcza pasków z szybką wymianą, bo suwak może się przesunąć,
+gdy pasek jest nowy i sztywny. Po dniu noszenia mocowanie zwykle się układa
+i nie wymaga już kontroli.
+
 ## Najczęstsze pytania
 
 ### Jak zmierzyć szerokość paska bez suwmiarki?
